@@ -31,7 +31,7 @@ sitemap.xml
 
 - Use semantic elements: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`
 - Every page must have unique `<title>` and `<meta name="description">`
-- Every page must have `<link rel="canonical" href="https://ds-guides.wiki/...">`
+- Every page must have `<link rel="canonical" href="https://ds-guides.wiki/...">` matching its actual URL (subpages include language dir, e.g. `/en/beginner-guide.html`)
 - Include hreflang tags for all 5 language versions
 - One `<h1>` per page; proper heading hierarchy (h1 > h2 > h3)
 - `<meta charset="UTF-8">` in `<head>`
