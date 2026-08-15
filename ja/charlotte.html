@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte ガイド — DragonSword Awakening: ビルド、チーム & 毒コンボ</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なCharlotteガイド。Sティアアサシンの最強ビルド、チーム構成、毒/浮遊コンボ、ステルスクローンメカニクス、戦闘のコツ。">
+    <meta name="keywords" content="DragonSword Awakening Charlotte, アサシン, 毒, 浮遊, ベノム, ビルド, チーム, ステルスクローン">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/charlotte.html">
+    <meta property="og:title" content="Charlotte ガイド — DragonSword Awakening">
+    <meta property="og:description" content="Sティアアサシンの最強ビルド、チーム、毒コンボ、ステルスメカニクス。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/charlotte.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/charlotte.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/charlotte.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/charlotte.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/charlotte.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/charlotte.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Charlotte ガイド — DragonSword Awakening: ビルド、チーム & 毒コンボ",
+      "description": "DragonSword: Awakeningの完全なCharlotteガイド。Sティアアサシンの最強ビルド、チーム構成、毒/浮遊コンボ、ステルスクローンメカニクス、戦闘のコツ。",
+      "url": "https://ds-guides.wiki/ja/charlotte.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/charlotte.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html" class="active">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">レンタス反乱軍 · Sティア</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Charlotte — 情報員</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                ハイリスク・ハイリターンの近接アサシンDPS。毒を付与してから浮遊に変換し、コンボチェーンを開きます。ステルスクローンが追加のプレッシャーを生み出します。熟練したプレイで真価を発揮し、ミスは厳しく罰せられます。
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 双短剣</div>
+                <div class="hero-stat"><span class="dot"></span> ベノム特性</div>
+                <div class="hero-stat"><span class="dot"></span> 毒 / 浮遊 / ダウン</div>
+                <div class="hero-stat"><span class="dot"></span> 交換ショップ</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックアンサー</div>
+                <p>Charlotteは最も万能なSティアヒーローの1人です。毒を付与してから浮遊に変換し、継続的なシグナルスキルとタッグコンボチェーンを可能にします。最強チーム: Charlotte + Johnny + Reina。ビルドは3 ルインズブレイカー + 2 ベノムフォグシェイド。高いスキル上限 — 安全な遠距離プレイを求めるプレイヤーには不向き。</p>
+            </div>
+
+            <!-- Character Info -->
+            <h2 id="overview">📋 キャラクター概要</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td><strong>フルネーム</strong></td><td>Charlotte (シャーロット)</td></tr>
+                        <tr><td><strong>陣営</strong></td><td>レンタス反乱軍</td></tr>
+                        <tr><td><strong>称号</strong></td><td>情報員</td></tr>
+                        <tr><td><strong>ヒーロー特性</strong></td><td>ベノム</td></tr>
+                        <tr><td><strong>武器</strong></td><td>双短剣 (近接)</td></tr>
+                        <tr><td><strong>状態異常</strong></td><td>毒、浮遊、ダウン</td></tr>
+                        <tr><td><strong>アンロック</strong></td><td>交換ショップ (運命の招待 x1)</td></tr>
+                        <tr><td><strong>専用カルマ</strong></td><td>闇に残されし信念</td></tr>
+                        <tr><td><strong>ティアランク</strong></td><td><span class="tier-badge tier-s">Sティア</span></td></tr>
+                        <tr><td><strong>プレイスタイル</strong></td><td>アサシンDPS、アクティブプレッシャードライバー、状態付与者</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Best Build -->
+            <h2 id="build">⚔️ 最強ビルド</h2>
+            <div class="card">
+                <h3 class="card-title">スタンダードDPSビルド</h3>
+                <div class="table-wrapper" style="margin-top: 16px;">
+                    <table>
+                        <tbody>
+                            <tr><td><strong>専用カルマ</strong></td><td>闇に残されし信念</td></tr>
+                            <tr><td><strong>装備セット</strong></td><td>3 ルインズブレイカー + 2 ベノムフォグシェイド</td></tr>
+                            <tr><td><strong>メインステータス</strong></td><td>ATKパワーアップ → クリティカルヒット確率 → クリティカルダメージ</td></tr>
+                            <tr><td><strong>サブステータス</strong></td><td>状態異常効率 > 追加パワー</td></tr>
+                            <tr><td><strong>ルーン</strong></td><td>レゾルブ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>専用カルマ効果</h4>
+                    <p>クローンがQスキルを再詠唱すると、向いている方向に飛び跳ねて爆発 — ローテーションに大幅な追加ダメージを加えます。</p>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>ステータス優先順位</h4>
+                    <ol>
+                        <li><strong>攻撃力</strong> — Charlotteの仕事はあらゆる機会でダメージを出すこと</li>
+                        <li><strong>状態異常効率</strong> — 毒、ダウン、浮遊のプレッシャーが単独のプレッシャーをシグナルスキルシーケンスに変換</li>
+                        <li><strong>クリティカル率 & クリティカルダメージ</strong> — 暗殺ウィンドウを適切にスケールさせる</li>
+                        <li><strong>生存</strong> — 死亡が実際にクリアを妨げている場合にのみ追加。防御しすぎるとCharlotteの価値が下がる</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Best Teams -->
+            <h2 id="teams">👥 最強チーム構成</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>チーム</th>
+                            <th>最適な用途</th>
+                            <th>コアループ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Charlotte + Johnny + Reina</strong></td>
+                            <td>最強ダメージチーム</td>
+                            <td>CharlotteメインDPS、JohnnyセカンダリDPS、Reinaコンボサポート。ゲーム内最強の構成の1つ。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Reina</strong></td>
+                            <td>アクション重視のエンドゲーム</td>
+                            <td>Charlotteがプレッシャーを牽引、Reinaが空中と間合いをサポート。Charlotteがドライバー、Reinaがチームを浮遊させるか再配置するのを助ける。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Johnny + Eileen</strong></td>
+                            <td>毒-浮遊チーム</td>
+                            <td>Eileenがバッファーと浮遊付与、Charlotteが出力。安定した毒DoT + 浮遊バースト。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Eileen + Dana</strong></td>
+                            <td>"ペイントレイン"</td>
+                            <td>Eileenがバフ、Charlotteが敵を引き寄せて叩きつけ、Danaが毒を単独でスタック。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Lute/Reina</strong></td>
+                            <td>汎用</td>
+                            <td>3枠目は必要に応じて: 回復ならLute、コンボ延長ならReina。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Combat Flow -->
+            <h2 id="combat">🔄 戦闘フロー (6ステップ)</h2>
+            <div class="card">
+                <ol>
+                    <li><strong>浮遊レスポンスをテスト</strong> — 戦闘開始時、敵が浮遊にどう反応するかをテスト</li>
+                    <li><strong>カメラを読みやすく保つ</strong> — 近接キャラは悪いカメラアングルに苦しむ。慎重にポジショニング</li>
+                    <li><strong>点灯した味方入力を使う</strong> — シグナルスキルウィンドウが表示されたら、速やかに切り替え</li>
+                    <li><strong>間合いにReinaを使う</strong> — 離脱が必要なときはReinaに切り替えて安全に再配置</li>
+                    <li><strong>Charlotteに戻る</strong> — 味方切り替えで戦闘リズムをリセット</li>
+                    <li><strong>まず毒、次に浮遊</strong> — まず毒をスタック、次に浮遊に変換してコンボを開く</li>
+                </ol>
+            </div>
+
+            <!-- Strengths -->
+            <h2 id="strengths">✅ 強み</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3 class="card-title">Sティアの万能性</h3>
+                    <p class="card-desc">最もチームを組みやすいヒーローの1人。ほとんどのヒーローより多くのチーム構成に収まる。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☠️</div>
+                    <h3 class="card-title">デュアル状態の力</h3>
+                    <p class="card-desc">毒と浮遊の両方を付与。毒のプレッシャーを浮遊コンボの機会に変換。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👤</div>
+                    <h3 class="card-title">ステルスクローン</h3>
+                    <p class="card-desc">インビジブルスキルがクローンを生成。専用カルマでクローンが飛び跳ねて爆発し追加ダメージ。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💨</div>
+                    <h3 class="card-title">高い機動力</h3>
+                    <p class="card-desc">アサシン定位で速い接近と離脱。地上と空中コンボ間を素早く変換。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3 class="card-title">コンボドライバー</h3>
+                    <p class="card-desc">チームのシグナルスキルとタッグコンボシーケンスを開く。アグレッシブチームを機能させるエンジン。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">序盤が強い</h3>
+                    <p class="card-desc">毒は序盤 (レベル50前) で非常によく機能する。進行に最適。</p>
+                </div>
+            </div>
+
+            <!-- Weaknesses -->
+            <h2 id="weaknesses">❌ 弱み</h2>
+            <ul>
+                <li><strong>高いスキル要求</strong> — 高投資、高リターン。正確な回避とタイミングが必要</li>
+                <li><strong>近接の罰</strong> — 遠距離構成より寛容でない。ミスは厳しく罰せられる</li>
+                <li><strong>カメラ問題</strong> — 近接戦闘は読めないカメラアングルにつながる可能性</li>
+                <li><strong>毒は後半で落ちる</strong> — レベル50以降、ボスは毒耐性が上昇する場合がある</li>
+                <li><strong>味方が必要</strong> — 最高のパフォーマンスにはReinaまたは同様のサポートが必要</li>
+            </ul>
+
+            <!-- Combat Tips -->
+            <h2 id="tips">🎮 戦闘のコツ</h2>
+            <ol>
+                <li><strong>まず浮遊をテスト</strong> — 常に戦闘開始時に敵の浮遊レスポンスをテスト</li>
+                <li><strong>カメラを読みやすく保つ</strong> — 近接でのポジショニングに注意し、カメラの妨げを回避</li>
+                <li><strong>点灯した味方入力を使う</strong> — シグナルスキルウィンドウが表示されたら即座に切り替え</li>
+                <li><strong>間合いにReina</strong> — 間合いを作るか再配置する必要があるときはReinaに切り替え</li>
+                <li><strong>毒オープナー</strong> — まず毒をスタック、次に浮遊に変換してコンボを開く</li>
+                <li><strong>クローン爆発</strong> — 専用カルマ効果を使ってクローンを飛び跳ねさせ爆発させ追加ダメージ</li>
+                <li><strong>速いリセット</strong> — プレッシャーが下がったら味方切り替えで戦闘リズムをリセット</li>
+            </ol>
+
+            <!-- Common Mistakes -->
+            <h2>⚠️ よくある間違い</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">防御しすぎ</h3>
+                    <p class="card-desc">生存ステータスに過剰投資するとCharlotteのダメージ価値が下がる。死亡が実際の問題である場合にのみ防御を追加。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">状態効率を無視</h3>
+                    <p class="card-desc">状態異常効率がないと、毒のスタックが遅すぎる。このステータスは彼女のローテーションのコア。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">クローンを無駄に</h3>
+                    <p class="card-desc">ステルスクローンと専用カルマの爆発を活用しないと、彼女のダメージのかなりの部分を無駄にする。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">悪いカメラを追う</h3>
+                    <p class="card-desc">カメラが読めないときにプレッシャーを追うと罰せられる。離脱して再配置。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">Reinaサポートなし</h3>
+                    <p class="card-desc">Charlotteの最高のパフォーマンスにはReinaのような味方が必要。ソロキャリーで運用すると上限が下がる。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">遠距離のようにプレイ</h3>
+                    <p class="card-desc">Charlotteは近接アサシン。安全な遠距離プレイが欲しいなら、代わりにCereseかOthelloを選ぼう。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">全ヒーローのランクを見たい？</h3>
+                <p style="margin-bottom: 16px;">完全なティアリストとキャラクターデータベースをチェック。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 ティアリストを見る</a>
+                    <a href="characters.html" class="btn btn-secondary">👥 全キャラクター</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview">キャラクター概要</a></li>
+                    <li><a href="#build">最強ビルド</a></li>
+                    <li><a href="#teams">最強チーム</a></li>
+                    <li><a href="#combat">戦闘フロー</a></li>
+                    <li><a href="#strengths">強み</a></li>
+                    <li><a href="#weaknesses">弱み</a></li>
+                    <li><a href="#tips">戦闘のコツ</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">その他のヒーロー</div>
+                <ul class="sidebar-nav">
+                    <li><a href="lute.html">⚔️ Lute</a></li>
+                    <li><a href="theresia.html">🔨 Theresia</a></li>
+                    <li><a href="reina.html">🌪️ Reina</a></li>
+                    <li><a href="characters.html">📋 全キャラクター</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

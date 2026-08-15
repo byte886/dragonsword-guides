@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reina ガイド — DragonSword Awakening: 浮遊ビルド、チーム & ジャグリングコンボ</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なReinaガイド。Sティア疾風ランチャーの最強ビルド、チーム構成、全スキル、浮遊ジャグリングコンボ、戦闘のコツ。">
+    <meta name="keywords" content="DragonSword Awakening Reina, 浮遊, 疾風, ランチャー, ジャグリング, ビルド, チーム, ライジングカッター, テンペスト">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/reina.html">
+    <meta property="og:title" content="Reina ガイド — DragonSword Awakening">
+    <meta property="og:description" content="Sティア疾風ランチャーの最強ビルド、チーム、浮遊コンボ、スキル。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/reina.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/reina.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/reina.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/reina.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/reina.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/reina.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Reina ガイド — DragonSword Awakening: 浮遊ビルド、チーム & ジャグリングコンボ",
+      "description": "DragonSword: Awakeningの完全なReinaガイド。Sティア疾風ランチャーの最強ビルド、チーム構成、全スキル、浮遊ジャグリングコンボ、戦闘のコツ。",
+      "url": "https://ds-guides.wiki/ja/reina.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/reina.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html" class="active">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">オルビス王国 · Sティア</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Reina — 守護の風</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                ゲーム内の主要な浮遊ランチャーであり、最強のジャグリングキャラクターの1人。敵を空中で無力化し続け、反撃の機会を制限します。スプリント + 別個の回避による高い機動力。
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 疾風の剣</div>
+                <div class="hero-stat"><span class="dot"></span> 疾風特性</div>
+                <div class="hero-stat"><span class="dot"></span> 浮遊 / 出血</div>
+                <div class="hero-stat"><span class="dot"></span> 第8騎士団長</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックアンサー</div>
+                <p>Reinaは最強の浮遊ランチャーであり、すべてのジャグリングチームのコアです。ライジングカッターまたはウィンドスレイヤーで敵を打ち上げ、ウィンドグラブで延長、Castellaの地面叩きつけでフィニッシュ。最強チーム: Reina + Castella + Lute。ビルドは3 ルインズブレイカー + 2 アズールゲイル。浮遊は打ち上げられた敵が反撃できないため、最強のメカニクスの1つです。</p>
+            </div>
+
+            <!-- Character Info -->
+            <h2 id="overview">📋 キャラクター概要</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td><strong>フルネーム</strong></td><td>Reina (レイナ)</td></tr>
+                        <tr><td><strong>陣営</strong></td><td>オルビス王国</td></tr>
+                        <tr><td><strong>称号</strong></td><td>第8騎士団長</td></tr>
+                        <tr><td><strong>ヒーロー特性</strong></td><td>疾風 (ゲイル)</td></tr>
+                        <tr><td><strong>武器</strong></td><td>疾風の剣 (近接)</td></tr>
+                        <tr><td><strong>状態異常</strong></td><td>浮遊、出血 (テンペスト経由)</td></tr>
+                        <tr><td><strong>アンロック</strong></td><td>交換ショップ (運命の招待 x1)</td></tr>
+                        <tr><td><strong>専用カルマ</strong></td><td>王国を守る風</td></tr>
+                        <tr><td><strong>ティアランク</strong></td><td><span class="tier-badge tier-s">Sティア</span></td></tr>
+                        <tr><td><strong>プレイスタイル</strong></td><td>主要浮遊ランチャー、機動ブリッジ、ジャグリングコア</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Skills -->
+            <h2 id="skills">⚔️ 全スキル解説</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>スキル</th>
+                            <th>タイプ</th>
+                            <th>効果</th>
+                            <th>使用場面</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ライジングカッター</strong></td>
+                            <td>アクティブ1</td>
+                            <td><strong>浮遊</strong>を付与</td>
+                            <td>近距離ランチャー。メインコンボオープナー。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ウィンドスレイヤー</strong></td>
+                            <td>アクティブ2</td>
+                            <td><strong>浮遊</strong>を付与</td>
+                            <td>おそらく広範囲。グループ向けの代替ランチャー。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>テンペスト (嵐)</strong></td>
+                            <td>シグナルA</td>
+                            <td><strong>スタン</strong>状態の敵で発動。<strong>出血</strong>を付与。</td>
+                            <td>味方がスタンを付与した後に切り替え。追加ダメージ + 出血セットアップ。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ウィンドグラブ</strong></td>
+                            <td>シグナルB</td>
+                            <td><strong>浮遊</strong>状態の敵で発動。浮遊を延長/増加。</td>
+                            <td>コアジャグリングエクステンダー。敵をより長く空中に保つ。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Skill Synergy -->
+            <h2 id="synergy">🔗 スキルシナジーチェーン</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🪽</div>
+                    <h3 class="card-title">浮遊チェーン</h3>
+                    <p class="card-desc">ライジングカッター / ウィンドスレイヤー → 敵が浮遊 → ウィンドグラブ (シグナルB) → 浮遊時間を延長 → 繰り返すか味方でフィニッシュ</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🩸</div>
+                    <h3 class="card-title">スタン → 出血チェーン</h3>
+                    <p class="card-desc">味方がスタンを付与 → Reinaに切り替え → テンペスト (シグナルA) → 出血を付与 → 出血ダメージでコンボを継続</p>
+                </div>
+            </div>
+
+            <!-- Best Build -->
+            <h2 id="build">🛡️ 最強ビルド</h2>
+            <div class="card">
+                <h3 class="card-title">スタンダード浮遊DPSビルド</h3>
+                <div class="table-wrapper" style="margin-top: 16px;">
+                    <table>
+                        <tbody>
+                            <tr><td><strong>専用カルマ</strong></td><td>王国を守る風</td></tr>
+                            <tr><td><strong>装備セット</strong></td><td>3 ルインズブレイカー + 2 アズールゲイル</td></tr>
+                            <tr><td><strong>メインステータス</strong></td><td>ATKパワーアップ → クリティカルヒット確率 → クリティカルダメージ</td></tr>
+                            <tr><td><strong>サブステータス</strong></td><td>追加パワー > 状態異常効率</td></tr>
+                            <tr><td><strong>ルーン</strong></td><td>レゾルブ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>このビルドの理由</h4>
+                    <ul>
+                        <li><strong>3-piece ルインズブレイカー</strong> — ボスのアーマー貫通のためのDEF無視</li>
+                        <li><strong>2-piece アズールゲイル</strong> — 疾風/浮遊ダメージ+15%。Reinaのキット全体を直接増幅。</li>
+                        <li><strong>状態異常効率</strong> — 浮遊スタックが速い = ジャグリング時間が長い</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Best Teams -->
+            <h2 id="teams">👥 最強チーム構成</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>チーム</th>
+                            <th>最適な用途</th>
+                            <th>コアループ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Reina + Castella + Lute</strong></td>
+                            <td>最強の浮遊チーム</td>
+                            <td>Reinaが打ち上げ → テンペスト → Luteが延長 → Castellaが地面叩きつけバースト</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Theresia + Castella</strong></td>
+                            <td>エンドゲーム最強オールラウンド</td>
+                            <td>現在のエンドゲームベンチマーク。ほぼすべてのアクティビティに対応。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Eileen + Aria</strong></td>
+                            <td>バランスの取れた浮遊</td>
+                            <td>EileenとAriaが浮遊と遠距離出力をサポート</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Eileen + Kalsion</strong></td>
+                            <td>火属性浮遊</td>
+                            <td>Kalsionの火傷がReinaの打ち上げと組み合わさって元素シナジー</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Eileen + Cerese</strong></td>
+                            <td>氷属性浮遊</td>
+                            <td>Cereseの氷結がReinaの打ち上げと組み合わさってフリーズジャグリング</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Charlotte</strong></td>
+                            <td>アクション重視のエンドゲーム</td>
+                            <td>Charlotteがプレッシャーを牽引、Reinaが空中と間合いをサポート</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Theresia + Roxy</strong></td>
+                            <td>浮遊 + 出血</td>
+                            <td>Reinaが打ち上げ、Theresia/Roxyが浮遊ウィンドウ中に出力</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combo Sequence -->
+            <h2 id="combo">🪽 浮遊コンボシーケンス</h2>
+            <div class="card">
+                <h3 class="card-title">Reina + Castella + Lute — フルジャグリングループ</h3>
+                <ol style="margin-top: 12px;">
+                    <li><strong>Reinaで開始</strong> — ライジングカッターまたはウィンドスレイヤーでターゲットを打ち上げ</li>
+                    <li><strong>即座にテンペスト</strong> — 敵が上昇し始めたら、Reinaのテンペストシグナルスキルを発動</li>
+                    <li><strong>Luteに切り替え</strong> — Luteのシグナルスキルを発動して浮遊時間を延長</li>
+                    <li><strong>Castellaに切り替え</strong> — ターゲットを地面に叩きつけて大ダメージ</li>
+                    <li><strong>繰り返し</strong> — ループして浮遊ウィンドウの制御を維持</li>
+                </ol>
+                <div class="alert alert-info" style="margin-top: 16px;">
+                    <div class="alert-title">💡 浮遊がなぜ強いのか</div>
+                    <p>浮遊はゲーム内で最強のメカニクスの1つです。空中に浮かされた敵は<strong>反撃の機会が制限される</strong>ためです。ブロックもできず、スーパーアーマーも発動できず、特殊攻撃も使えません。上手く決まったジャグリング = フリーダメージウィンドウです。</p>
+                </div>
+            </div>
+
+            <!-- Mobility -->
+            <h2>💨 機動力: "モバイルブリッジ"</h2>
+            <p>Reinaはどんなチームの「ブリッジ」にもなるユニークな機動オプションを持っています：</p>
+            <ul>
+                <li><strong>スプリント風の移動</strong> — 間合いを取り戻すための長いダッシュ</li>
+                <li><strong>別個の回避</strong> — コミットした攻撃に対する短い回避</li>
+                <li><strong>2つの再配置オプション</strong> — 長いスプリントで間合いを取り戻し、短い回避は次のコミット攻撃用に取っておく</li>
+            </ul>
+
+            <!-- Strengths -->
+            <h2>✅ 強み</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🪽</div>
+                    <h3 class="card-title">Sティア浮遊コア</h3>
+                    <p class="card-desc">主要な浮遊ランチャー。すべてのジャグリングチーム構成に必須。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">デュアルランチャー</h3>
+                    <p class="card-desc">ライジングカッターとウィンドスレイヤーの両方が浮遊を付与。どんな状況にも対応できる柔軟なコンボオープナー。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">デュアルシグナルスキル</h3>
+                    <p class="card-desc">テンペスト (スタントリガー) とウィンドグラブ (浮遊トリガー)。2つの異なる状態異常に反応。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💨</div>
+                    <h3 class="card-title">高い機動力</h3>
+                    <p class="card-desc">スプリント + 別個の回避 = 2つの再配置オプション。ゲーム内最強の機動キット。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎪</div>
+                    <h3 class="card-title">最強ジャグラー</h3>
+                    <p class="card-desc">敵を空中に保ち続け、反撃を制限。厳しい戦闘でより長い攻撃チェーンを生み出す。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3 class="card-title">万能フィット</h3>
+                    <p class="card-desc">3人目として多くのチームに収まる。火、氷、出血、毒の原型と組める。</p>
+                </div>
+            </div>
+
+            <!-- Weaknesses -->
+            <h2>❌ 弱み</h2>
+            <ul>
+                <li><strong>浮遊依存</strong> — スーパーアーマーの敵に対しては浮遊が失敗し、Reinaの価値が大幅に下がる</li>
+                <li><strong>味方が必要</strong> — 最高のパフォーマンスには浮遊ウィンドウを活かすCastellaのようなフィニッシャーが必要</li>
+                <li><strong>近接のリスク</strong> — 高い機動力にもかかわらず、依然として近接であり罰せられる可能性がある</li>
+                <li><strong>出血は二次的</strong> — テンペストの出血はボーナス効果であり、メインダメージソースではない</li>
+                <li><strong>実行力が必要</strong> — ジャグリング時間を最大化するには正確な浮遊タイミングと切り替えリズムが必要</li>
+            </ul>
+
+            <!-- Combat Tips -->
+            <h2 id="tips">🎮 戦闘のコツ</h2>
+            <ol>
+                <li><strong>ランチャーで開始</strong> — 常にライジングカッターまたはウィンドスレイヤーで開始して敵を浮遊させる</li>
+                <li><strong>スタンでテンペスト</strong> — 味方がスタンを付与したら、Reinaに切り替えてテンペストを発動し出血</li>
+                <li><strong>ウィンドグラブで延長</strong> — 打ち上げ直後にウィンドグラブを使って敵をより長く空中に保つ</li>
+                <li><strong>両方の回避を使う</strong> — 長いスプリントで間合いを取り戻し、短い回避は攻撃の隙間に。どちらも無駄にしない</li>
+                <li><strong>Castellaと組む</strong> — 浮遊ウィンドウが終わる前に、Castellaに切り替えて地面叩きつけフィニッシャー</li>
+                <li><strong>Luteがチェーンを延長</strong> — 浮遊チームでは、Luteが浮遊時間をさらに延長できる</li>
+                <li><strong>浮遊させ続ける</strong> — 浮遊状態の敵は反撃が制限される。ジャグリング = 安全。</li>
+            </ol>
+
+            <!-- Common Mistakes -->
+            <h2>⚠️ よくある間違い</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">スーパーアーマーに浮遊を強要</h3>
+                    <p class="card-desc">スーパーアーマーの敵に対しては浮遊は無効。別の戦略に切り替えるか、アーマーブレイカーを連れて行こう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">打ち上げ後に切り替えない</h3>
+                    <p class="card-desc">打ち上げてReinaのままだと浮遊ダメージウィンドウを無駄にする。即座にフィニッシャーに切り替えよう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">テンペスト出血を無視</h3>
+                    <p class="card-desc">テンペストの出血はフリーの追加ダメージソース。スタンが付与されたら常に使おう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">デュアル回避を無駄に</h3>
+                    <p class="card-desc">Reinaの機動力は彼女の最大のアドバンテージ。両方の回避オプションを戦略的に使おう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">遠距離のようにプレイ</h3>
+                    <p class="card-desc">Reinaは近接浮遊キャラクター。遠距離が欲しいなら、CereseかOthelloを選ぼう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">アズールゲイルセットなし</h3>
+                    <p class="card-desc">2-piece アズールゲイルは浮遊ダメージに必須。スキップしないこと。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">全ヒーローのランクを見たい？</h3>
+                <p style="margin-bottom: 16px;">完全なティアリストとキャラクターデータベースをチェック。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 ティアリストを見る</a>
+                    <a href="characters.html" class="btn btn-secondary">👥 全キャラクター</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview">キャラクター概要</a></li>
+                    <li><a href="#skills">全スキル</a></li>
+                    <li><a href="#synergy">スキルシナジー</a></li>
+                    <li><a href="#build">最強ビルド</a></li>
+                    <li><a href="#teams">最強チーム</a></li>
+                    <li><a href="#combo">浮遊コンボ</a></li>
+                    <li><a href="#tips">戦闘のコツ</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">その他のヒーロー</div>
+                <ul class="sidebar-nav">
+                    <li><a href="lute.html">⚔️ Lute</a></li>
+                    <li><a href="theresia.html">🔨 Theresia</a></li>
+                    <li><a href="charlotte.html">🗡️ Charlotte</a></li>
+                    <li><a href="characters.html">📋 全キャラクター</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

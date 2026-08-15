@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カルマシステムガイド — DragonSword Awakening: 基本 & 専用カルマ、昇華 & ファーム</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なカルマシステムガイド。基本カルマ vs 専用カルマ、ランクVIへの昇華、元素マッチング、残像の欠片ファーム、全ヒーロー専用カルマリスト。">
+    <meta name="keywords" content="DragonSword Awakening カルマ, 専用カルマ, 基本カルマ, 昇華, 残像の欠片, ファーム, シャノア">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/karma.html">
+    <meta property="og:title" content="カルマシステムガイド — DragonSword Awakening">
+    <meta property="og:description" content="基本 vs 専用カルマ、昇華、元素マッチング、ファームルート。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/karma.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/karma.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/karma.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/karma.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/karma.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/karma.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "カルマシステムガイド — DragonSword Awakening: 基本 & 専用カルマ、昇華 & ファーム",
+      "description": "DragonSword: Awakeningの完全なカルマシステムガイド。基本カルマ vs 専用カルマ、ランクVIへの昇華、元素マッチング、残像の欠片ファーム、全ヒーロー専用カルマリスト。",
+      "url": "https://ds-guides.wiki/ja/karma.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/karma.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">進行システム</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">カルマシステムガイド</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                カルマはヒーローの武器にスロットするアビリティカードです。各カードはベースステータス + 特殊特性を持ち、最強の専用カルマは戦闘でのスキルの振る舞いを書き換えることができます。最大のパワースパイクはレベリングではなく昇華から来ます。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約8分</span>
+                <span>🃏 16専用カルマ</span>
+                <span>⬆️ 最大ランクVI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックアンサー</div>
+                <p>カルマは装備やヒーローレベルとは別の武器スロットアビリティカード。2種類: 基本 (元素が一致する任意のヒーロー) と専用 (特定の1ヒーローのみ、最強装備)。パワーは昇華から来る (同一カードの複製をフィード、最大ランクVI、合計5枚の複製が必要)。常にまず元素を合わせる — 元素が不一致だとカルマ特性が機能しない。基本カルマの複製はデイリーでワールドボスをファーム; 専用カルマ用にシャノアで残像の欠片をクラフト。</p>
+            </div>
+
+            <!-- Two Types -->
+            <h2 id="types">🃏 2種類のカルマ</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>種類</th>
+                            <th>使用可能</th>
+                            <th>主な効果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>基本カルマ</strong></td>
+                            <td>元素が一致する任意のヒーロー</td>
+                            <td>ステータスと条件付きボーナス。複数のビルドで再利用可能。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>専用カルマ</strong></td>
+                            <td>特定の1ヒーローのみ</td>
+                            <td>強力なステータス + スキルを変更するヒーロー固有パッシブ。専用DPSの最強装備。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📜</div>
+                    <h3 class="card-title">基本カルマの成長</h3>
+                    <p class="card-desc">レベリング、ブレイクスルー、複製による昇華を通じて成長。通常のカルマカードとカレンシーパスから入手。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⭐</div>
+                    <h3 class="card-title">専用カルマの成長</h3>
+                    <p class="card-desc">長期的な成長に専用カルマリソースが必要。ヒーローログ、試練の塔交換、分解価値と変換から入手。</p>
+                </div>
+            </div>
+
+            <!-- Ascension -->
+            <h2 id="ascension">⬆️ 昇華システム (真のパワースパイク)</h2>
+            <p>実際のパワー上昇はレベルバーではなく<strong>昇華</strong>から来ます。仕組みは以下の通り：</p>
+            <ul>
+                <li>昇華は同一カルマの<strong>完全な複製カード</strong>のみを受け付ける</li>
+                <li>ベースカードは開始ステータスのみ表示。複製をフィードすると特殊特性がアンロック・強化される</li>
+                <li>最大ランク: <strong>ランクVI</strong> — 合計<strong>5枚の複製カード</strong>が必要</li>
+                <li>各ランクで特性が強化 (追加クリティカル、より多くの状態異常ダメージ、スキル固有の修正)</li>
+                <li><strong>複製を提出する前に常にプレビューを開く</strong> — 次の複製で何がアンロックされるか確認するため</li>
+            </ul>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ プロのヒント</div>
+                <p>メインにしないヒーローに複製を無駄にしない。昇華は永続的でリソース集約的。1-2人のDPSヒーローを選び、すべてのカルマ投資をそれらに集中させよう。</p>
+            </div>
+
+            <!-- Element Matching -->
+            <h2 id="element">🔥 元素マッチング要件</h2>
+            <p>技術的には任意のヒーローに任意のカルマをスロットできますが、カルマカードは<strong>ヒーローの元素と一致しなければならない</strong>元素を持っています。</p>
+            <ul>
+                <li>元素が一致しない場合、<strong>特性ラインが適切に発動しない</strong></li>
+                <li>例: 氷結ヒーローのReinaには氷結カルマが必要。出血や物理カードは重要な効果を無駄にする</li>
+                <li><strong>まず元素を合わせ、次に昇華を気にする</strong></li>
+            </ul>
+
+            <!-- Acquisition -->
+            <h2 id="acquisition">🎯 カルマカード入手方法</h2>
+            <h3>基本カルマ</h3>
+            <ul>
+                <li>キャンペーン進行で数枚入手</li>
+                <li>その他は購入またはファームで入手</li>
+                <li>購入カレンシーはランダムな宝箱から</li>
+                <li><strong>最も確実: 試練の塔</strong> (アンロック後)</li>
+                <li><strong>ワールドボス</strong>が基本カルマ複製の最も確実なデイリーソース — メインDPSの元素に一致するボスを選ぶ</li>
+            </ul>
+
+            <h3>専用カルマ</h3>
+            <ul>
+                <li>ヒーロークエスト (完了して入手)</li>
+                <li>試練の塔交換</li>
+                <li>不要な専用カルマを分解してリソースに</li>
+                <li>残像の欠片を通じてクラフト (下記参照)</li>
+            </ul>
+
+            <!-- Fragment of Afterimage -->
+            <h2 id="afterimage">✨ 残像の欠片 (専用カルマクラフト)</h2>
+            <p>残像の欠片は<strong>専用カルマと交換</strong>するために使用されるカレンシーです。各専用カルマカードは欠片1個が必要です。</p>
+
+            <h3>クラフト方法</h3>
+            <p>残像の欠片を入手する唯一の方法は<strong>錬金術師のシャノア</strong>での変換です：</p>
+            <div class="card">
+                <h3 class="card-title">シャノア変換レシピ</h3>
+                <div class="table-wrapper" style="margin-top: 16px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>素材</th>
+                                <th>数量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>渦巻く想い</td><td>1</td></tr>
+                            <tr><td>記憶の欠片</td><td>100</td></tr>
+                            <tr><td>ゴールド</td><td>100,000</td></tr>
+                            <tr><td><strong>結果</strong></td><td><strong>残像の欠片 1個</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 16px;"><strong>シャノアの場所:</strong> オルビス王城内の大聖堂付近。</p>
+            </div>
+
+            <h3>記憶の欠片の用途</h3>
+            <ul>
+                <li>基本カルマをアップグレード</li>
+                <li>シャノアで残像の欠片に変換</li>
+                <li><strong>入手先:</strong> 宝箱、クエスト、試練の初回クリア、傭兵レベルアップ、試練の塔</li>
+                <li><strong>後期ゲームの主な入手先:</strong> 試練の塔 (スカイスパイアロック山に位置)</li>
+            </ul>
+
+            <!-- Exclusive Karma List -->
+            <h2 id="list">📋 全16専用カルマ</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ヒーロー</th>
+                            <th>専用カルマ名</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Johnny</td><td>放浪の剣</td></tr>
+                        <tr><td><a href="lute.html">Lute</a></td><td>友のために召喚されし剣</td></tr>
+                        <tr><td>Castella</td><td>騒がしいデュエット</td></tr>
+                        <tr><td>Aria</td><td>爆発こそアート</td></tr>
+                        <tr><td>Dana</td><td>きらめくティータイム</td></tr>
+                        <tr><td>Kalien</td><td>紅蓮の炎の選ばれし者</td></tr>
+                        <tr><td>Roxy</td><td>貴婦人の野生的な趣味</td></tr>
+                        <tr><td><a href="theresia.html">Theresia</a></td><td>慈悲深き死刑宣告</td></tr>
+                        <tr><td>Ornette</td><td>神聖なる雷撃の洗礼</td></tr>
+                        <tr><td><a href="reina.html">Reina</a></td><td>王国を守る風</td></tr>
+                        <tr><td>Kalsion</td><td>太陽は再び昇る</td></tr>
+                        <tr><td>Cerese</td><td>永遠のブリザード</td></tr>
+                        <tr><td>Astria</td><td>風に咲く風花</td></tr>
+                        <tr><td>Eileen</td><td>騎士道としおりの間で</td></tr>
+                        <tr><td>Othello</td><td>太陽を討つ槍</td></tr>
+                        <tr><td><a href="charlotte.html">Charlotte</a></td><td>闇に残されし信念</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Hero Progression Comparison -->
+            <h2>📊 ヒーロー進行システム比較</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>システム</th>
+                            <th>変更内容</th>
+                            <th>主なリソース</th>
+                            <th>ファーム場所</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>スキル</strong></td>
+                            <td>アビリティの強さと選択肢</td>
+                            <td>戦闘の記録</td>
+                            <td>ハント</td>
+                        </tr>
+                        <tr>
+                            <td><strong>カルマ</strong></td>
+                            <td>武器特性と専用効果</td>
+                            <td>記憶の欠片 / 専用リソース</td>
+                            <td>試練の塔、宝箱、ヒーロークエスト、シャノア</td>
+                        </tr>
+                        <tr>
+                            <td><strong>覚醒</strong></td>
+                            <td>プレイスタイル、長所、短所</td>
+                            <td>スティグマ覚醒石</td>
+                            <td>サドンミッションからの神聖なる光の欠片</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Core Principles -->
+            <h2 id="principles">📜 カルマシステムコア原則</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">まず元素を合わせる</h3>
+                    <p class="card-desc">カルマはヒーロー元素と一致しなければ特性が発動しない。これは譲れない。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">まず基本カルマを昇華</h3>
+                    <p class="card-desc">メインDPSに元素一致の基本カルマを装備し、複製をフィードしてランクVIに。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">専用は長期的</h3>
+                    <p class="card-desc">実際にプレイする1-2人のヒーローにのみ専用カルマに投資。莫大なリソースシンク。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">ワールドボスをデイリーファーム</h3>
+                    <p class="card-desc">基本カルマ複製の最も確実な入手先。毎日これをやろう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">試練の塔 = 素材コア</h3>
+                    <p class="card-desc">記憶の欠片の後期ゲーム主要入手先。アンロックとファームを優先。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">不要な専用は分解</h3>
+                    <p class="card-desc">使わないヒーローの専用カルマを入手した？分解して必要なものをクラフトするリソースに。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">7</div>
+                    <h3 class="card-title">昇華前にプレビュー</h3>
+                    <p class="card-desc">コミットする前に常にプレビューを確認し、次の複製で何がアンロックされるか確認。</p>
+                </div>
+            </div>
+
+            <!-- Material Summary -->
+            <h2>📦 素材入手サマリー</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>素材</th>
+                            <th>用途</th>
+                            <th>主な入手先</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>記憶の欠片</strong></td>
+                            <td>基本カルマアップグレード + 変換</td>
+                            <td>宝箱、クエスト、試練の塔、初回クリア</td>
+                        </tr>
+                        <tr>
+                            <td><strong>残像の欠片</strong></td>
+                            <td>専用カルマと交換</td>
+                            <td>シャノア変換 (記憶 + 渦巻く想い + ゴールド)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>渦巻く想い</strong></td>
+                            <td>残像の欠片に変換</td>
+                            <td>試練の塔</td>
+                        </tr>
+                        <tr>
+                            <td><strong>基本カルマカード</strong></td>
+                            <td>武器ステータス + 特性</td>
+                            <td>ワールドボス、宝箱、試練の塔交換</td>
+                        </tr>
+                        <tr>
+                            <td><strong>専用カルマカード</strong></td>
+                            <td>ヒーロー固有パッシブ</td>
+                            <td>ヒーロークエスト、残像の欠片交換、分解</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">ヒーロービルドを最適化する準備はできた？</h3>
+                <p style="margin-bottom: 16px;">全ヒーロー向けのカルマ推奨付き完全なビルドガイドをチェック。</p>
+                <a href="build.html" class="btn btn-primary">⚔️ ヒーロービルドを見る</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#types">2種類のカルマ</a></li>
+                    <li><a href="#ascension">昇華システム</a></li>
+                    <li><a href="#element">元素マッチング</a></li>
+                    <li><a href="#acquisition">カルマ入手方法</a></li>
+                    <li><a href="#afterimage">残像の欠片</a></li>
+                    <li><a href="#list">全専用カルマ</a></li>
+                    <li><a href="#principles">コア原則</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html" class="active">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html">レイド & エンドゲーム <span class="count">2</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

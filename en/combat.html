@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Guide | DragonSword Awakening Wiki</title>
+    <meta name="description" content="Deep dive into DragonSword: Awakening combat system. Master Status Ailments, Signal Skills, Switching Signals, team roles and combo chains for maximum damage.">
+    <meta name="keywords" content="DragonSword Awakening combat, Status Ailments, Signal Skills, Switching Signals, tag team, combos, guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/combat.html">
+    <meta property="og:title" content="DragonSword Awakening Combat Guide">
+    <meta property="og:description" content="Master Status Ailments, Signal Skills, Switching Signals and combo chains.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/combat.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/combat.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/combat.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/combat.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/combat.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/combat.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Combat Guide | DragonSword Awakening Wiki",
+      "description": "Deep dive into DragonSword: Awakening combat system. Master Status Ailments, Signal Skills, Switching Signals, team roles and combo chains for maximum damage.",
+      "url": "https://ds-guides.wiki/en/combat.html",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/en/combat.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">Beginner Guide</a></li>
+                <li><a href="tier-list.html">Tier List</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="build.html">Builds</a></li>
+                <li><a href="best-team.html">Teams</a></li>
+                <li><a href="combat.html" class="active">Combat</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Play on Steam</a></li>
+            </ul>
+            <button class="theme-toggle" title="Switch to light mode">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">Core Mechanics</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Combat System Guide</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                DragonSword's combat is deeper than it looks. Master the three-step cycle of Status Ailments → Signal Skills → Switching Signals to unleash devastating combo chains.
+            </p>
+            <div class="article-meta">
+                <span>📖 Reading time: ~10 min</span>
+                <span>⚔️ 9 Status Ailments</span>
+                <span>🔄 3-Hero Tag System</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Core Concept -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 Core Concept</div>
+                <p>Normal attacks only fill ailment gauges. The <strong>real damage comes from Signal Skills</strong>, triggered by stacking compatible Status Ailments across your three-Hero team. Team synergy matters more than individual character power.</p>
+            </div>
+
+            <!-- Three-Step Cycle -->
+            <h2 id="cycle">🔄 The Three-Step Combat Cycle</h2>
+            <p>Every successful combo follows this fundamental pattern:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">Active Skills</h3>
+                    <p class="card-desc">Use Active Skills to apply the first Status Ailment. Each hero has 2 Active Skills with different properties and effects.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">Signal Skills</h3>
+                    <p class="card-desc">When the ailment triggers, off-field heroes' portraits flash. Switch in at the right moment to unleash a powerful Signal Skill that applies the next ailment.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">Switching Signals</h3>
+                    <p class="card-desc">Continue switching heroes during the combo window to chain Switching Signals, maintaining pressure and extending the chain for massive damage.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ Important Timing Note</div>
+                <p>Seeing a hero portrait flash does NOT mean the Signal is ready. You must wait for the actual Status Ailment to trigger, then switch within the narrow window. Early switches waste the Signal opportunity.</p>
+            </div>
+
+            <!-- Status Ailments -->
+            <h2 id="ailments">🩸 All 9 Status Ailments Explained</h2>
+            <p>Every hero applies one or more Status Ailments. Stacking compatible types is what triggers Signal Skills.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ailment</th>
+                            <th>Effect</th>
+                            <th>Heroes Who Apply It</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Stun</strong></td>
+                            <td>Enemy cannot act — opens full damage window</td>
+                            <td>Lute, Castella, Kalien, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bleed</strong></td>
+                            <td>Damage over time, stacks for burst</td>
+                            <td>Roxy, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Burn</strong></td>
+                            <td>Fire damage over time</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frost / Freeze</strong></td>
+                            <td>Slow → full freeze when gauge maxes</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shock</strong></td>
+                            <td>Electric damage + crowd control</td>
+                            <td>Ornette, Sion, Tarte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Poison</strong></td>
+                            <td>Toxic damage over time</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Airborne</strong></td>
+                            <td>Enemy launched — cannot counter or block</td>
+                            <td>Castella, Johnny, Reina, Eileen, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Knockdown</strong></td>
+                            <td>Enemy knocked to ground — vulnerable</td>
+                            <td>Lute, Alex, Ornette, Sion, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recovery</strong></td>
+                            <td>Heals the party</td>
+                            <td>Lute, Tarte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Signal Skills -->
+            <h2 id="signal">⚡ Signal Skills Deep Dive</h2>
+            <p>Signal Skills are the game's most powerful attacks. Here's how they work:</p>
+
+            <h3>How They Trigger</h3>
+            <ol>
+                <li>Attack an enemy to fill their ailment gauge</li>
+                <li>When full, the enemy enters the Status Ailment state</li>
+                <li>Off-field heroes who can respond to that ailment will have their portraits flash</li>
+                <li>Press the switch button for that hero — they enter with a special Signal Skill attack</li>
+                <li>The Signal Skill deals high damage AND applies the next ailment</li>
+            </ol>
+
+            <h3>Key Characteristics</h3>
+            <ul>
+                <li>Each hero has <strong>2 Signal Abilities</strong> (in addition to 2 Active Skills)</li>
+                <li>Signal Skills are only available when the enemy is in a compatible ailment state</li>
+                <li>Both the on-field hero AND waiting heroes can have Signal Skills activate</li>
+                <li>The damage formula revolves around chaining these skills through character switches</li>
+                <li>Effectively connecting Active and Signal skills is the entire core of combat</li>
+            </ul>
+
+            <!-- Switching Signals -->
+            <h2 id="switching">🔀 Switching Signals & Combo Chaining</h2>
+            <p>The true depth of combat lies in chaining multiple heroes together:</p>
+
+            <div class="card">
+                <h3 class="card-title">The Infinite Ailment Chain</h3>
+                <p>When all three heroes maintain different ailment uptimes, you can create an <strong>uninterrupted status chain</strong>:</p>
+                <ol style="margin-top: 12px;">
+                    <li>Hero A applies Stun → triggers Hero B's Signal Skill</li>
+                    <li>Hero B enters with Signal Skill, applies Bleed → triggers Hero C's Signal Skill</li>
+                    <li>Hero C enters with Signal Skill, applies Airborne → triggers Hero A's Signal Skill</li>
+                    <li>Hero A re-enters, applies Stun again → cycle repeats</li>
+                </ol>
+                <p style="margin-top: 12px;">Switching also grants brief <strong>invincibility frames (i-frames)</strong> until your next attack, making it both offensive and defensive.</p>
+            </div>
+
+            <!-- Team Roles -->
+            <h2 id="roles">👥 Three Team Roles</h2>
+            <p>Every successful team composition fills these three positions. These are <strong>roles within a combo, not permanent classes</strong>:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Field Driver</h3>
+                    <p class="card-desc">Stays active on the field, creates the next repeatable condition. The "engine" of the team that keeps the combo going.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Signal Answer</h3>
+                    <p class="card-desc">Enters when the condition lights up. Delivers the big Signal Skill damage and applies the next ailment in the chain.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌉</div>
+                    <h3 class="card-title">Bridge</h3>
+                    <p class="card-desc">Extends pressure or recovers spacing, then hands combat back. Keeps the chain alive between big damage windows.</p>
+                </div>
+            </div>
+
+            <!-- Best Teams by Content -->
+            <h2 id="teams">🎯 Best Teams by Content Type</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team Composition</th>
+                            <th>Best For</th>
+                            <th>Core Loop</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Theresia + Castella + Lute</strong></td>
+                            <td>Boss Fights</td>
+                            <td>Theresia outputs, Lute breaks armor + utility, Castella bursts during Stun windows</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Castella/Lute</strong></td>
+                            <td>High-HP Targets (Bleed)</td>
+                            <td>Consecration applies Bleed, Celestial Verdict adds Stun, Roxy cuts in, Castella/Lute detonates</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Roxy + Ornette</strong></td>
+                            <td>Open World Exploration</td>
+                            <td>Reina ends fights fast, Roxy chains combos, Ornette shields for protection</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Lute</strong></td>
+                            <td>Elite Enemies</td>
+                            <td>Bleed application + armor break + Stun, keeps elites controlled</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette + Castella + Alex/Lute</strong></td>
+                            <td>Heavy Armor Bosses</td>
+                            <td>Ornette or Alex strips power armor, triggers Knockdown, Castella exploits downed damage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combos -->
+            <h2 id="airborne">🪽 Airborne Combo Teams</h2>
+            <p>Airborne is one of the strongest mechanics because launched enemies <strong>cannot counter-attack or trigger defensive blocks</strong>.</p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">🏆 Premium Airborne Team</div>
+                <p><strong>Reina + Theresia + Roxy</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li>Reina is the primary launcher, keeps enemies airborne</li>
+                    <li>Theresia handles aerial combo damage</li>
+                    <li>Roxy extends the chain</li>
+                </ul>
+            </div>
+
+            <p><strong>Alternative:</strong> Reina + Castella + Lute/Aria</p>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ Super Armor Caveat</div>
+                <p>When enemies have Super Armor active, they cannot be launched or knocked down. Airborne teams lose significant value against these enemies — always have an armor-breaking option ready.</p>
+            </div>
+
+            <!-- How to Practice -->
+            <h2 id="practice">🎮 How to Practice Combat</h2>
+            <ol>
+                <li><strong>Start simple</strong> — Find a durable enemy and practice applying one Status Ailment, wait for the Signal prompt, then switch once</li>
+                <li><strong>Add the third hero</strong> — Once the two-step response feels reliable, bring in the third hero for full chains</li>
+                <li><strong>Boss practice</strong> — Bosses follow the same sequence: identify a safe opener, reserve follow-up attacks, interrupt the chain when you need to dodge</li>
+                <li><strong>Dodge first</strong> — Always prioritize dodging over completing a combo. A dead hero deals zero damage.</li>
+            </ol>
+
+            <!-- Core Principles -->
+            <h2>📜 Six Core Combat Principles</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">Ailments Are Core</h3>
+                    <p class="card-desc">Normal attacks only fill gauges. Real damage comes from Signal Skills triggered by ailments.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">Synergy > Damage</h3>
+                    <p class="card-desc">Three strong heroes do not equal a strong team. Complementary ailments win.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">Timing Is Everything</h3>
+                    <p class="card-desc">Switch within the narrow ailment window. Early switches waste Signal opportunities.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">Dodge First</h3>
+                    <p class="card-desc">Never trade a combo for damage you'll take. Survive first, optimize second.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">Match the Enemy</h3>
+                    <p class="card-desc">Bosses need DoT and armor break. Open world needs mobility and control.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">Bring Armor Break</h3>
+                    <p class="card-desc">Super Armor blocks launch/knockdown. Always have a breaker in your back pocket.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">Ready to build your perfect team?</h3>
+                <p style="margin-bottom: 16px;">Check our proven team compositions for every content type.</p>
+                <a href="best-team.html" class="btn btn-primary">👥 View Best Team Builds</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">On This Page</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#cycle">Three-Step Cycle</a></li>
+                    <li><a href="#ailments">Status Ailments</a></li>
+                    <li><a href="#signal">Signal Skills</a></li>
+                    <li><a href="#switching">Switching Signals</a></li>
+                    <li><a href="#roles">Team Roles</a></li>
+                    <li><a href="#teams">Best Teams</a></li>
+                    <li><a href="#airborne">Airborne Combos</a></li>
+                    <li><a href="#practice">How to Practice</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Wiki Navigation</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">Getting Started <span class="count">1</span></a></li>
+                    <li><a href="characters.html">Characters <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">Tier List <span class="count">1</span></a></li>
+                    <li><a href="build.html">Builds & Skills <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">Team Compositions <span class="count">1</span></a></li>
+                    <li><a href="combat.html" class="active">Combat System <span class="count">1</span></a></li>
+                    <li><a href="classes.html">Hero Traits <span class="count">1</span></a></li>
+                    <li><a href="gear.html">Gear & Equipment <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma System <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">Cooking & Recipes <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Bosses <span class="count">1</span></a></li>
+                    <li><a href="raid.html">Raids & Endgame <span class="count">2</span></a></li>
+                    <li><a href="map.html">Map & Areas <span class="count">1</span></a></li>
+                    <li><a href="coop.html">Multiplayer & Co-op <span class="count">2</span></a></li>
+                    <li><a href="review.html">Review & Roadmap <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Official Links</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam Store</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 Official Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wiki is an independent fan-made guide site covering all Heroes, combat mechanics, team builds and progression tips for DragonSword: Awakening. Not affiliated with Hound13 Inc.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Guides</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">Beginner Guide</a></li>
+                    <li><a href="tier-list.html">Tier List</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="build.html">Builds</a></li>
+                    <li><a href="best-team.html">Team Builds</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Systems</h4>
+                <ul>
+                    <li><a href="combat.html">Combat</a></li>
+                    <li><a href="gear.html">Gear</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="map.html">Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Play on Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Official Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">Game Review</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. Fan-made, not affiliated with Hound13.</span>
+            <span>Last updated: Aug 2026</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening is a trademark of Hound13 Inc. This site is a community resource and is not endorsed by or affiliated with Hound13 Inc.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

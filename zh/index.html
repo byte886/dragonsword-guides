@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO -->
+    <title>龙之剑：觉醒 中文维基 — 攻略、强度榜、配装大全</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）完整中文攻略站，包含新手指南、角色强度榜、最佳配装、队伍搭配和战斗机制详解。">
+    <meta name="keywords" content="龙之剑觉醒, DragonSword Awakening, 中文攻略, 强度榜, 配装, 角色, 战斗, 队伍, Orbis, Hound13, Steam">
+    <meta name="author" content="DS Awakening Wiki">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ds-guides.wiki/zh/">
+    <meta property="og:title" content="龙之剑：觉醒 中文维基 — 新手攻略、强度榜、配装">
+    <meta property="og:description" content="DragonSword: Awakening（龙之剑：觉醒）完整中文攻略站，包含新手指南、角色强度榜、最佳配装、队伍搭配和战斗机制详解。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <meta property="og:site_name" content="龙之剑：觉醒 中文维基">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ds-guides.wiki/zh/">
+    <meta name="twitter:title" content="龙之剑：觉醒 中文维基 — 新手攻略、强度榜、配装">
+    <meta name="twitter:description" content="DragonSword: Awakening（龙之剑：觉醒）完整中文攻略站，包含新手指南、角色强度榜、最佳配装和战斗机制详解。">
+    <meta name="twitter:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/favicon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "龙之剑：觉醒 中文维基",
+        "url": "https://ds-guides.wiki/zh/",
+        "description": "DragonSword: Awakening（龙之剑：觉醒）完整中文攻略站，包含新手指南、角色强度榜、最佳配装、队伍搭配和战斗机制详解。",
+        "publisher": {
+            "@type": "Organization",
+            "name": "DS Awakening Wiki"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "DragonSword: Awakening",
+        "alternateName": "龙之剑：觉醒",
+        "description": "动漫风格开放世界动作RPG，拥有19名独特英雄，基于状态异常的换人战斗系统，以及奥比斯大陆的自由探索。",
+        "developer": {
+            "@type": "Organization",
+            "name": "Hound13 Inc."
+        },
+        "releaseDate": "2026-07-22",
+        "gamePlatform": "PC (Steam)",
+        "genre": ["动作RPG", "开放世界", "动漫"],
+        "numberOfPlayers": "1-3",
+        "offers": {
+            "@type": "Offer",
+            "price": "29.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/index.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/index.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/index.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/">
+</head>
+<body>
+    <!-- ========== Navigation ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="review.html" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-eyebrow">玩家社区中文维基</span>
+                <h1 class="hero-title">
+                    DragonSword: <span class="highlight">Awakening</span>
+                </h1>
+                <p class="hero-description">
+                    动漫风格开放世界动作RPG，拥有19名独特英雄，基于状态异常的换人战斗系统，以及奥比斯大陆的自由探索。无抽卡、无体力——纯粹的游戏体验。
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat"><span class="dot"></span> 2026年7月发售</div>
+                    <div class="hero-stat"><span class="dot"></span> 19名可玩角色</div>
+                    <div class="hero-stat"><span class="dot"></span> 92% 特别好评</div>
+                    <div class="hero-stat"><span class="dot"></span> 59个成就</div>
+                </div>
+                <div class="hero-cta">
+                    <a href="beginner-guide.html" class="btn btn-primary">📖 开始新手攻略</a>
+                    <a href="tier-list.html" class="btn btn-secondary">🏆 查看强度榜</a>
+                    <a href="best-team.html" class="btn btn-gold">⚔️ 最佳队伍搭配</a>
+                </div>
+            </div>
+            <div class="hero-art">
+                <img src="../assets/hero-cover.jpg" alt="DragonSword: Awakening 官方主视觉图，展示主要英雄角色" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Main Content ========== -->
+    <main class="main-layout">
+        <div class="content-area">
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">19</div>
+                    <div class="stat-label">可玩角色</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">状态异常</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">阵营</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">攻略页面</div>
+                </div>
+            </div>
+
+            <!-- Start Here Section -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">🚀 从这里开始</h2>
+                    <a href="beginner-guide.html" class="section-link">查看全部攻略 →</a>
+                </div>
+                <div class="card-grid">
+                    <a href="beginner-guide.html" class="card">
+                        <div class="card-icon">1️⃣</div>
+                        <h3 class="card-title">新手攻略</h3>
+                        <p class="card-desc">开局数小时优先级、战斗基础、队伍搭建和常见避坑指南。</p>
+                        <span class="card-link">阅读攻略 →</span>
+                    </a>
+                    <a href="tier-list.html" class="card">
+                        <div class="card-icon">2️⃣</div>
+                        <h3 class="card-title">角色强度榜</h3>
+                        <p class="card-desc">全部19名英雄按终局表现排名，附最佳定位和队伍位置。</p>
+                        <span class="card-link">查看强度榜 →</span>
+                    </a>
+                    <a href="combat.html" class="card">
+                        <div class="card-icon">3️⃣</div>
+                        <h3 class="card-title">战斗系统</h3>
+                        <p class="card-desc">状态异常、Signal Skills、换人连携，以及如何有效打出连招。</p>
+                        <span class="card-link">学习战斗 →</span>
+                    </a>
+                    <a href="best-team.html" class="card">
+                        <div class="card-icon">4️⃣</div>
+                        <h3 class="card-title">最佳队伍搭配</h3>
+                        <p class="card-desc">经过验证的队伍组合，覆盖前期、终局副本和试炼之塔。</p>
+                        <span class="card-link">查看搭配 →</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- About Game Section -->
+            <section>
+                <h2>什么是 DragonSword: Awakening？</h2>
+                <p>
+                    DragonSword: Awakening（龙之剑：觉醒）是由 Hound13 开发、采用虚幻引擎5打造的动漫风格开放世界动作RPG。玩家将探索奥比斯大陆，招募19名独特英雄，掌握以状态异常和Signal Skills为核心的深度换人战斗系统。
+                </p>
+                <p>
+                    与许多动漫游戏不同，本作没有抽卡系统，也没有体力系统——所有角色和内容都可通过游戏解锁。从烹饪和使魔到副本和试炼之塔，游戏既提供轻松的探索体验，也有挑战性的终局内容。
+                </p>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>开发商</th>
+                                <td>Hound13 Inc.</td>
+                                <th>平台</th>
+                                <td>Steam (PC)</td>
+                            </tr>
+                            <tr>
+                                <th>类型</th>
+                                <td>开放世界动作RPG</td>
+                                <th>发售日</th>
+                                <td>2026年7月22日</td>
+                            </tr>
+                            <tr>
+                                <th>角色</th>
+                                <td>19名可玩</td>
+                                <th>评价</th>
+                                <td>92% 特别好评</td>
+                            </tr>
+                            <tr>
+                                <th>销量</th>
+                                <td>30万+</td>
+                                <th>成就</th>
+                                <td>59个</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Popular Characters Section -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">⭐ 热门角色攻略</h2>
+                    <a href="characters.html" class="section-link">全部角色 →</a>
+                </div>
+                <div class="card-grid">
+                    <a href="lute.html" class="card">
+                        <div class="card-icon">🗡️</div>
+                        <h3 class="card-title">Lute</h3>
+                        <p class="card-desc">主角。大剑全能型角色，拥有气绝和倒地异常。通过女神之力治疗队友。</p>
+                        <span class="card-link">Lute攻略 →</span>
+                    </a>
+                    <a href="theresia.html" class="card">
+                        <div class="card-icon">⚒️</div>
+                        <h3 class="card-title">Theresia</h3>
+                        <p class="card-desc">奥加纳教团异端审判官。双持圣锤，拥有流血和气绝。仅有的十名拥有处决权的审判官之一。</p>
+                        <span class="card-link">Theresia攻略 →</span>
+                    </a>
+                    <a href="charlotte.html" class="card">
+                        <div class="card-icon">🗡️</div>
+                        <h3 class="card-title">Charlotte</h3>
+                        <p class="card-desc">伦图斯起义军情报员。猛毒特性专家，拥有中毒、浮空和击倒异常。</p>
+                        <span class="card-link">Charlotte攻略 →</span>
+                    </a>
+                    <a href="reina.html" class="card">
+                        <div class="card-icon">🌪️</div>
+                        <h3 class="card-title">Reina</h3>
+                        <p class="card-desc">第八骑士团团长。疾风特性专家，凭借超高机动性专注侦察和游击战。</p>
+                        <span class="card-link">Reina攻略 →</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Game Systems Section -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">⚙️ 游戏系统</h2>
+                </div>
+                <div class="card-grid">
+                    <a href="karma.html" class="card">
+                        <div class="card-icon">🔮</div>
+                        <h3 class="card-title">Karma系统</h3>
+                        <p class="card-desc">各属性专属和通用Karma。了解装备哪些Karma能最大化伤害和功能性。</p>
+                        <span class="card-link">Karma攻略 →</span>
+                    </a>
+                    <a href="gear.html" class="card">
+                        <div class="card-icon">🛡️</div>
+                        <h3 class="card-title">装备系统</h3>
+                        <p class="card-desc">完整装备指南，包含套装效果、属性优先级和获取最佳装备的方法。</p>
+                        <span class="card-link">装备攻略 →</span>
+                    </a>
+                    <a href="recipes.html" class="card">
+                        <div class="card-icon">🍳</div>
+                        <h3 class="card-title">烹饪与配方</h3>
+                        <p class="card-desc">全部烹饪配方及效果、食材，以及哪些料理值得为战斗和探索制作。</p>
+                        <span class="card-link">配方攻略 →</span>
+                    </a>
+                    <a href="classes.html" class="card">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">英雄特性与职业</h3>
+                        <p class="card-desc">了解9种英雄特性，以及各职业如何贡献于队伍搭配和连招链。</p>
+                        <span class="card-link">职业攻略 →</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <section style="text-align: center; padding: 48px 0;">
+                <h2 style="border: none; margin-bottom: 16px;">准备好征服龙之剑了吗？</h2>
+                <p style="max-width: 600px; margin: 0 auto 24px;">
+                    从你在奥比斯的第一步，到终局副本通关，我们的社区维基为你提供经过验证的攻略、强度榜和队伍搭配。
+                </p>
+                <div class="hero-cta" style="justify-content: center;">
+                    <a href="beginner-guide.html" class="btn btn-primary">📖 阅读新手攻略</a>
+                    <a href="https://store.steampowered.com/app/4570720/" target="_blank" class="btn btn-secondary">🎮 Steam购买</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========== Sidebar ========== -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">英雄特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">副本与终局 <span class="count">2</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                    <li><a href="https://x.com/DSAwakening" target="_blank">🐦 X (Twitter)</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">游戏信息</div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+                    <strong>开发商：</strong>Hound13 Inc.
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+                    <strong>发售日：</strong>2026年7月22日
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+                    <strong>引擎：</strong>虚幻引擎5
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    <strong>定价：</strong>买断制
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>
+                    龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

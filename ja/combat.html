@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonSword Awakening 戦闘ガイド — 状態異常、シグナルスキル & コンボ</title>
+    <meta name="description" content="DragonSword: Awakening戦闘システムの深掘り。状態異常、シグナルスキル、スイッチングシグナル、チームロール、コンボチェーンをマスターして最大ダメージを。">
+    <meta name="keywords" content="DragonSword Awakening 戦闘, 状態異常, シグナルスキル, スイッチングシグナル, タッグチーム, コンボ, ガイド">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/combat.html">
+    <meta property="og:title" content="DragonSword Awakening 戦闘ガイド">
+    <meta property="og:description" content="状態異常、シグナルスキル、スイッチングシグナル、コンボチェーンをマスター。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/combat.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/combat.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/combat.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/combat.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/combat.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/combat.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DragonSword Awakening 戦闘ガイド — 状態異常、シグナルスキル & コンボ",
+      "description": "DragonSword: Awakening戦闘システムの深掘り。状態異常、シグナルスキル、スイッチングシグナル、チームロール、コンボチェーンをマスターして最大ダメージを。",
+      "url": "https://ds-guides.wiki/ja/combat.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/combat.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html" class="active">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">コアメカニクス</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">戦闘システムガイド</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                DragonSwordの戦闘は見た目より深いです。状態異常 → シグナルスキル → スイッチングシグナルの3ステップサイクルをマスターして、壊滅的なコンボチェーンを解き放ちましょう。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約10分</span>
+                <span>⚔️ 9つの状態異常</span>
+                <span>🔄 3ヒーロータッグシステム</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Core Concept -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 コアコンセプト</div>
+                <p>通常攻撃は状態異常ゲージを溜めるだけです。<strong>本当のダメージはシグナルスキル</strong>から来ます。3ヒーローチーム全体で互換性のある状態異常をスタックすることで発動します。チームシナジーは個々のキャラクターパワーより重要です。</p>
+            </div>
+
+            <!-- Three-Step Cycle -->
+            <h2 id="cycle">🔄 3ステップ戦闘サイクル</h2>
+            <p>すべての成功するコンボはこの基本パターンに従います：</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">アクティブスキル</h3>
+                    <p class="card-desc">アクティブスキルを使って最初の状態異常を付与。各ヒーローは異なる特性と効果を持つ2つのアクティブスキルを持っています。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">シグナルスキル</h3>
+                    <p class="card-desc">状態異常が発動すると、控えのヒーローのポートレートが点滅。適切なタイミングで切り替えて、次の状態異常を付与する強力なシグナルスキルを発動。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">スイッチングシグナル</h3>
+                    <p class="card-desc">コンボウィンドウ中にヒーローを切り替え続けてスイッチングシグナルを連鎖、プレッシャーを維持して大ダメージのためにチェーンを延長。</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 重要なタイミング注意</div>
+                <p>ヒーローポートレートが点滅してもシグナルの準備ができたわけではありません。実際の状態異常が発動するのを待ってから、狭いウィンドウ内で切り替える必要があります。早すぎる切り替えはシグナルの機会を無駄にします。</p>
+            </div>
+
+            <!-- Status Ailments -->
+            <h2 id="ailments">🩸 全9状態異常解説</h2>
+            <p>すべてのヒーローは1つ以上の状態異常を付与します。互換性のあるタイプをスタックすることがシグナルスキルを発動させます。</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>状態異常</th>
+                            <th>効果</th>
+                            <th>付与するヒーロー</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>スタン</strong></td>
+                            <td>敵が行動不能 — フルダメージウィンドウを開く</td>
+                            <td>Lute, Castella, Kalien, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>出血</strong></td>
+                            <td>継続ダメージ、バーストのためにスタック</td>
+                            <td>Roxy, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>火傷</strong></td>
+                            <td>火属性継続ダメージ</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>氷結 / フリーズ</strong></td>
+                            <td>減速 → ゲージMAXで完全フリーズ</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>感電</strong></td>
+                            <td>電撃ダメージ + 群衆制御</td>
+                            <td>Ornette, Sion, Tarte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>毒</strong></td>
+                            <td>毒属性継続ダメージ</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>浮遊</strong></td>
+                            <td>敵が打ち上げられる — 反撃もブロックも不可</td>
+                            <td>Castella, Johnny, Reina, Eileen, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ダウン</strong></td>
+                            <td>敵が地面に倒される — 無防備</td>
+                            <td>Lute, Alex, Ornette, Sion, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>回復</strong></td>
+                            <td>パーティを回復</td>
+                            <td>Lute, Tarte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Signal Skills -->
+            <h2 id="signal">⚡ シグナルスキル詳解</h2>
+            <p>シグナルスキルはゲーム内で最も強力な攻撃です。仕組みは以下の通り：</p>
+
+            <h3>発動方法</h3>
+            <ol>
+                <li>敵を攻撃して状態異常ゲージを溜める</li>
+                <li>満タンになると、敵が状態異常状態に入る</li>
+                <li>その状態異常に反応できる控えのヒーローのポートレートが点滅</li>
+                <li>そのヒーローの切り替えボタンを押す — 特殊なシグナルスキル攻撃で登場</li>
+                <li>シグナルスキルは高ダメージを与え、次の状態異常を付与</li>
+            </ol>
+
+            <h3>主な特徴</h3>
+            <ul>
+                <li>各ヒーローは<strong>2つのシグナルアビリティ</strong>を持つ (2つのアクティブスキルに加えて)</li>
+                <li>シグナルスキルは敵が互換性のある状態異常状態のときのみ使用可能</li>
+                <li>フィールド上のヒーローと待機中のヒーローの両方がシグナルスキルを発動可能</li>
+                <li>ダメージ計算式はキャラクター切り替えを通じてこれらのスキルを連鎖させることを中心に展開</li>
+                <li>アクティブとシグナルスキルを効果的に繋げることが戦闘のコアそのもの</li>
+            </ul>
+
+            <!-- Switching Signals -->
+            <h2 id="switching">🔀 スイッチングシグナル & コンボチェーン</h2>
+            <p>戦闘の真の深さは複数のヒーローを連鎖させることにあります：</p>
+
+            <div class="card">
+                <h3 class="card-title">無限状態異常チェーン</h3>
+                <p>3人すべてのヒーローが異なる状態異常のアップタイムを維持すると、<strong>途切れない状態チェーン</strong>を作れます：</p>
+                <ol style="margin-top: 12px;">
+                    <li>ヒーローAがスタンを付与 → ヒーローBのシグナルスキルを発動</li>
+                    <li>ヒーローBがシグナルスキルで登場、出血を付与 → ヒーローCのシグナルスキルを発動</li>
+                    <li>ヒーローCがシグナルスキルで登場、浮遊を付与 → ヒーローAのシグナルスキルを発動</li>
+                    <li>ヒーローAが再登場、再びスタンを付与 → サイクルが繰り返される</li>
+                </ol>
+                <p style="margin-top: 12px;">切り替えはまた、次の攻撃までの短い<strong>無敵フレーム (i-frame)</strong>を付与するため、攻撃的にも防御的にも機能します。</p>
+            </div>
+
+            <!-- Team Roles -->
+            <h2 id="roles">👥 3つのチームロール</h2>
+            <p>すべての成功するチーム構成はこの3つのポジションを満たします。これらは<strong>コンボ内の役割であり、永続的なクラスではありません</strong>：</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">フィールドドライバー</h3>
+                    <p class="card-desc">フィールド上でアクティブに留まり、次の繰り返し可能な条件を作る。コンボを継続させるチームの「エンジン」。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">シグナルアンサー</h3>
+                    <p class="card-desc">条件が点灯したときに登場。大きなシグナルスキルダメージを与え、チェーンの次の状態異常を付与。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌉</div>
+                    <h3 class="card-title">ブリッジ</h3>
+                    <p class="card-desc">プレッシャーを延長するか間合いを取り戻し、戦闘を戻す。大ダメージウィンドウ間でチェーンを維持。</p>
+                </div>
+            </div>
+
+            <!-- Best Teams by Content -->
+            <h2 id="teams">🎯 コンテンツ別最強チーム</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>チーム構成</th>
+                            <th>最適な用途</th>
+                            <th>コアループ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Theresia + Castella + Lute</strong></td>
+                            <td>ボス戦</td>
+                            <td>Theresiaが出力、Luteがアーマーブレイク + ユーティリティ、Castellaがスタンウィンドウ中にバースト</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Castella/Lute</strong></td>
+                            <td>高HPターゲット (出血)</td>
+                            <td>コンセクレイションが出血を付与、セレスティアルヴァーディクトがスタンを追加、Roxyがカットイン、Castella/Luteがデトネート</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Roxy + Ornette</strong></td>
+                            <td>オープンワールド探索</td>
+                            <td>Reinaが素早く戦闘を終了、Roxyがコンボを連鎖、Ornetteがシールドで保護</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Lute</strong></td>
+                            <td>エリート敵</td>
+                            <td>出血付与 + アーマーブレイク + スタン、エリートを制御し続ける</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette + Castella + Alex/Lute</strong></td>
+                            <td>重装甲ボス</td>
+                            <td>OrnetteまたはAlexがパワーアーマーを剥ぎ取り、ダウンを誘発、Castellaがダウン中ダメージを突く</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combos -->
+            <h2 id="airborne">🪽 浮遊コンボチーム</h2>
+            <p>浮遊は最強のメカニクスの1つです。打ち上げられた敵は<strong>反撃も防御ブロックも発動できない</strong>ためです。</p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">🏆 プレミアム浮遊チーム</div>
+                <p><strong>Reina + Theresia + Roxy</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li>Reinaがメインランチャー、敵を浮遊させ続ける</li>
+                    <li>Theresiaが空中コンボダメージを担当</li>
+                    <li>Roxyがチェーンを延長</li>
+                </ul>
+            </div>
+
+            <p><strong>代替:</strong> Reina + Castella + Lute/Aria</p>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ スーパーアーマーの注意点</div>
+                <p>敵がスーパーアーマーを発動しているとき、打ち上げやダウンはできません。浮遊チームはこれらの敵に対して価値が大幅に下がります — 常にアーマーブレイクのオプションを用意しておきましょう。</p>
+            </div>
+
+            <!-- How to Practice -->
+            <h2 id="practice">🎮 戦闘の練習方法</h2>
+            <ol>
+                <li><strong>シンプルに始める</strong> — 耐久力のある敵を見つけ、1つの状態異常を付与する練習をし、シグナルプロンプトを待ってから1回切り替える</li>
+                <li><strong>3人目のヒーローを追加</strong> — 2ステップのレスポンスが確実に感じられるようになったら、3人目のヒーローを加えてフルチェーンに</li>
+                <li><strong>ボス練習</strong> — ボスも同じシーケンスに従う: 安全なオープナーを特定、追撃を温存、回避が必要なときはチェーンを中断</li>
+                <li><strong>まず回避</strong> — コンボを完成させるより常に回避を優先。死んだヒーローはゼロダメージです。</li>
+            </ol>
+
+            <!-- Core Principles -->
+            <h2>📜 6つのコア戦闘原則</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">状態異常がコア</h3>
+                    <p class="card-desc">通常攻撃はゲージを溜めるだけ。本当のダメージは状態異常で発動するシグナルスキルから。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">シナジー > ダメージ</h3>
+                    <p class="card-desc">3人の強いヒーローは強いチームに等しくない。互換性のある状態異常が勝つ。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">タイミングが全て</h3>
+                    <p class="card-desc">狭い状態異常ウィンドウ内で切り替え。早すぎる切り替えはシグナルの機会を無駄にする。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">まず回避</h3>
+                    <p class="card-desc">被るダメージのためにコンボを交換しない。まず生き残り、次に最適化。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">敵に合わせる</h3>
+                    <p class="card-desc">ボスにはDoTとアーマーブレイクが必要。オープンワールドには機動力と制御が必要。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">アーマーブレイクを持つ</h3>
+                    <p class="card-desc">スーパーアーマーは打ち上げ/ダウンをブロック。常にブレイカーを懐に用意。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">完璧なチームを組む準備はできた？</h3>
+                <p style="margin-bottom: 16px;">あらゆるコンテンツタイプ向けの実証済みチーム構成をチェック。</p>
+                <a href="best-team.html" class="btn btn-primary">👥 最強チームビルドを見る</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#cycle">3ステップサイクル</a></li>
+                    <li><a href="#ailments">状態異常</a></li>
+                    <li><a href="#signal">シグナルスキル</a></li>
+                    <li><a href="#switching">スイッチングシグナル</a></li>
+                    <li><a href="#roles">チームロール</a></li>
+                    <li><a href="#teams">最強チーム</a></li>
+                    <li><a href="#airborne">浮遊コンボ</a></li>
+                    <li><a href="#practice">練習方法</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html" class="active">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="classes.html">ヒーロー特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html">レイド & エンドゲーム <span class="count">2</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

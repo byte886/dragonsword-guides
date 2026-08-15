@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クラス & 役割 — DragonSword Awakening: 全ヒーロー分類、戦闘役割 & 状態タイプ</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なクラスと役割ガイド。このゲームには伝統的なクラスシステムはありません — 全19人のヒーローが戦闘役割（DPS/サポート/タンク/制御）、攻撃タイプ、状態効果、陣営でどう分類されるかを解説。">
+    <meta name="keywords" content="DragonSword Awakening クラス, 役割, DPS, サポート, タンク, 制御, 近接, 遠距離, 状態効果, 陣営, ヒーロータイプ">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/classes.html">
+    <meta property="og:title" content="クラス & 役割 — DragonSword Awakening">
+    <meta property="og:description" content="伝統的なクラスシステムなし — 全19人のヒーローを役割、攻撃タイプ、状態、陣営で分類。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/classes.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/classes.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/classes.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/classes.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/classes.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/classes.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "クラス & 役割 — DragonSword Awakening: 全ヒーロー分類、戦闘役割 & 状態タイプ",
+      "description": "DragonSword: Awakeningの完全なクラスと役割ガイド。このゲームには伝統的なクラスシステムはありません — 全19人のヒーローが戦闘役割（DPS/サポート/タンク/制御）、攻撃タイプ、状態効果、陣営でどう分類されるかを解説。",
+      "url": "https://ds-guides.wiki/ja/classes.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/classes.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">ヒーロー分類</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">クラス & 戦闘役割</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                DragonSword: Awakeningには伝統的なクラスシステムはありません（戦士/魔法使い/僧侶の選択やジョブチェンジはありません）。代わりに、それぞれがユニークなヒーロー特性、状態効果の専門、戦闘役割を持つ19人の固定ヒーローがいます。彼らがどう分類されるかを解説します。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約6分</span>
+                <span>🦸 19人のヒーロー</span>
+                <span>⚔️ 5つの陣営</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 重要ポイント</div>
+                <p><strong>伝統的なクラスはありません。</strong>クラスを選んでジョブチェンジできるほとんどのRPGと異なり、DragonSwordは19人のユニークな固定ヒーローを使用します。それぞれが独自のヒーロー特性、武器、状態効果の専門、戦闘役割を持っています。ヒーローの「クラス」を変えることはできません — 相補的な役割と状態効果を持つヒーローを組み合わせてチームを編成します。</p>
+            </div>
+
+            <!-- vs Traditional -->
+            <h2>⚔️ 伝統的なクラスシステムとの比較</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>伝統的なクラスシステム</th>
+                            <th>DragonSword: Awakening</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1つのクラスを選び、ジョブアドバンス可能</td>
+                            <td>19人の固定ヒーロー、アドバンスなし</td>
+                        </tr>
+                        <tr>
+                            <td>同じクラスのキャラは似たプレイ感</td>
+                            <td>すべてのヒーローがユニークな特性とスキルを持つ</td>
+                        </tr>
+                        <tr>
+                            <td>クラスが装備とスキルを決定</td>
+                            <td>ヒーローが状態効果と役割を決定</td>
+                        </tr>
+                        <tr>
+                            <td>タンク/DPS/ヒーラーの三極</td>
+                            <td>柔軟 — ヒーローは複数の役割を果たせる</td>
+                        </tr>
+                        <tr>
+                            <td>クラスバランスパッチは多くに影響</td>
+                            <td>バランスパッチは個々のヒーローを対象</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- By Combat Role -->
+            <h2 id="roles">🎯 主要戦闘役割別</h2>
+
+            <h3>DPS（ダメージディーラー）</h3>
+            <p><strong>近接DPS:</strong> Lute, Kalsion, Othello, Charlotte, Johnny, Theresia, Reina, Ornette</p>
+            <p><strong>遠距離DPS:</strong> Aria, Kalien, Roxy, Astria, Sion</p>
+
+            <h3>サポート（ユーティリティ / 回復）</h3>
+            <ul>
+                <li><strong>Dana</strong> — シールド + 凍結、ゴーレムのチャコを召喚</li>
+                <li><strong>Lute</strong> — 回復 + ユーティリティ、万能</li>
+                <li><strong>Tarte</strong> — 回復 + 感電、見習い僧侶</li>
+                <li><strong>Eileen</strong> — チーム全体バフ、第8騎士団見習い</li>
+            </ul>
+
+            <h3>タンク（防御）</h3>
+            <ul>
+                <li><strong>Alex</strong> — 防御スタンス + ダウン</li>
+                <li><strong>Dana</strong> — 召喚 + シールド（ハイブリッドサポート/タンク）</li>
+            </ul>
+
+            <h3>制御（群制）</h3>
+            <ul>
+                <li><strong>Castella</strong> — 浮遊 + ダウン、ハウリングプッシュ</li>
+                <li><strong>Cerese</strong> — 氷 + フリーズ、第3魔導騎士団長</li>
+                <li><strong>Ornette</strong> — 感電 + 制御、聖女</li>
+            </ul>
+
+            <h3>コネクター / ブリッジ（コンボエネイブラー）</h3>
+            <ul>
+                <li><strong>Roxy</strong> — コンボブリッジ、出血の遠距離DPS</li>
+                <li><strong>Johnny</strong> — 地上コンボ延長、毒の近接</li>
+            </ul>
+
+            <!-- By Attack Type -->
+            <h2 id="attack">🗡️ 攻撃タイプ別</h2>
+            <div class="card-grid">
+                <div class="card" style="border-left: 4px solid #ef4444;">
+                    <h3 class="card-title" style="border: none; padding: 0;">⚔️ 近接 (11ヒーロー)</h3>
+                    <p class="card-desc" style="font-size: 0.85rem;">Alex, Castella, Charlotte, Eileen, Johnny, Kalsion, Lute, Ornette, Othello, Reina, Theresia</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #3b82f6;">
+                    <h3 class="card-title" style="border: none; padding: 0;">🏹 遠距離 (8ヒーロー)</h3>
+                    <p class="card-desc" style="font-size: 0.85rem;">Aria, Astria, Cerese, Dana, Kalien, Roxy, Sion, Tarte</p>
+                </div>
+            </div>
+
+            <!-- By Status Effect -->
+            <h2 id="status">🔥 状態効果の専門別</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>状態効果</th>
+                            <th>ヒーロー</th>
+                            <th>用途</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>スタン</strong></td>
+                            <td>Lute, Theresia</td>
+                            <td>敵を封じ込め、コンボのセットアップ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>火 / 火傷</strong></td>
+                            <td>Aria, Kalien, Kalsion</td>
+                            <td>DoTダメージ、元素反応</td>
+                        </tr>
+                        <tr>
+                            <td><strong>氷 / 凍結</strong></td>
+                            <td>Cerese, Dana, Othello</td>
+                            <td>減速、フリーズ、群制</td>
+                        </tr>
+                        <tr>
+                            <td><strong>毒</strong></td>
+                            <td>Charlotte, Johnny</td>
+                            <td>強力なDoT、毒チーム構成</td>
+                        </tr>
+                        <tr>
+                            <td><strong>風 / 浮遊</strong></td>
+                            <td>Eileen, Reina</td>
+                            <td>敵を打ち上げ、空中コンボ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>感電</strong></td>
+                            <td>Ornette, Sion, Tarte</td>
+                            <td>スタンチェーン、電気反応</td>
+                        </tr>
+                        <tr>
+                            <td><strong>出血</strong></td>
+                            <td>Roxy</td>
+                            <td>出血チームのコア、高い単体ダメージ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ダウン / ダウン</strong></td>
+                            <td>Alex</td>
+                            <td>敵を地面に、攻撃を中断</td>
+                        </tr>
+                        <tr>
+                            <td><strong>スーパーアーマー</strong></td>
+                            <td>Astria, Castella</td>
+                            <td>よろめき無効、攻撃を耐える</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- By Faction -->
+            <h2 id="faction">🏰 陣営別 (5組織)</h2>
+
+            <h3>1. ジョニー傭兵団</h3>
+            <p>Lute, Castella, Aria, Johnny</p>
+
+            <h3>2. レッドフォックス傭兵団</h3>
+            <p>Dana, Kalien, Roxy, Alex</p>
+
+            <h3>3. オルガナ教団</h3>
+            <p>Theresia, Ornette, Sion, Tarte</p>
+
+            <h3>4. オルビス王国</h3>
+            <p>Kalsion, Cerese, Reina, Astria, Eileen</p>
+
+            <h3>5. レンタス反乱軍</h3>
+            <p>Othello, Charlotte</p>
+
+            <!-- Full Table -->
+            <h2 id="table">📋 完全なヒーロー分類表</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ヒーロー</th>
+                            <th>称号 / クラス</th>
+                            <th>役割</th>
+                            <th>攻撃</th>
+                            <th>状態</th>
+                            <th>陣営</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Alex</td><td>メンバー</td><td>タンク</td><td>近接</td><td>ダウン</td><td>レッドフォックス</td></tr>
+                        <tr><td>Aria</td><td>メンバー</td><td>遠距離DPS</td><td>遠距離</td><td>火</td><td>ジョニー傭兵</td></tr>
+                        <tr><td>Astria</td><td>鋼心駐屯軍団長</td><td>遠距離DPS</td><td>遠距離</td><td>スーパーアーマー</td><td>オルビス王国</td></tr>
+                        <tr><td>Castella</td><td>メンバー</td><td>制御</td><td>近接</td><td>スーパーアーマー</td><td>ジョニー傭兵</td></tr>
+                        <tr><td>Cerese</td><td>第3魔導騎士団長</td><td>制御</td><td>遠距離</td><td>氷</td><td>オルビス王国</td></tr>
+                        <tr><td>Charlotte</td><td>情報員</td><td>近接DPS</td><td>近接</td><td>毒</td><td>レンタス反乱軍</td></tr>
+                        <tr><td>Dana</td><td>メンバー</td><td>サポート/タンク</td><td>遠距離</td><td>氷</td><td>レッドフォックス</td></tr>
+                        <tr><td>Eileen</td><td>第8騎士団見習い</td><td>サポート</td><td>近接</td><td>風</td><td>オルビス王国</td></tr>
+                        <tr><td>Johnny</td><td>キャプテン</td><td>コネクター/DPS</td><td>近接</td><td>毒</td><td>ジョニー傭兵</td></tr>
+                        <tr><td>Kalien</td><td>副キャプテン</td><td>遠距離DPS</td><td>遠距離</td><td>火</td><td>レッドフォックス</td></tr>
+                        <tr><td>Kalsion</td><td>現王</td><td>近接DPS</td><td>近接</td><td>火</td><td>オルビス王国</td></tr>
+                        <tr><td>Lute</td><td>メンバー</td><td>DPS/サポート</td><td>近接</td><td>スタン</td><td>ジョニー傭兵</td></tr>
+                        <tr><td>Ornette</td><td>聖女</td><td>制御/DPS</td><td>近接</td><td>感電</td><td>オルガナ教団</td></tr>
+                        <tr><td>Othello</td><td>チーフ</td><td>近接DPS</td><td>近接</td><td>氷</td><td>レンタス反乱軍</td></tr>
+                        <tr><td>Reina</td><td>第8騎士団長</td><td>近接DPS</td><td>近接</td><td>風</td><td>オルビス王国</td></tr>
+                        <tr><td>Roxy</td><td>キャプテン</td><td>コネクター/DPS</td><td>遠距離</td><td>出血</td><td>レッドフォックス</td></tr>
+                        <tr><td>Sion</td><td>オルゼアの代表</td><td>遠距離DPS</td><td>遠距離</td><td>感電</td><td>オルガナ教団</td></tr>
+                        <tr><td>Tarte</td><td>見習い僧侶</td><td>サポート</td><td>遠距離</td><td>感電</td><td>オルガナ教団</td></tr>
+                        <tr><td>Theresia</td><td>異端審問官</td><td>近接DPS</td><td>近接</td><td>スタン</td><td>オルガナ教団</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Team Building Tips -->
+            <h2 id="teambuild">🧩 役割別チーム編成の方法</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">メインDPSを選ぶ</h3>
+                    <p class="card-desc">1-2人の強力なDPSヒーロー（Theresia, Reina, Charlotte, Lute）から始める。これがダメージコアになります。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">コネクターを追加</h3>
+                    <p class="card-desc">RoxyまたはJohnnyがコンボを延長し、ヒーロー間をブリッジしてチーム全体のDPSをブースト。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">状態効果を一致させる</h3>
+                    <p class="card-desc">状態タイプを軸に構築：出血チーム（Roxy+Theresia+Lute）、毒チーム（Charlotte+Johnny）、風チーム（Reina+Castella）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">ユーティリティ/サポートを追加</h3>
+                    <p class="card-desc">シールドにDana、感電制御にOrnette、浮遊にCastella。コンテンツに応じて柔軟に。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">誰が最強か知りたい？</h3>
+                <p style="margin-bottom: 16px;">詳細なビルドについては、ティアリストと詳細なヒーローガイドをチェック。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">⭐ ティアリスト</a>
+                    <a href="characters.html" class="btn btn-secondary">🦸 全ヒーロー</a>
+                    <a href="best-team.html" class="btn btn-secondary">👥 最強チーム</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#roles">戦闘役割別</a></li>
+                    <li><a href="#attack">攻撃タイプ別</a></li>
+                    <li><a href="#status">状態効果別</a></li>
+                    <li><a href="#faction">陣営別</a></li>
+                    <li><a href="#table">完全な表</a></li>
+                    <li><a href="#teambuild">チーム編成</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="classes.html" class="active">クラス & 役割 <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html">レイド & ルーン <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">エンドゲームガイド <span class="count">1</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

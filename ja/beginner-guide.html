@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonSword Awakening 初心者ガイド — 最初の数時間、戦闘 & コツ</title>
+    <meta name="description" content="DragonSword: Awakeningの完全初心者ガイド。戦闘の基本、チーム編成、リソース管理、探索のコツ、最初の数時間で避けるべきよくあるミスを学ぼう。">
+    <meta name="keywords" content="DragonSword Awakening 初心者ガイド, 最初の数時間, 戦闘の基本, チーム編成, コツ, ミス">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/beginner-guide.html">
+    <meta property="og:title" content="DragonSword Awakening 初心者ガイド">
+    <meta property="og:description" content="最初の数時間の優先順位、戦闘の基本、チーム編成、避けるべきよくあるミス。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/beginner-guide.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/beginner-guide.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/beginner-guide.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/beginner-guide.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/beginner-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/beginner-guide.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DragonSword Awakening 初心者ガイド — 最初の数時間、戦闘 & コツ",
+      "description": "DragonSword: Awakeningの完全初心者ガイド。戦闘の基本、チーム編成、リソース管理、探索のコツ、最初の数時間で避けるべきよくあるミスを学ぼう。",
+      "url": "https://ds-guides.wiki/ja/beginner-guide.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/beginner-guide.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html" class="active">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">入門編</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">DragonSword: Awakening 初心者ガイド</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                オルビスでの最初の数時間に知っておくべきすべて。戦闘の基本、チーム編成、リソース戦略、探索のコツ、すべての新規プレイヤーが避けるべきミス。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約8分</span>
+                <span>🎯 新規プレイヤー向け</span>
+                <span>🔄 2026年8月更新</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックアンサー</div>
+                <p>ゲームのコアシステムが解放されるまでメインストーリーを進め、信頼できる3ヒーローの戦闘コンボを1つ学び、初期リソースは慎重に使い、近くのサイドエリアを探索し、すべてのヒーローを同時に強化しないようにしましょう。</p>
+            </div>
+
+            <!-- Beginner Checklist -->
+            <h2 id="checklist">✅ 初心者チェックリスト (13ステップ)</h2>
+            <ol>
+                <li>オープニングチュートリアルを完了する</li>
+                <li>回避とカメラ操作を学ぶ</li>
+                <li>アクティブスキルを理解する</li>
+                <li>自分のヒーローがどの状態異常を付与するか確認する</li>
+                <li>シグナルスキルの発生条件を学ぶ</li>
+                <li>機能する3ヒーローチームを1つ編成する</li>
+                <li>コアシステムが解放されるまでメインストーリーを進める</li>
+                <li>新しいヒーローと recruitメニューを確認する</li>
+                <li>限定的な強化素材を節約する</li>
+                <li>近くの洞窟と望楼の地下室を探索する</li>
+                <li>材料を集めて料理を試す</li>
+                <li>ファミリアの機能を確認する</li>
+                <li>SSDにゲームをインストールして実行する</li>
+            </ol>
+
+            <!-- What To Do First -->
+            <h2 id="first-steps">🎯 最初にすべきこと</h2>
+            
+            <h3>1. オープニングチュートリアルを完了する</h3>
+            <p>オープニングシーケンスでは、基本攻撃、アクティブスキル、回避、カメラ操作、ヒーロー切り替え、状態インジケーター、シグナルプロンプトを教えてくれます。これらをスキップしないでください — 戦闘システムは最初に見たよりも深く、チュートリアルはその後のすべての基礎を築きます。</p>
+
+            <h3>2. コアシステムが解放されるまでメインストーリーを進める</h3>
+            <p>DragonSwordは多くのシステムをストーリーの進行によって制限しています。最適な序盤のリズムは：<strong>メインクエスト → 新システム解放 → 試してみる → 近くのエリアを探索 → ストーリーに戻る</strong>です。すべてに到達するためのツールを手に入れる前に、マップを100%にしようとしないでください。</p>
+
+            <h3>3. 信頼できる戦闘コンボを1つ学ぶ</h3>
+            <p>他のコンボを試す前に、3ヒーローのコンボを1つマスターしましょう。基本パターンは：</p>
+            <ul>
+                <li><strong>スターター</strong>が最初の状態異常を付与</li>
+                <li><strong>コネクター</strong>がシグナルスキルで応答し、次の隙を作る</li>
+                <li><strong>フィニッシャー</strong>が隙を大ダメージまたは群制に変換</li>
+            </ul>
+
+            <!-- Combat System -->
+            <h2 id="combat">⚔️ 戦闘システムの基本</h2>
+            <p>DragonSword: Awakeningは、オープンワールド探索と、状態異常、シグナルスキル、キャラクター切り替えを軸にした3ヒーロータッグアクション戦闘システムを組み合わせています。個々のキャラクターの強さは戦闘の一部に過ぎません — チームの相乗効果の方が重要です。</p>
+
+            <h3>3つのコアメカニクス</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🩸</div>
+                    <h3 class="card-title">状態異常</h3>
+                    <p class="card-desc">プレイアブルな19人のヒーロー全員が、それぞれ異なる状態異常アビリティ（スタン、火傷、凍結、感電、出血、毒、浮遊、ダウン、回復）を持っています。これらがすべてのコンボの基礎です。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">シグナルスキル</h3>
+                    <p class="card-desc">必要な戦闘条件が満たされたときに使用可能になる強力な追撃。同じ敵に互換性のある状態異常が重なると、これらのスキルが発動します。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">スイッチングシグナル</h3>
+                    <p class="card-desc">コンボ中にヒーローが戦闘に出入りし続けることを可能にします。適切なタイミングで切り替えるとコンボが延長され、短い無敵フレーム（i-frames）が付与されます。</p>
+                </div>
+            </div>
+
+            <h3>ベテランプレイヤーからの戦闘のコツ</h3>
+            <ul>
+                <li>スキルのクールダウンは敵を攻撃すると短縮されます — 積極的に攻めましょう</li>
+                <li>キャラクターを切り替えると、次の攻撃またはシグナルスキルまで短いi-framesが付与されます</li>
+                <li>白いスタガーバーを持つ敵は打ち上げやすいですが、スーパーアーマーの敵はそうではありません</li>
+                <li>各キャラクターはアクティブスキルを2つしか持ちませんが、戦闘中はシグナルスキルとグラブスキルも使用できます</li>
+                <li>回避攻撃（回避+攻撃）はモーションの重要な一部です</li>
+            </ul>
+
+            <!-- First Team Building -->
+            <h2 id="team">👥 最初のチームを編成する</h2>
+            <p>すべてのチームには3つの役割が必要です。これらは<strong>チーム内のポジションであり、永続的なクラスではありません</strong> — ヒーローは誰と組むかによって異なる役割を果たせます。</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>役割</th>
+                            <th>仕事</th>
+                            <th>序盤の例</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>スターター</strong></td>
+                            <td>最初の状態を作り、コンボを開始する</td>
+                            <td>Lute (スタン), Castella (スタン/浮遊)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>コネクター</strong></td>
+                            <td>状態に応答し、次の隙を作る</td>
+                            <td>Aria (火傷), Dana (凍結)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>フィニッシャー</strong></td>
+                            <td>隙をダメージまたは制御に変換する</td>
+                            <td>Johnny (毒/浮遊), Charlotte (毒)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <div class="alert-title">💡 推奨スターターチーム</div>
+                <p><strong>Lute + Dana + Aria</strong>は3種類の状態（スタン、凍結、火傷）をカバーし、信頼できる基礎となります。Luteは回復もできるため、学習中の生存余裕が得られます。</p>
+            </div>
+
+            <h3 id="quick-answer">アクション重視 vs リラックスしたプレイスタイル</h3>
+            <ul>
+                <li><strong>アクションチーム</strong>（高スキル、高リターン）: Charlotte + Johnny + Reina — 全員高DPSで非常に機動的、上手くプレイすればエンドゲームをクリア可能</li>
+                <li><strong>遠距離リラックスチーム</strong>（エンドゲームが容易）: Sion + Othello + Dana — 遠距離出力、ポジショニングに余裕あり</li>
+            </ul>
+
+            <!-- Resource Strategy -->
+            <h2 id="resources">💰 リソース戦略</h2>
+            <p>序盤で最も重要な原則は<strong>集中であり、均等投資ではない</strong>ということです。素材をすべてのヒーローに薄く広げると、チーム全体が弱くなってしまいます。</p>
+
+            <h3>コア原則</h3>
+            <ul>
+                <li>スターター1人、コネクター1人、フィニッシャー1人を育成 — メインチームに集中する</li>
+                <li>使用頻度の高いスキルを先に強化し、すべてを均等にレベルアップしない</li>
+                <li>レア素材は予備を確保 — 後で必要になります</li>
+                <li>recruit通貨（運命の招待）を早すぎる段階で使わない — どのヒーローが欲しいか分かるまで待つ</li>
+                <li>セットボーナスは5つではなく3つで発動 — より良いステータスのためにセットを混ぜられます（3+2）</li>
+            </ul>
+
+            <h3>主要通貨</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>通貨</th>
+                            <th>入手方法</th>
+                            <th>使い道</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>運命の招待</strong></td>
+                            <td>ストーリーチャプター、ヒーロークエスト</td>
+                            <td>交換ショップでヒーローをアンロック（各1つ）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>聖光の欠片</strong></td>
+                            <td>宝箱、ミニボスアクティビティ</td>
+                            <td>各種強化</td>
+                        </tr>
+                        <tr>
+                            <td><strong>メダル</strong></td>
+                            <td>クエスト完了</td>
+                            <td>ほぼすべての素材とスキル強化スクロール</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ムーンキー</strong></td>
+                            <td>探索、クエスト、ストーリー</td>
+                            <td>特別な宝箱を開ける</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Exploration Tips -->
+            <h2 id="exploration">🗺️ 探索のコツ</h2>
+            <ul>
+                <li>探索しながら近くのトラベルポイントを有効化 — 高速移動は膨大な時間を節約します</li>
+                <li>建物、望楼、洞窟をチェック — 多くの隠し宝箱やアイテムが屋内にあります</li>
+                <li>材料を集めて住民と話す — 料理は便利なバフを提供します</li>
+                <li>まだ完了できない場所をマーク — より良いツールで戻ってきます</li>
+                <li><strong>水中エリア</strong>には多くの隠しコンテンツがあります — ストーリーを進めて早期に水上マウントをアンロックしましょう</li>
+                <li>地域ボスは毎日午前9時にリフレッシュ — スキルスクロールと鍛造型をドロップします</li>
+            </ul>
+
+            <h3>マウントシステム</h3>
+            <p>マウントは傭兵レベルとストーリーの進行を通じてアンロックされます。主なコツ：</p>
+            <ul>
+                <li>同じマウントの異なるバリアントは、他のマウントで使用可能な2番目のスキルをアンロックします</li>
+                <li>デラックスエディションのベビードラゴンは空中で任意の方向にダッシュできます</li>
+                <li>ブライトクロウティット（初心者傭兵でアンロック）も、2番目のバリアントのために20のミニゲームを完了すると空中ダッシュできます</li>
+                <li>水中に行けるマウントは1つだけ — ストーリーの進行で早期にアンロックしましょう</li>
+            </ul>
+
+            <!-- Common Mistakes -->
+            <h2 id="mistakes">❌ よくある初心者のミス</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">早すぎる段階ですべてのヒーローを強化</h3>
+                    <p class="card-desc">素材を19人全員に薄く広げると、強いチームができません。まず3-4人のヒーローに集中しましょう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">状態異常を無視</h3>
+                    <p class="card-desc">状態を付与しないと、シグナルスキルがほとんど発生せず、ゲームの最も深い戦闘システムを見逃します。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">切り替えをクールダウンリセットとして扱う</h3>
+                    <p class="card-desc">ランダムな切り替えはコンボ構造を崩します。スイッチングシグナルを発動させコンボを延長するために、意図的に切り替えましょう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4️⃣</div>
+                    <h3 class="card-title">ティアリストを盲目的にコピー</h3>
+                    <p class="card-desc">相性の悪いSティアヒーローのチームは、よく構成されたBティアチームより性能が低くなります。コピーする前にチームの順番を理解しましょう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5️⃣</div>
+                    <h3 class="card-title">早すぎる段階でrecruit通貨を使用</h3>
+                    <p class="card-desc">運命の招待は限定的です。どのヒーローが自分のプレイスタイルに合うか理解するまで、アンロックを待ちましょう。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6️⃣</div>
+                    <h3 class="card-title">サイド探索を無視</h3>
+                    <p class="card-desc">洞窟、望楼、水中エリアには、貴重な素材、宝の地図、マスタースキルのグリモアが隠されています。</p>
+                </div>
+            </div>
+
+            <!-- Boss Tips -->
+            <h2 id="boss">👹 ボス戦のコツ</h2>
+            <ul>
+                <li>ボスが主要な状態に耐性があるか確認 — 必要に応じて別の状態異常に切り替える</li>
+                <li>セットアップスキルが外れ続ける場合は、そのフェーズでボスがスーパーアーマーを持っていないか確認する</li>
+                <li>長いモーションは中断される可能性がある — どのスキルが安全でどれがリスキーか学ぶ</li>
+                <li>学習中は生存を優先 — パターンを理解すればダメージを最適化できる</li>
+                <li>大きな攻撃を避けるために切り替えのi-framesを使用する</li>
+            </ul>
+
+            <!-- PC Setup -->
+            <h2>🖥️ PCセットアップの推奨</h2>
+            <ul>
+                <li><strong>SSDにインストール</strong> — ゲームは大きなオープンワールドエリアをロードするため、SSDはポップインとロード時間を劇的に短縮します</li>
+                <li>グラフィックドライバーを最新バージョンに更新する</li>
+                <li>長時間セッションの前にPCを再起動する</li>
+                <li>RAMとCPUを解放するためにバックグラウンドアプリケーションを閉じる</li>
+                <li>フレームレート制限設定を確認 — フレームレート無制限は一部のシステムで不安定を引き起こす可能性があります</li>
+            </ul>
+
+            <!-- Next Steps -->
+            <h2>📚 次のステップ</h2>
+            <p>基本に慣れたら、これらのシステムをより深く学びましょう：</p>
+            <div class="card-grid">
+                <a href="combat.html" class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">戦闘システム詳解</h3>
+                    <p class="card-desc">状態異常、シグナルスキル、スイッチングシグナル、上級コンボチェーンをマスター。</p>
+                    <span class="card-link">戦闘ガイドを読む →</span>
+                </a>
+                <a href="best-team.html" class="card">
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title">最強チームビルド</h3>
+                    <p class="card-desc">序盤、エンドゲームレイド、試練の塔向けの実証済みチーム構成。</p>
+                    <span class="card-link">チームビルドを見る →</span>
+                </a>
+                <a href="tier-list.html" class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3 class="card-title">キャラクターティアリスト</h3>
+                    <p class="card-desc">エンドゲームでの性能でランク付けされた全19人のヒーロー。最適な役割とチームポジション付き。</p>
+                    <span class="card-link">ティアリストを見る →</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#quick-answer">クイックアンサー</a></li>
+                    <li><a href="#checklist">初心者チェックリスト</a></li>
+                    <li><a href="#first-steps">最初にすべきこと</a></li>
+                    <li><a href="#combat">戦闘の基本</a></li>
+                    <li><a href="#team">最初のチーム</a></li>
+                    <li><a href="#resources">リソース戦略</a></li>
+                    <li><a href="#exploration">探索のコツ</a></li>
+                    <li><a href="#mistakes">よくあるミス</a></li>
+                    <li><a href="#boss">ボスのコツ</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html" class="active">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="classes.html">ヒーロー特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html">レイド & エンドゲーム <span class="count">2</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

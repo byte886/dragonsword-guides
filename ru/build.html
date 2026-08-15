@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по билдам DragonSword Awakening — Лучшее снаряжение, Карма и Руны для всех героев</title>
+    <meta name="description" content="Полный гайд по билдам для DragonSword: Awakening. Лучшие наборы снаряжения, оружие Карма, основные характеристики и руны для всех 16 протестированных героев с элементальной логикой билдов.">
+    <meta name="keywords" content="DragonSword Awakening билды, лучшее снаряжение, Карма, руны, характеристики, Разрушитель руин, крит рейт, крит урон">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ru/build.html">
+    <meta property="og:title" content="Гайд по билдам DragonSword Awakening">
+    <meta property="og:description" content="Лучшее снаряжение, Карма и руны для всех героев с элементальной логикой билдов.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/build.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/build.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/build.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/build.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/build.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/build.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Гайд по билдам DragonSword Awakening — Лучшее снаряжение, Карма и Руны для всех героев",
+      "description": "Полный гайд по билдам для DragonSword: Awakening. Лучшие наборы снаряжения, оружие Карма, основные характеристики и руны для всех 16 протестированных героев с элементальной логикой билдов.",
+      "url": "https://ds-guides.wiki/ru/build.html",
+      "inLanguage": "ru",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ru/build.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                <li><a href="tier-list.html">Тиер лист</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="build.html" class="active">Билды</a></li>
+                <li><a href="best-team.html">Команды</a></li>
+                <li><a href="combat.html">Бой</a></li>
+                <li><a href="map.html">Карта</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Играть в Steam</a></li>
+            </ul>
+            <button class="theme-toggle" title="Переключить на светлую тему">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">Билды героев</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Полный гайд по билдам</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                Лучшие наборы снаряжения, оружие Карма, основные характеристики и руны для каждого героя. Предположения билда: полностью пробуждённые герои, не максимального уровня Карма или идеальные подхарактеристики.
+            </p>
+            <div class="article-meta">
+                <span>📖 Время чтения: ~10 мин</span>
+                <span>⚔️ 16 героев с билдами</span>
+                <span>🔄 Обновлено Август 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Formula -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ Быстрая формула билда</div>
+                <ol style="margin-top: 8px;">
+                    <li>Сначала полностью пробудите вашего героя (разблокирует пассивки и усиленные эффекты наборов)</li>
+                    <li>Используйте 3 штуки Разрушитель руин как ядро (игнорирование DEF почти для всех)</li>
+                    <li>Цельтесь в ~80% крит. рейта и ~150% крит. урона</li>
+                    <li>Добавьте набор из 2 штук элемента, соответствующего недугу вашего героя</li>
+                    <li>Команда: один герой накладывает недуг, следующий детонирует его</li>
+                </ol>
+            </div>
+
+            <!-- Universal Stats -->
+            <h2 id="stats">📊 Универсальные приоритеты характеристик</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Крит. рейт ~80%</h3>
+                    <p class="card-desc">Ваша первая цель. Ниже 80% вы теряете слишком много стабильности урона. Приоритизируйте на нагруднике и штанах.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💥</div>
+                    <h3 class="card-title">Крит. урон ~150%</h3>
+                    <p class="card-desc">Когда крит. рейт достиг предела, накапливайте крит. урон. Основной множитель урона для всех билдов.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Приоритет подхарактеристик</h3>
+                    <p class="card-desc">Дополнительная мощь > Усиление ATK > Игнорирование DEF. Перековывайте снаряжение, чтобы выпадали они по порядку.</p>
+                </div>
+            </div>
+
+            <!-- Full Build Table -->
+            <h2 id="table">📋 Полная таблица билдов (16 героев)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Герой</th>
+                            <th>Эксклюзивная Карма</th>
+                            <th>Наборы снаряжения</th>
+                            <th>Основные характеристики</th>
+                            <th>Руны</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong><a href="lute.html">Lute</a></strong></td>
+                            <td>Меч, призванный для друга</td>
+                            <td>2 Святой Арбитр + 3 Разрушитель руин</td>
+                            <td>Усиление ATK, Крит. урон, Крит. рейт</td>
+                            <td>Решимость / Усиление</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Johnny</strong></td>
+                            <td>Странствующий клинок</td>
+                            <td>3 Разрушитель руин + 2 Тень ядовитого тумана</td>
+                            <td>Усиление ATK, Крит. урон, Крит. рейт</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Castella</strong></td>
+                            <td>Шумный дуэт</td>
+                            <td>3 Разрушитель руин + 2 Лазурный Gale</td>
+                            <td>Усиление ATK, Крит. урон, Крит. рейт</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aria</strong></td>
+                            <td>Взрыв — это искусство</td>
+                            <td>3 Пылающее пламя + 2 Лазурный Gale</td>
+                            <td>Усиление ATK, Крит. урон, Крит. рейт</td>
+                            <td>Усиление / Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dana</strong></td>
+                            <td>Искрящееся чаепитие</td>
+                            <td>3 Разрушитель руин + 2 Ледяная буря</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Усиление / Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalien</strong></td>
+                            <td>Избранник багрового пламени</td>
+                            <td>3 Пылающее пламя + 2 Разрушитель руин</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Усиление / Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Roxy</strong></td>
+                            <td>Дикое хобби благородной леди</td>
+                            <td>3 Разрушитель руин + 2 Кровавое преследование</td>
+                            <td>Крит. рейт, Усиление ATK, Крит. урон</td>
+                            <td>Усиление / Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="theresia.html">Theresia</a></strong></td>
+                            <td>Милосердный смертный приговор</td>
+                            <td>3 Разрушитель руин + 2 Святой Арбитр</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette</strong></td>
+                            <td>Святое крещение молнией</td>
+                            <td>3 Разрушитель руин + 2 Громовой рывок</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="reina.html">Reina</a></strong></td>
+                            <td>Ветер, что защищает королевство</td>
+                            <td>3 Разрушитель руин + 2 Лазурный Gale</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalsion</strong></td>
+                            <td>Солнце восходит снова</td>
+                            <td>3 Пылающее пламя + 2 Разрушитель руин</td>
+                            <td>Усиление ATK, Крит. урон, Крит. рейт</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cerese</strong></td>
+                            <td>Вечная метель</td>
+                            <td>3 Разрушитель руин + 2 Ледяная буря</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость / Усиление</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Astria</strong></td>
+                            <td>Ветроцветы расцветают сквозь ветер</td>
+                            <td>3 Разрушитель руин + 2 Святой Арбитр</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Усиление / Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eileen</strong></td>
+                            <td>Между рыцарством и закладками</td>
+                            <td>3 Лазурный Gale + 2 Баллада о жизни / Разрушитель руин</td>
+                            <td>Усиление ATK, Крит. урон, Макс. HP</td>
+                            <td>Решимость / Усиление</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Othello</strong></td>
+                            <td>Копьё, что низвергает солнце</td>
+                            <td>3 Разрушитель руин + 2 Ледяная буря</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="charlotte.html">Charlotte</a></strong></td>
+                            <td>Убеждение, оставшееся во тьме</td>
+                            <td>3 Разрушитель руин + 2 Тень ядовитого тумана</td>
+                            <td>Усиление ATK, Крит. рейт, Крит. урон</td>
+                            <td>Решимость</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">* Билды Alex, Sion и Tarte всё ещё тестируются. Данные будут обновляться по мере прогресса тестирования сообществом.</p>
+
+            <!-- Element Build Logic -->
+            <h2 id="elements">🔥 Элементальная логика билдов</h2>
+
+            <h3>Яд / Отравление (Johnny + Charlotte)</h3>
+            <ul>
+                <li><strong>Johnny</strong> — Основной DPS Яда, поддерживает Яд на поле. 2 штуки Тень ядовитого тумана усиливают урон Яда.</li>
+                <li><strong>Charlotte</strong> — Нуждается в Johnny для поддержания Яда, чтобы достичь потолка взрыва. Эти двое созданы друг для друга.</li>
+            </ul>
+
+            <h3>Пламя / Ожог (Aria + Kalien + Kalsion)</h3>
+            <ul>
+                <li><strong>Aria</strong> — Включатель. Накладывает и Ожог, И Воздух одновременно. Лучший герой подготовки для Reina и Kalsion. Использует 3 штуки Пылающее пламя.</li>
+                <li><strong>Kalien</strong> — Быстро накапливает Ожог через клонов-лис. Fox Grab и Finale доставляют взрыв + Оглушение.</li>
+                <li><strong>Kalsion</strong> — Тяжёлый боец. Weapon Blaze усиливает урон, но нуждается во включателях Воздуха и Ожога для пика.</li>
+            </ul>
+
+            <h3>Мороз / Заморозка (Othello + Cerese + Dana)</h3>
+            <ul>
+                <li><strong>Cerese</strong> — Лучший накладыватель Мороза. Многократный урон + сильный контроль групп. Слабость: большие боссы (длинные анимации, недостаток Ледяной бури).</li>
+                <li><strong>Othello</strong> — DPS Обморожения. Нуждается в быстром накоплении Мороза для запуска окна максимального урона. Эксклюзивная Карма компенсирует низкий базовый пассив крит. рейта.</li>
+                <li><strong>Dana</strong> — Гибкая. Наносит Мороз вне поля, использует фамильяра для сдерживания врагов, обеспечивает командный щит после идеального парирования.</li>
+            </ul>
+
+            <h3>Кровотечение / Оглушение (Roxy + Theresia + Astria)</h3>
+            <ul>
+                <li><strong>Roxy</strong> — Быстрое накопление Кровотечения на всех дистанциях, но нуждается в Оглушении для максимизации урона. Theresia и Astria — естественные партнёры.</li>
+                <li><strong>Theresia</strong> — DPS на поле. Накладывает и Кровотечение, и тяжёлое Оглушение одновременно.</li>
+                <li><strong>Astria</strong> — Меняет мобильность на урон. Стрелы, подобные дождю, накапливают Оглушение и Пробой. Выводит урон, пока союзники контролируют врагов. Крит. рейт — высший приоритет.</li>
+            </ul>
+
+            <h3>Gale / Воздух (Reina + Eileen)</h3>
+            <ul>
+                <li><strong>Reina</strong> — Специалист по одиночным целям. Длинные цепи комбо навыков по воздушным врагам. 2 штуки Лазурный Gale напрямую усиливают урон Gale. Aria — лучший включатель.</li>
+                <li><strong>Eileen</strong> — Поддерживает Воздух с наступательной стороны. Усиливает командную скорость движения и ATK. Хорошо работает как быстрый переключаемый персонаж с солидным крит. рейтом. Самое гибкое снаряжение (Баллада о жизни или Разрушитель руин).</li>
+            </ul>
+
+            <h3>Гром / Шок (Ornette)</h3>
+            <ul>
+                <li><strong>Ornette</strong> — Мощный герой Громовой молнии, способный вести большинство команд. Пику достигает в командах Шока. 2 штуки Громовой рывок обязательны.</li>
+                <li>Когда Sion и Tarte недоступны, Lute работает как заменяющий партнёр (лечение и бафф ATK поддерживают вывод урона Ornette).</li>
+            </ul>
+
+            <!-- Special Heroes -->
+            <h2 id="special">🌟 Особые герои</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">Lute</h3>
+                    <p class="card-desc">Один из только двух лекарей в игре (другой — Tarte). Универсальный выбор почти для любой команды. Первый узел пробуждения усиливает командный ATK. Вписывается в команды Нокаута и Оглушения. 2 штуки Святой Арбитр обеспечивают вывод лечения, Разрушитель руин поддерживает личный урон.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">Tarte</h3>
+                    <p class="card-desc">Другой лекарь. Билд всё ещё на финальном тестировании. Ценность значительно растёт в контенте высокой сложности, где выживание становится узким местом.</p>
+                </div>
+            </div>
+
+            <!-- Exclusive Karma -->
+            <h2 id="karma">🗡️ Получение эксклюзивной Кармы</h2>
+            <p>Эксклюзивное оружие Карма (как Странствующий клинок Johnny или Вечная метель Cerese) требует <strong>Осколков призрачного образа</strong> и <strong>Памяти</strong> для получения.</p>
+            <ul>
+                <li>Фарм этих материалов — основной прогрессивный барьер между функциональными и полностью оптимизированными билдами</li>
+                <li>Приоритизируйте фарм осколков для героев, которых планируете использовать как основных, прежде чем гнаться за идеальными подхарактеристиками рун</li>
+                <li>Базовую Карму можно купить в магазине обмена, и она не привязана к герою</li>
+                <li>Используйте 7 идентичных базовых Карм для вознесения до максимального уровня (1 базовая + 6 копий)</li>
+                <li>Мировые боссы могут дропать базовую Карму (RNG), фармятся ежедневно</li>
+            </ul>
+
+            <!-- Gear Sets Reference -->
+            <h2 id="sets">🛡️ Справочник по наборам снаряжения</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название набора</th>
+                            <th>Эффект / Сценарий использования</th>
+                            <th>Используется кем</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Разрушитель руин (3 шт.)</strong></td>
+                            <td>Игнорирование DEF — основной набор DPS</td>
+                            <td>Почти каждый герой</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Тень ядовитого тумана (2 шт.)</strong></td>
+                            <td>Усиливает урон Яда</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Пылающее пламя (3 шт.)</strong></td>
+                            <td>Усиление урона Ожога</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ледяная буря (2 шт.)</strong></td>
+                            <td>Усиление урона Мороза</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Кровавое преследование (2 шт.)</strong></td>
+                            <td>Усиление урона Кровотечения</td>
+                            <td>Roxy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Лазурный Gale (2 шт.)</strong></td>
+                            <td>Урон Gale / Воздуха</td>
+                            <td>Castella, Aria, Reina, Eileen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Громовой рывок (2 шт.)</strong></td>
+                            <td>Усиление урона Шока</td>
+                            <td>Ornette</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Святой Арбитр (2 шт.)</strong></td>
+                            <td>Вывод лечения / урон Светом</td>
+                            <td>Lute, Theresia, Astria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Баллада о жизни (2 шт.)</strong></td>
+                            <td>Выживание / Лечение</td>
+                            <td>Eileen (опционально)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Team Building Principle -->
+            <h2>🤝 Принцип построения команды</h2>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 Ключевое понимание</div>
+                <p>Большинству DPS героев нужно как минимум одно конкретное условие для достижения потолка урона:</p>
+                <ul style="margin-top: 8px;">
+                    <li>Reina и Kalsion нуждаются в <strong>Воздухе</strong></li>
+                    <li>Othello нуждается в <strong>стаках Мороза</strong></li>
+                    <li>Charlotte нуждается в <strong>Яде на поле</strong></li>
+                    <li>Roxy нуждается в <strong>Оглушении</strong></li>
+                </ul>
+                <p style="margin-top: 8px;">Перед финализацией команды определите, что нужно вашему основному DPS, и убедитесь, что как минимум один союзник может надёжно это накладывать.</p>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">Готовы объединить эти билды в команды?</h3>
+                <p style="margin-bottom: 16px;">Ознакомьтесь с нашими проверенными составами команд для каждого стиля игры.</p>
+                <a href="best-team.html" class="btn btn-primary">👥 Посмотреть лучшие билды команд</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">На этой странице</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#stats">Универсальные характеристики</a></li>
+                    <li><a href="#table">Таблица билдов</a></li>
+                    <li><a href="#elements">Логика элементов</a></li>
+                    <li><a href="#special">Особые герои</a></li>
+                    <li><a href="#karma">Эксклюзивная Карма</a></li>
+                    <li><a href="#sets">Наборы снаряжения</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Навигация по вики</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">Начало работы <span class="count">1</span></a></li>
+                    <li><a href="characters.html">Персонажи <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">Тиер лист <span class="count">1</span></a></li>
+                    <li><a href="build.html" class="active">Билды и навыки <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">Составы команд <span class="count">1</span></a></li>
+                    <li><a href="combat.html">Боевая система <span class="count">1</span></a></li>
+                    <li><a href="classes.html">Черты героев <span class="count">1</span></a></li>
+                    <li><a href="gear.html">Снаряжение и экипировка <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Система кармы <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">Кулинария и рецепты <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Боссы <span class="count">1</span></a></li>
+                    <li><a href="raid.html">Рейды и эндгейм <span class="count">2</span></a></li>
+                    <li><a href="map.html">Карта и области <span class="count">1</span></a></li>
+                    <li><a href="coop.html">Мультиплеер и кооп <span class="count">2</span></a></li>
+                    <li><a href="review.html">Обзор и роадмап <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Официальные ссылки</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Магазин Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wiki — это независимый гайд-сайт от фанатов, охватывающий всех героев, боевую механику, билды команд и советы по прогрессу для DragonSword: Awakening. Не связан с Hound13 Inc.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Гайды</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                    <li><a href="tier-list.html">Тиер лист</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="build.html">Билды</a></li>
+                    <li><a href="best-team.html">Билды команд</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Системы</h4>
+                <ul>
+                    <li><a href="combat.html">Бой</a></li>
+                    <li><a href="gear.html">Снаряжение</a></li>
+                    <li><a href="karma.html">Карма</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Сообщество</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Играть в Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">Обзор игры</a></li>
+                    <li><a href="roadmap.html">Роадмап</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. Сделано фанатами, не связано с Hound13.</span>
+            <span>Последнее обновление: Август 2026</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening — торговая марка Hound13 Inc. Этот сайт является сообщественным ресурсом и не одобрен и не связан с Hound13 Inc.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

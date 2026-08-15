@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>副本与符文攻略 — 龙之剑：觉醒：全部符文类型、副本机制与多人联机</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）完整副本与符文指南。全部5种符文类型、最佳符文优先级、符文槽解锁、符文地下城vs副本、多人联机机制和难度推进。">
+    <meta name="keywords" content="龙之剑觉醒 副本, 符文, 决意, 增幅, 集中, 符文槽, 符文地下城, 多人联机">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/raid.html">
+    <meta property="og:title" content="副本与符文攻略 — 龙之剑：觉醒">
+    <meta property="og:description" content="全部符文类型、最佳优先级、槽位解锁、副本机制和多人联机。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/raid.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/raid.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/raid.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/raid.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/raid.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/raid.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "副本与符文攻略 — 龙之剑：觉醒：全部符文类型、副本机制与多人联机",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）完整副本与符文指南。全部5种符文类型、最佳符文优先级、符文槽解锁、符文地下城vs副本、多人联机机制和难度推进。",
+      "url": "https://ds-guides.wiki/zh/raid.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/raid.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">终局内容</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">副本与符文攻略</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                副本是符文的主要来源——嵌入4星+装备的强力属性提升道具。用制作工具解锁符文槽，刷符文地下城获取SSR符文，与最多3名玩家一起挑战多人副本。
+            </p>
+            <div class="article-meta">
+                <span>📖 阅读时间：约7分钟</span>
+                <span>💎 5种符文类型</span>
+                <span>👥 3人联机</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 快速答案</div>
+                <p>符文是附加在4星+装备上的属性提升。最佳DPS优先级：决意（攻击）> 增幅（暴击伤害）> 集中（暴击率）。用匿名工匠的制作工具（来自副本）解锁符文槽。Lv62+刷符文地下城保证获得SSR符文。副本通过大厅+邀请码支持最多3名玩家。目标：80%暴击率 + 150%暴击伤害。</p>
+            </div>
+
+            <!-- Rune System -->
+            <h2 id="runes">💎 符文系统概览</h2>
+            <ul>
+                <li>符文是附加在装备上的<strong>属性提升道具</strong></li>
+                <li>每个符文针对<strong>一个特定属性</strong></li>
+                <li>主要通过<strong>副本</strong>获取</li>
+                <li>5个稀有度阶位：破损 → 完好 → 精炼 → 光辉 → 完美</li>
+                <li>随机数独立影响符文威力——高稀有度不总是意味着大提升</li>
+            </ul>
+
+            <!-- 5 Rune Types -->
+            <h2 id="types">🔮 全部5种符文类型</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>符文</th>
+                            <th>属性提升</th>
+                            <th>最适合</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>决意</strong></td>
+                            <td>固定攻击力</td>
+                            <td>所有DPS英雄。通用最佳装备。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>增幅</strong></td>
+                            <td>暴击伤害</td>
+                            <td>高暴击率的DPS。150%+时副本表现飙升。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>集中</strong></td>
+                            <td>暴击几率</td>
+                            <td>暴击率达不到上限的DPS。通常通过装备/Karma更高效。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>守护</strong></td>
+                            <td>固定防御力</td>
+                            <td>更难副本内容中的坦克/辅助。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>活力</strong></td>
+                            <td>最大生命值</td>
+                            <td>困难副本中的生存。不提升伤害。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rune Priority -->
+            <h2 id="priority">🎯 最佳符文优先级</h2>
+            <h3>DPS英雄</h3>
+            <ol>
+                <li><strong>决意</strong>——固定攻击力适用于所有伤害计算。通用有用。</li>
+                <li><strong>增幅</strong>——暴击伤害。150%+时副本表现明显提升。</li>
+                <li><strong>集中</strong>——暴击率。仅在你的暴击率不稳定时考虑；通常通过装备和Karma更高效。</li>
+            </ol>
+            <h3>坦克 / 辅助英雄</h3>
+            <ol>
+                <li><strong>守护</strong>——固定防御力提升生存</li>
+                <li><strong>活力</strong>——最大生命值抵御爆发伤害</li>
+            </ol>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 目标属性</div>
+                <p>主DPS目标约<strong>80%暴击率</strong>和<strong>150%暴击伤害</strong>。达到这些基准后，转向攻击力和防御穿透。</p>
+            </div>
+
+            <!-- Rune Slot Unlocking -->
+            <h2 id="slots">🔓 如何解锁符文槽</h2>
+            <p>符文槽<strong>不是预先解锁的</strong>。必须手动开启：</p>
+            <ol>
+                <li>选择<strong>4星或更高</strong>的装备</li>
+                <li>点击装备上锁定的符文槽，或查看时按Triangle/Y</li>
+                <li>花费一个<strong>匿名工匠的制作工具</strong>开启槽位</li>
+                <li>每个槽位需要各自的制作工具</li>
+                <li>插入想要的符文——总属性提升显示在装备摘要中</li>
+            </ol>
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 常见陷阱</div>
+                <p>用完匿名工匠的制作工具是玩家卡在符文成长的首要原因。只在主队的永久装备上解锁槽位——不要把工具浪费在临时装备上。</p>
+            </div>
+
+            <!-- Rune Farming -->
+            <h2 id="farming">⛏️ 在哪里刷符文</h2>
+
+            <h3>1. 符文地下城（魔源旋涡）</h3>
+            <ul>
+                <li><strong>Lv50</strong>解锁</li>
+                <li>Lv50前，可以挑战高于当前等级5-10级</li>
+                <li><strong>Lv55</strong>难度飙升——需要同级装备才能通关</li>
+                <li><strong>Lv62</strong>后，每次通关<strong>保证1个SSR符文</strong></li>
+                <li>免费玩家的<strong>长期最佳装备来源</strong></li>
+            </ul>
+
+            <h3>2. 副本（鏖战副本）</h3>
+            <ul>
+                <li><strong>Lv50</strong>解锁（与符文地下城同时）</li>
+                <li>低阶掉落低阶符文</li>
+                <li>高阶Boss掉落<strong>高品质金色 / SSR符文</strong></li>
+                <li>也掉落<strong>匿名工匠的制作工具</strong></li>
+                <li>作为符文地下城之外的补充材料来源</li>
+            </ul>
+
+            <!-- Multiplayer Mechanics -->
+            <h2 id="multiplayer">👥 多人副本机制</h2>
+            <ul>
+                <li>每次联机会话需要<strong>创建大厅</strong>并向朋友发送<strong>邀请码</strong></li>
+                <li>只有<strong>大厅房主</strong>可以选择地下城/副本/狩猎和具体难度</li>
+                <li>如果设置错误，必须<strong>解散整个大厅</strong>并重新创建</li>
+                <li><strong>没有立即重试</strong>选项——完成后被踢出，必须重新创建大厅</li>
+                <li><strong>没有开放世界联机</strong>——只有地下城、副本和狩猎支持多人</li>
+                <li>副本允许邀请最多<strong>2名其他玩家（共3人）</strong></li>
+            </ul>
+
+            <h3>匹配系统</h3>
+            <ul>
+                <li>选择模式和Boss后，游戏检查是否有相同内容的现有大厅</li>
+                <li>如果没找到，创建一个其他玩家可以加入的新大厅</li>
+                <li>可以将房间设为<strong>私密</strong>——只有被邀请的玩家可以加入</li>
+            </ul>
+
+            <!-- Game Modes -->
+            <h2>🎮 游戏模式对比</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>模式</th>
+                            <th>玩家</th>
+                            <th>内容</th>
+                            <th>奖励</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>地下城</strong></td>
+                            <td>单人 / 联机</td>
+                            <td>特性地下城、货币地下城</td>
+                            <td>装备、材料、金币</td>
+                        </tr>
+                        <tr>
+                            <td><strong>副本</strong></td>
+                            <td>最多3人</td>
+                            <td>高难度Boss战</td>
+                            <td>符文、高阶材料、制作工具</td>
+                        </tr>
+                        <tr>
+                            <td><strong>狩猎</strong></td>
+                            <td>单人 / 联机</td>
+                            <td>世界Boss / 精英狩猎</td>
+                            <td>升级材料、Karma材料</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Raid Strategy -->
+            <h2 id="strategy">📜 副本核心策略</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">符文优先级</h3>
+                    <p class="card-desc">DPS：决意 > 增幅 > 集中。坦克/辅助：守护 > 活力。目标80%暴击 / 150%暴击伤害。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">槽位管理</h3>
+                    <p class="card-desc">只在4星+装备上解锁槽位。优先主队核心装备。不要把制作工具浪费在临时装备上。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">联机沟通</h3>
+                    <p class="card-desc">提前与朋友协调队伍搭配。房主选择难度。匹配失败时用邀请码。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">难度推进</h3>
+                    <p class="card-desc">Lv50从低难度开始。Lv55需要同级装备。Lv62+是保证SSR符文的长期目标。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">准备好终局内容了吗？</h3>
+                <p style="margin-bottom: 16px;">查看我们的终局指南和联机技巧，获取多人联机成功。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="endgame.html" class="btn btn-primary">🏆 终局指南</a>
+                    <a href="coop.html" class="btn btn-secondary">👥 联机指南</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#runes">符文系统</a></li>
+                    <li><a href="#types">全部5种符文</a></li>
+                    <li><a href="#priority">符文优先级</a></li>
+                    <li><a href="#slots">解锁符文槽</a></li>
+                    <li><a href="#farming">刷取地点</a></li>
+                    <li><a href="#multiplayer">多人联机机制</a></li>
+                    <li><a href="#strategy">副本策略</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html" class="active">副本与符文 <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">终局指南 <span class="count">1</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonSword Awakening ビルドガイド — 全ヒーローの最強装備、カルマ & ルーン</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なビルドガイド。16人のテスト済みヒーローの最強装備セット、カルマ武器、メインステータス、ルーン、元素別ビルドロジック。">
+    <meta name="keywords" content="DragonSword Awakening ビルド, 最強装備, カルマ, ルーン, ステータス, ルインズブレイカー, クリティカル率, クリティカルダメージ">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/build.html">
+    <meta property="og:title" content="DragonSword Awakening ビルドガイド">
+    <meta property="og:description" content="全ヒーローの最強装備、カルマ、ルーン、元素別ビルドロジック。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/build.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/build.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/build.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/build.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/build.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/build.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DragonSword Awakening ビルドガイド — 全ヒーローの最強装備、カルマ & ルーン",
+      "description": "DragonSword: Awakeningの完全なビルドガイド。16人のテスト済みヒーローの最強装備セット、カルマ武器、メインステータス、ルーン、元素別ビルドロジック。",
+      "url": "https://ds-guides.wiki/ja/build.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/build.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html" class="active">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">ヒーロービルド</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">完全なビルドガイド</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                全ヒーローの最強装備セット、カルマ武器、メインステータス、ルーン。ビルド前提: 完全覚醒したヒーロー、カルマは最大レベルでも完璧なサブステータスでもない。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約10分</span>
+                <span>⚔️ 16ヒーローのビルド</span>
+                <span>🔄 2026年8月更新</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Formula -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックビルドフォーミュラ</div>
+                <ol style="margin-top: 8px;">
+                    <li>まずヒーローを完全覚醒 (パッシブと強化されたセット効果をアンロック)</li>
+                    <li>コアとして3-piece ルインズブレイカーを使用 (ほぼ全員にDEF無視)</li>
+                    <li>クリティカル率約80%とクリティカルダメージ約150%を目標</li>
+                    <li>ヒーローの状態異常に合わせた2-piece元素セットを追加</li>
+                    <li>チーム: 1人が状態異常を付与し、次がそれをデトネート</li>
+                </ol>
+            </div>
+
+            <!-- Universal Stats -->
+            <h2 id="stats">📊 全ヒーロー共通ステータス優先順位</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">クリティカル率 ~80%</h3>
+                    <p class="card-desc">最初の目標。80%を下回るとダメージの安定性が大きく損なわれる。胸と脚で優先。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💥</div>
+                    <h3 class="card-title">クリティカルダメージ ~150%</h3>
+                    <p class="card-desc">クリティカル率がキャップしたら、クリティカルダメージをスタック。全ビルドのプライマリダメージ乗数。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">サブステータス優先順位</h3>
+                    <p class="card-desc">追加パワー > ATKパワーアップ > DEF無視。装備をリフォージしてこの順番でロール。</p>
+                </div>
+            </div>
+
+            <!-- Full Build Table -->
+            <h2 id="table">📋 完全ビルドテーブル (16ヒーロー)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ヒーロー</th>
+                            <th>専用カルマ</th>
+                            <th>装備セット</th>
+                            <th>メインステータス</th>
+                            <th>ルーン</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong><a href="lute.html">Lute</a></strong></td>
+                            <td>友のために召喚されし剣</td>
+                            <td>2 ホーリーアービター + 3 ルインズブレイカー</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, クリティカル率</td>
+                            <td>レゾルブ / アンプリフィケーション</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Johnny</strong></td>
+                            <td>放浪の剣</td>
+                            <td>3 ルインズブレイカー + 2 ベノムフォグシェイド</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, クリティカル率</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Castella</strong></td>
+                            <td>騒がしいデュエット</td>
+                            <td>3 ルインズブレイカー + 2 アズールゲイル</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, クリティカル率</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aria</strong></td>
+                            <td>爆発こそアート</td>
+                            <td>3 ブレイジングフレイム + 2 アズールゲイル</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, クリティカル率</td>
+                            <td>アンプリフィケーション / レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dana</strong></td>
+                            <td>きらめくティータイム</td>
+                            <td>3 ルインズブレイカー + 2 フロストストーム</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>アンプリフィケーション / レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalien</strong></td>
+                            <td>紅蓮の炎の選ばれし者</td>
+                            <td>3 ブレイジングフレイム + 2 ルインズブレイカー</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>アンプリフィケーション / レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Roxy</strong></td>
+                            <td>貴婦人の野生的な趣味</td>
+                            <td>3 ルインズブレイカー + 2 ブラッドステインドチェイス</td>
+                            <td>クリティカル率, ATKパワーアップ, クリティカルダメージ</td>
+                            <td>アンプリフィケーション / レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="theresia.html">Theresia</a></strong></td>
+                            <td>慈悲深き死刑宣告</td>
+                            <td>3 ルインズブレイカー + 2 ホーリーアービター</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette</strong></td>
+                            <td>神聖なる雷撃の洗礼</td>
+                            <td>3 ルインズブレイカー + 2 サンダーラッシュ</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="reina.html">Reina</a></strong></td>
+                            <td>王国を守る風</td>
+                            <td>3 ルインズブレイカー + 2 アズールゲイル</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalsion</strong></td>
+                            <td>太陽は再び昇る</td>
+                            <td>3 ブレイジングフレイム + 2 ルインズブレイカー</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, クリティカル率</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cerese</strong></td>
+                            <td>永遠のブリザード</td>
+                            <td>3 ルインズブレイカー + 2 フロストストーム</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ / アンプリフィケーション</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Astria</strong></td>
+                            <td>風に咲く風花</td>
+                            <td>3 ルインズブレイカー + 2 ホーリーアービター</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>アンプリフィケーション / レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eileen</strong></td>
+                            <td>騎士道としおりの間で</td>
+                            <td>3 アズールゲイル + 2 生命のバラード / ルインズブレイカー</td>
+                            <td>ATKパワーアップ, クリティカルダメージ, 最大HP</td>
+                            <td>レゾルブ / アンプリフィケーション</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Othello</strong></td>
+                            <td>太陽を討つ槍</td>
+                            <td>3 ルインズブレイカー + 2 フロストストーム</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="charlotte.html">Charlotte</a></strong></td>
+                            <td>闇に残されし信念</td>
+                            <td>3 ルインズブレイカー + 2 ベノムフォグシェイド</td>
+                            <td>ATKパワーアップ, クリティカル率, クリティカルダメージ</td>
+                            <td>レゾルブ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">* Alex, Sion, Tarteのビルドは現在テスト中。コミュニティテストの進行に伴いデータを更新予定。</p>
+
+            <!-- Element Build Logic -->
+            <h2 id="elements">🔥 元素別ビルドロジック</h2>
+
+            <h3>毒 / ポイズン (Johnny + Charlotte)</h3>
+            <ul>
+                <li><strong>Johnny</strong> — メイン毒DPS、フィールド上で毒を維持。2-piece ベノムフォグシェイドが毒ダメージを増幅。</li>
+                <li><strong>Charlotte</strong> — バースト上限に到達するにはJohnnyが毒を維持する必要がある。2人は互いのために設計されている。</li>
+            </ul>
+
+            <h3>火 / バーン (Aria + Kalien + Kalsion)</h3>
+            <ul>
+                <li><strong>Aria</strong> — エネイブラー。火傷と浮遊の両方を同時に付与。ReinaとKalsionの最高のセットアップヒーロー。3-piece ブレイジングフレイムを使用。</li>
+                <li><strong>Kalien</strong> — キツネクローンを通じて火傷を急速にスタック。キツネグラブとフィナーレがバースト + スタンを提供。</li>
+                <li><strong>Kalsion</strong> — 重撃手。ウェポンブレイズがダメージを強化するが、ピークには浮遊と火傷のエネイブラーが必要。</li>
+            </ul>
+
+            <h3>氷 / フリーズ (Othello + Cerese + Dana)</h3>
+            <ul>
+                <li><strong>Cerese</strong> — 最高の氷結付与者。多段ヒットダメージ + 強力な制御グルーピング。弱点: 大型ボス (長いアニメーション、アイスストームのデメリット)。</li>
+                <li><strong>Othello</strong> — フロストバイトDPS。最大ダメージウィンドウを発動するには速い氷結スタックが必要。専用カルマが低いベースクリティカルパッシブを補う。</li>
+                <li><strong>Dana</strong> — 柔軟。オフフィールドで氷結ダメージを与え、使い魔で敵を牽制、パーフェクトパリィ後にチームシールドを提供。</li>
+            </ul>
+
+            <h3>出血 / スタン (Roxy + Theresia + Astria)</h3>
+            <ul>
+                <li><strong>Roxy</strong> — あらゆる距離で速い出血スタックだが、ダメージを最大化するにはスタンが必要。TheresiaとAstriaが自然なパートナー。</li>
+                <li><strong>Theresia</strong> — オンフィールドDPS。出血と重いスタンの両方を同時に付与。</li>
+                <li><strong>Astria</strong> — 機動力をダメージと交換。雨のような矢がスタンとブレイクをスタック。味方が敵を制御している間に出力。クリティカル率が最優先。</li>
+            </ul>
+
+            <h3>疾風 / 浮遊 (Reina + Eileen)</h3>
+            <ul>
+                <li><strong>Reina</strong> — 単体スペシャリスト。浮遊中の敵に長いスキルコンボチェーン。2-piece アズールゲイルが疾風ダメージを直接増幅。Ariaが最高のエネイブラー。</li>
+                <li><strong>Eileen</strong> — 攻撃的な角度から浮遊をサポート。チームの移動速度とATKをブースト。堅実なクリティカルを持つ速い切り替えキャラクターとして優秀。最も柔軟な装備 (生命のバラードまたはルインズブレイカー)。</li>
+            </ul>
+
+            <h3>雷 / 感電 (Ornette)</h3>
+            <ul>
+                <li><strong>Ornette</strong> — ほとんどのチームを率いられる強力なサンダーボルトヒーロー。感電チームでピーク。2-piece サンダーラッシュが必須。</li>
+                <li>SionとTarteが利用できない場合、Luteが代替パートナーとして機能 (回復とATKバフがOrnetteの出力を維持)。</li>
+            </ul>
+
+            <!-- Special Heroes -->
+            <h2 id="special">🌟 特殊ヒーロー</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">Lute</h3>
+                    <p class="card-desc">ゲーム内で唯一の2人のヒーラーの1人 (もう1人はTarte)。ほぼすべてのチームの万能選択。最初の覚醒ノードがチームATKをブースト。ノックアウトとスタンチームにフィット。2-piece ホーリーアービターが回復出力を提供し、ルインズブレイカーが個人ダメージを維持。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">Tarte</h3>
+                    <p class="card-desc">もう1人のヒーラー。ビルドは現在最終テスト中。生存がボトルネックになる高難易度コンテンツで価値が大幅に上昇。</p>
+                </div>
+            </div>
+
+            <!-- Exclusive Karma -->
+            <h2 id="karma">🗡️ 専用カルマ入手方法</h2>
+            <p>専用カルマ武器 (Johnnyの放浪の剣やCereseの永遠のブリザードなど) は入手に<strong>残像の欠片</strong>と<strong>記憶</strong>が必要です。</p>
+            <ul>
+                <li>これらの素材をファームすることが、機能するビルドと完全最適化されたビルドの間の主な進行ゲート</li>
+                <li>完璧なルーンサブステータスを追う前に、メインにする予定のヒーローの欠片ファームを優先</li>
+                <li>基本カルマは交換ショップで購入可能で、ヒーロー固有ではない</li>
+                <li>7つの同一の基本カルマを使用して最大レベルに昇華 (1ベース + 6レプリカ)</li>
+                <li>ワールドボスが基本カルマをドロップ可能 (RNG)、デイリーでファーム可能</li>
+            </ul>
+
+            <!-- Gear Sets Reference -->
+            <h2 id="sets">🛡️ 装備セットリファレンス</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>セット名</th>
+                            <th>効果 / 使用場面</th>
+                            <th>使用者</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ルインズブレイカー (3-piece)</strong></td>
+                            <td>DEF無視 — コアDPSセット</td>
+                            <td>ほぼ全ヒーロー</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ベノムフォグシェイド (2-piece)</strong></td>
+                            <td>毒ダメージを増幅</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ブレイジングフレイム (3-piece)</strong></td>
+                            <td>火傷ダメージ増幅</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>フロストストーム (2-piece)</strong></td>
+                            <td>氷結ダメージ増幅</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ブラッドステインドチェイス (2-piece)</strong></td>
+                            <td>出血ダメージ増幅</td>
+                            <td>Roxy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>アズールゲイル (2-piece)</strong></td>
+                            <td>疾風 / 浮遊ダメージ</td>
+                            <td>Castella, Aria, Reina, Eileen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>サンダーラッシュ (2-piece)</strong></td>
+                            <td>感電ダメージ増幅</td>
+                            <td>Ornette</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ホーリーアービター (2-piece)</strong></td>
+                            <td>回復出力 / 光ダメージ</td>
+                            <td>Lute, Theresia, Astria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>生命のバラード (2-piece)</strong></td>
+                            <td>生存 / 回復</td>
+                            <td>Eileen (オプション)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Team Building Principle -->
+            <h2>🤝 チーム編成原則</h2>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 重要な洞察</div>
+                <p>ほとんどのDPSヒーローはダメージ上限に到達するために少なくとも1つの特定の条件が必要です：</p>
+                <ul style="margin-top: 8px;">
+                    <li>ReinaとKalsionは<strong>浮遊</strong>が必要</li>
+                    <li>Othelloは<strong>氷結スタック</strong>が必要</li>
+                    <li>Charlotteは<strong>フィールド上の毒</strong>が必要</li>
+                    <li>Roxyは<strong>スタン</strong>が必要</li>
+                </ul>
+                <p style="margin-top: 8px;">チームを確定する前に、メインDPSが何を必要としているかを特定し、少なくとも1人のチームメイトがそれを確実に付与できることを確認しましょう。</p>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">これらのビルドをチームに組み込む準備はできた？</h3>
+                <p style="margin-bottom: 16px;">あらゆるプレイスタイル向けの実証済みチーム構成をチェック。</p>
+                <a href="best-team.html" class="btn btn-primary">👥 最強チームビルドを見る</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#stats">共通ステータス</a></li>
+                    <li><a href="#table">ビルドテーブル</a></li>
+                    <li><a href="#elements">元素ロジック</a></li>
+                    <li><a href="#special">特殊ヒーロー</a></li>
+                    <li><a href="#karma">専用カルマ</a></li>
+                    <li><a href="#sets">装備セット</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html" class="active">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="classes.html">ヒーロー特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html">レイド & エンドゲーム <span class="count">2</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

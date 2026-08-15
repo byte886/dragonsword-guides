@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙之剑：觉醒 战斗系统攻略 — 状态异常、Signal Skills与连招</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）战斗系统深度解析。掌握状态异常、Signal Skills、换人连携、队伍定位和连招链以最大化伤害。">
+    <meta name="keywords" content="龙之剑觉醒 战斗, 状态异常, Signal Skills, 换人连携, 换人队伍, 连招, 攻略">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/combat.html">
+    <meta property="og:title" content="龙之剑：觉醒 战斗系统攻略">
+    <meta property="og:description" content="掌握状态异常、Signal Skills、换人连携和连招链。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/combat.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/combat.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/combat.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/combat.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/combat.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/combat.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "龙之剑：觉醒 战斗系统攻略 — 状态异常、Signal Skills与连招",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）战斗系统深度解析。掌握状态异常、Signal Skills、换人连携、队伍定位和连招链以最大化伤害。",
+      "url": "https://ds-guides.wiki/zh/combat.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/combat.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html" class="active">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">核心机制</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">战斗系统攻略</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                龙之剑的战斗比看起来更深。掌握三步循环：状态异常 → Signal Skills → 换人连携，释放毁灭性的连招链。
+            </p>
+            <div class="article-meta">
+                <span>📖 阅读时间：约10分钟</span>
+                <span>⚔️ 9种状态异常</span>
+                <span>🔄 3英雄换人系统</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Core Concept -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 核心理念</div>
+                <p>普通攻击只填充异常槽。<strong>真正的伤害来自Signal Skills</strong>，通过在你的三英雄队伍中叠加兼容的状态异常来触发。队伍协同比单个角色强度更重要。</p>
+            </div>
+
+            <!-- Three-Step Cycle -->
+            <h2 id="cycle">🔄 三步战斗循环</h2>
+            <p>每个成功的连招都遵循这个基本模式：</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">主动技能</h3>
+                    <p class="card-desc">使用主动技能施加第一个状态异常。每个英雄有2个不同属性和效果的主动技能。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">Signal Skills</h3>
+                    <p class="card-desc">异常触发时，场下英雄头像闪烁。在正确时机切入释放强力Signal Skill，施加下一个异常。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">换人连携</h3>
+                    <p class="card-desc">在连招窗口内继续切换英雄，连锁换人连携，维持压制并延长链条造成巨额伤害。</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 重要时机提示</div>
+                <p>看到英雄头像闪烁并不意味着Signal已就绪。你必须等待实际的状态异常触发，然后在狭窄窗口内切换。过早切换会浪费Signal机会。</p>
+            </div>
+
+            <!-- Status Ailments -->
+            <h2 id="ailments">🩸 全部9种状态异常详解</h2>
+            <p>每个英雄施加一种或多种状态异常。叠加兼容类型是触发Signal Skills的关键。</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>异常</th>
+                            <th>效果</th>
+                            <th>施加英雄</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>气绝</strong></td>
+                            <td>敌人无法行动——开启全额伤害窗口</td>
+                            <td>Lute, Castella, Kalien, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>流血</strong></td>
+                            <td>持续伤害，叠加后爆发</td>
+                            <td>Roxy, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>燃烧</strong></td>
+                            <td>火焰持续伤害</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>冰冻</strong></td>
+                            <td>减速→槽满时完全冻结</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>电击</strong></td>
+                            <td>雷电伤害+群体控制</td>
+                            <td>Ornette, Sion, Tarte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>中毒</strong></td>
+                            <td>毒素持续伤害</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>浮空</strong></td>
+                            <td>敌人被击飞——无法反击或格挡</td>
+                            <td>Castella, Johnny, Reina, Eileen, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>击倒</strong></td>
+                            <td>敌人被砸到地面——易受攻击</td>
+                            <td>Lute, Alex, Ornette, Sion, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>恢复</strong></td>
+                            <td>治疗队伍</td>
+                            <td>Lute, Tarte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Signal Skills -->
+            <h2 id="signal">⚡ Signal Skills深度解析</h2>
+            <p>Signal Skills是游戏中最强的攻击。以下是它们的工作原理：</p>
+
+            <h3>如何触发</h3>
+            <ol>
+                <li>攻击敌人填充他们的异常槽</li>
+                <li>槽满时，敌人进入状态异常状态</li>
+                <li>能响应该异常的场下英雄头像会闪烁</li>
+                <li>按该英雄的切换按钮——他们以特殊Signal Skill攻击入场</li>
+                <li>Signal Skill造成高伤害并施加下一个异常</li>
+            </ol>
+
+            <h3>关键特征</h3>
+            <ul>
+                <li>每个英雄有<strong>2个Signal能力</strong>（除了2个主动技能）</li>
+                <li>Signal Skills仅在敌人处于兼容异常状态时可用</li>
+                <li>场上英雄和等待英雄都可以激活Signal Skills</li>
+                <li>伤害公式围绕通过角色切换连锁这些技能展开</li>
+                <li>有效连接主动和Signal技能是战斗的全部核心</li>
+            </ul>
+
+            <!-- Switching Signals -->
+            <h2 id="switching">🔀 换人连携与连招连锁</h2>
+            <p>战斗的真正深度在于将多个英雄连锁在一起：</p>
+
+            <div class="card">
+                <h3 class="card-title">无限异常链</h3>
+                <p>当三个英雄都维持不同的异常覆盖时，你可以创造<strong>不间断的状态链</strong>：</p>
+                <ol style="margin-top: 12px;">
+                    <li>英雄A施加气绝 → 触发英雄B的Signal Skill</li>
+                    <li>英雄B以Signal Skill入场，施加流血 → 触发英雄C的Signal Skill</li>
+                    <li>英雄C以Signal Skill入场，施加浮空 → 触发英雄A的Signal Skill</li>
+                    <li>英雄A重新入场，再次施加气绝 → 循环重复</li>
+                </ol>
+                <p style="margin-top: 12px;">切换还会提供短暂的<strong>无敌帧（i-frames）</strong>直到你的下一次攻击，使其兼具进攻和防御性。</p>
+            </div>
+
+            <!-- Team Roles -->
+            <h2 id="roles">👥 三个队伍定位</h2>
+            <p>每个成功的队伍搭配都填补这三个位置。这些是<strong>连招中的定位，而非永久职业</strong>：</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">场上驱动者</h3>
+                    <p class="card-desc">保持在场上活跃，创造下一个可重复条件。让连招持续的队伍"引擎"。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Signal响应者</h3>
+                    <p class="card-desc">条件亮起时入场。造成大额Signal Skill伤害并施加链中的下一个异常。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌉</div>
+                    <h3 class="card-title">桥梁</h3>
+                    <p class="card-desc">延长压制或恢复间距，然后交还战斗。在大额伤害窗口之间维持链条。</p>
+                </div>
+            </div>
+
+            <!-- Best Teams by Content -->
+            <h2 id="teams">🎯 按内容类型的最佳队伍</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>队伍搭配</th>
+                            <th>最适合</th>
+                            <th>核心循环</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Theresia + Castella + Lute</strong></td>
+                            <td>Boss战</td>
+                            <td>Theresia输出，Lute破甲+辅助，Castella在气绝窗口爆发</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Castella/Lute</strong></td>
+                            <td>高血量目标（流血）</td>
+                            <td>奉献施加流血，神圣裁决加气绝，Roxy切入，Castella/Lute引爆</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Roxy + Ornette</strong></td>
+                            <td>开放世界探索</td>
+                            <td>Reina快速结束战斗，Roxy连锁连招，Ornette护盾保护</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Lute</strong></td>
+                            <td>精英怪</td>
+                            <td>流血施加+破甲+气绝，控制精英怪</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette + Castella + Alex/Lute</strong></td>
+                            <td>重甲Boss</td>
+                            <td>Ornette或Alex剥离力量护甲，触发挥倒，Castella利用倒地伤害</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combos -->
+            <h2 id="airborne">🪽 浮空连招队伍</h2>
+            <p>浮空是最强机制之一，因为被击飞的敌人<strong>无法反击或触发防御格挡</strong>。</p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">🏆 顶级浮空队伍</div>
+                <p><strong>Reina + Theresia + Roxy</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li>Reina是主要击飞者，保持敌人浮空</li>
+                    <li>Theresia处理空中连招伤害</li>
+                    <li>Roxy延长链条</li>
+                </ul>
+            </div>
+
+            <p><strong>备选：</strong>Reina + Castella + Lute/Aria</p>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 超级护甲注意事项</div>
+                <p>当敌人激活超级护甲时，他们无法被击飞或击倒。浮空队伍对这些敌人失去大量价值——总是准备好破甲选项。</p>
+            </div>
+
+            <!-- How to Practice -->
+            <h2 id="practice">🎮 如何练习战斗</h2>
+            <ol>
+                <li><strong>从简单开始</strong>——找一个耐打的敌人，练习施加一个状态异常，等待Signal提示，然后切换一次</li>
+                <li><strong>加入第三个英雄</strong>——两步响应感觉可靠后，引入第三个英雄完成完整链条</li>
+                <li><strong>Boss练习</strong>——Boss遵循相同序列：确定安全起手，预留后续攻击，需要闪避时中断链条</li>
+                <li><strong>闪避优先</strong>——总是优先闪避而非完成连招。死亡的英雄造成零伤害。</li>
+            </ol>
+
+            <!-- Core Principles -->
+            <h2>📜 六大核心战斗原则</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">异常是核心</h3>
+                    <p class="card-desc">普通攻击只填充槽。真正的伤害来自异常触发的Signal Skills。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">协同 > 伤害</h3>
+                    <p class="card-desc">三个强力英雄不等于强力队伍。互补的异常才能赢。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">时机就是一切</h3>
+                    <p class="card-desc">在狭窄的异常窗口内切换。过早切换浪费Signal机会。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">闪避优先</h3>
+                    <p class="card-desc">永远不要用连招换你将承受的伤害。先生存，再优化。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">匹配敌人</h3>
+                    <p class="card-desc">Boss需要持续伤害和破甲。开放世界需要机动性和控制。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">带破甲</h3>
+                    <p class="card-desc">超级护甲阻挡击飞/击倒。总是在后备中准备破甲者。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">准备好搭建你的完美队伍了吗？</h3>
+                <p style="margin-bottom: 16px;">查看我们经过验证的每种内容类型的队伍搭配。</p>
+                <a href="best-team.html" class="btn btn-primary">👥 查看最佳队伍搭配</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#cycle">三步循环</a></li>
+                    <li><a href="#ailments">状态异常</a></li>
+                    <li><a href="#signal">Signal Skills</a></li>
+                    <li><a href="#switching">换人连携</a></li>
+                    <li><a href="#roles">队伍定位</a></li>
+                    <li><a href="#teams">最佳队伍</a></li>
+                    <li><a href="#airborne">浮空连招</a></li>
+                    <li><a href="#practice">如何练习</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html" class="active">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">英雄特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">副本与终局 <span class="count">2</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

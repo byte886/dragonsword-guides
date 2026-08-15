@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonSword Awakening 초보자 가이드 — 초반 시간, 전투 및 팁</title>
+    <meta name="description" content="DragonSword: Awakening 완벽 초보자 가이드. 전투 기초, 팀 빌딩, 자원 관리, 탐험 팁과 초반에 피해야 할 흔한 실수들을 배우세요.">
+    <meta name="keywords" content="DragonSword Awakening 초보자 가이드, 초반, 전투 기초, 팀 빌딩, 팁, 실수">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/beginner-guide.html">
+    <meta property="og:title" content="DragonSword Awakening 초보자 가이드">
+    <meta property="og:description" content="초반 시간대 우선순위, 전투 기초, 팀 빌딩과 피해야 할 흔한 실수들.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/beginner-guide.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/beginner-guide.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/beginner-guide.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/beginner-guide.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/beginner-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/beginner-guide.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DragonSword Awakening 초보자 가이드 — 초반 시간, 전투 및 팁",
+      "description": "DragonSword: Awakening 완벽 초보자 가이드. 전투 기초, 팀 빌딩, 자원 관리, 탐험 팁과 초반에 피해야 할 흔한 실수들을 배우세요.",
+      "url": "https://ds-guides.wiki/ko/beginner-guide.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/beginner-guide.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html" class="active">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀 편성</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">시작하기</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">DragonSword: Awakening 초보자 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                오르비스에서의 첫 시간에 알아야 할 모든 것. 전투 기초, 팀 빌딩, 자원 전략, 탐험 팁과 모든 신규 플레이어가 피해야 할 실수들.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 8분</span>
+                <span>🎯 신규 플레이어 대상</span>
+                <span>🔄 2026년 8월 업데이트</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success" id="quick-answer">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>핵심 시스템이 열릴 때까지 메인 스토리를 따라가고, 신뢰할 수 있는 3영웅 전투 콤보 하나를 익히고, 초반 자원은 신중하게 사용하고, 주변 사이드 지역을 탐험하고, 모든 영웅을 동시에 육성하는 것은 피하세요.</p>
+            </div>
+
+            <!-- Beginner Checklist -->
+            <h2 id="checklist">✅ 초보자 체크리스트 (13단계)</h2>
+            <ol>
+                <li>오프닝 튜토리얼 완료하기</li>
+                <li>회피와 카메라 조작 익히기</li>
+                <li>액티브 스킬 이해하기</li>
+                <li>내 영웅이 어떤 상태 이상을 거는지 파악하기</li>
+                <li>시그널 스킬이 어떻게 나타나는지 배우기</li>
+                <li>작동하는 3영웅 팀 하나 만들기</li>
+                <li>핵심 시스템이 열릴 때까지 메인 스토리 따라가기</li>
+                <li>새 영웅과 영입 메뉴 확인하기</li>
+                <li>희귀 강화 재료 아껴두기</li>
+                <li>주변 동굴과 망루 지하 탐험하기</li>
+                <li>재료 수집하고 요리 테스트하기</li>
+                <li>패밀리어 기능 확인하기</li>
+                <li>SSD에 게임 설치하고 실행하기</li>
+            </ol>
+
+            <!-- What To Do First -->
+            <h2 id="first-steps">🎯 가장 먼저 할 일</h2>
+            
+            <h3>1. 오프닝 튜토리얼 완료하기</h3>
+            <p>오프닝 시퀀스는 기본 공격, 액티브 스킬, 회피, 카메라 조작, 영웅 교체, 상태 표시기, 시그널 프롬프트를 가르쳐줍니다. 이것들을 건너뛰지 마세요 — 전투 시스템은 겉보기보다 깊이가 있으며, 튜토리얼이 이후 모든 것의 기초를 다져줍니다.</p>
+
+            <h3>2. 핵심 시스템이 열릴 때까지 메인 스토리 따라가기</h3>
+            <p>DragonSword는 많은 시스템을 스토리 진행 뒤에 숨겨두고 있습니다. 최적의 초반 리듬은: <strong>메인 퀘스트 → 새 시스템 잠금 해제 → 테스트해보기 → 주변 지역 탐험 → 스토리로 복귀</strong>입니다. 모든 것에 도달할 도구가 생기기 전에 지도를 100% 완료하려고 하지 마세요.</p>
+
+            <h3>3. 신뢰할 수 있는 전투 콤보 하나 익히기</h3>
+            <p>다른 것을 실험하기 전에 3영웅 콤보 하나를 마스터하세요. 기본 패턴은:</p>
+            <ul>
+                <li><strong>시동자</strong>가 첫 번째 상태 이상을 겁니다</li>
+                <li><strong>연결자</strong>가 시그널 스킬로 응답하고 다음 기회를 만듭니다</li>
+                <li><strong>마무리꾼</strong>이 기회를 큰 데미지나 군중 제어로 전환합니다</li>
+            </ul>
+
+            <!-- Combat System -->
+            <h2 id="combat">⚔️ 전투 시스템 기초</h2>
+            <p>DragonSword: Awakening은 오픈월드 탐험과 상태 이상, 시그널 스킬, 캐릭터 교체를 중심으로 구축된 3영웅 태그 액션 전투 시스템을 결합합니다. 개별 캐릭터의 힘은 전투의 일부일 뿐 — 팀 시너지가 더 중요합니다.</p>
+
+            <h3>세 가지 핵심 메커니즘</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🩸</div>
+                    <h3 class="card-title">상태 이상</h3>
+                    <p class="card-desc">19명의 플레이 가능 영웅 각각은 고유한 상태 이상 능력(스턴, 화상, 빙결, 감전, 출혈, 독, 공중, 넉다운, 회복)을 가지고 있습니다. 이것들이 모든 콤보의 기초입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">시그널 스킬</h3>
+                    <p class="card-desc">필요한 전투 조건이 충족되면 사용 가능해지는 강력한 후속 공격. 같은 적에 호환되는 상태 이상이 중첩되면 이 스킬들이 발동합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">스위칭 시그널</h3>
+                    <p class="card-desc">영웅이 콤보 중에 전투에 들어가고 나가는 것을 계속할 수 있게 합니다. 적절한 타이밍에 교체하면 체인이 연장되고 짧은 무적 프레임(i-frame)이 주어집니다.</p>
+                </div>
+            </div>
+
+            <h3>베테랑 플레이어의 전투 팁</h3>
+            <ul>
+                <li>스킬 쿨다운은 적을 공격하면 줄어듭니다 — 적극적으로 플레이하세요</li>
+                <li>캐릭터 교체는 다음 공격이나 시그널 스킬까지 짧은 무적 프레임을 줍니다</li>
+                <li>흰색 스태거 바가 있는 적은 띄우기 쉽지만, 슈퍼 아머 적은 그렇지 않습니다</li>
+                <li>각 캐릭터는 액티브 스킬이 2개뿐이지만, 전투 중 시그널 스킬과 잡기 스킬도 있습니다</li>
+                <li>회피 공격(회피 + 공격)은 기술의 중요한 부분입니다</li>
+            </ul>
+
+            <!-- First Team Building -->
+            <h2 id="team">👥 첫 팀 만들기</h2>
+            <p>모든 팀에는 세 가지 역할이 필요합니다. 이것들은 <strong>팀 포지션일 뿐 영구 직업이 아닙니다</strong> — 영웅은 누구와 짝을 이루느냐에 따라 다른 역할을 맡을 수 있습니다.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>역할</th>
+                            <th>하는 일</th>
+                            <th>초반 추천 예시</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>시동자</strong></td>
+                            <td>첫 번째 상태를 만들고 콤보를 시작</td>
+                            <td>루트(스턴), 카스텔라(스턴/공중)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>연결자</strong></td>
+                            <td>상태에 응답하고 다음 기회를 만듦</td>
+                            <td>아리아(화상), 다나(빙결)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>마무리꾼</strong></td>
+                            <td>기회를 데미지나 제어로 전환</td>
+                            <td>조니(독/공중), 샬롯(독)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <div class="alert-title">💡 추천 초보 팀</div>
+                <p><strong>루트 + 다나 + 아리아</strong>는 세 가지 다른 상태 유형(스턴, 빙결, 화상)을 커버하며 신뢰할 수 있는 기초입니다. 루트는 치유도 할 수 있어 배우는 동안 생존 여유를 줍니다.</p>
+            </div>
+
+            <h3>액션 지향 vs 편안한 플레이 스타일</h3>
+            <ul>
+                <li><strong>액션 팀</strong> (고스킬, 고리워드): 샬롯 + 조니 + 레이나 — 모두 고DPS, 기동성 좋음, 잘 플레이하면 엔드게임 클리어 가능</li>
+                <li><strong>원거리 편안한 팀</strong> (쉬운 엔드게임): 시온 + 오델로 + 다나 — 원거리 딜, 포지셔닝이 관대</li>
+            </ul>
+
+            <!-- Resource Strategy -->
+            <h2 id="resources">💰 자원 전략</h2>
+            <p>초반 가장 중요한 원칙은 <strong>골고루 투자하는 것이 아니라 집중하는 것</strong>입니다. 재료를 모든 영웅에게 얕게 나눠주면 전체적으로 약한 팀만 남게 됩니다.</p>
+
+            <h3>핵심 원칙</h3>
+            <ul>
+                <li>시동자 하나, 연결자 하나, 마무리꾼 하나를 육성 — 메인 팀에 집중</li>
+                <li>자주 쓰는 스킬부터 강화, 모든 것을 동등하게 레벨업하지 마세요</li>
+                <li>희귀 재료는 비축 — 나중에 필요합니다</li>
+                <li>영입 통화(운명의 초대장)를 너무 일찍 쓰지 마세요 — 어떤 영웅을 원하는지 알 때까지 기다리세요</li>
+                <li>세트 보너스는 5개가 아니라 3개만 있으면 발동 — 더 좋은 스탯을 위해 3+2로 세트를 섞을 수 있습니다</li>
+            </ul>
+
+            <h3>주요 통화</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>통화</th>
+                            <th>획득 방법</th>
+                            <th>사용처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>운명의 초대장</strong></td>
+                            <td>스토리 챕터, 영웅 퀘스트</td>
+                            <td>교환 상점에서 영웅 잠금 해제 (각 1개)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>신성한 빛의 조각</strong></td>
+                            <td>상자, 미니보스 활동</td>
+                            <td>각종 강화</td>
+                        </tr>
+                        <tr>
+                            <td><strong>메달</strong></td>
+                            <td>퀘스트 완료</td>
+                            <td>거의 모든 재료와 스킬 강화 두루마리</td>
+                        </tr>
+                        <tr>
+                            <td><strong>달의 열쇠</strong></td>
+                            <td>탐험, 퀘스트, 스토리</td>
+                            <td>특별 보물 상자 열기</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Exploration Tips -->
+            <h2 id="exploration">🗺️ 탐험 팁</h2>
+            <ul>
+                <li>탐험할 때 주변 이동 거점을 활성화 — 빠른 이동이 엄청난 시간을 절약</li>
+                <li>건물, 망루, 동굴을 확인 — 숨겨진 상자와 아이템이 실내에 많음</li>
+                <li>재료를 수집하고 주민과 대화 — 요리가 유용한 버프를 제공</li>
+                <li>아직 완료할 수 없는 장소는 표시 — 더 좋은 도구로 돌아옵니다</li>
+                <li><strong>수중 지역</strong>에는 숨겨진 콘텐츠가 많음 — 스토리를 진행해 수중 탈것을 일찍 잠금 해제</li>
+                <li>지역 보스는 매일 오전 9시에 새로고침 — 스킬 두루마리와 단조 주형을 드롭</li>
+            </ul>
+
+            <h3>탈것 시스템</h3>
+            <p>탈것은 용병 레벨링과 스토리 진행을 통해 잠금 해제됩니다. 주요 팁:</p>
+            <ul>
+                <li>같은 탈것의 다른 변종은 다른 탈것에 사용할 수 있는 두 번째 스킬을 잠금 해제</li>
+                <li>디럭스 에디션 아기 용은 공중에서 어느 방향으로든 대시 가능</li>
+                <li>브라이트 크로우 티트(초보 용병 잠금 해제)는 두 번째 변종을 위해 20개의 미니게임을 완료하면 공중 대시 가능</li>
+                <li>수중에 갈 수 있는 탈것은 하나뿐 — 스토리 진행으로 일찍 잠금 해제</li>
+            </ul>
+
+            <!-- Common Mistakes -->
+            <h2 id="mistakes">❌ 흔한 초보자 실수</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">너무 일찍 모든 영웅 강화</h3>
+                    <p class="card-desc">재료를 19명 모든 영웅에게 얕게 나누면 강한 팀이 없습니다. 먼저 3-4명의 영웅에 집중하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">상태 이상 무시</h3>
+                    <p class="card-desc">상태를 걸지 않으면 시그널 스킬이 거의 나타나지 않고 게임의 가장 깊은 전투 시스템을 놓치게 됩니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">교체를 쿨다운 리셋으로 생각</h3>
+                    <p class="card-desc">무작위 교체는 콤보 구조를 깨뜨립니다. 스위칭 시그널을 발동하고 체인을 연장하기 위해 의도적으로 교체하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4️⃣</div>
+                    <h3 class="card-title">티어 리스트 맹목 복사</h3>
+                    <p class="card-desc">시너지가 나쁜 S급 영웅 팀은 잘 구성된 B급 팀보다 성능이 떨어집니다. 복사하기 전에 팀 순서를 이해하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5️⃣</div>
+                    <h3 class="card-title">영입 통화 일찍 소비</h3>
+                    <p class="card-desc">운명의 초대장은 한정적입니다. 어떤 영웅이 내 플레이 스타일에 맞는지 이해할 때까지 기다렸다가 잠금 해제하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6️⃣</div>
+                    <h3 class="card-title">사이드 탐험 무시</h3>
+                    <p class="card-desc">동굴, 망루, 수중 지역에는 귀중한 재료, 보물 지도, 마스터 스킬 서책이 숨겨져 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- Boss Tips -->
+            <h2 id="boss">👹 보스전 팁</h2>
+            <ul>
+                <li>보스가 주 상태 이상에 저항하는지 확인 — 필요하면 다른 상태로 교체</li>
+                <li>셋업 스킬이 계속 빗나가면, 그 페이즈에 보스가 슈퍼 아머를 가지고 있는지 확인</li>
+                <li>긴 애니메이션은 끼어들 수 있음 — 어떤 스킬이 안전하고 위험한지 배우세요</li>
+                <li>배우는 동안은 생존 우선 — 패턴을 알면 데미지 최적화 가능</li>
+                <li>큰 공격을 피할 때 교체 무적 프레임을 사용</li>
+            </ul>
+
+            <!-- PC Setup -->
+            <h2>🖥️ PC 설정 권장사항</h2>
+            <ul>
+                <li><strong>SSD에 설치</strong> — 게임이 큰 오픈월드 지역을 로드하므로, SSD가 팝인과 로딩 시간을 극적으로 줄임</li>
+                <li>그래픽 드라이버를 최신 버전으로 업데이트</li>
+                <li>긴 세션 전에 PC 재시작</li>
+                <li>RAM과 CPU를 확보하기 위해 백그라운드 애플리케이션 종료</li>
+                <li>프레임 레이트 제한 설정 확인 — 프레임 제한 없음은 일부 시스템에서 불안정을 유발할 수 있음</li>
+            </ul>
+
+            <!-- Next Steps -->
+            <h2>📚 다음 단계</h2>
+            <p>기초에 익숙해지면 이 시스템들을 더 깊이 파보세요:</p>
+            <div class="card-grid">
+                <a href="combat.html" class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">전투 시스템 심층 분석</h3>
+                    <p class="card-desc">상태 이상, 시그널 스킬, 스위칭 시그널과 고급 콤보 체인을 마스터하세요.</p>
+                    <span class="card-link">전투 가이드 읽기 →</span>
+                </a>
+                <a href="best-team.html" class="card">
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title">최고 팀 빌드</h3>
+                    <p class="card-desc">초반, 엔드게임 레이드, 시련의 탑을 위한 검증된 팀 편성.</p>
+                    <span class="card-link">팀 빌드 보기 →</span>
+                </a>
+                <a href="tier-list.html" class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3 class="card-title">캐릭터 티어 리스트</h3>
+                    <p class="card-desc">19명 모든 영웅의 엔드게임 성능 순위, 최고 역할과 팀 포지션 포함.</p>
+                    <span class="card-link">티어 리스트 보기 →</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 내용</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#quick-answer">빠른 답변</a></li>
+                    <li><a href="#checklist">초보자 체크리스트</a></li>
+                    <li><a href="#first-steps">가장 먼저 할 일</a></li>
+                    <li><a href="#combat">전투 기초</a></li>
+                    <li><a href="#team">첫 팀</a></li>
+                    <li><a href="#resources">자원 전략</a></li>
+                    <li><a href="#exploration">탐험 팁</a></li>
+                    <li><a href="#mistakes">흔한 실수</a></li>
+                    <li><a href="#boss">보스 팁</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 탐색</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html" class="active">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 및 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 편성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">영웅 특성 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 및 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">레이드 및 엔드게임 <span class="count">2</span></a></li>
+                    <li><a href="map.html">지도 및 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">멀티플레이어 및 협동 <span class="count">2</span></a></li>
+                    <li><a href="review.html">리뷰 및 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wiki는 DragonSword: Awakening의 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. Hound13 Inc.와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, Hound13와 제휴되지 않음.</span>
+            <span>최종 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 Hound13 Inc.의 상표입니다. 이 사이트는 커뮤니티 리소스이며 Hound13 Inc.의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte 攻略 — 龙之剑：觉醒：配装、队伍与中毒连招</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）Charlotte完整攻略。S级刺客的最佳配装、队伍搭配、中毒/浮空连招、隐身分身机制和战斗技巧。">
+    <meta name="keywords" content="龙之剑觉醒 Charlotte, 刺客, 中毒, 浮空, 猛毒, 配装, 队伍, 隐身分身">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/charlotte.html">
+    <meta property="og:title" content="Charlotte 攻略 — 龙之剑：觉醒">
+    <meta property="og:description" content="S级刺客的最佳配装、队伍、中毒连招和隐身机制。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/charlotte.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/charlotte.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/charlotte.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/charlotte.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/charlotte.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/charlotte.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Charlotte 攻略 — 龙之剑：觉醒：配装、队伍与中毒连招",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）Charlotte完整攻略。S级刺客的最佳配装、队伍搭配、中毒/浮空连招、隐身分身机制和战斗技巧。",
+      "url": "https://ds-guides.wiki/zh/charlotte.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/charlotte.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html" class="active">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">伦图斯起义军 · S级</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Charlotte — 情报员</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                高风险高回报的近战刺客DPS。施加中毒后转化为浮空开启连招链。隐身分身增加额外压制。熟练操作下表现出色，失误惩罚严重。
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 双持匕首</div>
+                <div class="hero-stat"><span class="dot"></span> 猛毒特性</div>
+                <div class="hero-stat"><span class="dot"></span> 中毒/浮空/击倒</div>
+                <div class="hero-stat"><span class="dot"></span> 兑换商店</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 快速答案</div>
+                <p>Charlotte是最全能的S级英雄之一。她施加中毒后转化为浮空，实现连续的Signal Skill和换人连招链。最佳队伍：Charlotte + Johnny + Reina。配装用3件遗迹破坏者 + 2件毒雾暗影。操作上限高——不适合想要安全远程玩法的玩家。</p>
+            </div>
+
+            <!-- Character Info -->
+            <h2 id="overview">📋 角色概览</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td><strong>全名</strong></td><td>Charlotte（夏洛特）</td></tr>
+                        <tr><td><strong>阵营</strong></td><td>伦图斯起义军</td></tr>
+                        <tr><td><strong>称号</strong></td><td>情报员</td></tr>
+                        <tr><td><strong>英雄特性</strong></td><td>猛毒</td></tr>
+                        <tr><td><strong>武器</strong></td><td>双持匕首（近战）</td></tr>
+                        <tr><td><strong>状态异常</strong></td><td>中毒、浮空、击倒</td></tr>
+                        <tr><td><strong>解锁方式</strong></td><td>兑换商店（1张命运的邀请函）</td></tr>
+                        <tr><td><strong>专属Karma</strong></td><td>黑暗中留下的信念</td></tr>
+                        <tr><td><strong>强度评级</strong></td><td><span class="tier-badge tier-s">S级</span></td></tr>
+                        <tr><td><strong>玩法风格</strong></td><td>刺客DPS、主动压制驱动者、状态施加者</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Best Build -->
+            <h2 id="build">⚔️ 最佳配装</h2>
+            <div class="card">
+                <h3 class="card-title">标准DPS配装</h3>
+                <div class="table-wrapper" style="margin-top: 16px;">
+                    <table>
+                        <tbody>
+                            <tr><td><strong>专属Karma</strong></td><td>黑暗中留下的信念</td></tr>
+                            <tr><td><strong>装备套装</strong></td><td>3件遗迹破坏者 + 2件毒雾暗影</td></tr>
+                            <tr><td><strong>主属性</strong></td><td>攻击力提升 → 暴击率 → 暴击伤害</td></tr>
+                            <tr><td><strong>副属性</strong></td><td>状态异常效率 > 额外力量</td></tr>
+                            <tr><td><strong>符文</strong></td><td>决意</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>专属Karma效果</h4>
+                    <p>当分身重新释放Q技能时，它会朝面向方向跳跃并爆炸——为你的循环增加显著额外伤害。</p>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>属性优先级顺序</h4>
+                    <ol>
+                        <li><strong>攻击力</strong>——Charlotte的工作是让每个机会都造成伤害</li>
+                        <li><strong>状态异常效率</strong>——中毒、击倒和浮空压制将单人压制转化为Signal Skill序列</li>
+                        <li><strong>暴击率和暴击伤害</strong>——让刺杀窗口正确缩放</li>
+                        <li><strong>生存</strong>——只有在死亡确实阻碍通关时才加。太防御会降低Charlotte的价值</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Best Teams -->
+            <h2 id="teams">👥 最佳队伍搭配</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>队伍</th>
+                            <th>最适合</th>
+                            <th>核心循环</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Charlotte + Johnny + Reina</strong></td>
+                            <td>最佳伤害队</td>
+                            <td>Charlotte主DPS，Johnny副DPS，Reina连招支援。游戏中最佳搭配之一。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Reina</strong></td>
+                            <td>动作密集的终局</td>
+                            <td>Charlotte驱动压制，Reina支援空中和间距。Charlotte是驱动者，Reina帮助队伍浮空或重新站位。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Johnny + Eileen</strong></td>
+                            <td>中毒-浮空队</td>
+                            <td>Eileen作为增益和浮空施加者，Charlotte输出。稳定的中毒持续伤害+浮空爆发。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Eileen + Dana</strong></td>
+                            <td>"痛苦列车"</td>
+                            <td>Eileen增益，Charlotte拉怪并砸下，Dana单人叠加中毒。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Charlotte + Lute/Reina</strong></td>
+                            <td>通用</td>
+                            <td>第三号位按需选择：Lute治疗，Reina连招延长。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Combat Flow -->
+            <h2 id="combat">🔄 战斗流程（6步）</h2>
+            <div class="card">
+                <ol>
+                    <li><strong>测试击飞反应</strong>——战斗开始时，测试敌人对浮空的反应</li>
+                    <li><strong>保持视角可读</strong>——近战角色受坏视角影响。小心站位</li>
+                    <li><strong>使用亮起的队友输入</strong>——Signal Skill窗口出现时，及时切换</li>
+                    <li><strong>用Reina拉开距离</strong>——需要脱离时，切到Reina安全重新站位</li>
+                    <li><strong>回到Charlotte</strong>——通过队友切换重置战斗节奏</li>
+                    <li><strong>先中毒，后浮空</strong>——先叠加中毒，然后转化为浮空开启连招</li>
+                </ol>
+            </div>
+
+            <!-- Strengths -->
+            <h2 id="strengths">✅ 优势</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3 class="card-title">S级全能性</h3>
+                    <p class="card-desc">最容易围绕搭建的英雄之一。能融入的队伍搭配比几乎任何其他英雄都多。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☠️</div>
+                    <h3 class="card-title">双异常力量</h3>
+                    <p class="card-desc">同时施加中毒和浮空。将中毒压制转化为浮空连招机会。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👤</div>
+                    <h3 class="card-title">隐身分身</h3>
+                    <p class="card-desc">隐身技能创造分身。配合专属Karma，分身跳跃并爆炸造成额外伤害。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💨</div>
+                    <h3 class="card-title">高机动性</h3>
+                    <p class="card-desc">刺客定位，快速接近和脱离。在地面和空中连招之间快速转换。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3 class="card-title">连招驱动者</h3>
+                    <p class="card-desc">开启队伍Signal Skill和换人连招序列。让进攻队伍运转的引擎。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">前期强势</h3>
+                    <p class="card-desc">中毒在前期（50级前）表现极佳。非常适合推进流程。</p>
+                </div>
+            </div>
+
+            <!-- Weaknesses -->
+            <h2 id="weaknesses">❌ 劣势</h2>
+            <ul>
+                <li><strong>操作要求高</strong>——高投资高回报。需要精确闪避和时机</li>
+                <li><strong>近战惩罚</strong>——不如远程配置宽容。失误被重罚</li>
+                <li><strong>视角问题</strong>——近战战斗可能导致视角不可读</li>
+                <li><strong>中毒后期衰减</strong>——50级后，Boss可能有更高的中毒抗性</li>
+                <li><strong>需要队友</strong>——最佳表现需要Reina或类似支援才能发光</li>
+            </ul>
+
+            <!-- Combat Tips -->
+            <h2 id="tips">🎮 战斗技巧</h2>
+            <ol>
+                <li><strong>先测试浮空</strong>——战斗开始时总是测试敌人的浮空反应</li>
+                <li><strong>保持视角可读</strong>——注意近战站位以避免视角遮挡</li>
+                <li><strong>使用亮起的队友输入</strong>——Signal Skill窗口出现时立即切换</li>
+                <li><strong>Reina拉间距</strong>——需要创造空间或重新站位时切到Reina</li>
+                <li><strong>中毒起手</strong>——先叠加中毒，然后转化为浮空开启连招</li>
+                <li><strong>分身爆炸</strong>——利用专属Karma效果让分身跳跃并爆炸造成额外伤害</li>
+                <li><strong>快速重置</strong>——压制下降时通过队友切换重置战斗节奏</li>
+            </ol>
+
+            <!-- Common Mistakes -->
+            <h2>⚠️ 常见错误</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">太防御</h3>
+                    <p class="card-desc">过度投资生存属性会降低Charlotte的伤害价值。只有在死亡确实是问题时才加防御。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">忽略异常效率</h3>
+                    <p class="card-desc">没有状态异常效率，中毒叠加太慢。这个属性是她循环的核心。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">浪费分身</h3>
+                    <p class="card-desc">不利用隐身分身和专属Karma爆炸会浪费她相当一部分伤害。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">追坏视角</h3>
+                    <p class="card-desc">视角不可读时继续追压制会被惩罚。脱离并重新站位。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">没有Reina支援</h3>
+                    <p class="card-desc">Charlotte的最佳表现需要像Reina这样的队友。单人carry会限制她的上限。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">当远程玩</h3>
+                    <p class="card-desc">Charlotte是近战刺客。如果想要安全的远程玩法，选Cerese或Othello。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">想看全部英雄排名？</h3>
+                <p style="margin-bottom: 16px;">查看我们完整的强度榜和角色数据库。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 查看强度榜</a>
+                    <a href="characters.html" class="btn btn-secondary">👥 全部角色</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview">角色概览</a></li>
+                    <li><a href="#build">最佳配装</a></li>
+                    <li><a href="#teams">最佳队伍</a></li>
+                    <li><a href="#combat">战斗流程</a></li>
+                    <li><a href="#strengths">优势</a></li>
+                    <li><a href="#weaknesses">劣势</a></li>
+                    <li><a href="#tips">战斗技巧</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">其他英雄</div>
+                <ul class="sidebar-nav">
+                    <li><a href="lute.html">⚔️ Lute</a></li>
+                    <li><a href="theresia.html">🔨 Theresia</a></li>
+                    <li><a href="reina.html">🌪️ Reina</a></li>
+                    <li><a href="characters.html">📋 全部角色</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レイド & ルーンガイド — DragonSword Awakening: 全ルーンタイプ、レイドメカニクス & マルチプレイ</title>
+    <meta name="description" content="DragonSword: Awakeningの完全なレイド & ルーンガイド。全5ルーンタイプ、最強ルーン優先度、ルーンスロット解除、ルーンダンジョン vs レイド、マルチプレイメカニクス、難易度進行。">
+    <meta name="keywords" content="DragonSword Awakening レイド, ルーン, レゾルブ, アンプリフィケーション, コンセントレーション, ルーンスロット, ルーンダンジョン, マルチプレイ">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ja/raid.html">
+    <meta property="og:title" content="レイド & ルーンガイド — DragonSword Awakening">
+    <meta property="og:description" content="全ルーンタイプ、最強優先度、スロット解除、レイドメカニクス、マルチプレイ。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/raid.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/raid.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/raid.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/raid.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/raid.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/raid.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "レイド & ルーンガイド — DragonSword Awakening: 全ルーンタイプ、レイドメカニクス & マルチプレイ",
+      "description": "DragonSword: Awakeningの完全なレイド & ルーンガイド。全5ルーンタイプ、最強ルーン優先度、ルーンスロット解除、ルーンダンジョン vs レイド、マルチプレイメカニクス、難易度進行。",
+      "url": "https://ds-guides.wiki/ja/raid.html",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ja/raid.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                <li><a href="tier-list.html">ティアリスト</a></li>
+                <li><a href="characters.html">キャラクター</a></li>
+                <li><a href="build.html">ビルド</a></li>
+                <li><a href="best-team.html">チーム</a></li>
+                <li><a href="combat.html">戦闘</a></li>
+                <li><a href="map.html">マップ</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steamでプレイ</a></li>
+            </ul>
+            <button class="theme-toggle" title="ライトモードに切り替え">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">エンドゲームコンテンツ</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">レイド & ルーンガイド</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                レイドはルーンの主要入手先 — 4スター以上の装備にソケットする強力なステータス強化アイテム。クラフトツールでルーンスロットを解除し、ルーンダンジョンでSSRルーンをファーム、最大3人でマルチプレイヤーレイドに挑もう。
+            </p>
+            <div class="article-meta">
+                <span>📖 読了時間: 約7分</span>
+                <span>💎 5ルーンタイプ</span>
+                <span>👥 3人協力</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ クイックアンサー</div>
+                <p>ルーンは4スター以上の装備に付けるステータス強化。DPS最優先: レゾルブ (ATK) > アンプリフィケーション (クリティカルダメージ) > コンセントレーション (クリティカル率)。名もなき職人のクラフトツール (レイド入手) でルーンスロットを解除。Lv62以上のルーンダンジョンでSSRルーン確定入手。レイドはロビー + 招待コードで最大3人まで対応。目標: クリティカル率80% + クリティカルダメージ150%。</p>
+            </div>
+
+            <!-- Rune System -->
+            <h2 id="runes">💎 ルーンシステム概要</h2>
+            <ul>
+                <li>ルーンは装備に付ける<strong>ステータス強化アイテム</strong></li>
+                <li>各ルーンは<strong>1つの特定ステータス</strong>を対象とする</li>
+                <li>主に<strong>レイド</strong>を通じて入手</li>
+                <li>5つのレアリティ段階: 損傷 → 無傷 → 精製 → 輝かしい → 完璧</li>
+                <li>RNGがルーンの強さに独立して影響する — 高レアリティが必ずしも大きな強化とは限らない</li>
+            </ul>
+
+            <!-- 5 Rune Types -->
+            <h2 id="types">🔮 全5ルーンタイプ</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ルーン</th>
+                            <th>ステータス強化</th>
+                            <th>最適</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>レゾルブ</strong></td>
+                            <td>固定ATK (攻撃力)</td>
+                            <td>全DPSヒーロー。万能の最強装備。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>アンプリフィケーション</strong></td>
+                            <td>クリティカルダメージ</td>
+                            <td>クリティカル率の高いDPS。150%以上でレイド性能が急上昇。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>コンセントレーション</strong></td>
+                            <td>クリティカルヒット確率</td>
+                            <td>クリティカル率キャップに届かないDPS。通常は装備/カルマで補う方が効率的。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ガーディアン</strong></td>
+                            <td>固定DEF (防御力)</td>
+                            <td>難しいレイドコンテンツのタンク/サポート。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>バイタリティ</strong></td>
+                            <td>最大HP</td>
+                            <td>難しいレイドでの生存。ダメージは上がらない。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rune Priority -->
+            <h2 id="priority">🎯 最強ルーン優先度</h2>
+            <h3>DPSヒーロー</h3>
+            <ol>
+                <li><strong>レゾルブ</strong> — 固定ATKは全ダメージ計算に適用。万能に有用。</li>
+                <li><strong>アンプリフィケーション</strong> — クリティカルダメージ。150%以上でレイド性能が顕著に向上。</li>
+                <li><strong>コンセントレーション</strong> — クリティカル率。率が不安定な場合のみ検討。通常は装備とカルマで補う方が効率的。</li>
+            </ol>
+            <h3>タンク / サポートヒーロー</h3>
+            <ol>
+                <li><strong>ガーディアン</strong> — 生存用の固定DEF</li>
+                <li><strong>バイタリティ</strong> — バーストダメージへの緩衝用の最大HP</li>
+            </ol>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 目標ステータス</div>
+                <p>メインDPSで約<strong>クリティカル率80%</strong>と<strong>クリティカルダメージ150%</strong>を目指そう。これらのベンチマークに達したら、ATKとDEF無視に焦点を移す。</p>
+            </div>
+
+            <!-- Rune Slot Unlocking -->
+            <h2 id="slots">🔓 ルーンスロット解除方法</h2>
+            <p>ルーンスロットは<strong>最初から解除されていない</strong>。手動で開ける必要がある：</p>
+            <ol>
+                <li><strong>4スター以上</strong>の装備を選択</li>
+                <li>装備のロックされたルーンスロットをクリックするか、調査中にTriangle/Yを押す</li>
+                <li>スロットを開けるために<strong>名もなき職人のクラフトツール</strong>を1つ消費</li>
+                <li>各スロットにそれぞれクラフトツールが必要</li>
+                <li>目的のルーンを挿入 — 合計ステータス強化が装備サマリーに表示される</li>
+            </ol>
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ よくある落とし穴</div>
+                <p>名もなき職人のクラフトツールが尽きるのが、プレイヤーがルーン進行で行き詰まる一番の理由。メインチームの永続装備のスロットのみ解除しよう — 一時的な装備にツールを無駄にするな。</p>
+            </div>
+
+            <!-- Rune Farming -->
+            <h2 id="farming">⛏️ ルーンファーム場所</h2>
+
+            <h3>1. ルーンダンジョン (魔源旋涡)</h3>
+            <ul>
+                <li><strong>Lv50</strong>でアンロック</li>
+                <li>Lv50以前は現在のレベルより5-10レベル上に挑戦可能</li>
+                <li><strong>Lv55</strong>で難易度が急上昇 — クリアには同レベルの装備が必要</li>
+                <li><strong>Lv62</strong>以降、各クリアで<strong>SSRルーンが1つ確定入手</strong></li>
+                <li>無課金プレイヤーにとって<strong>長期的な最強入手先</strong></li>
+            </ul>
+
+            <h3>2. レイド (鏖战副本)</h3>
+            <ul>
+                <li><strong>Lv50</strong>でアンロック (ルーンダンジョンと同時)</li>
+                <li>低ティアは低ランクルーンをドロップ</li>
+                <li>高ティアボスは<strong>高品質ゴールド / SSRルーン</strong>をドロップ</li>
+                <li><strong>名もなき職人のクラフトツール</strong>もドロップ</li>
+                <li>ルーンダンジョンと並ぶ補助的な素材入手先</li>
+            </ul>
+
+            <!-- Multiplayer Mechanics -->
+            <h2 id="multiplayer">👥 マルチプレイヤーレイドメカニクス</h2>
+            <ul>
+                <li>すべての協力セッションは<strong>ロビーを作成</strong>して友人に<strong>招待コード</strong>を送る必要がある</li>
+                <li><strong>ロビーホストのみ</strong>がダンジョン/レイド/ハントと具体的な難易度を選択可能</li>
+                <li>設定が間違っている場合、<strong>ロビー全体を解散</strong>して再作成する必要がある</li>
+                <li><strong>即時リトライ</strong>オプションなし — 完了後は追い出され、ロビーを再作成する必要がある</li>
+                <li><strong>オープンワールド協力なし</strong> — ダンジョン、レイド、ハントのみマルチプレイ対応</li>
+                <li>レイドでは最大<strong>他のプレイヤー2人 (合計3人)</strong>まで招待可能</li>
+            </ul>
+
+            <h3>マッチメイキングシステム</h3>
+            <ul>
+                <li>モードとボスを選択後、同じコンテンツの既存ロビーがないかゲームが確認</li>
+                <li>見つからない場合、他のプレイヤーが参加可能な新しいロビーを作成</li>
+                <li>ルームを<strong>プライベート</strong>に設定可能 — 招待されたプレイヤーのみ参加可能</li>
+            </ul>
+
+            <!-- Game Modes -->
+            <h2>🎮 ゲームモード比較</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>モード</th>
+                            <th>プレイヤー</th>
+                            <th>コンテンツ</th>
+                            <th>報酬</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ダンジョン</strong></td>
+                            <td>ソロ / 協力</td>
+                            <td>特性ダンジョン、通貨ダンジョン</td>
+                            <td>装備、素材、ゴールド</td>
+                        </tr>
+                        <tr>
+                            <td><strong>レイド</strong></td>
+                            <td>最大3人</td>
+                            <td>高難易度ボス戦</td>
+                            <td>ルーン、高ティア素材、クラフトツール</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ハント</strong></td>
+                            <td>ソロ / 協力</td>
+                            <td>ワールドボス / エリートハント</td>
+                            <td>強化素材、カルマ素材</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Raid Strategy -->
+            <h2 id="strategy">📜 レイドコア戦略</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">ルーン優先度</h3>
+                    <p class="card-desc">DPS: レゾルブ > アンプリフィケーション > コンセントレーション。タンク/サポート: ガーディアン > バイタリティ。目標クリティカル80% / クリティカルダメージ150%。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">スロット管理</h3>
+                    <p class="card-desc">4スター以上の装備のスロットのみ解除。メインチームのコア装備を優先。一時的な装備にクラフトツールを無駄にするな。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">協力コミュニケーション</h3>
+                    <p class="card-desc">事前に友人とチーム構成を調整。ホストが難易度を選択。マッチメイキングが失敗したら招待コードを使う。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">難易度進行</h3>
+                    <p class="card-desc">Lv50の低難易度から開始。Lv55は同レベル装備が必要。Lv62以上がSSRルーン確定の長期目標。</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">エンドゲームコンテンツの準備はできた？</h3>
+                <p style="margin-bottom: 16px;">マルチプレイ成功のためのエンドゲームガイドと協力のコツをチェック。</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="endgame.html" class="btn btn-primary">🏆 エンドゲームガイド</a>
+                    <a href="coop.html" class="btn btn-secondary">👥 協力ガイド</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">このページの内容</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#runes">ルーンシステム</a></li>
+                    <li><a href="#types">全5ルーンタイプ</a></li>
+                    <li><a href="#priority">ルーン優先度</a></li>
+                    <li><a href="#slots">ルーンスロット解除</a></li>
+                    <li><a href="#farming">ファーム場所</a></li>
+                    <li><a href="#multiplayer">マルチプレイメカニクス</a></li>
+                    <li><a href="#strategy">レイド戦略</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">ウィキナビゲーション</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入門編 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">キャラクター <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">ティアリスト <span class="count">1</span></a></li>
+                    <li><a href="build.html">ビルド & スキル <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">チーム構成 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">戦闘システム <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装備 & ギア <span class="count">1</span></a></li>
+                    <li><a href="karma.html">カルマシステム <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">料理 & レシピ <span class="count">1</span></a></li>
+                    <li><a href="boss.html">ボス <span class="count">1</span></a></li>
+                    <li><a href="raid.html" class="active">レイド & ルーン <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">エンドゲームガイド <span class="count">1</span></a></li>
+                    <li><a href="map.html">マップ & エリア <span class="count">1</span></a></li>
+                    <li><a href="coop.html">マルチプレイ & 協力 <span class="count">2</span></a></li>
+                    <li><a href="review.html">レビュー & ロードマップ <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">公式リンク</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steamストア</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wikiは、DragonSword: Awakeningの全ヒーロー、戦闘メカニクス、チームビルド、進行Tipsを網羅した独立したファンメイドのガイドサイトです。Hound13 Inc.とは提携していません。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ガイド</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">初心者ガイド</a></li>
+                    <li><a href="tier-list.html">ティアリスト</a></li>
+                    <li><a href="characters.html">キャラクター</a></li>
+                    <li><a href="build.html">ビルド</a></li>
+                    <li><a href="best-team.html">チームビルド</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>システム</h4>
+                <ul>
+                    <li><a href="combat.html">戦闘</a></li>
+                    <li><a href="gear.html">装備</a></li>
+                    <li><a href="karma.html">カルマ</a></li>
+                    <li><a href="recipes.html">レシピ</a></li>
+                    <li><a href="map.html">マップ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>コミュニティ</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steamでプレイ</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">公式Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">ゲームレビュー</a></li>
+                    <li><a href="roadmap.html">ロードマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. ファンメイド、Hound13とは提携していません。</span>
+            <span>最終更新: 2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: AwakeningはHound13 Inc.の商標です。このサイトはコミュニティリソースであり、Hound13 Inc.によって承認または提携されたものではありません。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

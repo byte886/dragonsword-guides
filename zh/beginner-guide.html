@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙之剑：觉醒 新手攻略 — 开局指南、战斗基础与避坑技巧</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）完整新手攻略。学习战斗基础、队伍搭建、资源管理、探索技巧，以及开局数小时需要避免的常见错误。">
+    <meta name="keywords" content="龙之剑觉醒 新手攻略, 开局指南, 战斗基础, 队伍搭建, 技巧, 避坑">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/beginner-guide.html">
+    <meta property="og:title" content="龙之剑：觉醒 新手攻略">
+    <meta property="og:description" content="开局数小时优先级、战斗基础、队伍搭建和常见避坑指南。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/beginner-guide.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/beginner-guide.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/beginner-guide.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/beginner-guide.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/beginner-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/beginner-guide.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "龙之剑：觉醒 新手攻略 — 开局指南、战斗基础与避坑技巧",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）完整新手攻略。学习战斗基础、队伍搭建、资源管理、探索技巧，以及开局数小时需要避免的常见错误。",
+      "url": "https://ds-guides.wiki/zh/beginner-guide.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/beginner-guide.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html" class="active">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">入门指南</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">DragonSword: Awakening 新手攻略</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                你在奥比斯大陆开局数小时需要知道的一切。战斗基础、队伍搭建、资源策略、探索技巧，以及每个新手都应该避免的错误。
+            </p>
+            <div class="article-meta">
+                <span>📖 阅读时间：约8分钟</span>
+                <span>🎯 适合新手</span>
+                <span>🔄 2026年8月更新</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success" id="quick-answer">
+                <div class="alert-title">⚡ 快速答案</div>
+                <p>跟随主线直到游戏解锁核心系统，学会一套可靠的三英雄连招，谨慎使用前期资源，探索附近的支线区域，不要同时升级所有英雄。</p>
+            </div>
+
+            <!-- Beginner Checklist -->
+            <h2 id="checklist">✅ 新手清单（13步）</h2>
+            <ol>
+                <li>完成开场教程</li>
+                <li>掌握闪避和视角控制</li>
+                <li>理解主动技能（Active Skills）</li>
+                <li>确认你的英雄能施加哪些状态异常</li>
+                <li>了解Signal Skills如何触发</li>
+                <li>组建一支能用的三英雄队伍</li>
+                <li>跟随主线直到核心系统解锁</li>
+                <li>查看新英雄和招募菜单</li>
+                <li>保留有限的强化材料</li>
+                <li>探索附近的洞穴和瞭望塔地下室</li>
+                <li>收集食材并尝试烹饪</li>
+                <li>了解使魔（Familiar）功能</li>
+                <li>将游戏安装在SSD上运行</li>
+            </ol>
+
+            <!-- What To Do First -->
+            <h2 id="first-steps">🎯 开局先做什么</h2>
+            
+            <h3>1. 完成开场教程</h3>
+            <p>开场序列会教学基础攻击、主动技能、闪避、视角控制、英雄切换、状态指示器和Signal提示。不要跳过这些——战斗系统比表面看起来更深，教程为后续一切打下基础。</p>
+
+            <h3>2. 跟随主线直到核心系统开放</h3>
+            <p>DragonSword 的许多系统都需要剧情进度才能解锁。最佳的前期节奏是：<strong>主线任务 → 解锁新系统 → 试用一下 → 探索附近区域 → 回到主线</strong>。在你拥有到达所有地点的工具之前，不要试图100%探索地图。</p>
+
+            <h3>3. 学会一套可靠的连招</h3>
+            <p>在尝试其他组合之前，先精通一套三英雄连招。基本模式是：</p>
+            <ul>
+                <li><strong>起手者（Starter）</strong>：施加第一个状态条件，开启连招</li>
+                <li><strong>衔接者（Connector）</strong>：用Signal Skill响应，创造下一个机会</li>
+                <li><strong>终结技（Finisher）</strong>：将机会转化为高伤害或控制</li>
+            </ul>
+
+            <!-- Combat System -->
+            <h2 id="combat">⚔️ 战斗系统基础</h2>
+            <p>DragonSword: Awakening 将开放世界探索与以状态异常、Signal Skills和角色切换为核心的三英雄换人动作战斗系统相结合。单个角色的强度只是战斗的一部分——队伍协同更重要。</p>
+
+            <h3>三大核心机制</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🩸</div>
+                    <h3 class="card-title">状态异常</h3>
+                    <p class="card-desc">19名可玩英雄每人都有独特的状态异常能力（气绝、燃烧、冰冻、电击、流血、中毒、浮空、击倒、恢复）。这些是所有连招的基础。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Signal Skills</h3>
+                    <p class="card-desc">当满足所需战斗条件时可用的强力追击技能。兼容的异常状态叠加在同一敌人身上会触发这些技能。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">换人连携</h3>
+                    <p class="card-desc">让英雄在连招中持续进出战斗。在正确时机换人可延长连招并获得短暂无敌帧（i-frames）。</p>
+                </div>
+            </div>
+
+            <h3>资深玩家的战斗技巧</h3>
+            <ul>
+                <li>攻击敌人可减少技能冷却——保持进攻性</li>
+                <li>切换角色会获得短暂无敌帧，直到下次攻击或Signal Skill</li>
+                <li>有白色韧性条的敌人容易被击飞；有超级护甲的敌人则不会</li>
+                <li>每个角色只有2个主动技能，但战斗中还有Signal Skills和抓取技能</li>
+                <li>闪避攻击（闪避+攻击）是招式表的重要组成部分</li>
+            </ul>
+
+            <!-- First Team Building -->
+            <h2 id="team">👥 组建你的第一支队伍</h2>
+            <p>每支队伍都需要三个定位。这些是<strong>队伍位置，不是固定职业</strong>——一个英雄可以根据搭档不同而担任不同定位。</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>定位</th>
+                            <th>职责</th>
+                            <th>前期推荐</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>起手者</strong></td>
+                            <td>创造第一个条件，开启连招</td>
+                            <td>Lute（气绝）、Castella（气绝/浮空）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>衔接者</strong></td>
+                            <td>响应条件，创造下一个机会</td>
+                            <td>Aria（燃烧）、Dana（冰冻）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>终结技</strong></td>
+                            <td>将机会转化为伤害或控制</td>
+                            <td>Johnny（中毒/浮空）、Charlotte（中毒）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info">
+                <div class="alert-title">💡 推荐初始队伍</div>
+                <p><strong>Lute + Dana + Aria</strong> 覆盖三种不同状态类型（气绝、冰冻、燃烧），是可靠的基础。Lute还能治疗，在你学习过程中提供生存余量。</p>
+            </div>
+
+            <h3>动作型 vs 休闲型玩法</h3>
+            <ul>
+                <li><strong>动作队伍</strong>（高技巧、高回报）：Charlotte + Johnny + Reina——全高DPS，机动性强，操作好可通关终局</li>
+                <li><strong>远程休闲队伍</strong>（终局更轻松）：Sion + Othello + Dana——远程输出，站位更宽容</li>
+            </ul>
+
+            <!-- Resource Strategy -->
+            <h2 id="resources">💰 资源策略</h2>
+            <p>前期最重要的原则是<strong>集中投资，而非平均分配</strong>。把材料分散到每个英雄身上会让你的整体队伍都很弱。</p>
+
+            <h3>核心原则</h3>
+            <ul>
+                <li>培养一个起手者、一个衔接者、一个终结技——专注于你的主力队伍</li>
+                <li>优先升级高频使用的技能，不要平均升级所有技能</li>
+                <li>保留稀有材料储备——后期会需要</li>
+                <li>不要太早花招募货币（命运的邀请函）——等到你知道想要哪些英雄</li>
+                <li>套装效果只需要3件就能触发，不需要5件——可以混搭套装（3+2）获得更好属性</li>
+            </ul>
+
+            <h3>关键货币</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>货币</th>
+                            <th>获取方式</th>
+                            <th>用途</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>命运的邀请函</strong></td>
+                            <td>剧情章节、英雄任务</td>
+                            <td>在兑换商店解锁英雄（每个1张）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>圣光碎片</strong></td>
+                            <td>宝箱、小Boss活动</td>
+                            <td>各种强化</td>
+                        </tr>
+                        <tr>
+                            <td><strong>勋章</strong></td>
+                            <td>完成任务</td>
+                            <td>几乎所有材料和技能升级卷轴</td>
+                        </tr>
+                        <tr>
+                            <td><strong>月亮钥匙</strong></td>
+                            <td>探索、任务、剧情</td>
+                            <td>开启特殊宝箱</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Exploration Tips -->
+            <h2 id="exploration">🗺️ 探索技巧</h2>
+            <ul>
+                <li>探索时激活附近的传送点——快速旅行能节省大量时间</li>
+                <li>检查建筑、瞭望塔和洞穴——许多隐藏宝箱和物品在室内</li>
+                <li>收集食材并与居民交谈——烹饪提供有用的增益</li>
+                <li>标记你暂时无法完成的地点——等有更好工具后再回来</li>
+                <li><strong>水下区域</strong>包含大量隐藏内容——通过推进剧情尽早解锁水上坐骑</li>
+                <li>区域Boss每天早上9点刷新——掉落技能卷轴和锻造模具</li>
+            </ul>
+
+            <h3>坐骑系统</h3>
+            <p>坐骑通过佣兵等级和剧情进度解锁。关键提示：</p>
+            <ul>
+                <li>同一坐骑的不同变种会解锁第二个技能，可用于其他坐骑</li>
+                <li>豪华版的幼龙可以在空中向任意方向冲刺</li>
+                <li>亮冠山雀（新手佣兵解锁）在完成20个小游戏获得第二个变种后也能空中冲刺</li>
+                <li>只有一个坐骑能下水——通过剧情进度尽早解锁</li>
+            </ul>
+
+            <!-- Common Mistakes -->
+            <h2 id="mistakes">❌ 新手常见错误</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">太早升级所有英雄</h3>
+                    <p class="card-desc">把材料分散到全部19个英雄会让你没有强力队伍。先专注于3-4个英雄。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">忽视状态异常</h3>
+                    <p class="card-desc">如果不施加状态条件，Signal Skills很少出现，你会错过游戏最深层的战斗系统。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">把换人当冷却重置</h3>
+                    <p class="card-desc">随机换人会破坏连招结构。要有意地换人来触发换人连携和延长连招。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4️⃣</div>
+                    <h3 class="card-title">盲目照搬强度榜</h3>
+                    <p class="card-desc">协同差的S级英雄队伍表现不如搭配合理的B级队伍。抄作业前先理解队伍顺序。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5️⃣</div>
+                    <h3 class="card-title">太早花招募货币</h3>
+                    <p class="card-desc">命运的邀请函是有限的。等到你理解哪些英雄适合你的玩法风格后再解锁。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6️⃣</div>
+                    <h3 class="card-title">忽视支线探索</h3>
+                    <p class="card-desc">洞穴、瞭望塔和水下区域隐藏着有价值的材料、藏宝图和大师技能魔导书。</p>
+                </div>
+            </div>
+
+            <!-- Boss Tips -->
+            <h2 id="boss">👹 Boss战技巧</h2>
+            <ul>
+                <li>检查Boss是否抵抗你的主要状态——必要时换一种异常</li>
+                <li>如果起手技能一直未命中，检查Boss在该阶段是否有超级护甲</li>
+                <li>长动画可以被打断——了解哪些技能安全、哪些有风险</li>
+                <li>学习阶段优先保证生存——熟悉招式后再优化伤害</li>
+                <li>利用换人无敌帧躲避大招</li>
+            </ul>
+
+            <!-- PC Setup -->
+            <h2>🖥️ PC设置建议</h2>
+            <ul>
+                <li><strong>安装在SSD上</strong>——游戏加载大型开放世界区域，SSD能大幅减少贴图弹出和加载时间</li>
+                <li>更新显卡驱动到最新版本</li>
+                <li>长时间游戏前重启电脑</li>
+                <li>关闭后台应用以释放内存和CPU</li>
+                <li>检查帧率限制设置——无限制帧率在某些系统上可能导致不稳定</li>
+            </ul>
+
+            <!-- Next Steps -->
+            <h2>📚 下一步</h2>
+            <p>熟悉基础后，深入了解这些系统：</p>
+            <div class="card-grid">
+                <a href="combat.html" class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">战斗系统深度解析</h3>
+                    <p class="card-desc">精通状态异常、Signal Skills、换人连携和高级连招链。</p>
+                    <span class="card-link">阅读战斗攻略 →</span>
+                </a>
+                <a href="best-team.html" class="card">
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title">最佳队伍搭配</h3>
+                    <p class="card-desc">经过验证的队伍组合，覆盖前期、终局副本和试炼之塔。</p>
+                    <span class="card-link">查看队伍搭配 →</span>
+                </a>
+                <a href="tier-list.html" class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3 class="card-title">角色强度榜</h3>
+                    <p class="card-desc">全部19名英雄按终局表现排名，附最佳定位和队伍位置。</p>
+                    <span class="card-link">查看强度榜 →</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#quick-answer">快速答案</a></li>
+                    <li><a href="#checklist">新手清单</a></li>
+                    <li><a href="#first-steps">开局先做什么</a></li>
+                    <li><a href="#combat">战斗基础</a></li>
+                    <li><a href="#team">第一支队伍</a></li>
+                    <li><a href="#resources">资源策略</a></li>
+                    <li><a href="#exploration">探索技巧</a></li>
+                    <li><a href="#mistakes">常见错误</a></li>
+                    <li><a href="#boss">Boss技巧</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html" class="active">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">英雄特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">副本与终局 <span class="count">2</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

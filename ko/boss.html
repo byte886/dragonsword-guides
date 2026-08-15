@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보스 가이드 — 드래곤소드 어웨이크닝: 보스 메커니즘, 최고 팀 & 공략</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 완전 보스 가이드. 파워 아머/실드 메커니즘, 상태 이상 경직 창, 유형별 최고 보스 팀, 오크 전사 튜토리얼 보스, 범용 전투 전략.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 보스, 파워 아머, 실드, 경직, 최고 팀, 오크 전사, 월드 보스, 공략">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/boss.html">
+    <meta property="og:title" content="보스 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="보스 메커니즘, 유형별 최고 팀, 범용 전투 전략.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/boss.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/boss.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/boss.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/boss.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/boss.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/boss.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "보스 가이드 — 드래곤소드 어웨이크닝: 보스 메커니즘, 최고 팀 & 공략",
+      "description": "드래곤소드: 어웨이크닝 완전 보스 가이드. 파워 아머/실드 메커니즘, 상태 이상 경직 창, 유형별 최고 보스 팀, 오크 전사 튜토리얼 보스, 범용 전투 전략.",
+      "url": "https://ds-guides.wiki/ko/boss.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/boss.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">전투</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">보스 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                보스는 일반 공격으로 깰 수 없는 두꺼운 파워 아머를 가지고 있습니다. 상태 이상 게이지를 채워 경직시킨 다음, 좁은 창에서 시그널 스킬을 발동하세요. 아머를 먼저 깨고 폭발하세요. 콤보를 마무리하는 것보다 회피가 항상 낫습니다.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 6분</span>
+                <span>👹 스토리 + 월드 보스</span>
+                <span>🛡️ 파워 아머 시스템</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>대부분의 보스는 파워 아머나 실드를 가지고 있습니다 — 실제 HP 피해를 입히기 전에 먼저 깨야 합니다. 상태 이상 게이지를 채워 경직시킨 다음, 좁은 창에서 캐릭터를 교체하여 시그널 스킬 폭발을 하세요. 최고의 범용 보스 팀: 테레지아 + 카스텔라 + 루트. 고아머 보스에는 오르네트/알렉스 + 카스텔라를 사용하세요. 고HP 보스에는 테레지아 + 록시로 출혈을 사용하세요. 콤보를 마무리하는 대신 항상 회피하세요.</p>
+            </div>
+
+            <!-- Core Mechanics -->
+            <h2 id="mechanics">🛡️ 보스 핵심 메커니즘</h2>
+            <ul>
+                <li>정예와 보스는 일반 공격으로 깰 수 없는 <strong>두꺼운 파워 아머</strong>를 가지고 있습니다</li>
+                <li>공격은 <strong>상태 이상 게이지</strong>를 채웁니다 — 가득 차면 적이 상태 이상 상태(경직)에 들어갑니다</li>
+                <li>상태 이상 상태는 막대한 피해를 주는 <strong>시그널 스킬 기회</strong>를 엽니다</li>
+                <li>상태 이상이 활성화된 동안 <strong>좁은 창 내에서 캐릭터를 교체해야 합니다</strong></li>
+                <li>실드는 잠시 후 재생성됩니다 — 지속적인 압박을 유지하세요</li>
+            </ul>
+
+            <!-- Best Teams by Type -->
+            <h2 id="teams">👥 유형별 최고 보스 팀</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>보스 유형</th>
+                            <th>추천 팀</th>
+                            <th>핵심 루프</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>일반 보스</strong></td>
+                            <td>테레지아 + 카스텔라 + 루트</td>
+                            <td>테레지아 DPS, 루트 아머 파괴 + 유틸, 카스텔라 기절 창에서 폭발</td>
+                        </tr>
+                        <tr>
+                            <td><strong>고HP / 출혈</strong></td>
+                            <td>테레지아 + 록시 + 카스텔라/루트</td>
+                            <td>콘스크레이션이 출혈 적용, 천상의 심판이 기절 추가, 록시가 컷인, 카스텔라/루트가 폭발</td>
+                        </tr>
+                        <tr>
+                            <td><strong>중아머</strong></td>
+                            <td>오르네트 + 카스텔라 + 알렉스/루트</td>
+                            <td>오르네트나 알렉스가 파워 아머를 벗기고 넉다운 발동, 카스텔라가 다운된 적의 피해를 활용</td>
+                        </tr>
+                        <tr>
+                            <td><strong>정예 적</strong></td>
+                            <td>테레지아 + 록시 + 루트</td>
+                            <td>빠른 상태 이상 적용 + 지속 전투를 위한 힐링</td>
+                        </tr>
+                        <tr>
+                            <td><strong>종합 콘텐츠</strong></td>
+                            <td>테레지아 + 레이나 + 카스텔라</td>
+                            <td>범용 벤치마크. 거의 모든 활동에서 좋은 성능을 냅니다</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tutorial Boss -->
+            <h2 id="tutorial">📖 튜토리얼 보스: 오크 전사 (Lv.3)</h2>
+            <div class="card">
+                <h3 class="card-title">게임 내 첫 보스</h3>
+                <ul style="margin-top: 12px;">
+                    <li><strong>위치:</strong> 동굴의 거대한 문 뒤</li>
+                    <li><strong>특징:</strong> 전투 중 고블린을 소환하는 거대 오크</li>
+                    <li><strong>아군:</strong> 조니가 이 전투에서 지원합니다</li>
+                </ul>
+
+                <h4 style="margin-top: 16px;">이중 바 메커니즘 (HP + 실드)</h4>
+                <ul>
+                    <li>HP에 효과적으로 피해를 입히려면 <strong>실드를 깨기 위해</strong> 지속적으로 공격해야 합니다</li>
+                    <li>실드가 깨지면 방어력이 떨어지고 효율적으로 처치할 수 있습니다</li>
+                    <li>실드는 <strong>잠시 후 재충전됩니다</strong> — 긴장을 늦추지 마세요</li>
+                </ul>
+
+                <h4 style="margin-top: 16px;">전투 팁</h4>
+                <ol>
+                    <li>Shift를 눌러 보스 공격에서 구르며 회피</li>
+                    <li>회피 후 앞으로 이동하여 공격</li>
+                    <li>조니의 공격이 보스를 띄울 수 있습니다 (공중)</li>
+                    <li>점프하여 공중에 뜬 오크 전사 공격</li>
+                    <li>태그 콤보 공격을 사용하여 더 빨리 처치</li>
+                </ol>
+            </div>
+
+            <!-- Universal Strategy -->
+            <h2 id="strategy">🎯 범용 보스 전략</h2>
+
+            <h3>1. 아머 먼저 깨기</h3>
+            <ul>
+                <li>대부분의 보스는 실드나 파워 아머를 가지고 있습니다</li>
+                <li>효과적인 피해를 입히기 전에 실드를 깨세요</li>
+                <li>실드는 재생성됩니다 — 지속적인 압박을 유지하세요</li>
+                <li>아머 파괴 영웅: 알렉스, 오르네트, 루트</li>
+            </ul>
+
+            <h3>2. 상태 이상 체인 콤보</h3>
+            <ul>
+                <li>액티브 스킬을 사용하여 상태 이상 적용</li>
+                <li>팀메이트 초상화가 켜지는 것을 기다리세요</li>
+                <li>좁은 창 내에서 교체하여 시그널 스킬 발동</li>
+                <li>한 영웅에 고집하지 말고 사이클을 반복하세요</li>
+            </ul>
+
+            <h3>3. 회피 > 콤보</h3>
+            <ul>
+                <li>콤보를 마무리한다고 피해를 입지 마세요</li>
+                <li>보스 공격은 명확한 선딜 애니메이션이 있습니다 — 제때 회피하세요</li>
+                <li>회피 후 공격을 재정비하세요</li>
+            </ul>
+
+            <h3>4. 공중 / 넉다운 사용</h3>
+            <ul>
+                <li>공중에 뜬 적은 반격할 수 없습니다</li>
+                <li>넉다운된 적은 더 많은 피해를 받습니다</li>
+                <li>참고: 슈퍼 아머는 이러한 상태를 막습니다 — 파괴 옵션을 가져가세요</li>
+            </ul>
+
+            <!-- Boss Types -->
+            <h2 id="types">📋 알려진 보스 카테고리</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3 class="card-title">스토리 보스</h3>
+                    <p class="card-desc">오크 전사(튜토리얼), 용(프롤로그 컷신), 메인 퀘스트 진행 중 만나는 다른 보스들.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">월드 보스</h3>
+                    <p class="card-desc">오픈월드 지역 전역에 흩어져 있습니다. 일일 리스폰. 업그레이드 재료와 카르마 카드를 제공합니다. 위치는 인터랙티브 지도를 확인하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🗿</div>
+                    <h3 class="card-title">상 보스</h3>
+                    <p class="card-desc">오르가나의 상 복원 중 트리거: 폐허가 된 사원(Lv60), 황폐한 교역소(Lv60 트롤), 갈매기 마을(Lv25 야수), 메아리 협곡.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏰</div>
+                    <h3 class="card-title">레이드 보스</h3>
+                    <p class="card-desc">멀티플레이어 레이드 보스. 룬과 고티어 재료를 드롭합니다. 협력된 팀 플레이가 필요합니다.</p>
+                </div>
+            </div>
+
+            <!-- Prep Tips -->
+            <h2 id="prep">🍳 전투 전: 준비</h2>
+            <ul>
+                <li>보스에 도전하기 전에 <strong>삶기 버프 스튜</strong>(15분 공격력/치명타 버프)를 드세요</li>
+                <li>팀메이트가 쓰러질 경우를 대비해 <strong>부활 차</strong>를 최소 하나 이상 가지고 가세요</li>
+                <li>메인 DPS에 방어 무시를 위해 <strong>3피스 루인스브레이커</strong>를 장비하세요</li>
+                <li>근처 힐링 거점을 위해 가장 가까운 <strong>오르가나의 상</strong>을 복원하세요</li>
+                <li>보스 유형(아머 vs HP vs 일반)에 맞춰 팀을 매칭하세요</li>
+            </ul>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">보스 팀을 최적화하고 싶으신가요?</h3>
+                <p style="margin-bottom: 16px;">모든 시나리오별 빌드가 포함된 완전한 팀 구성 가이드를 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="best-team.html" class="btn btn-primary">👥 최고 팀</a>
+                    <a href="combat.html" class="btn btn-secondary">⚔️ 전투 가이드</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#mechanics">핵심 메커니즘</a></li>
+                    <li><a href="#teams">최고 보스 팀</a></li>
+                    <li><a href="#tutorial">튜토리얼 보스</a></li>
+                    <li><a href="#strategy">범용 전략</a></li>
+                    <li><a href="#types">보스 카테고리</a></li>
+                    <li><a href="#prep">준비 팁</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 & 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html" class="active">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">레이드 & 종합 콘텐츠 <span class="count">2</span></a></li>
+                    <li><a href="map.html">지도 & 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">멀티플레이 & 협동 <span class="count">2</span></a></li>
+                    <li><a href="review.html">리뷰 & 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

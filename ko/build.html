@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드래곤소드 어웨이크닝 빌드 가이드 — 모든 영웅의 최고 장비, 카르마 & 룬</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 완전 빌드 가이드. 16명의 테스트된 영웅별 최고 장비 세트, 카르마 무기, 주요 스탯, 룬과 원소별 빌드 로직.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 빌드, 최고 장비, 카르마, 룬, 스탯, 루인스브레이커, 치명타 확률, 치명타 피해">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/build.html">
+    <meta property="og:title" content="드래곤소드 어웨이크닝 빌드 가이드">
+    <meta property="og:description" content="원소별 빌드 로직과 함께 모든 영웅의 최고 장비, 카르마, 룬.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/build.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/build.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/build.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/build.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/build.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/build.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "드래곤소드 어웨이크닝 빌드 가이드 — 모든 영웅의 최고 장비, 카르마 & 룬",
+      "description": "드래곤소드: 어웨이크닝 완전 빌드 가이드. 16명의 테스트된 영웅별 최고 장비 세트, 카르마 무기, 주요 스탯, 룬과 원소별 빌드 로직.",
+      "url": "https://ds-guides.wiki/ko/build.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/build.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html" class="active">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">영웅 빌드</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">완전 빌드 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                모든 영웅별 최고 장비 세트, 카르마 무기, 주요 스탯, 룬. 빌드 가정: 완전 각성한 영웅, 최고 레벨 카르마나 완벽한 부 스탯은 아님.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 10분</span>
+                <span>⚔️ 16명 영웅 빌드</span>
+                <span>🔄 2026년 8월 업데이트</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Formula -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 빌드 공식</div>
+                <ol style="margin-top: 8px;">
+                    <li>먼저 영웅을 완전 각성하세요 (패시브와 강화된 세트 효과 잠금 해제)</li>
+                    <li>핵심으로 3피스 루인스브레이커를 사용하세요 (거의 모두에게 방어 무시)</li>
+                    <li>약 80% 치명타 확률과 약 150% 치명타 피해를 목표로 하세요</li>
+                    <li>영웅의 상태 이상에 맞는 2피스 원소 세트를 추가하세요</li>
+                    <li>팀: 한 영웅이 상태 이상을 적용하면 다음이 폭발시킵니다</li>
+                </ol>
+            </div>
+
+            <!-- Universal Stats -->
+            <h2 id="stats">📊 범용 스탯 우선순위</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">치명타 확률 ~80%</h3>
+                    <p class="card-desc">첫 번째 목표. 80% 미만이면 피해 일관성이 너무 많이 손실됩니다. 가슴과 다리에 우선순위를 두세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💥</div>
+                    <h3 class="card-title">치명타 피해 ~150%</h3>
+                    <p class="card-desc">치명타 확률이 캡되면 치명타 피해를 스택하세요. 모든 빌드의 주요 피해 배율.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">부 스탯 우선순위</h3>
+                    <p class="card-desc">추가 위력 > 공격력 증가 > 방어 무시. 장비를 재단련하여 이 순서로 굴리세요.</p>
+                </div>
+            </div>
+
+            <!-- Full Build Table -->
+            <h2 id="table">📋 완전 빌드 표 (16명 영웅)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>영웅</th>
+                            <th>전용 카르마</th>
+                            <th>장비 세트</th>
+                            <th>주요 스탯</th>
+                            <th>룬</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong><a href="lute.html">루트</a></strong></td>
+                            <td>친구를 위해 소환된 검</td>
+                            <td>홀리 아비터 2 + 루인스브레이커 3</td>
+                            <td>공격력 증가, 치명타 피해, 치명타 확률</td>
+                            <td>결의 / 증폭</td>
+                        </tr>
+                        <tr>
+                            <td><strong>조니</strong></td>
+                            <td>방랑하는 검</td>
+                            <td>루인스브레이커 3 + 베놈포그 셰이드 2</td>
+                            <td>공격력 증가, 치명타 피해, 치명타 확률</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>카스텔라</strong></td>
+                            <td>시끄러운 이중주</td>
+                            <td>루인스브레이커 3 + 애저 게일 2</td>
+                            <td>공격력 증가, 치명타 피해, 치명타 확률</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>아리아</strong></td>
+                            <td>폭발은 예술</td>
+                            <td>블레이징 플레임 3 + 애저 게일 2</td>
+                            <td>공격력 증가, 치명타 피해, 치명타 확률</td>
+                            <td>증폭 / 결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>다나</strong></td>
+                            <td>반짝이는 티 타임</td>
+                            <td>루인스브레이커 3 + 프로스트스톰 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>증폭 / 결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>칼리엔</strong></td>
+                            <td>진홍 불꽃의 선택받은 자</td>
+                            <td>블레이징 플레임 3 + 루인스브레이커 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>증폭 / 결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>록시</strong></td>
+                            <td>귀부인의 거친 취미</td>
+                            <td>루인스브레이커 3 + 블러드스테인드 체이스 2</td>
+                            <td>치명타 확률, 공격력 증가, 치명타 피해</td>
+                            <td>증폭 / 결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="theresia.html">테레지아</a></strong></td>
+                            <td>자비로운 사형 선고</td>
+                            <td>루인스브레이커 3 + 홀리 아비터 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>오르네트</strong></td>
+                            <td>신성한 번개 세례</td>
+                            <td>루인스브레이커 3 + 썬더러시 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="reina.html">레이나</a></strong></td>
+                            <td>왕국을 지키는 바람</td>
+                            <td>루인스브레이커 3 + 애저 게일 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>칼시온</strong></td>
+                            <td>태양은 다시 뜬다</td>
+                            <td>블레이징 플레임 3 + 루인스브레이커 2</td>
+                            <td>공격력 증가, 치명타 피해, 치명타 확률</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>세레세</strong></td>
+                            <td>영원한 눈보라</td>
+                            <td>루인스브레이커 3 + 프로스트스톰 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의 / 증폭</td>
+                        </tr>
+                        <tr>
+                            <td><strong>아스트리아</strong></td>
+                            <td>바람을 뚫고 피는 바람꽃</td>
+                            <td>루인스브레이커 3 + 홀리 아비터 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>증폭 / 결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>아일린</strong></td>
+                            <td>기사도와 북마크 사이</td>
+                            <td>애저 게일 3 + 발라드 오브 라이프 / 루인스브레이커 2</td>
+                            <td>공격력 증가, 치명타 피해, 최대 HP</td>
+                            <td>결의 / 증폭</td>
+                        </tr>
+                        <tr>
+                            <td><strong>오델로</strong></td>
+                            <td>태양을 쓰러뜨리는 창</td>
+                            <td>루인스브레이커 3 + 프로스트스톰 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="charlotte.html">샬롯</a></strong></td>
+                            <td>어둠 속에 남은 신념</td>
+                            <td>루인스브레이커 3 + 베놈포그 셰이드 2</td>
+                            <td>공격력 증가, 치명타 확률, 치명타 피해</td>
+                            <td>결의</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">* 알렉스, 시온, 타르트 빌드는 아직 테스트 중입니다. 커뮤니티 테스트가 진행됨에 따라 데이터가 업데이트됩니다.</p>
+
+            <!-- Element Build Logic -->
+            <h2 id="elements">🔥 원소별 빌드 로직</h2>
+
+            <h3>베놈 / 중독 (조니 + 샬롯)</h3>
+            <ul>
+                <li><strong>조니</strong> — 주요 베놈 DPS, 필드에 중독 유지. 2피스 베놈포그 셰이드가 중독 피해를 증폭합니다.</li>
+                <li><strong>샬롯</strong> — 폭발 천장에 도달하려면 조니가 중독을 유지해줘야 합니다. 둘은 서로를 위해 설계되었습니다.</li>
+            </ul>
+
+            <h3>블레이즈 / 화상 (아리아 + 칼리엔 + 칼시온)</h3>
+            <ul>
+                <li><strong>아리아</strong> — 인에이블러. 화상과 공중을 동시에 적용. 레이나와 칼시온을 위한 최고 세팅 영웅. 3피스 블레이징 플레임 사용.</li>
+                <li><strong>칼리엔</strong> — 여우 분신으로 화상을 빠르게 스택. 폭스 그랩과 피날레가 폭발 + 기절을 전달.</li>
+                <li><strong>칼시온</strong> — 강력한 타격자. 웨폰 블레이즈가 피해를 강화하지만, 최고조에 달하려면 공중과 화상 인에이블러가 필요합니다.</li>
+            </ul>
+
+            <h3>프로스트 / 빙결 (오델로 + 세레세 + 다나)</h3>
+            <ul>
+                <li><strong>세레세</strong> — 최고의 빙결 적용자. 다중 히트 피해 + 강력한 제어 군집. 약점: 대형 보스 (긴 애니메이션, 아이스 스톰 불리).</li>
+                <li><strong>오델로</strong> — 프로스트바이트 DPS. 최대 피해 창을 발동하려면 빠른 빙결 스택이 필요. 전용 카르마가 낮은 기본 치명타 패시브를 보상합니다.</li>
+                <li><strong>다나</strong> — 유연함. 오프필드에서 빙결 딜, 패밀리어로 적을 견제, 퍼펙트 패리 후 팀 실드 제공.</li>
+            </ul>
+
+            <h3>출혈 / 기절 (록시 + 테레지아 + 아스트리아)</h3>
+            <ul>
+                <li><strong>록시</strong> — 모든 거리에서 빠른 출혈 스택이지만, 피해를 최대화하려면 기절이 필요. 테레지아와 아스트리아가 자연스러운 파트너.</li>
+                <li><strong>테레지아</strong> — 온필드 DPS. 출혈과 강한 기절을 동시에 적용.</li>
+                <li><strong>아스트리아</strong> — 기동성을 피해로 맞바꿈. 비 같은 화살이 기절과 브레이크를 스택. 아군이 적을 제어하는 동안 딜. 치명타 확률이 최우선.</li>
+            </ul>
+
+            <h3>게일 / 공중 (레이나 + 아일린)</h3>
+            <ul>
+                <li><strong>레이나</strong> — 단일 대상 전문가. 공중인 적에 긴 스킬 콤보 체인. 2피스 애저 게일이 게일 피해를 직접 증폭. 아리아가 최고 인에이블러.</li>
+                <li><strong>아일린</strong> — 공격적 각도에서 공중 지원. 팀 이동 속도와 공격력 부스트. 견고한 치명타를 가진 빠른 교체 캐릭터로 잘 어울림. 가장 유연한 장비 (발라드 오브 라이프 또는 루인스브레이커).</li>
+            </ul>
+
+            <h3>썬더 / 감전 (오르네트)</h3>
+            <ul>
+                <li><strong>오르네트</strong> — 대부분의 팀을 이끌 수 있는 강력한 썬더볼트 영웅. 감전 팀에서 최고조. 2피스 썬더러시는 필수.</li>
+                <li>시온과 타르트를 사용할 수 없을 때, 루트가 대체 파트너로 작동합니다 (힐링과 공격력 버프가 오르네트의 딜을 지속).</li>
+            </ul>
+
+            <!-- Special Heroes -->
+            <h2 id="special">🌟 특수 영웅</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">루트</h3>
+                    <p class="card-desc">게임 내 단 둘뿐인 힐러 중 하나 (다른 하나는 타르트). 거의 모든 팀에 범용 선택. 첫 각성 노드가 팀 공격력을 부스트. 넉아웃과 기절 팀에 적합. 2피스 홀리 아비터가 힐링 출력을 제공하고, 루인스브레이커가 개인 딜을 유지합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">타르트</h3>
+                    <p class="card-desc">다른 힐러. 빌드는 아직 최종 테스트 중. 생존이 병목이 되는 고난이도 콘텐츠에서 가치가 크게 상승합니다.</p>
+                </div>
+            </div>
+
+            <!-- Exclusive Karma -->
+            <h2 id="karma">🗡️ 전용 카르마 획득</h2>
+            <p>전용 카르마 무기(조니의 방랑하는 검이나 세레세의 영원한 눈보라 같은)는 획득하려면 <strong>잔영의 파편</strong>과 <strong>기억</strong>이 필요합니다.</p>
+            <ul>
+                <li>이 재료를 파밍하는 것이 기능적 빌드와 완전히 최적화된 빌드 사이의 주요 성장 관문입니다</li>
+                <li>완벽한 룬 부 스탯을 쫓기 전에 메인으로 플레이할 영웅의 파편 파밍을 우선하세요</li>
+                <li>기본 카르마는 교환 상점에서 구매할 수 있으며 영웅 특정이 아닙니다</li>
+                <li>동일한 기본 카르마 7개를 사용하여 최고 레벨로 승급합니다 (1개 기본 + 6개 복제)</li>
+                <li>월드 보스가 기본 카르마를 드롭할 수 있습니다 (RNG), 매일 파밍 가능</li>
+            </ul>
+
+            <!-- Gear Sets Reference -->
+            <h2 id="sets">🛡️ 장비 세트 참고</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>세트 이름</th>
+                            <th>효과 / 활용 사례</th>
+                            <th>사용자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>루인스브레이커 (3피스)</strong></td>
+                            <td>방어 무시 — 핵심 DPS 세트</td>
+                            <td>거의 모든 영웅</td>
+                        </tr>
+                        <tr>
+                            <td><strong>베놈포그 셰이드 (2피스)</strong></td>
+                            <td>중독 피해 증폭</td>
+                            <td>조니, 샬롯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>블레이징 플레임 (3피스)</strong></td>
+                            <td>화상 피해 증폭</td>
+                            <td>아리아, 칼리엔, 칼시온</td>
+                        </tr>
+                        <tr>
+                            <td><strong>프로스트스톰 (2피스)</strong></td>
+                            <td>빙결 피해 증폭</td>
+                            <td>다나, 세레세, 오델로</td>
+                        </tr>
+                        <tr>
+                            <td><strong>블러드스테인드 체이스 (2피스)</strong></td>
+                            <td>출혈 피해 증폭</td>
+                            <td>록시</td>
+                        </tr>
+                        <tr>
+                            <td><strong>애저 게일 (2피스)</strong></td>
+                            <td>게일 / 공중 피해</td>
+                            <td>카스텔라, 아리아, 레이나, 아일린</td>
+                        </tr>
+                        <tr>
+                            <td><strong>썬더러시 (2피스)</strong></td>
+                            <td>감전 피해 증폭</td>
+                            <td>오르네트</td>
+                        </tr>
+                        <tr>
+                            <td><strong>홀리 아비터 (2피스)</strong></td>
+                            <td>힐링 출력 / 광속성 피해</td>
+                            <td>루트, 테레지아, 아스트리아</td>
+                        </tr>
+                        <tr>
+                            <td><strong>발라드 오브 라이프 (2피스)</strong></td>
+                            <td>생존 / 힐링</td>
+                            <td>아일린 (선택)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Team Building Principle -->
+            <h2>🤝 팀 빌딩 원칙</h2>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 핵심 인사이트</div>
+                <p>대부분의 DPS 영웅은 피해 천장에 도달하려면 최소 하나의 특정 조건이 필요합니다:</p>
+                <ul style="margin-top: 8px;">
+                    <li>레이나와 칼시온은 <strong>공중</strong>이 필요합니다</li>
+                    <li>오델로는 <strong>빙결 스택</strong>이 필요합니다</li>
+                    <li>샬롯은 <strong>필드에 중독</strong>이 필요합니다</li>
+                    <li>록시는 <strong>기절</strong>이 필요합니다</li>
+                </ul>
+                <p style="margin-top: 8px;">팀을 최종 확정하기 전에, 메인 DPS에게 무엇이 필요한지 파악하고 최소 한 명의 팀메이트가 안정적으로 적용할 수 있는지 확인하세요.</p>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">이 빌드들을 팀으로 구성할 준비가 되셨나요?</h3>
+                <p style="margin-bottom: 16px;">모든 플레이스타일별 검증된 팀 구성을 확인하세요.</p>
+                <a href="best-team.html" class="btn btn-primary">👥 최고 팀 빌드 보기</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#stats">범용 스탯</a></li>
+                    <li><a href="#table">빌드 표</a></li>
+                    <li><a href="#elements">원소 로직</a></li>
+                    <li><a href="#special">특수 영웅</a></li>
+                    <li><a href="#karma">전용 카르마</a></li>
+                    <li><a href="#sets">장비 세트</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html" class="active">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">영웅 특성 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 & 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">레이드 & 종합 콘텐츠 <span class="count">2</span></a></li>
+                    <li><a href="map.html">지도 & 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">멀티플레이 & 협동 <span class="count">2</span></a></li>
+                    <li><a href="review.html">리뷰 & 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

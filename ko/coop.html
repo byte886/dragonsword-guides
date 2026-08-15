@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>협동 가이드 — 드래곤소드 어웨이크닝: 멀티플레이어 사냥, 레이드 & 친구와 플레이 방법</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 완전 협동 가이드. 어떤 모드가 멀티플레이어를 지원하는지(사냥 2P, 레이드 3P), 초대 코드 시스템, 로비 메커니즘, 장단점, 친구와 플레이 방법.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 협동, 멀티플레이어, 사냥, 레이드, 초대 코드, 로비, 친구와 플레이 방법">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/coop.html">
+    <meta property="og:title" content="협동 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="멀티플레이어 사냥, 레이드, 초대 코드 시스템, 친구와 플레이 방법.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/coop.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/coop.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/coop.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/coop.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/coop.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/coop.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "협동 가이드 — 드래곤소드 어웨이크닝: 멀티플레이어 사냥, 레이드 & 친구와 플레이 방법",
+      "description": "드래곤소드: 어웨이크닝 완전 협동 가이드. 어떤 모드가 멀티플레이어를 지원하는지(사냥 2P, 레이드 3P), 초대 코드 시스템, 로비 메커니즘, 장단점, 친구와 플레이 방법.",
+      "url": "https://ds-guides.wiki/ko/coop.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/coop.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">멀티플레이어</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">협동 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                드래곤소드: 어웨이크닝은 사냥(2인)과 레이드(3인)를 통해 제한된 협동을 지원합니다. 오픈월드나 스토리 협동은 없습니다. 초대 코드로 참여하세요 — 매치메이킹 없고, 친구 목록도 필요 없습니다. 각 플레이어는 자신의 완전한 3영웅 파티를 가져옵니다.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 5분</span>
+                <span>👥 사냥 2P / 레이드 3P</span>
+                <span>🔗 초대 코드만</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>사냥(2P)과 레이드(3P)만 협동을 지원합니다. 오픈월드, 스토리, 시련의 탑 멀티플레이어는 없습니다. 모든 세션은 로비 생성과 초대 코드 공유가 필요합니다. 매치메이킹 없음 — 코드로 친구만 가능합니다. 각 플레이어는 자신의 3영웅 파티를 사용합니다. 빠른 재시도 없음 — 매번 돌 때마다 로비를 다시 만들어야 합니다. 게임은 기본적으로 싱글플레이어 경험입니다.</p>
+            </div>
+
+            <!-- Supported Content -->
+            <h2 id="supported">✅ 협동 지원 콘텐츠</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>모드</th>
+                            <th>최대 플레이어</th>
+                            <th>설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>사냥 (토벌)</strong></td>
+                            <td>2인</td>
+                            <td>폐쇄형 아레나 보스 전투. 각 플레이어는 자신의 3영웅 파티를 가져옵니다.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>레이드</strong></td>
+                            <td>3인</td>
+                            <td>고난이도 인스턴스 콘텐츠. 솔로나 최대 2명의 친구와 플레이할 수 있습니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Not Supported -->
+            <h2>❌ 협동 불가 콘텐츠</h2>
+            <ul>
+                <li><strong>메인 스토리</strong> — 캠페인은 싱글플레이어 전용입니다</li>
+                <li><strong>오픈월드 탐험</strong> — 지도를 함께 탐험할 수 없습니다</li>
+                <li><strong>시련의 탑</strong> — 종합 도전 과제는 솔로 전용입니다</li>
+                <li><strong>일반 필드 탐험</strong> — 오버월드 협동이 없습니다</li>
+                <li><strong>사이드 퀘스트</strong> — 모든 퀘스트는 싱글플레이어입니다</li>
+                <li><strong>PvP</strong> — 플레이어 대 플레이어 모드가 존재하지 않습니다</li>
+            </ul>
+
+            <!-- How to Co-op -->
+            <h2 id="howto">🎮 협동 플레이 방법</h2>
+            <ol>
+                <li><strong>호스트가 로비 생성</strong> — 멀티플레이어 메뉴를 열고 새 세션을 만듭니다</li>
+                <li><strong>콘텐츠 & 난이도 선택</strong> — 호스트만 사냥/레이드와 난이도를 선택할 수 있습니다</li>
+                <li><strong>초대 코드 생성</strong> — 로비가 고유 초대 코드를 생성합니다</li>
+                <li><strong>코드 공유</strong> — 초대 코드를 친구에게 보냅니다</li>
+                <li><strong>친구가 코드 입력</strong> — 친구가 초대 코드를 입력하여 로비에 참여합니다</li>
+                <li><strong>전투 시작</strong> — 모두 준비되면 전투를 시작합니다</li>
+                <li><strong>이후 로비 해산</strong> — 다음 돌을 위해 로비 전체를 다시 만들어야 합니다</li>
+            </ol>
+
+            <!-- Co-op Mechanics -->
+            <h2 id="mechanics">⚙️ 협동 메커니즘</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3 class="card-title">초대 코드 시스템</h3>
+                    <p class="card-desc">고유 초대 코드로 참여합니다. 스팀 친구 목록이 필요 없습니다. 매치메이킹 없음 — 코드를 가진 사람과만 플레이할 수 있습니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title">각 플레이어 = 완전 파티</h3>
+                    <p class="card-desc">모든 플레이어는 자신의 완전한 3영웅 파티를 가져옵니다. 3인 레이드에서는 동시에 9명의 영웅이 필드에 나옵니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3 class="card-title">호스트가 모든 것을 제어</h3>
+                    <p class="card-desc">로비 호스트만 콘텐츠와 난이도를 선택합니다. 설정이 틀리면 로비 전체를 해산하고 다시 만들어야 합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">빠른 재시도 없음</h3>
+                    <p class="card-desc">사냥이나 레이드 완료 후 로비가 자동으로 해산됩니다. 다음 돌을 위해 전체 로비 생성 과정을 다시 거쳐야 합니다.</p>
+                </div>
+            </div>
+
+            <!-- Pros -->
+            <h2 id="pros">👍 협동의 장점</h2>
+            <ul>
+                <li><strong>더 쉬운 고난이도 콘텐츠</strong> — 레이드와 고티어 사냥은 친구와 함께하면 훨씬 수월합니다</li>
+                <li><strong>사회적 경험</strong> — 함께 보스를 공략하고 도전을 공유합니다</li>
+                <li><strong>플레이어당 완전 파티</strong> — 각 플레이어가 3명의 영웅을 가지고 있어 풍부한 전술 조합을 만듭니다</li>
+                <li><strong>간단한 초대 시스템</strong> — 친구 목록 필요 없이 코드만 공유하면 됩니다</li>
+                <li><strong>레이드는 솔로 또는 협동 가능</strong> — 선호도와 파티 위력에 따라 선택하세요</li>
+            </ul>
+
+            <!-- Cons -->
+            <h2 id="cons">👎 제한 & 문제점</h2>
+            <ul>
+                <li><strong>매우 제한된 콘텐츠</strong> — 사냥과 레이드만. 오픈월드 협동은 전혀 없습니다</li>
+                <li><strong>번거로운 워크플로우</strong> — 매번 돌 때마다 로비를 다시 만들어야 하고 빠른 재시도가 없습니다</li>
+                <li><strong>호스트 전용 설정</strong> — 호스트만 콘텐츠/난이도를 고릅니다. 설정이 틀리면 전체 재시작입니다</li>
+                <li><strong>매치메이킹 없음</strong> — 랜덤 플레이어와 플레이할 수 없고 친구만 가능합니다</li>
+                <li><strong>게스트 진행 불명확</strong> — 게스트 진행이 저장되는지 완전히 문서화되지 않았습니다</li>
+                <li><strong>잠금 해제 조건 불명확</strong> — 멀티플레이어가 정확히 언제 잠금 해제되는지 잘 문서화되지 않았습니다</li>
+                <li><strong>모드 충돌</strong> — 모드가 온라인 플레이를 막을 수 있습니다 (양쪽 플레이어가 동일한 모드나 우회 패치가 필요)</li>
+            </ul>
+
+            <!-- Co-op Tips -->
+            <h2 id="tips">💡 협동 팁</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">파티 조율</h3>
+                    <p class="card-desc">미리 친구와 팀 구성에 대해 이야기하세요. 최대 효율을 위해 다른 속성과 역할(DPS, 서포터, 파괴자)을 커버하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">호스트는 미리 계획</h3>
+                    <p class="card-desc">호스트로서 로비를 만들기 전에 어떤 사냥/레이드와 난이도를 원하는지 정확히 알고 가세요. 설정이 틀리면 전체 재시작입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">버프 음식 가지고 가기</h3>
+                    <p class="card-desc">각 플레이어는 참여 전에 자신의 삶기 버프 스튜를 먹어야 합니다. 15분 공격력/치명타 버프가 파티 전체에 중첩됩니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">종합 콘텐츠에만 사용</h3>
+                    <p class="card-desc">협동은 정말 고난이도 레이드와 사냥에만 유용합니다. 스토리와 오픈월드는 솔로 플레이용으로 설계되었습니다.</p>
+                </div>
+            </div>
+
+            <!-- Future -->
+            <h2 id="future">🔮 향후 협동 업데이트</h2>
+            <p>개발자 로드맵에 따르면 향후 업데이트에서 다음이 추가될 수 있습니다:</p>
+            <ul>
+                <li>더 많은 협동 지원 활동</li>
+                <li>차원 균열 시스템 (차원 균열)</li>
+                <li>추가 무료 영웅</li>
+                <li>개인 / 개별 퀘스트</li>
+            </ul>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">참고: 게임은 2026년 7월 23일 출시되었습니다. 협동 기능은 향후 업데이트로 확장될 가능성이 높습니다.</p>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">협동 콘텐츠를 공략할 준비가 되셨나요?</h3>
+                <p style="margin-bottom: 16px;">룬 파밍과 멀티플레이어 전략을 위한 레이드 가이드를 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="raid.html" class="btn btn-primary">💎 레이드 & 룬 가이드</a>
+                    <a href="best-team.html" class="btn btn-secondary">👥 최고 팀</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#supported">지원 콘텐츠</a></li>
+                    <li><a href="#howto">협동 방법</a></li>
+                    <li><a href="#mechanics">협동 메커니즘</a></li>
+                    <li><a href="#pros">장점</a></li>
+                    <li><a href="#cons">제한 사항</a></li>
+                    <li><a href="#tips">협동 팁</a></li>
+                    <li><a href="#future">향후 업데이트</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 & 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">레이드 & 룬 <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">종합 가이드 <span class="count">1</span></a></li>
+                    <li><a href="map.html">지도 & 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html" class="active">협동 가이드 <span class="count">1</span></a></li>
+                    <li><a href="multiplayer.html">멀티플레이 FAQ <span class="count">1</span></a></li>
+                    <li><a href="review.html">리뷰 & 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

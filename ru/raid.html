@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по рейдам и рунам — DragonSword Awakening: Все типы рун, Механики рейдов и Мультиплеер</title>
+    <meta name="description" content="Полный гайд по рейдам и рунам для DragonSword: Awakening. Все 5 типов рун, лучший приоритет рун, разблокировка слотов под руны, Подземелье рун против Рейдов, механики мультиплеера и прогрессия сложности.">
+    <meta name="keywords" content="DragonSword Awakening рейды, руны, Решимость, Усиление, Концентрация, слоты под руны, Подземелье рун, мультиплеер">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ru/raid.html">
+    <meta property="og:title" content="Гайд по рейдам и рунам — DragonSword Awakening">
+    <meta property="og:description" content="Все типы рун, лучший приоритет, разблокировка слотов, механики рейдов и мультиплеер.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/raid.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/raid.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/raid.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/raid.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/raid.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/raid.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Гайд по рейдам и рунам — DragonSword Awakening: Все типы рун, Механики рейдов и Мультиплеер",
+      "description": "Полный гайд по рейдам и рунам для DragonSword: Awakening. Все 5 типов рун, лучший приоритет рун, разблокировка слотов под руны, Подземелье рун против Рейдов, механики мультиплеера и прогрессия сложности.",
+      "url": "https://ds-guides.wiki/ru/raid.html",
+      "inLanguage": "ru",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ru/raid.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                <li><a href="tier-list.html">Тиер лист</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="build.html">Билды</a></li>
+                <li><a href="best-team.html">Команды</a></li>
+                <li><a href="combat.html">Бой</a></li>
+                <li><a href="map.html">Карта</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Играть в Steam</a></li>
+            </ul>
+            <button class="theme-toggle" title="Переключить на светлую тему">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">Контент эндгейма</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Гайд по рейдам и рунам</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                Рейды — основной источник рун — мощных предметов, повышающих характеристики, вставляемых в снаряжение 4 звезды+. Разблокируйте слоты под руны с помощью Инструментов крафта, фармите Подземелье рун для SSR рун и проходите мультиплеерные рейды до 3 игроков.
+            </p>
+            <div class="article-meta">
+                <span>📖 Время чтения: ~7 мин</span>
+                <span>💎 5 типов рун</span>
+                <span>👥 Кооп до 3 игроков</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ Быстрый ответ</div>
+                <p>Руны — это повышения характеристик, прикрепляемые к снаряжению 4 звезды+. Лучший приоритет для DPS: Решимость (ATK) > Усиление (Крит. урон) > Концентрация (Крит. рейт). Разблокируйте слоты под руны с помощью Инструментов крафта Анонимного мастера (из рейдов). Фармите Подземелье рун на Ур62+ для гарантированных SSR рун. Рейды поддерживают до 3 игроков через лобби + код приглашения. Цель: 80% Крит. рейта + 150% Крит. урона.</p>
+            </div>
+
+            <!-- Rune System -->
+            <h2 id="runes">💎 Обзор системы рун</h2>
+            <ul>
+                <li>Руны — это <strong>предметы, повышающие характеристики</strong>, прикрепляемые к снаряжению</li>
+                <li>Каждая руна нацелена на <strong>одну конкретную характеристику</strong></li>
+                <li>В основном получаются через <strong>рейды</strong></li>
+                <li>5 уровней редкости: Повреждённая → Целая → Очищенная → Сияющая → Идеальная</li>
+                <li>RNG независимо влияет на силу руны — высокая редкость не всегда означает большое улучшение</li>
+            </ul>
+
+            <!-- 5 Rune Types -->
+            <h2 id="types">🔮 Все 5 типов рун</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Руна</th>
+                            <th>Повышение характеристики</th>
+                            <th>Лучше всего для</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Решимость</strong></td>
+                            <td>Плоский ATK (Сила атаки)</td>
+                            <td>Все DPS герои. Универсальная лучшая в слоте.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Усиление</strong></td>
+                            <td>Критический урон</td>
+                            <td>DPS с высоким крит. рейтом. Производительность в рейдах резко растёт на 150%+.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Концентрация</strong></td>
+                            <td>Шанс критического удара</td>
+                            <td>DPS, которым сложно достичь предела крит. рейта. Обычно лучше через снаряжение/Карму.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Страж</strong></td>
+                            <td>Плоский DEF (Защита)</td>
+                            <td>Танки / саппорты в сложном рейдовом контенте.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Жизненная сила</strong></td>
+                            <td>Макс. HP</td>
+                            <td>Выживание в сложных рейдах. Не повышает урон.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rune Priority -->
+            <h2 id="priority">🎯 Лучший приоритет рун</h2>
+            <h3>DPS герои</h3>
+            <ol>
+                <li><strong>Решимость</strong> — Плоский ATK применяется ко всем расчётам урона. Универсально полезна.</li>
+                <li><strong>Усиление</strong> — Крит. урон. Производительность в рейдах заметно улучшается на 150%+.</li>
+                <li><strong>Концентрация</strong> — Крит. рейт. Рассматривайте только если ваш рейт нестабилен; обычно эффективнее через снаряжение и Карму.</li>
+            </ol>
+            <h3>Танк / Саппорт герои</h3>
+            <ol>
+                <li><strong>Страж</strong> — Плоский DEF для выживаемости</li>
+                <li><strong>Жизненная сила</strong> — Макс. HP для буфера против взрывного урона</li>
+            </ol>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 Целевые характеристики</div>
+                <p>Стремитесь примерно к <strong>80% Крит. рейта</strong> и <strong>150% Крит. урона</strong> на вашем основном DPS. После достижения этих ориентиров переключите фокус на ATK и Игнорирование DEF.</p>
+            </div>
+
+            <!-- Rune Slot Unlocking -->
+            <h2 id="slots">🔓 Как разблокировать слоты под руны</h2>
+            <p>Слоты под руны <strong>не разблокированы заранее</strong>. Их нужно открывать вручную:</p>
+            <ol>
+                <li>Выберите снаряжение <strong>4 звезды или выше</strong></li>
+                <li>Нажмите на заблокированный слот под руну на снаряжении, или нажмите Triangle/Y во время осмотра</li>
+                <li>Потратьте один <strong>Инструмент крафта Анонимного мастера</strong>, чтобы открыть слот</li>
+                <li>Каждый слот требует свой собственный Инструмент крафта</li>
+                <li>Вставьте нужную руну — общее повышение характеристик отображается в сводке снаряжения</li>
+            </ol>
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ Распространённая ловушка</div>
+                <p>Закончившиеся Инструменты крафта Анонимного мастера — причина №1, по которой игроки застревают в прогрессии рун. Разблокируйте слоты только на постоянном снаряжении вашей основной команды — не тратьте инструменты на временное снаряжение.</p>
+            </div>
+
+            <!-- Rune Farming -->
+            <h2 id="farming">⛏️ Где фармить руны</h2>
+
+            <h3>1. Подземелье рун (魔源旋涡)</h3>
+            <ul>
+                <li>Разблокируется на <strong>Ур50</strong></li>
+                <li>До Ур50 вы можете бросать вызов на 5-10 уровней выше вашего текущего уровня</li>
+                <li>Сложность резко растёт на <strong>Ур55</strong> — нужно снаряжение равного уровня для прохождения</li>
+                <li>После <strong>Ур62</strong> каждое прохождение <strong>гарантирует 1 SSR руну</strong></li>
+                <li><strong>Долгосрочный лучший источник в слоте</strong> для free-to-play игроков</li>
+            </ul>
+
+            <h3>2. Рейды (鏖战副本)</h3>
+            <ul>
+                <li>Разблокируются на <strong>Ур50</strong> (одновременно с Подземельем рун)</li>
+                <li>Низкие тиры дропают руны низкого ранга</li>
+                <li>Боссы высокого тира дропают <strong>высококачественные Золотые / SSR руны</strong></li>
+                <li>Также дропают <strong>Инструменты крафта Анонимного мастера</strong></li>
+                <li>Служат дополнительным источником материалов наряду с Подземельем рун</li>
+            </ul>
+
+            <!-- Multiplayer Mechanics -->
+            <h2 id="multiplayer">👥 Механики мультиплеерных рейдов</h2>
+            <ul>
+                <li>Каждая кооп-сессия требует <strong>создания лобби</strong> и отправки <strong>кода приглашения</strong> друзьям</li>
+                <li>Только <strong>хост лобби</strong> может выбирать подземелье/рейд/охоту и конкретную сложность</li>
+                <li>Если настройки неверны, вы должны <strong>расформировать всё лобби</strong> и создать заново</li>
+                <li><strong>Нет опции немедленного повтора</strong> — после завершения вас выкидывают, и нужно создавать лобби заново</li>
+                <li><strong>Нет коопа в открытом мире</strong> — только подземелья, рейды и охоты поддерживают мультиплеер</li>
+                <li>Рейды позволяют приглашать до <strong>2 других игроков (3 всего)</strong></li>
+            </ul>
+
+            <h3>Система матчмейкинга</h3>
+            <ul>
+                <li>После выбора режима и босса игра проверяет существующие лобби с тем же контентом</li>
+                <li>Если ничего не найдено, создаётся новое лобби, к которому могут присоединиться другие игроки</li>
+                <li>Можно установить комнаты как <strong>Приватные</strong> — только приглашённые игроки могут присоединиться</li>
+            </ul>
+
+            <!-- Game Modes -->
+            <h2>🎮 Сравнение игровых режимов</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Режим</th>
+                            <th>Игроки</th>
+                            <th>Контент</th>
+                            <th>Награды</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Подземелья</strong></td>
+                            <td>Соло / Кооп</td>
+                            <td>Подземелья черт, валютные подземелья</td>
+                            <td>Снаряжение, материалы, золото</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Рейды</strong></td>
+                            <td>До 3 игроков</td>
+                            <td>Бои с боссами высокой сложности</td>
+                            <td>Руны, материалы высокого тира, Инструменты крафта</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Охоты</strong></td>
+                            <td>Соло / Кооп</td>
+                            <td>Охоты на мировых боссов / элит</td>
+                            <td>Материалы для улучшения, материалы Кармы</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Raid Strategy -->
+            <h2 id="strategy">📜 Основная стратегия рейдов</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">Приоритет рун</h3>
+                    <p class="card-desc">DPS: Решимость > Усиление > Концентрация. Танк/Саппорт: Страж > Жизненная сила. Цель 80% крит / 150% крит. урона.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">Управление слотами</h3>
+                    <p class="card-desc">Разблокируйте слоты только на снаряжении 4 звезды+. Приоритизируйте основное снаряжение вашей основной команды. Не тратьте Инструменты крафта на временное снаряжение.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">Кооп-коммуникация</h3>
+                    <p class="card-desc">Координируйте состав команды с друзьями заранее. Хост выбирает сложность. Используйте коды приглашения, если матчмейкинг не работает.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">Прогрессия сложности</h3>
+                    <p class="card-desc">Начинайте с низкого на Ур50. Ур55 требует снаряжение равного уровня. Ур62+ — долгосрочная цель для гарантированных SSR рун.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">Готовы к контенту эндгейма?</h3>
+                <p style="margin-bottom: 16px;">Ознакомьтесь с нашим гайдом по эндгейму и советами по коопу для успеха в мультиплеере.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="endgame.html" class="btn btn-primary">🏆 Гайд по эндгейму</a>
+                    <a href="coop.html" class="btn btn-secondary">👥 Гайд по коопу</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">На этой странице</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#runes">Система рун</a></li>
+                    <li><a href="#types">Все 5 типов рун</a></li>
+                    <li><a href="#priority">Приоритет рун</a></li>
+                    <li><a href="#slots">Разблокировать слоты</a></li>
+                    <li><a href="#farming">Где фармить</a></li>
+                    <li><a href="#multiplayer">Механики мультиплеера</a></li>
+                    <li><a href="#strategy">Стратегия рейдов</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Навигация по вики</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">Начало работы <span class="count">1</span></a></li>
+                    <li><a href="characters.html">Персонажи <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">Тиер лист <span class="count">1</span></a></li>
+                    <li><a href="build.html">Билды и навыки <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">Составы команд <span class="count">1</span></a></li>
+                    <li><a href="combat.html">Боевая система <span class="count">1</span></a></li>
+                    <li><a href="gear.html">Снаряжение и экипировка <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Система кармы <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">Кулинария и рецепты <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Боссы <span class="count">1</span></a></li>
+                    <li><a href="raid.html" class="active">Рейды и руны <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">Гайд по эндгейму <span class="count">1</span></a></li>
+                    <li><a href="map.html">Карта и области <span class="count">1</span></a></li>
+                    <li><a href="coop.html">Мультиплеер и кооп <span class="count">2</span></a></li>
+                    <li><a href="review.html">Обзор и роадмап <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Официальные ссылки</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Магазин Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wiki — это независимый гайд-сайт от фанатов, охватывающий всех героев, боевую механику, билды команд и советы по прогрессу для DragonSword: Awakening. Не связан с Hound13 Inc.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Гайды</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                    <li><a href="tier-list.html">Тиер лист</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="build.html">Билды</a></li>
+                    <li><a href="best-team.html">Билды команд</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Системы</h4>
+                <ul>
+                    <li><a href="combat.html">Бой</a></li>
+                    <li><a href="gear.html">Снаряжение</a></li>
+                    <li><a href="karma.html">Карма</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Сообщество</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Играть в Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">Обзор игры</a></li>
+                    <li><a href="roadmap.html">Роадмап</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. Сделано фанатами, не связано с Hound13.</span>
+            <span>Последнее обновление: Август 2026</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening — торговая марка Hound13 Inc. Этот сайт является сообщественным ресурсом и не одобрен и не связан с Hound13 Inc.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

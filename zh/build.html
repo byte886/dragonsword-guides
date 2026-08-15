@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙之剑：觉醒 配装攻略 — 全部英雄的最佳装备、Karma与符文</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）完整配装指南。全部16个已测试英雄的最佳装备套装、Karma武器、主属性和符文，含元素特定配装逻辑。">
+    <meta name="keywords" content="龙之剑觉醒 配装, 最佳装备, Karma, 符文, 属性, 遗迹破坏者, 暴击率, 暴击伤害">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/build.html">
+    <meta property="og:title" content="龙之剑：觉醒 配装攻略">
+    <meta property="og:description" content="全部英雄的最佳装备、Karma和符文，含元素特定配装逻辑。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/build.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/build.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/build.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/build.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/build.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/build.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "龙之剑：觉醒 配装攻略 — 全部英雄的最佳装备、Karma与符文",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）完整配装指南。全部16个已测试英雄的最佳装备套装、Karma武器、主属性和符文，含元素特定配装逻辑。",
+      "url": "https://ds-guides.wiki/zh/build.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/build.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html" class="active">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">英雄配装</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">完整配装指南</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                每个英雄的最佳装备套装、Karma武器、主属性和符文。配装假设：完全觉醒的英雄，非满级Karma或完美副属性。
+            </p>
+            <div class="article-meta">
+                <span>📖 阅读时间：约10分钟</span>
+                <span>⚔️ 16个英雄配装</span>
+                <span>🔄 2026年8月更新</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Formula -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 快速配装公式</div>
+                <ol style="margin-top: 8px;">
+                    <li>先完全觉醒你的英雄（解锁被动和增强套装效果）</li>
+                    <li>用3件遗迹破坏者作为核心（几乎所有人都需要防御穿透）</li>
+                    <li>目标约80%暴击率和约150%暴击伤害</li>
+                    <li>添加匹配你英雄异常的2件元素套装</li>
+                    <li>队伍：一个英雄施加异常，下一个引爆它</li>
+                </ol>
+            </div>
+
+            <!-- Universal Stats -->
+            <h2 id="stats">📊 通用属性优先级</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">暴击率约80%</h3>
+                    <p class="card-desc">你的第一个目标。低于80%会损失太多伤害稳定性。优先在胸甲和腿甲上堆。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💥</div>
+                    <h3 class="card-title">暴击伤害约150%</h3>
+                    <p class="card-desc">暴击率达标后，堆叠暴击伤害。所有配装的主要伤害乘数。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">副属性优先级</h3>
+                    <p class="card-desc">额外力量 > 攻击力提升 > 防御穿透。重铸装备按此顺序刷。</p>
+                </div>
+            </div>
+
+            <!-- Full Build Table -->
+            <h2 id="table">📋 完整配装表（16个英雄）</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>英雄</th>
+                            <th>专属Karma</th>
+                            <th>装备套装</th>
+                            <th>主属性</th>
+                            <th>符文</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong><a href="lute.html">Lute</a></strong></td>
+                            <td>为朋友召唤的剑</td>
+                            <td>2件神圣仲裁者 + 3件遗迹破坏者</td>
+                            <td>攻击力提升, 暴击伤害, 暴击率</td>
+                            <td>决意 / 振幅</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Johnny</strong></td>
+                            <td>流浪之刃</td>
+                            <td>3件遗迹破坏者 + 2件毒雾暗影</td>
+                            <td>攻击力提升, 暴击伤害, 暴击率</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Castella</strong></td>
+                            <td>喧闹二重奏</td>
+                            <td>3件遗迹破坏者 + 2件苍蓝疾风</td>
+                            <td>攻击力提升, 暴击伤害, 暴击率</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aria</strong></td>
+                            <td>爆炸即艺术</td>
+                            <td>3件炽焰 + 2件苍蓝疾风</td>
+                            <td>攻击力提升, 暴击伤害, 暴击率</td>
+                            <td>振幅 / 决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dana</strong></td>
+                            <td>闪耀的下午茶时光</td>
+                            <td>3件遗迹破坏者 + 2件冰霜风暴</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>振幅 / 决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalien</strong></td>
+                            <td>赤焰的天选者</td>
+                            <td>3件炽焰 + 2件遗迹破坏者</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>振幅 / 决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Roxy</strong></td>
+                            <td>贵族小姐的狂野爱好</td>
+                            <td>3件遗迹破坏者 + 2件血染追逐</td>
+                            <td>暴击率, 攻击力提升, 暴击伤害</td>
+                            <td>振幅 / 决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="theresia.html">Theresia</a></strong></td>
+                            <td>慈悲的死刑判决</td>
+                            <td>3件遗迹破坏者 + 2件神圣仲裁者</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette</strong></td>
+                            <td>神圣闪电洗礼</td>
+                            <td>3件遗迹破坏者 + 2件雷霆冲刺</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="reina.html">Reina</a></strong></td>
+                            <td>守护王国之风</td>
+                            <td>3件遗迹破坏者 + 2件苍蓝疾风</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kalsion</strong></td>
+                            <td>太阳再次升起</td>
+                            <td>3件炽焰 + 2件遗迹破坏者</td>
+                            <td>攻击力提升, 暴击伤害, 暴击率</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cerese</strong></td>
+                            <td>永恒暴风雪</td>
+                            <td>3件遗迹破坏者 + 2件冰霜风暴</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意 / 振幅</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Astria</strong></td>
+                            <td>风中绽放的风之花</td>
+                            <td>3件遗迹破坏者 + 2件神圣仲裁者</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>振幅 / 决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eileen</strong></td>
+                            <td>骑士精神与书签之间</td>
+                            <td>3件苍蓝疾风 + 2件生命之歌 / 遗迹破坏者</td>
+                            <td>攻击力提升, 暴击伤害, 最大生命值</td>
+                            <td>决意 / 振幅</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Othello</strong></td>
+                            <td>击落太阳之矛</td>
+                            <td>3件遗迹破坏者 + 2件冰霜风暴</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意</td>
+                        </tr>
+                        <tr>
+                            <td><strong><a href="charlotte.html">Charlotte</a></strong></td>
+                            <td>黑暗中留下的信念</td>
+                            <td>3件遗迹破坏者 + 2件毒雾暗影</td>
+                            <td>攻击力提升, 暴击率, 暴击伤害</td>
+                            <td>决意</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">* Alex、Sion和Tarte的配装仍在测试中。数据将随着社区测试进展更新。</p>
+
+            <!-- Element Build Logic -->
+            <h2 id="elements">🔥 元素特定配装逻辑</h2>
+
+            <h3>猛毒 / 中毒（Johnny + Charlotte）</h3>
+            <ul>
+                <li><strong>Johnny</strong>——主要猛毒DPS，在场上维持中毒。2件毒雾暗影放大中毒伤害。</li>
+                <li><strong>Charlotte</strong>——需要Johnny维持中毒才能达到爆发上限。两者为彼此设计。</li>
+            </ul>
+
+            <h3>烈焰 / 燃烧（Aria + Kalien + Kalsion）</h3>
+            <ul>
+                <li><strong>Aria</strong>——起手者。同时施加燃烧和浮空。Reina和Kalsion的最佳起手英雄。用3件炽焰。</li>
+                <li><strong>Kalien</strong>——通过狐狸分身快速叠加燃烧。狐狸抓取和终曲提供爆发+气绝。</li>
+                <li><strong>Kalsion</strong>——重击手。武器烈焰增强伤害，但需要浮空和燃烧起手者才能达到巅峰。</li>
+            </ul>
+
+            <h3>冰霜 / 冰冻（Othello + Cerese + Dana）</h3>
+            <ul>
+                <li><strong>Cerese</strong>——最佳冰霜施加者。多段伤害+强力控制分组。弱点：大型Boss（长动画，冰风暴劣势）。</li>
+                <li><strong>Othello</strong>——冰霜DPS。需要快速叠冰霜来触发最大伤害窗口。专属Karma弥补低基础暴击被动。</li>
+                <li><strong>Dana</strong>——灵活。在场外造成冰霜，用使魔牵制敌人，完美格挡后提供队伍护盾。</li>
+            </ul>
+
+            <h3>流血 / 气绝（Roxy + Theresia + Astria）</h3>
+            <ul>
+                <li><strong>Roxy</strong>——全距离快速叠流血，但需要气绝来最大化伤害。Theresia和Astria是天然搭档。</li>
+                <li><strong>Theresia</strong>——场上DPS。同时施加流血和重型气绝。</li>
+                <li><strong>Astria</strong>——用机动性换伤害。雨状箭矢叠加气绝和破击。队友控制敌人时输出。暴击率是最高优先级。</li>
+            </ul>
+
+            <h3>疾风 / 浮空（Reina + Eileen）</h3>
+            <ul>
+                <li><strong>Reina</strong>——单体专家。对浮空敌人的长技能连招链。2件苍蓝疾风直接放大疾风伤害。Aria是最佳起手者。</li>
+                <li><strong>Eileen</strong>——从进攻角度支援浮空。提升队伍移动速度和攻击力。作为快速切换角色表现良好，暴击扎实。最灵活的装备（生命之歌或遗迹破坏者）。</li>
+            </ul>
+
+            <h3>雷电 / 电击（Ornette）</h3>
+            <ul>
+                <li><strong>Ornette</strong>——强力的雷电英雄，可以领导大多数队伍。在电击队伍中达到巅峰。2件雷霆冲刺是必需的。</li>
+                <li>当Sion和Tarte不可用时，Lute可作为替代搭档（治疗和攻击力增益维持Ornette的输出）。</li>
+            </ul>
+
+            <!-- Special Heroes -->
+            <h2 id="special">🌟 特殊英雄</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">Lute</h3>
+                    <p class="card-desc">游戏中仅有的两个治疗者之一（另一个是Tarte）。几乎任何队伍的通用选择。第一个觉醒节点提升队伍攻击力。适合击倒和气绝队伍。2件神圣仲裁者提供治疗输出，遗迹破坏者维持个人伤害。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">Tarte</h3>
+                    <p class="card-desc">另一个治疗者。配装仍在最终测试中。在生存成为瓶颈的高难度内容中价值显著上升。</p>
+                </div>
+            </div>
+
+            <!-- Exclusive Karma -->
+            <h2 id="karma">🗡️ 专属Karma获取</h2>
+            <p>专属Karma武器（如Johnny的流浪之刃或Cerese的永恒暴风雪）需要<strong>残影碎片</strong>和<strong>记忆</strong>来获取。</p>
+            <ul>
+                <li>刷这些材料是功能配装和完全优化配装之间的主要进度门槛</li>
+                <li>在追求完美符文副属性之前，优先为你计划主修的英雄刷碎片</li>
+                <li>基础Karma可以在兑换商店购买，不是英雄特定的</li>
+                <li>用7个相同的基础Karma升满（1个本体+6个副本）</li>
+                <li>世界Boss可以掉落基础Karma（随机），每日可刷</li>
+            </ul>
+
+            <!-- Gear Sets Reference -->
+            <h2 id="sets">🛡️ 装备套装参考</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>套装名称</th>
+                            <th>效果 / 使用场景</th>
+                            <th>使用者</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>遗迹破坏者（3件）</strong></td>
+                            <td>防御穿透——核心DPS套装</td>
+                            <td>几乎每个英雄</td>
+                        </tr>
+                        <tr>
+                            <td><strong>毒雾暗影（2件）</strong></td>
+                            <td>放大中毒伤害</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>炽焰（3件）</strong></td>
+                            <td>燃烧伤害放大</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>冰霜风暴（2件）</strong></td>
+                            <td>冰霜伤害放大</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>血染追逐（2件）</strong></td>
+                            <td>流血伤害放大</td>
+                            <td>Roxy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>苍蓝疾风（2件）</strong></td>
+                            <td>疾风 / 浮空伤害</td>
+                            <td>Castella, Aria, Reina, Eileen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>雷霆冲刺（2件）</strong></td>
+                            <td>电击伤害放大</td>
+                            <td>Ornette</td>
+                        </tr>
+                        <tr>
+                            <td><strong>神圣仲裁者（2件）</strong></td>
+                            <td>治疗输出 / 光属性伤害</td>
+                            <td>Lute, Theresia, Astria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>生命之歌（2件）</strong></td>
+                            <td>生存 / 治疗</td>
+                            <td>Eileen（可选）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Team Building Principle -->
+            <h2>🤝 队伍搭建原则</h2>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 关键洞察</div>
+                <p>大多数DPS英雄需要至少一个特定条件才能达到伤害上限：</p>
+                <ul style="margin-top: 8px;">
+                    <li>Reina和Kalsion需要<strong>浮空</strong></li>
+                    <li>Othello需要<strong>冰霜层数</strong></li>
+                    <li>Charlotte需要<strong>场上中毒</strong></li>
+                    <li>Roxy需要<strong>气绝</strong></li>
+                </ul>
+                <p style="margin-top: 8px;">在最终确定队伍之前，确定你的主DPS需要什么，并确保至少一个队友能可靠施加它。</p>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">准备好把这些配装放进队伍了吗？</h3>
+                <p style="margin-bottom: 16px;">查看我们经过验证的每种玩法的队伍搭配。</p>
+                <a href="best-team.html" class="btn btn-primary">👥 查看最佳队伍搭配</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#stats">通用属性</a></li>
+                    <li><a href="#table">配装表</a></li>
+                    <li><a href="#elements">元素逻辑</a></li>
+                    <li><a href="#special">特殊英雄</a></li>
+                    <li><a href="#karma">专属Karma</a></li>
+                    <li><a href="#sets">装备套装</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html" class="active">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">英雄特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">副本与终局 <span class="count">2</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

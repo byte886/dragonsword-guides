@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테레지아 가이드 — 드래곤소드 어웨이크닝: 빌드, 팀 & 스킬</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝의 완전한 테레지아 가이드. S티어 이단 심문관의 최고 빌드, 팀 구성, 모든 스킬, 콤보 루프, 전투 팁을 확인하세요.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 테레지아, 이단 심문관, 출혈, 기절, 빌드, 팀, 스킬, 디바인 아크">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/theresia.html">
+    <meta property="og:title" content="테레지아 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="S티어 이단 심문관의 최고 빌드, 팀, 스킬, 콤보 루프.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/theresia.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/theresia.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/theresia.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/theresia.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/theresia.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/theresia.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "테레지아 가이드 — 드래곤소드 어웨이크닝: 빌드, 팀 & 스킬",
+      "description": "드래곤소드: 어웨이크닝의 완전한 테레지아 가이드. S티어 이단 심문관의 최고 빌드, 팀 구성, 모든 스킬, 콤보 루프, 전투 팁을 확인하세요.",
+      "url": "https://ds-guides.wiki/ko/theresia.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/theresia.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html" class="active">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">오르가나 교단 · S티어</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">테레지아 — 이단 심문관</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                집행 권한을 가진 열 명뿐인 이단 심문관 중 한 명. 게임 내 가장 자립적인 출혈+기절 DPS로, 세팅 파트너 없이도 두 가지 상태 이상을 혼자서 적용합니다.
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 쌍둥이 메이스</div>
+                <div class="hero-stat"><span class="dot"></span> 앰플리튜드 특성</div>
+                <div class="hero-stat"><span class="dot"></span> 출혈 / 기절</div>
+                <div class="hero-stat"><span class="dot"></span> 교환 상점</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>테레지아는 게임 내 최고의 공격형 캐리입니다. 출혈과 기절을 혼자서 적용하기 때문에 팀을 가장 쉽게 꾸릴 수 있는 영웅입니다. 핵심 루프: 콘스크레이션(출혈) → 셀레스티얼 버딕트(기절) → 록시로 교체하여 폭딜. 최고 팀: 테레지아 + 록시 + 루트.</p>
+            </div>
+
+            <!-- Character Info -->
+            <h2 id="overview">📋 캐릭터 개요</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td><strong>이름</strong></td><td>테레지아 (Theresia)</td></tr>
+                        <tr><td><strong>세력</strong></td><td>오르가나 교단</td></tr>
+                        <tr><td><strong>칭호</strong></td><td>이단 심문관 (집행 권한 가진 10명 중 한 명)</td></tr>
+                        <tr><td><strong>영웅 특성</strong></td><td>앰플리튜드</td></tr>
+                        <tr><td><strong>무기</strong></td><td>쌍둥이 메이스 (근거리)</td></tr>
+                        <tr><td><strong>상태 이상</strong></td><td>출혈, 기절</td></tr>
+                        <tr><td><strong>잠금 해제</strong></td><td>교환 상점 (운명의 초대장 1개)</td></tr>
+                        <tr><td><strong>전용 카르마</strong></td><td>자비로운 사형 선고 (Merciful Death Sentence)</td></tr>
+                        <tr><td><strong>티어</strong></td><td><span class="tier-badge tier-s">S티어</span></td></tr>
+                        <tr><td><strong>플레이 스타일</strong></td><td>자립형 공격 캐리, 이중 상태 이상 DPS</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Skills -->
+            <h2 id="skills">⚔️ 모든 스킬 설명</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>스킬</th>
+                            <th>유형</th>
+                            <th>효과</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>콘스크레이션 (Consecration)</strong></td>
+                            <td>액티브</td>
+                            <td>회전하는 메이스를 남기는 강력한 전방 타격. 발동 시 기본 공격 체인을 연장. <strong>출혈</strong> 적용.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>셀레스티얼 버딕트 (Celestial Verdict)</strong></td>
+                            <td>액티브</td>
+                            <td>점프하여 땅을 내리찍어 충격파 생성. <strong>기절</strong> 적용. 아군의 시그널 스킬 창을 엽니다.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>디바인 아크 (Divine Arc)</strong></td>
+                            <td>시그널 스킬</td>
+                            <td><strong>기절</strong>한 적에게 발동. 대상에게 돌진하여 출혈 적용. <strong>주요 폭딜 스킬</strong> — 게임 내 최고 피해 스킬 중 하나.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>홀리 라이즈 (Holy Rise)</strong></td>
+                            <td>시그널 스킬</td>
+                            <td><strong>출혈</strong> 중인 적에게 발동. 출혈 재적용 및 대상을 <strong>공중</strong>으로 띄움. 테레지아를 공중 팀에 통합시킵니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Core Combo Loop -->
+            <h2 id="combo">🔄 핵심 콤보 루프</h2>
+            <div class="card">
+                <h3 class="card-title">테레지아 원맨 세팅</h3>
+                <p style="margin-top: 8px;">대부분의 영웅과 달리 테레지아는 상태 이상 세팅을 위해 파트너가 필요 없습니다. 혼자서 모든 것을 처리합니다:</p>
+                <ol style="margin-top: 16px;">
+                    <li><strong>콘스크레이션</strong> — 출혈 적용, 공격 체인 연장</li>
+                    <li><strong>셀레스티얼 버딕트</strong> — 내리찍어 기절, 시그널 창 개방</li>
+                    <li><strong>아군으로 교체</strong> — 록시나 다른 영웅이 기절한 적에게 시그널 스킬 발동</li>
+                    <li><strong>다시 교체</strong> — 기절한 대상에게 디바인 아크로 압박 지속</li>
+                </ol>
+                <div class="alert alert-info" style="margin-top: 16px;">
+                    <div class="alert-title">💡 핵심 인사이트</div>
+                    <p>테레지아는 출혈과 기절을 혼자 적용하기 때문에 게임 내 가장 유연한 팀 앵커입니다. 어느 한쪽 상태 이상에 반응하는 영웅이면 누구나 그와 호흡합니다.</p>
+                </div>
+            </div>
+
+            <!-- Best Build -->
+            <h2 id="build">🛡️ 최고 빌드 (종합 콘텐츠 컨센서스)</h2>
+            <div class="card">
+                <div class="table-wrapper" style="margin-top: 0;">
+                    <table>
+                        <tbody>
+                            <tr><td><strong>전용 카르마</strong></td><td>자비로운 사형 선고</td></tr>
+                            <tr><td><strong>장비 세트</strong></td><td>루인스브레이커 3세트 + 홀리 아비터 2세트</td></tr>
+                            <tr><td><strong>주요 스탯</strong></td><td>공격력 증가 → 치명타 확률 → 치명타 피해</td></tr>
+                            <tr><td><strong>부 스탯</strong></td><td>추가 위력 > 공격력 증가 > 방어 무시</td></tr>
+                            <tr><td><strong>룬</strong></td><td>결의 (또는 최대 치명타 피해용 증폭 x5)</td></tr>
+                            <tr><td><strong>스탯 목표</strong></td><td>치명타 확률 ~80% / 치명타 피해 ~150%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>이 빌드를 선택하는 이유</h4>
+                    <ul>
+                        <li><strong>루인스브레이커 3세트</strong> — 시그널 스킬 방어 무시 (10초, 20% 방어 관통). 보스 피해에 핵심적입니다.</li>
+                        <li><strong>홀리 아비터 2세트</strong> — 기절한 적에게 +15% 피해. 테레지아의 기절 중심 플레이스타일과 완벽히 맞습니다.</li>
+                        <li><strong>결의</strong> — 안정적인 피해 증가. 최대 치명타 피해를 노리고 싶다면 증폭 x5로 교체하세요.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Best Teams -->
+            <h2 id="teams">👥 최고 팀 구성</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>팀</th>
+                            <th>최적 상황</th>
+                            <th>핵심 루프</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>테레지아 + 록시 + 루트</strong></td>
+                            <td>최고의 범용 팀</td>
+                            <td>테레지아의 출혈+기절 → 제어 중 록시 딜 → 루트 힐링</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 레이나 + 카스텔라</strong></td>
+                            <td>종합 콘텐츠 최고 범용</td>
+                            <td>현재 종합 콘텐츠 벤치마크. 거의 모든 활동에 통합니다.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 카스텔라 + 루트</strong></td>
+                            <td>긴 보스 전</td>
+                            <td>카스텔라가 추가 기절 적용, 루트가 유지력 제공</td>
+                        </tr>
+                        <tr>
+                            <td><strong>루트 + 테레지아 + 오르네트</strong></td>
+                            <td>초보자</td>
+                            <td>초반 잠금 해제, 무료 장비, 균형 잡힌 유지+딜, 복잡한 메커닉 없음</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 록시 + 카스텔라</strong></td>
+                            <td>출혈 특화</td>
+                            <td>고체력 대상 출혈 피해 극대화. 힐러 없음 — 높은 난이도</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Boss Fight Loop -->
+            <h2 id="combo">👹 보스 전 루프</h2>
+            <ol>
+                <li>테레지아의 셀레스티얼 버딕트로 시작하여 기절 적용</li>
+                <li>적이 기절하면 록시로 교체하여 시그널 스킬 발동</li>
+                <li>대상이 제어된 동안 록시로 딜 지속</li>
+                <li>3번 영웅(힐링은 루트, 추가 기절은 카스텔라)으로 루프 완성</li>
+                <li>테레지아로 다시 교체하고 반복 — 콘스크레이션 → 셀레스티얼 버딕트 → 디바인 아크 폭딜</li>
+            </ol>
+
+            <!-- Combat Tips -->
+            <h2 id="tips">🎮 전투 팁</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">자립형 세팅</h3>
+                    <p class="card-desc">테레지아는 상태 이상 세팅을 위해 아군이 필요 없습니다. 출혈+기절을 혼자 적용 — 두 가지를 안정적으로 할 수 있는 유일한 영웅입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">콘스크레이션 먼저</h3>
+                    <p class="card-desc">항상 콘스크레이션으로 시작하여 출혈을 적용하고 공격 체인을 연장한 후 셀레스티얼 버딕트로 기절하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">디바인 아크 = 폭딜</h3>
+                    <p class="card-desc">기절한 적에게 디바인 아크가 주요 피해원입니다. 게임 전체에서 최고 폭딜 스킬 중 하나입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">공중용 홀리 라이즈</h3>
+                    <p class="card-desc">홀리 라이즈는 출혈 중인 적을 공중으로 띄웁니다. 이를 사용해 테레지아를 공중 팀 구성에 통합하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">넓은 메이스 범위</h3>
+                    <p class="card-desc">쌍둥이 메이스는 대부분의 근거리 무기보다 사거리가 넓습니다. 군상 상대에서 빗나갈 일이 거의 없어 잡몹 처리에 탁월합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">먼저 각성</h3>
+                    <p class="card-desc">6성 각성 시 패시브와 강화 스킬이 해제됩니다. 그때야 치명타 스탯 라인에 투자할 가치가 생깁니다.</p>
+                </div>
+            </div>
+
+            <!-- Common Mistakes -->
+            <h2>⚠️ 흔한 실수</h2>
+            <ul>
+                <li><strong>잘못된 속성 카르마</strong> — 항상 전용 카르마(자비로운 사형 선고)를 사용하세요, 일반 무기가 아닙니다</li>
+                <li><strong>동일 세트 5피스</strong> — 절대 한 세트 5개를 사용하지 마세요. 3+2 혼합(루인스브레이커 + 홀리 아비터)이 항상 더 좋습니다</li>
+                <li><strong>방어 무시 무시</strong> — 루인스브레이커의 방어 무시는 보스 피해에 핵심적입니다. 건너뛰지 마세요</li>
+                <li><strong>순수 DPS 마인드</strong> — 테레지아의 힘은 raw 공격이 아닌 상태 이상에서 나옵니다. 항상 출혈/기절을 적용하세요</li>
+                <li><strong>이른 전용 카르마 투자</strong> — 테레지아가 메인 DPS인 게 확실해지기 전까지 전용 재료를 모으지 마세요</li>
+            </ul>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">모든 영웅 순위가 궁금하신가요?</h3>
+                <p style="margin-bottom: 16px;">완전한 티어 리스트와 캐릭터 데이터베이스를 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 티어 리스트 보기</a>
+                    <a href="characters.html" class="btn btn-secondary">👥 전체 캐릭터</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview">캐릭터 개요</a></li>
+                    <li><a href="#skills">모든 스킬</a></li>
+                    <li><a href="#combo">핵심 콤보 루프</a></li>
+                    <li><a href="#build">최고 빌드</a></li>
+                    <li><a href="#teams">최고 팀</a></li>
+                    <li><a href="#tips">전투 팁</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">다른 영웅</div>
+                <ul class="sidebar-nav">
+                    <li><a href="lute.html">⚔️ 루트</a></li>
+                    <li><a href="charlotte.html">🗡️ 샬롯</a></li>
+                    <li><a href="reina.html">🌪️ 레이나</a></li>
+                    <li><a href="characters.html">📋 전체 캐릭터</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

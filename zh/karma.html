@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma系统攻略 — 龙之剑：觉醒：基础与专属Karma、突破与刷取</title>
+    <meta name="description" content="DragonSword: Awakening（龙之剑：觉醒）完整Karma系统指南。了解基础与专属Karma、突破到VI阶、元素匹配、残影碎片刷取和全部英雄专属Karma列表。">
+    <meta name="keywords" content="龙之剑觉醒 Karma, 专属Karma, 基础Karma, 突破, 残影碎片, 刷取, Shanoa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/zh/karma.html">
+    <meta property="og:title" content="Karma系统攻略 — 龙之剑：觉醒">
+    <meta property="og:description" content="基础与专属Karma、突破、元素匹配和刷取路线。">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/karma.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/karma.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/karma.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/karma.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/karma.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/karma.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Karma系统攻略 — 龙之剑：觉醒：基础与专属Karma、突破与刷取",
+      "description": "DragonSword: Awakening（龙之剑：觉醒）完整Karma系统指南。了解基础与专属Karma、突破到VI阶、元素匹配、残影碎片刷取和全部英雄专属Karma列表。",
+      "url": "https://ds-guides.wiki/zh/karma.html",
+      "inLanguage": "zh-CN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/zh/karma.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">新手攻略</a></li>
+                <li><a href="tier-list.html">强度榜</a></li>
+                <li><a href="characters.html">角色</a></li>
+                <li><a href="build.html">配装</a></li>
+                <li><a href="best-team.html">队伍</a></li>
+                <li><a href="combat.html">战斗</a></li>
+                <li><a href="map.html">地图</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam购买</a></li>
+            </ul>
+            <button class="theme-toggle" title="切换亮色模式">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">成长系统</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Karma系统攻略</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                Karma是插入英雄武器的能力卡。每张卡带有基础属性+特殊特性，最强的专属Karma可以重写技能在战斗中的表现。最大的战力提升来自突破，而非升级。
+            </p>
+            <div class="article-meta">
+                <span>📖 阅读时间：约8分钟</span>
+                <span>🃏 16个专属Karma</span>
+                <span>⬆️ 最高VI阶</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 快速答案</div>
+                <p>Karma是独立于装备和英雄等级的武器槽能力卡。两种类型：基础（任何匹配元素的英雄可用）和专属（仅一个特定英雄可用，毕业装）。战力来自突破（喂相同副本，最高VI阶，共需5个副本）。总是先匹配元素——不匹配的Karma特性不生效。每日刷世界Boss获取基础Karma副本；用Shanoa制作残影碎片获取专属Karma。</p>
+            </div>
+
+            <!-- Two Types -->
+            <h2 id="types">🃏 两种Karma</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>可用者</th>
+                            <th>主要效果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>基础Karma</strong></td>
+                            <td>任何匹配元素的英雄</td>
+                            <td>属性和条件加成。可在多个配装中复用。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>专属Karma</strong></td>
+                            <td>仅一个特定英雄</td>
+                            <td>强力属性+修改技能的英雄特定被动。专精DPS的毕业装。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📜</div>
+                    <h3 class="card-title">基础Karma成长</h3>
+                    <p class="card-desc">通过升级、突破和副本升阶成长。通过常规Karma卡和货币途径获取。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⭐</div>
+                    <h3 class="card-title">专属Karma成长</h3>
+                    <p class="card-desc">需要专属Karma资源进行长期成长。通过英雄日志、试炼之塔兑换、分解价值和转换获取。</p>
+                </div>
+            </div>
+
+            <!-- Ascension -->
+            <h2 id="ascension">⬆️ 突破系统（真正的战力提升）</h2>
+            <p>真正的战力提升来自<strong>突破</strong>，而非等级条。以下是工作原理：</p>
+            <ul>
+                <li>突破只接受<strong>完全相同的Karma副本</strong></li>
+                <li>基础卡只显示起始属性。喂副本解锁并增强特殊特性</li>
+                <li>最高阶：<strong>VI阶</strong>——共需<strong>5个副本</strong></li>
+                <li>每阶增强特性（额外暴击、更多异常伤害、技能特定修改）</li>
+                <li><strong>提交副本前总是打开预览</strong>查看下一个副本解锁什么</li>
+            </ul>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 专业提示</div>
+                <p>不要把副本浪费在你不主修的英雄上。突破是永久的且资源密集。选1-2个DPS英雄，把所有Karma投资集中在他们身上。</p>
+            </div>
+
+            <!-- Element Matching -->
+            <h2 id="element">🔥 元素匹配要求</h2>
+            <p>技术上你可以在任何英雄上插入任何Karma，但Karma卡带有一个<strong>必须与英雄元素匹配</strong>的元素。</p>
+            <ul>
+                <li>如果元素不匹配，<strong>特性线不会正确激活</strong></li>
+                <li>示例：冰霜英雄Reina需要冰霜Karma。流血或物理卡会浪费重要效果</li>
+                <li><strong>先匹配元素，再考虑突破</strong></li>
+            </ul>
+
+            <!-- Acquisition -->
+            <h2 id="acquisition">🎯 如何获取Karma卡</h2>
+            <h3>基础Karma</h3>
+            <ul>
+                <li>战役进度给一些卡</li>
+                <li>其他通过购买或刷取获取</li>
+                <li>购买货币来自随机宝箱</li>
+                <li><strong>最可靠：试炼之塔</strong>（解锁后）</li>
+                <li><strong>世界Boss</strong>是基础Karma副本最可靠的每日来源——选匹配你主DPS元素的Boss</li>
+            </ul>
+
+            <h3 id="list">专属Karma</h3>
+            <ul>
+                <li>英雄任务（完成获取）</li>
+                <li>试炼之塔兑换</li>
+                <li>分解不需要的专属Karma获取资源</li>
+                <li>通过残影碎片制作（见下文）</li>
+            </ul>
+
+            <!-- Fragment of Afterimage -->
+            <h2 id="fragment">✨ 残影碎片（专属Karma制作）</h2>
+            <p>残影碎片是用于<strong>兑换专属Karma</strong>的货币。每张专属Karma卡花费1个碎片。</p>
+
+            <h3>如何制作</h3>
+            <p>获取残影碎片的唯一方法是通过<strong>炼金术士Shanoa</strong>的转换：</p>
+            <div class="card">
+                <h3 class="card-title">Shanoa转换配方</h3>
+                <div class="table-wrapper" style="margin-top: 16px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>材料</th>
+                                <th>数量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>旋转的思绪</td><td>1</td></tr>
+                            <tr><td>记忆碎片</td><td>100</td></tr>
+                            <tr><td>金币</td><td>100,000</td></tr>
+                            <tr><td><strong>结果</strong></td><td><strong>1个残影碎片</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 16px;"><strong>Shanoa位置：</strong>奥比斯王城大教堂附近。</p>
+            </div>
+
+            <h3>记忆碎片用途</h3>
+            <ul>
+                <li>升级基础Karma</li>
+                <li>在Shanoa处转换为残影碎片</li>
+                <li><strong>来源：</strong>宝箱、任务、首次试炼通关、佣兵升级、试炼之塔</li>
+                <li><strong>后期主要来源：</strong>试炼之塔（位于天尖岩山脉）</li>
+            </ul>
+
+            <!-- Exclusive Karma List -->
+            <h2>📋 全部16个专属Karma</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>英雄</th>
+                            <th>专属Karma名称</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Johnny</td><td>流浪之刃</td></tr>
+                        <tr><td><a href="lute.html">Lute</a></td><td>为朋友召唤的剑</td></tr>
+                        <tr><td>Castella</td><td>喧闹二重奏</td></tr>
+                        <tr><td>Aria</td><td>爆炸即艺术</td></tr>
+                        <tr><td>Dana</td><td>闪耀的下午茶时光</td></tr>
+                        <tr><td>Kalien</td><td>赤焰的天选者</td></tr>
+                        <tr><td>Roxy</td><td>贵族小姐的狂野爱好</td></tr>
+                        <tr><td><a href="theresia.html">Theresia</a></td><td>慈悲的死刑判决</td></tr>
+                        <tr><td>Ornette</td><td>神圣闪电洗礼</td></tr>
+                        <tr><td><a href="reina.html">Reina</a></td><td>守护王国之风</td></tr>
+                        <tr><td>Kalsion</td><td>太阳再次升起</td></tr>
+                        <tr><td>Cerese</td><td>永恒暴风雪</td></tr>
+                        <tr><td>Astria</td><td>风中绽放的风之花</td></tr>
+                        <tr><td>Eileen</td><td>骑士精神与书签之间</td></tr>
+                        <tr><td>Othello</td><td>击落太阳之矛</td></tr>
+                        <tr><td><a href="charlotte.html">Charlotte</a></td><td>黑暗中留下的信念</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Hero Progression Comparison -->
+            <h2 id="compare">📊 英雄成长系统对比</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>系统</th>
+                            <th>改变什么</th>
+                            <th>主要资源</th>
+                            <th>刷取地点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>技能</strong></td>
+                            <td>能力强度和选项</td>
+                            <td>战斗记录</td>
+                            <td>狩猎</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karma</strong></td>
+                            <td>武器特性和专属效果</td>
+                            <td>记忆碎片 / 专属资源</td>
+                            <td>试炼之塔、宝箱、英雄任务、Shanoa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>觉醒</strong></td>
+                            <td>玩法、优势、劣势</td>
+                            <td>烙印觉醒石</td>
+                            <td>突发任务的圣光碎片</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Core Principles -->
+            <h2>📜 Karma系统核心原则</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">先匹配元素</h3>
+                    <p class="card-desc">Karma必须匹配英雄元素，否则特性不激活。这是不可协商的。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">先突破基础Karma</h3>
+                    <p class="card-desc">给你的主DPS装备匹配元素的基础Karma，然后喂副本到VI阶。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">专属是长期投资</h3>
+                    <p class="card-desc">只为你实际玩的1-2个英雄投资专属Karma。这是巨大的资源消耗。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">每日刷世界Boss</h3>
+                    <p class="card-desc">基础Karma副本最可靠的来源。每天都做。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">试炼之塔=材料核心</h3>
+                    <p class="card-desc">后期记忆碎片的主要来源。优先解锁和刷取。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">分解不需要的专属</h3>
+                    <p class="card-desc">拿到不用的英雄的专属Karma？分解它获取资源来制作你需要的。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">7</div>
+                    <h3 class="card-title">突破前预览</h3>
+                    <p class="card-desc">提交前总是检查预览看下一个副本解锁什么。</p>
+                </div>
+            </div>
+
+            <!-- Material Summary -->
+            <h2 id="materials">📦 材料获取总结</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>材料</th>
+                            <th>用途</th>
+                            <th>主要来源</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>记忆碎片</strong></td>
+                            <td>升级基础Karma + 转换</td>
+                            <td>宝箱、任务、试炼之塔、首次通关</td>
+                        </tr>
+                        <tr>
+                            <td><strong>残影碎片</strong></td>
+                            <td>兑换专属Karma</td>
+                            <td>Shanoa转换（记忆+旋转的思绪+金币）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>旋转的思绪</strong></td>
+                            <td>转换为残影碎片</td>
+                            <td>试炼之塔</td>
+                        </tr>
+                        <tr>
+                            <td><strong>基础Karma卡</strong></td>
+                            <td>武器属性+特性</td>
+                            <td>世界Boss、宝箱、试炼之塔兑换</td>
+                        </tr>
+                        <tr>
+                            <td><strong>专属Karma卡</strong></td>
+                            <td>英雄特定被动</td>
+                            <td>英雄任务、残影碎片兑换、分解</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">准备好优化你的英雄配装了吗？</h3>
+                <p style="margin-bottom: 16px;">查看我们完整的配装指南，含每个英雄的Karma推荐。</p>
+                <a href="build.html" class="btn btn-primary">⚔️ 查看英雄配装</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">本页目录</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#types">两种Karma</a></li>
+                    <li><a href="#ascension">突破系统</a></li>
+                    <li><a href="#element">元素匹配</a></li>
+                    <li><a href="#acquisition">获取方法</a></li>
+                    <li><a href="#fragment">残影碎片</a></li>
+                    <li><a href="#list">专属Karma列表</a></li>
+                    <li><a href="#compare">成长系统对比</a></li>
+                    <li><a href="#materials">材料总结</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">维基导航</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">入门指南 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">角色 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">强度榜 <span class="count">1</span></a></li>
+                    <li><a href="build.html">配装与技能 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">队伍搭配 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">战斗系统 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">英雄特性 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">装备系统 <span class="count">1</span></a></li>
+                    <li><a href="karma.html" class="active">Karma系统 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">烹饪与配方 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Boss攻略 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">副本与终局 <span class="count">2</span></a></li>
+                    <li><a href="map.html">地图与区域 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">多人与联机 <span class="count">2</span></a></li>
+                    <li><a href="review.html">评测与路线图 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">官方链接</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam商店</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>龙之剑：觉醒 中文维基</h3>
+                <p>龙之剑：觉醒中文维基是独立的玩家攻略站，涵盖 DragonSword: Awakening 的全部角色、战斗机制、队伍搭配和成长技巧。与 Hound13 Inc. 无官方关联。</p>
+            </div>
+            <div class="footer-col">
+                <h4>攻略</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">新手攻略</a></li>
+                    <li><a href="tier-list.html">强度榜</a></li>
+                    <li><a href="characters.html">角色</a></li>
+                    <li><a href="build.html">配装</a></li>
+                    <li><a href="best-team.html">队伍搭配</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>系统</h4>
+                <ul>
+                    <li><a href="combat.html">战斗</a></li>
+                    <li><a href="gear.html">装备</a></li>
+                    <li><a href="karma.html">Karma</a></li>
+                    <li><a href="recipes.html">配方</a></li>
+                    <li><a href="map.html">地图</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam购买</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">官方Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">游戏评测</a></li>
+                    <li><a href="roadmap.html">更新路线图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> 龙之剑：觉醒中文维基。玩家制作，与 Hound13 无官方关联。</span>
+            <span>最后更新：2026年8月</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening 是 Hound13 Inc. 的商标。本站是社区资源，未经 Hound13 Inc. 认可或关联。所有游戏内容和素材均为其各自所有者的商标和版权。
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

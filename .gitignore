@@ -1,13 +1,11 @@
-# OS
+# 备份目录
+_backup_root_pages/
+
+# 系统文件
 .DS_Store
 Thumbs.db
 
-# Editor
+# 编辑器
 .vscode/
 .idea/
 *.swp
-*.swo
-
-# Temp
-*.tmp
-*.log

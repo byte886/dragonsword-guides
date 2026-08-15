@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이드 & 룬 가이드 — 드래곤소드 어웨이크닝: 모든 룬 유형, 레이드 메커니즘 & 멀티플레이</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 완전 레이드 & 룬 가이드. 모든 5가지 룬 유형, 최고 룬 우선순위, 룬 슬롯 잠금 해제, 룬 던전 vs 레이드, 멀티플레이 메커니즘, 난이도 진행.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 레이드, 룬, 결의, 증폭, 집중, 룬 슬롯, 룬 던전, 멀티플레이">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/raid.html">
+    <meta property="og:title" content="레이드 & 룬 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="모든 룬 유형, 최고 우선순위, 슬롯 잠금 해제, 레이드 메커니즘, 멀티플레이.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/raid.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/raid.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/raid.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/raid.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/raid.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/raid.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "레이드 & 룬 가이드 — 드래곤소드 어웨이크닝: 모든 룬 유형, 레이드 메커니즘 & 멀티플레이",
+      "description": "드래곤소드: 어웨이크닝 완전 레이드 & 룬 가이드. 모든 5가지 룬 유형, 최고 룬 우선순위, 룬 슬롯 잠금 해제, 룬 던전 vs 레이드, 멀티플레이 메커니즘, 난이도 진행.",
+      "url": "https://ds-guides.wiki/ko/raid.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/raid.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">종합 콘텐츠</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">레이드 & 룬 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                레이드는 룬의 주요 출처입니다 — 4성 이상 장비에 장착하는 강력한 스탯 강화 아이템. 제작 도구로 룬 슬롯을 잠금 해제하고, 룬 던전에서 SSR 룬을 파밍하며, 최대 3인으로 멀티플레이어 레이드에 도전하세요.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 7분</span>
+                <span>💎 5가지 룬 유형</span>
+                <span>👥 3인 협동</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Quick Answer -->
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>룬은 4성 이상 장비에 부착하는 스탯 강화 아이템입니다. 최고 DPS 우선순위: 결의(공격력) > 증폭(치명타 피해) > 집중(치명타 확률). 익명 장인의 제작 도구(레이드 출처)로 룬 슬롯을 잠금 해제하세요. Lv62 이상 룬 던전을 파밍하면 SSR 룬이 확정 나옵니다. 레이드는 로비 + 초대 코드로 최대 3인을 지원합니다. 목표: 치명타 확률 80% + 치명타 피해 150%.</p>
+            </div>
+
+            <!-- Rune System -->
+            <h2 id="runes">💎 룬 시스템 개요</h2>
+            <ul>
+                <li>룬은 장비에 부착하는 <strong>스탯 강화 아이템</strong>입니다</li>
+                <li>각 룬은 <strong>하나의 특정 스탯</strong>을 대상으로 합니다</li>
+                <li>주로 <strong>레이드</strong>를 통해 획득합니다</li>
+                <li>5개 희귀 등급: 손상됨 → 온전함 → 정제됨 → 광휘 → 완벽</li>
+                <li>RNG가 룬 위력에 독립적으로 영향을 미칩니다 — 높은 희귀도가 항상 큰 업그레이드를 의미하지는 않습니다</li>
+            </ul>
+
+            <!-- 5 Rune Types -->
+            <h2 id="types">🔮 모든 5가지 룬 유형</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>룬</th>
+                            <th>스탯 강화</th>
+                            <th>최적 대상</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>결의</strong></td>
+                            <td>고정 공격력</td>
+                            <td>모든 DPS 영웅. 범용 최고 장비.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>증폭</strong></td>
+                            <td>치명타 피해</td>
+                            <td>치명타 확률이 높은 DPS. 150% 이상에서 레이드 성능이 급증합니다.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>집중</strong></td>
+                            <td>치명타 확률</td>
+                            <td>치명타 확률 캡에 도달하지 못한 DPS. 보통 장비/카르마로 더 효율적으로 맞춥니다.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>수호자</strong></td>
+                            <td>고정 방어력</td>
+                            <td>더 어려운 레이드 콘텐츠의 탱커/서포터.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>활력</strong></td>
+                            <td>최대 HP</td>
+                            <td>어려운 레이드에서 생존. 피해를 강화하지는 않습니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rune Priority -->
+            <h2 id="priority">🎯 최고 룬 우선순위</h2>
+            <h3>DPS 영웅</h3>
+            <ol>
+                <li><strong>결의</strong> — 고정 공격력은 모든 피해 계산에 적용됩니다. 범용적으로 유용합니다.</li>
+                <li><strong>증폭</strong> — 치명타 피해. 150% 이상에서 레이드 성능이 눈에 띄게 향상됩니다.</li>
+                <li><strong>집중</strong> — 치명타 확률. 확률이 불안정할 때만 고려하세요. 보통 장비와 카르마로 더 효율적입니다.</li>
+            </ol>
+            <h3>탱커 / 서포터 영웅</h3>
+            <ol>
+                <li><strong>수호자</strong> — 생존을 위한 고정 방어력</li>
+                <li><strong>활력</strong> — 폭발 피해에 대한 완충을 위한 최대 HP</li>
+            </ol>
+            <div class="alert alert-info">
+                <div class="alert-title">💡 목표 스탯</div>
+                <p>메인 DPS에서 대략 <strong>치명타 확률 80%</strong>와 <strong>치명타 피해 150%</strong>를 목표로 하세요. 이러한 벤치마크에 도달하면 공격력과 방어 무시로 초점을 옮기세요.</p>
+            </div>
+
+            <!-- Rune Slot Unlocking -->
+            <h2 id="slots">🔓 룬 슬롯 잠금 해제 방법</h2>
+            <p>룬 슬롯은 <strong>미리 잠금 해제되어 있지 않습니다</strong>. 수동으로 열어야 합니다:</p>
+            <ol>
+                <li><strong>4성 이상</strong> 장비를 선택</li>
+                <li>장비의 잠긴 룬 슬롯을 클릭하거나, 검사 중 Triangle/Y를 누르세요</li>
+                <li>슬롯을 열려면 <strong>익명 장인의 제작 도구</strong> 하나를 소모</li>
+                <li>각 슬롯은 자체 제작 도구가 필요합니다</li>
+                <li>원하는 룬을 삽입 — 총 스탯 강화가 장비 요약에 표시됩니다</li>
+            </ol>
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 흔한 함정</div>
+                <p>익명 장인의 제작 도구가 바닥나는 것이 플레이어가 룬 성장에 막히는 1위 이유입니다. 메인 팀의 영구 장비에만 슬롯을 잠금 해제하세요 — 임시 장비에 도구를 낭비하지 마세요.</p>
+            </div>
+
+            <!-- Rune Farming -->
+            <h2 id="farming">⛏️ 룬 파밍 장소</h2>
+
+            <h3>1. 룬 던전 (마원와선)</h3>
+            <ul>
+                <li><strong>Lv50</strong>에서 잠금 해제</li>
+                <li>Lv50 이전에는 현재 레벨보다 5-10레벨 높은 곳에 도전할 수 있습니다</li>
+                <li><strong>Lv55</strong>에서 난이도가 급증합니다 — 클리어하려면 동레벨 장비가 필요합니다</li>
+                <li><strong>Lv62</strong> 이후에는 클리어마다 <strong>SSR 룬 1개 확정</strong></li>
+                <li>무과금 플레이어를 위한 <strong>장기 최고 장비 출처</strong></li>
+            </ul>
+
+            <h3>2. 레이드 (오전 전투 던전)</h3>
+            <ul>
+                <li><strong>Lv50</strong>에서 잠금 해제 (룬 던전과 같은 시기)</li>
+                <li>저티어는 저랭크 룬을 드롭합니다</li>
+                <li>고티어 보스는 <strong>고품질 골드 / SSR 룬</strong>을 드롭합니다</li>
+                <li><strong>익명 장인의 제작 도구</strong>도 드롭합니다</li>
+                <li>룬 던전과 함께 보조 재료 출처 역할을 합니다</li>
+            </ul>
+
+            <!-- Multiplayer Mechanics -->
+            <h2 id="multiplayer">👥 멀티플레이어 레이드 메커니즘</h2>
+            <ul>
+                <li>모든 협동 세션은 <strong>로비 생성</strong>과 친구에게 <strong>초대 코드</strong> 전송이 필요합니다</li>
+                <li><strong>로비 호스트</strong>만 던전/레이드/사냥과 특정 난이도를 선택할 수 있습니다</li>
+                <li>설정이 틀리면 <strong>로비 전체를 해산</strong>하고 다시 만들어야 합니다</li>
+                <li><strong>즉시 재시도</strong> 옵션이 없습니다 — 완료 후 강제 퇴장되고 로비를 다시 만들어야 합니다</li>
+                <li><strong>오픈월드 협동이 없습니다</strong> — 던전, 레이드, 사냥만 멀티플레이어를 지원합니다</li>
+                <li>레이드는 최대 <strong>다른 플레이어 2명(총 3명)</strong>을 초대할 수 있습니다</li>
+            </ul>
+
+            <h3>매치메이킹 시스템</h3>
+            <ul>
+                <li>모드와 보스를 선택하면 게임이 같은 콘텐츠의 기존 로비를 확인합니다</li>
+                <li>없으면 다른 플레이어가 참여할 수 있는 새 로비를 만듭니다</li>
+                <li>방을 <strong>비공개</strong>로 설정할 수 있습니다 — 초대받은 플레이어만 참여 가능</li>
+            </ul>
+
+            <!-- Game Modes -->
+            <h2>🎮 게임 모드 비교</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>모드</th>
+                            <th>플레이어</th>
+                            <th>콘텐츠</th>
+                            <th>보상</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>던전</strong></td>
+                            <td>솔로 / 협동</td>
+                            <td>특성 던전, 화폐 던전</td>
+                            <td>장비, 재료, 골드</td>
+                        </tr>
+                        <tr>
+                            <td><strong>레이드</strong></td>
+                            <td>최대 3인</td>
+                            <td>고난이도 보스 전투</td>
+                            <td>룬, 고티어 재료, 제작 도구</td>
+                        </tr>
+                        <tr>
+                            <td><strong>사냥</strong></td>
+                            <td>솔로 / 협동</td>
+                            <td>월드 보스 / 정예 사냥</td>
+                            <td>업그레이드 재료, 카르마 재료</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Raid Strategy -->
+            <h2 id="strategy">📜 레이드 핵심 전략</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">룬 우선순위</h3>
+                    <p class="card-desc">DPS: 결의 > 증폭 > 집중. 탱커/서포터: 수호자 > 활력. 목표 치명타 80% / 치명타 피해 150%.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">슬롯 관리</h3>
+                    <p class="card-desc">4성 이상 장비에만 슬롯을 잠금 해제하세요. 메인 팀의 핵심 장비를 우선하세요. 임시 장비에 제작 도구를 낭비하지 마세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">협동 소통</h3>
+                    <p class="card-desc">미리 친구와 팀 구성을 조율하세요. 호스트가 난이도를 선택합니다. 매치메이킹이 실패하면 초대 코드를 사용하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">난이도 진행</h3>
+                    <p class="card-desc">Lv50에서 낮게 시작하세요. Lv55는 동레벨 장비가 필요합니다. Lv62+가 SSR 룬 확정의 장기 목표입니다.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">종합 콘텐츠를 준비하시나요?</h3>
+                <p style="margin-bottom: 16px;">멀티플레이어 성공을 위한 종합 가이드와 협동 팁을 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="endgame.html" class="btn btn-primary">🏆 종합 가이드</a>
+                    <a href="coop.html" class="btn btn-secondary">👥 협동 가이드</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#runes">룬 시스템</a></li>
+                    <li><a href="#types">모든 5가지 룬 유형</a></li>
+                    <li><a href="#priority">룬 우선순위</a></li>
+                    <li><a href="#slots">룬 슬롯 잠금 해제</a></li>
+                    <li><a href="#farming">파밍 장소</a></li>
+                    <li><a href="#multiplayer">멀티플레이어 메커니즘</a></li>
+                    <li><a href="#strategy">레이드 전략</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 & 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html" class="active">레이드 & 룬 <span class="count">1</span></a></li>
+                    <li><a href="endgame.html">종합 가이드 <span class="count">1</span></a></li>
+                    <li><a href="map.html">지도 & 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">멀티플레이 & 협동 <span class="count">2</span></a></li>
+                    <li><a href="review.html">리뷰 & 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

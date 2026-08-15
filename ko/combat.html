@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드래곤소드 어웨이크닝 전투 가이드 — 상태 이상, 시그널 스킬 & 콤보</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 전투 시스템 심층 분석. 최대 피해를 위해 상태 이상, 시그널 스킬, 스위칭 시그널, 팀 역할, 콤보 체인을 마스터하세요.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 전투, 상태 이상, 시그널 스킬, 스위칭 시그널, 태그 팀, 콤보, 가이드">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/combat.html">
+    <meta property="og:title" content="드래곤소드 어웨이크닝 전투 가이드">
+    <meta property="og:description" content="상태 이상, 시그널 스킬, 스위칭 시그널, 콤보 체인 마스터하기.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/combat.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/combat.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/combat.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/combat.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/combat.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/combat.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "드래곤소드 어웨이크닝 전투 가이드 — 상태 이상, 시그널 스킬 & 콤보",
+      "description": "드래곤소드: 어웨이크닝 전투 시스템 심층 분석. 최대 피해를 위해 상태 이상, 시그널 스킬, 스위칭 시그널, 팀 역할, 콤보 체인을 마스터하세요.",
+      "url": "https://ds-guides.wiki/ko/combat.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/combat.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html" class="active">전투</a></li>
+                <li><a href="map.html">지도</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">스팀에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="라이트 모드로 전환">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">핵심 메커닉</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">전투 시스템 가이드</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                드래곤소드의 전투는 보이는 것보다 깊습니다. 상태 이상 → 시그널 스킬 → 스위칭 시그널의 3단계 사이클을 마스터하여 파괴적인 콤보 체인을 해방하세요.
+            </p>
+            <div class="article-meta">
+                <span>📖 읽는 시간: 약 10분</span>
+                <span>⚔️ 9가지 상태 이상</span>
+                <span>🔄 3영웅 태그 시스템</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Core Concept -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 핵심 개념</div>
+                <p>일반 공격은 상태 이상 게이지만 채웁니다. <strong>실제 피해는 시그널 스킬</strong>에서 나오며, 3영웅 팀 전체에 호환되는 상태 이상을 스택하여 발동시킵니다. 팀 시너지가 개별 캐릭터 파워보다 중요합니다.</p>
+            </div>
+
+            <!-- Three-Step Cycle -->
+            <h2 id="cycle">🔄 3단계 전투 사이클</h2>
+            <p>모든 성공적인 콤보는 이 기본 패턴을 따릅니다:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">액티브 스킬</h3>
+                    <p class="card-desc">액티브 스킬을 사용하여 첫 번째 상태 이상을 적용합니다. 각 영웅은 다른 속성과 효과를 가진 2개의 액티브 스킬을 가집니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">시그널 스킬</h3>
+                    <p class="card-desc">상태 이상이 발동하면 대기 영웅의 초상화가 점멸합니다. 적절한 타이밍에 교체하여 다음 상태 이상을 적용하는 강력한 시그널 스킬을 발동하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">스위칭 시그널</h3>
+                    <p class="card-desc">콤보 창 동안 계속 영웅을 교체하여 스위칭 시그널을 연결하고, 압박을 유지하며 체인을 연장하여 막대한 피해를 얻으세요.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 중요한 타이밍 노트</div>
+                <p>영웅 초상화가 점멸하는 것이 시그널이 준비되었다는 뜻은 아닙니다. 실제 상태 이상이 발동할 때까지 기다린 후 좁은 창 안에서 교체해야 합니다. 너무 일찍 교체하면 시그널 기회를 낭비합니다.</p>
+            </div>
+
+            <!-- Status Ailments -->
+            <h2 id="ailments">🩸 9가지 모든 상태 이상 설명</h2>
+            <p>모든 영웅은 하나 이상의 상태 이상을 적용합니다. 호환되는 유형을 스택하는 것이 시그널 스킬을 발동시키는 방법입니다.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>상태 이상</th>
+                            <th>효과</th>
+                            <th>적용하는 영웅</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>기절 (Stun)</strong></td>
+                            <td>적이 행동 불가 — 전체 피해 창 개방</td>
+                            <td>루트, 카스텔라, 칼리엔, 테레지아</td>
+                        </tr>
+                        <tr>
+                            <td><strong>출혈 (Bleed)</strong></td>
+                            <td>시간당 피해, 스택 시 폭발</td>
+                            <td>록시, 테레지아</td>
+                        </tr>
+                        <tr>
+                            <td><strong>화상 (Burn)</strong></td>
+                            <td>화염 시간당 피해</td>
+                            <td>아리아, 칼리엔, 칼시온</td>
+                        </tr>
+                        <tr>
+                            <td><strong>빙결 / 동결 (Frost / Freeze)</strong></td>
+                            <td>감속 → 게이지 최대 시 완전 동결</td>
+                            <td>다나, 세레세, 오델로</td>
+                        </tr>
+                        <tr>
+                            <td><strong>감전 (Shock)</strong></td>
+                            <td>전기 피해 + 군중 제어</td>
+                            <td>오르네트, 시온, 타르트</td>
+                        </tr>
+                        <tr>
+                            <td><strong>중독 (Poison)</strong></td>
+                            <td>독성 시간당 피해</td>
+                            <td>조니, 샬롯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>공중 (Airborne)</strong></td>
+                            <td>적이 띄워짐 — 반격이나 방어 불가</td>
+                            <td>카스텔라, 조니, 레이나, 아일린, 샬롯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>넉다운 (Knockdown)</strong></td>
+                            <td>적이 땅에 쓰러짐 — 취약 상태</td>
+                            <td>루트, 알렉스, 오르네트, 시온, 샬롯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>회복 (Recovery)</strong></td>
+                            <td>파티 힐링</td>
+                            <td>루트, 타르트</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Signal Skills -->
+            <h2 id="signal">⚡ 시그널 스킬 심층 분석</h2>
+            <p>시그널 스킬은 게임 내 가장 강력한 공격입니다. 작동 방식은 다음과 같습니다:</p>
+
+            <h3>발동 방법</h3>
+            <ol>
+                <li>적을 공격하여 상태 이상 게이지를 채웁니다</li>
+                <li>가득 차면 적이 상태 이상 상태에 들어갑니다</li>
+                <li>해당 상태 이상에 반응할 수 있는 대기 영웅의 초상화가 점멸합니다</li>
+                <li>해당 영웅의 교체 버튼을 누르면 — 특수 시그널 스킬 공격으로 진입합니다</li>
+                <li>시그널 스킬은 높은 피해를 입히고 다음 상태 이상을 적용합니다</li>
+            </ol>
+
+            <h3>주요 특징</h3>
+            <ul>
+                <li>각 영웅은 <strong>2개의 시그널 어빌리티</strong>를 가집니다 (2개의 액티브 스킬 외에)</li>
+                <li>시그널 스킬은 적이 호환되는 상태 이상 상태일 때만 사용 가능합니다</li>
+                <li>필드 영웅과 대기 영웅 모두 시그널 스킬을 발동할 수 있습니다</li>
+                <li>피해 공식은 캐릭터 교체를 통해 이 스킬들을 연결하는 것 중심으로 돌아갑니다</li>
+                <li>액티브와 시그널 스킬을 효과적으로 연결하는 것이 전투의 전체 핵심입니다</li>
+            </ul>
+
+            <!-- Switching Signals -->
+            <h2 id="switching">🔀 스위칭 시그널 & 콤보 체이닝</h2>
+            <p>전투의 진정한 깊이는 여러 영웅을 함께 연결하는 데 있습니다:</p>
+
+            <div class="card">
+                <h3 class="card-title">무한 상태 이상 체인</h3>
+                <p>세 영웅 모두 다른 상태 이상 유지 시간을 유지할 때, <strong>중단 없는 상태 체인</strong>을 만들 수 있습니다:</p>
+                <ol style="margin-top: 12px;">
+                    <li>영웅 A가 기절 적용 → 영웅 B의 시그널 스킬 발동</li>
+                    <li>영웅 B가 시그널 스킬로 진입, 출혈 적용 → 영웅 C의 시그널 스킬 발동</li>
+                    <li>영웅 C가 시그널 스킬로 진입, 공중 적용 → 영웅 A의 시그널 스킬 발동</li>
+                    <li>영웅 A가 재진입, 다시 기절 적용 → 사이클 반복</li>
+                </ol>
+                <p style="margin-top: 12px;">교체는 또한 다음 공격까지 짧은 <strong>무적 프레임(i-frame)</strong>을 부여하여 공격적이면서 방어적이기도 합니다.</p>
+            </div>
+
+            <!-- Team Roles -->
+            <h2 id="roles">👥 세 가지 팀 역할</h2>
+            <p>모든 성공적인 팀 구성은 이 세 자리를 채웁니다. 이는 <strong>콤보 내 역할</strong>이지 영구 직업이 아닙니다:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">필드 드라이버</h3>
+                    <p class="card-desc">필드에 계속 활성화되어 다음 반복 가능한 조건을 만듭니다. 콤보를 계속 유지하는 팀의 "엔진"입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">시그널 앤서</h3>
+                    <p class="card-desc">조건이 점등되면 진입합니다. 큰 시그널 스킬 피해를 전달하고 체인의 다음 상태 이상을 적용합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌉</div>
+                    <h3 class="card-title">브릿지</h3>
+                    <p class="card-desc">압박을 연장하거나 간격을 회복한 후 전투를 다시 넘깁니다. 큰 피해 창 사이에 체인을 살려둡니다.</p>
+                </div>
+            </div>
+
+            <!-- Best Teams by Content -->
+            <h2 id="teams">🎯 콘텐츠 유형별 최고 팀</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>팀 구성</th>
+                            <th>최적 상황</th>
+                            <th>핵심 루프</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>테레지아 + 카스텔라 + 루트</strong></td>
+                            <td>보스 전</td>
+                            <td>테레지아 딜, 루트 갑옷 파괴 + 유틸, 카스텔라가 기절 창 동안 폭딜</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 록시 + 카스텔라/루트</strong></td>
+                            <td>고체력 대상 (출혈)</td>
+                            <td>콘스크레이션이 출혈 적용, 셀레스티얼 버딕트가 기절 추가, 록시가 진입, 카스텔라/루트가 폭발</td>
+                        </tr>
+                        <tr>
+                            <td><strong>레이나 + 록시 + 오르네트</strong></td>
+                            <td>오픈월드 탐험</td>
+                            <td>레이나가 전투를 빨리 끝내고, 록시가 콤보를 연결, 오르네트가 보호용 실드</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 록시 + 루트</strong></td>
+                            <td>정예 적</td>
+                            <td>출혈 적용 + 갑옷 파괴 + 기절, 정예를 제어된 상태로 유지</td>
+                        </tr>
+                        <tr>
+                            <td><strong>오르네트 + 카스텔라 + 알렉스/루트</strong></td>
+                            <td>중갑 보스</td>
+                            <td>오르네트나 알렉스가 파워 아머를 벗기고 넉다운 발동, 카스텔라가 다운된 피해를 활용</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combos -->
+            <h2 id="airborne">🪽 공중 콤보 팀</h2>
+            <p>공중은 띄워진 적이 <strong>반격하거나 방어 블록을 발동할 수 없기</strong> 때문에 최강 메커닉 중 하나입니다.</p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">🏆 프리미엄 공중 팀</div>
+                <p><strong>레이나 + 테레지아 + 록시</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li>레이나가 주요 런처, 적을 공중에 유지</li>
+                    <li>테레지아가 공중 콤보 피해를 담당</li>
+                    <li>록시가 체인을 연장</li>
+                </ul>
+            </div>
+
+            <p><strong>대안:</strong> 레이나 + 카스텔라 + 루트/아리아</p>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ 슈퍼 아머 주의사항</div>
+                <p>적이 슈퍼 아머를 활성화하면 띄우거나 넉다운할 수 없습니다. 공중 팀은 이런 적 상대에서 가치가 크게 떨어집니다 — 항상 갑옷 파괴 옵션을 준비하세요.</p>
+            </div>
+
+            <!-- How to Practice -->
+            <h2 id="practice">🎮 전투 연습 방법</h2>
+            <ol>
+                <li><strong>간단하게 시작</strong> — 튼튼한 적을 찾아 한 가지 상태 이상 적용 연습을 하고, 시그널 프롬프트를 기다린 후 한 번 교체하세요</li>
+                <li><strong>세 번째 영웅 추가</strong> — 2단계 반응이 안정적으로 느껴지면 세 번째 영웅을 데려와 풀 체인을 하세요</li>
+                <li><strong>보스 연습</strong> — 보스도 같은 시퀀스를 따릅니다: 안전한 오프너를 식별하고, 후속 공격을 예약하고, 회피가 필요할 때 체인을 중단하세요</li>
+                <li><strong>회피 우선</strong> — 항상 콤보 완료보다 회피를 우선하세요. 죽은 영웅은 피해를 0입니다.</li>
+            </ol>
+
+            <!-- Core Principles -->
+            <h2>📜 여섯 가지 핵심 전투 원칙</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">상태 이상이 핵심</h3>
+                    <p class="card-desc">일반 공격은 게이지만 채웁니다. 실제 피해는 상태 이상으로 발동하는 시그널 스킬에서 나옵니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">시너지 > 딜</h3>
+                    <p class="card-desc">세 강한 영웅이 강한 팀을 의미하지 않습니다. 호환되는 상태 이상이 승리합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">타이밍이 전부</h3>
+                    <p class="card-desc">좁은 상태 이상 창 안에서 교체하세요. 너무 일찍 교체하면 시그널 기회를 낭비합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">회피 우선</h3>
+                    <p class="card-desc">받을 피해를 위해 콤보를 맞바꾸지 마세요. 먼저 생존하고, 그다음 최적화하세요.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">적에 맞추기</h3>
+                    <p class="card-desc">보스는 DoT와 갑옷 파괴가 필요합니다. 오픈월드는 기동성과 제어가 필요합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">갑옷 파괴 준비</h3>
+                    <p class="card-desc">슈퍼 아머는 띄우기/넉다운을 막습니다. 항상 파괴자를 주머니에 넣어두세요.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">완벽한 팀을 만들 준비가 되셨나요?</h3>
+                <p style="margin-bottom: 16px;">모든 콘텐츠 유형에 대한 검증된 팀 구성을 확인하세요.</p>
+                <a href="best-team.html" class="btn btn-primary">👥 최고 팀 빌드 보기</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">이 페이지 목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#cycle">3단계 사이클</a></li>
+                    <li><a href="#ailments">상태 이상</a></li>
+                    <li><a href="#signal">시그널 스킬</a></li>
+                    <li><a href="#switching">스위칭 시그널</a></li>
+                    <li><a href="#roles">팀 역할</a></li>
+                    <li><a href="#teams">최고 팀</a></li>
+                    <li><a href="#airborne">공중 콤보</a></li>
+                    <li><a href="#practice">연습 방법</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">시작하기 <span class="count">1</span></a></li>
+                    <li><a href="characters.html">캐릭터 <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">티어 리스트 <span class="count">1</span></a></li>
+                    <li><a href="build.html">빌드 & 스킬 <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">팀 구성 <span class="count">1</span></a></li>
+                    <li><a href="combat.html" class="active">전투 시스템 <span class="count">1</span></a></li>
+                    <li><a href="classes.html">영웅 특성 <span class="count">1</span></a></li>
+                    <li><a href="gear.html">장비 & 아이템 <span class="count">1</span></a></li>
+                    <li><a href="karma.html">카르마 시스템 <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">요리 & 레시피 <span class="count">1</span></a></li>
+                    <li><a href="boss.html">보스 <span class="count">1</span></a></li>
+                    <li><a href="raid.html">레이드 & 종합 콘텐츠 <span class="count">2</span></a></li>
+                    <li><a href="map.html">지도 & 지역 <span class="count">1</span></a></li>
+                    <li><a href="coop.html">멀티플레이 & 협동 <span class="count">2</span></a></li>
+                    <li><a href="review.html">리뷰 & 로드맵 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 스팀 스토어</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 유튜브</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝 위키는 모든 영웅, 전투 메커니즘, 팀 빌드, 성장 팁을 다루는 독립적인 팬 제작 가이드 사이트입니다. 하운드13(주)와 제휴되지 않았습니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보자 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="build.html">빌드</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="recipes.html">레시피</a></li>
+                    <li><a href="map.html">지도</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">스팀에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">유튜브</a></li>
+                    <li><a href="review.html">게임 리뷰</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, 하운드13과 무관.</span>
+            <span>마지막 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening은 하운드13(주)의 상표입니다. 본 사이트는 커뮤니티 리소스이며 하운드13(주)의 보증이나 제휴를 받지 않습니다.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

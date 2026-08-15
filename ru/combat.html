@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по боевой системе DragonSword Awakening — Статусные недуги, Сигнальные навыки и Комбо</title>
+    <meta name="description" content="Глубокое погружение в боевую систему DragonSword: Awakening. Освойте статусные недуги, сигнальные навыки, переключаемые сигналы, роли команды и цепочки комбо для максимального урона.">
+    <meta name="keywords" content="DragonSword Awakening бой, статусные недуги, сигнальные навыки, переключаемые сигналы, тег-команда, комбо, гайд">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ds-guides.wiki/ru/combat.html">
+    <meta property="og:title" content="Гайд по боевой системе DragonSword Awakening">
+    <meta property="og:description" content="Освойте статусные недуги, сигнальные навыки, переключаемые сигналы и цепочки комбо.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/combat.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/combat.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/combat.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/combat.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/combat.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/combat.html">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Гайд по боевой системе DragonSword Awakening — Статусные недуги, Сигнальные навыки и Комбо",
+      "description": "Глубокое погружение в боевую систему DragonSword: Awakening. Освойте статусные недуги, сигнальные навыки, переключаемые сигналы, роли команды и цепочки комбо для максимального урона.",
+      "url": "https://ds-guides.wiki/ru/combat.html",
+      "inLanguage": "ru",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ru/combat.html"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                <li><a href="tier-list.html">Тиер лист</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="build.html">Билды</a></li>
+                <li><a href="best-team.html">Команды</a></li>
+                <li><a href="combat.html" class="active">Бой</a></li>
+                <li><a href="map.html">Карта</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Играть в Steam</a></li>
+            </ul>
+            <button class="theme-toggle" title="Переключить на светлую тему">☀️</button>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">Основные механики</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Гайд по боевой системе</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                Бой в DragonSword глубже, чем кажется. Освойте трёхшаговый цикл Статусные недуги → Сигнальные навыки → Переключаемые сигналы, чтобы высвободить разрушительные цепочки комбо.
+            </p>
+            <div class="article-meta">
+                <span>📖 Время чтения: ~10 мин</span>
+                <span>⚔️ 9 статусных недугов</span>
+                <span>🔄 Система тегов из 3 героев</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <!-- Core Concept -->
+            <div class="alert alert-info">
+                <div class="alert-title">💡 Основная концепция</div>
+                <p>Обычные атаки только заполняют шкалы недугов. <strong>Реальный урон исходит от сигнальных навыков</strong>, запускаемых накоплением совместимых статусных недугов по всей вашей команде из трёх героев. Синергия команды важнее индивидуальной силы персонажа.</p>
+            </div>
+
+            <!-- Three-Step Cycle -->
+            <h2 id="cycle">🔄 Трёхшаговый боевой цикл</h2>
+            <p>Каждое успешное комбо следует этому фундаментальному паттерну:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3 class="card-title">Активные навыки</h3>
+                    <p class="card-desc">Используйте активные навыки для наложения первого статусного недуга. У каждого героя есть 2 активных навыка с разными свойствами и эффектами.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3 class="card-title">Сигнальные навыки</h3>
+                    <p class="card-desc">Когда недуг срабатывает, портреты героев вне поля вспыхивают. Переключитесь в нужный момент, чтобы высвободить мощный сигнальный навык, накладывающий следующий недуг.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3 class="card-title">Переключаемые сигналы</h3>
+                    <p class="card-desc">Продолжайте переключать героев во время окна комбо для цепочки переключаемых сигналов, поддерживая давление и продлевая цепь для массивного урона.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ Важное примечание о тайминге</div>
+                <p>Вспышка портрета героя НЕ означает, что сигнал готов. Вы должны дождаться фактического срабатывания статусного недуга, затем переключиться в узком окне. Ранние переключения тратят возможность сигнала.</p>
+            </div>
+
+            <!-- Status Ailments -->
+            <h2 id="ailments">🩸 Все 9 статусных недугов объяснены</h2>
+            <p>Каждый герой накладывает один или несколько статусных недугов. Накопление совместимых типов — это то, что запускает сигнальные навыки.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Недуг</th>
+                            <th>Эффект</th>
+                            <th>Герои, накладывающие его</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Оглушение</strong></td>
+                            <td>Враг не может действовать — открывает полное окно урона</td>
+                            <td>Lute, Castella, Kalien, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Кровотечение</strong></td>
+                            <td>Урон с течением времени, накапливается для взрыва</td>
+                            <td>Roxy, Theresia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ожог</strong></td>
+                            <td>Огненный урон с течением времени</td>
+                            <td>Aria, Kalien, Kalsion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Мороз / Заморозка</strong></td>
+                            <td>Замедление → полная заморозка при заполнении шкалы</td>
+                            <td>Dana, Cerese, Othello</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Шок</strong></td>
+                            <td>Электрический урон + контроль толпы</td>
+                            <td>Ornette, Sion, Tarte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Отравление</strong></td>
+                            <td>Токсичный урон с течением времени</td>
+                            <td>Johnny, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Воздух</strong></td>
+                            <td>Враг подброшен — не может контратаковать или блокировать</td>
+                            <td>Castella, Johnny, Reina, Eileen, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Сбитие</strong></td>
+                            <td>Враг сбит на землю — уязвим</td>
+                            <td>Lute, Alex, Ornette, Sion, Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Восстановление</strong></td>
+                            <td>Лечит партию</td>
+                            <td>Lute, Tarte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Signal Skills -->
+            <h2 id="signal">⚡ Глубокое погружение в сигнальные навыки</h2>
+            <p>Сигнальные навыки — самые мощные атаки в игре. Вот как они работают:</p>
+
+            <h3>Как они запускаются</h3>
+            <ol>
+                <li>Атакуйте врага, чтобы заполнить его шкалу недуга</li>
+                <li>При заполнении враг входит в состояние статусного недуга</li>
+                <li>Герои вне поля, способные реагировать на этот недуг, получат вспышку портретов</li>
+                <li>Нажмите кнопку переключения для этого героя — они входят со специальной атакой сигнального навыка</li>
+                <li>Сигнальный навык наносит высокий урон И накладывает следующий недуг</li>
+            </ol>
+
+            <h3>Ключевые характеристики</h3>
+            <ul>
+                <li>У каждого героя есть <strong>2 сигнальные способности</strong> (в дополнение к 2 активным навыкам)</li>
+                <li>Сигнальные навыки доступны только когда враг находится в совместимом состоянии недуга</li>
+                <li>И герой на поле, И ожидающие герои могут активировать сигнальные навыки</li>
+                <li>Формула урона вращается вокруг цепочки этих навыков через переключения персонажей</li>
+                <li>Эффективное соединение активных и сигнальных навыков — всё ядро боя</li>
+            </ul>
+
+            <!-- Switching Signals -->
+            <h2 id="switching">🔀 Переключаемые сигналы и цепочка комбо</h2>
+            <p>Истинная глубина боя заключается в цепочке нескольких героев вместе:</p>
+
+            <div class="card">
+                <h3 class="card-title">Бесконечная цепь недугов</h3>
+                <p>Когда все три героя поддерживают разное время действия недугов, вы можете создать <strong>непрерывную цепь статусов</strong>:</p>
+                <ol style="margin-top: 12px;">
+                    <li>Герой A накладывает Оглушение → запускает сигнальный навык Героя B</li>
+                    <li>Герой B входит с сигнальным навыком, накладывает Кровотечение → запускает сигнальный навык Героя C</li>
+                    <li>Герой C входит с сигнальным навыком, накладывает Воздух → запускает сигнальный навык Героя A</li>
+                    <li>Герой A повторно входит, накладывает Оглушение снова → цикл повторяется</li>
+                </ol>
+                <p style="margin-top: 12px;">Переключение также даёт краткие <strong>кадры неуязвимости (i-frames)</strong> до вашей следующей атаки, что делает его и наступательным, и оборонительным.</p>
+            </div>
+
+            <!-- Team Roles -->
+            <h2 id="roles">👥 Три роли команды</h2>
+            <p>Каждый успешный состав команды заполняет эти три позиции. Это <strong>роли внутри комбо, а не постоянные классы</strong>:</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Драйвер поля</h3>
+                    <p class="card-desc">Остаётся активным на поле, создаёт следующее повторяемое условие. «Двигатель» команды, который поддерживает комбо.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Ответчик сигнала</h3>
+                    <p class="card-desc">Входит, когда условие загорается. Наносит большой урон сигнального навыка и накладывает следующий недуг в цепи.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌉</div>
+                    <h3 class="card-title">Мост</h3>
+                    <p class="card-desc">Продлевает давление или восстанавливает дистанцию, затем передаёт бой обратно. Поддерживает цепь между большими окнами урона.</p>
+                </div>
+            </div>
+
+            <!-- Best Teams by Content -->
+            <h2 id="teams">🎯 Лучшие команды по типу контента</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Состав команды</th>
+                            <th>Лучше всего для</th>
+                            <th>Основной цикл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Theresia + Castella + Lute</strong></td>
+                            <td>Бои с боссами</td>
+                            <td>Theresia выводит урон, Lute ломает броню + утилита, Castella взрывает во время окон Оглушения</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Castella/Lute</strong></td>
+                            <td>Цели с высоким HP (Кровотечение)</td>
+                            <td>Consecration накладывает Кровотечение, Celestial Verdict добавляет Оглушение, Roxy врезается, Castella/Lute детонирует</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reina + Roxy + Ornette</strong></td>
+                            <td>Исследование открытого мира</td>
+                            <td>Reina быстро заканчивает бои, Roxy цепляет комбо, Ornette ставит щит для защиты</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theresia + Roxy + Lute</strong></td>
+                            <td>Элитные враги</td>
+                            <td>Наложение Кровотечения + слом брони + Оглушение, держит элит под контролем</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ornette + Castella + Alex/Lute</strong></td>
+                            <td>Боссы с тяжёлой бронёй</td>
+                            <td>Ornette или Alex снимают силовую броню, запускают Сбитие, Castella использует урон по сбитым</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Airborne Combos -->
+            <h2 id="airborne">🪽 Команды воздушных комбо</h2>
+            <p>Воздух — одна из сильнейших механик, потому что подброшенные враги <strong>не могут контратаковать или запускать защитные блоки</strong>.</p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">🏆 Премиум команда Воздуха</div>
+                <p><strong>Reina + Theresia + Roxy</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li>Reina — основной подбрасыватель, держит врагов в воздухе</li>
+                    <li>Theresia обрабатывает урон воздушного комбо</li>
+                    <li>Roxy продлевает цепь</li>
+                </ul>
+            </div>
+
+            <p><strong>Альтернатива:</strong> Reina + Castella + Lute/Aria</p>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">⚠️ Оговорка о Суперброне</div>
+                <p>Когда у врагов активна Суперброня, их нельзя подбросить или сбить. Команды Воздуха теряют значительную ценность против этих врагов — всегда имейте под рукой опцию слома брони.</p>
+            </div>
+
+            <!-- How to Practice -->
+            <h2 id="practice">🎮 Как практиковать бой</h2>
+            <ol>
+                <li><strong>Начните просто</strong> — Найдите живучего врага и практикуйте наложение одного статусного недуга, дождитесь подсказки сигнала, затем переключитесь один раз</li>
+                <li><strong>Добавьте третьего героя</strong> — Когда двухшаговый ответ станет надёжным, введите третьего героя для полных цепей</li>
+                <li><strong>Практика на боссах</strong> — Боссы следуют той же последовательности: определите безопасный открыватель, резервуйте последующие атаки, прерывайте цепь, когда нужно уклониться</li>
+                <li><strong>Сначала уклонение</strong> — Всегда приоритизируйте уклонение над завершением комбо. Мёртвый герой наносит ноль урона.</li>
+            </ol>
+
+            <!-- Core Principles -->
+            <h2>📜 Шесть основных боевых принципов</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">Недуги — ядро</h3>
+                    <p class="card-desc">Обычные атаки только заполняют шкалы. Реальный урон исходит от сигнальных навыков, запускаемых недугами.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">Синергия > Урон</h3>
+                    <p class="card-desc">Три сильных героя не равны сильной команде. Дополняющие друг друга недуги побеждают.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">Тайминг — всё</h3>
+                    <p class="card-desc">Переключайтесь в узком окне недуга. Ранние переключения тратят возможности сигнала.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">Сначала уклонение</h3>
+                    <p class="card-desc">Никогда не меняйте комбо на урон, который вы получите. Сначала выживите, затем оптимизируйте.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">Подстраивайтесь под врага</h3>
+                    <p class="card-desc">Боссам нужны DoT и слом брони. Открытому миру нужны мобильность и контроль.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">Берите слом брони</h3>
+                    <p class="card-desc">Суперброня блокирует подбрасывание/сбитие. Всегда имейте разрушителя в заднем кармане.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">Готовы собрать свою идеальную команду?</h3>
+                <p style="margin-bottom: 16px;">Ознакомьтесь с нашими проверенными составами команд для каждого типа контента.</p>
+                <a href="best-team.html" class="btn btn-primary">👥 Посмотреть лучшие билды команд</a>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">На этой странице</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#cycle">Трёхшаговый цикл</a></li>
+                    <li><a href="#ailments">Статусные недуги</a></li>
+                    <li><a href="#signal">Сигнальные навыки</a></li>
+                    <li><a href="#switching">Переключаемые сигналы</a></li>
+                    <li><a href="#roles">Роли команды</a></li>
+                    <li><a href="#teams">Лучшие команды</a></li>
+                    <li><a href="#airborne">Воздушные комбо</a></li>
+                    <li><a href="#practice">Как практиковать</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Навигация по вики</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">Начало работы <span class="count">1</span></a></li>
+                    <li><a href="characters.html">Персонажи <span class="count">5</span></a></li>
+                    <li><a href="tier-list.html">Тиер лист <span class="count">1</span></a></li>
+                    <li><a href="build.html">Билды и навыки <span class="count">1</span></a></li>
+                    <li><a href="best-team.html">Составы команд <span class="count">1</span></a></li>
+                    <li><a href="combat.html" class="active">Боевая система <span class="count">1</span></a></li>
+                    <li><a href="classes.html">Черты героев <span class="count">1</span></a></li>
+                    <li><a href="gear.html">Снаряжение и экипировка <span class="count">1</span></a></li>
+                    <li><a href="karma.html">Система кармы <span class="count">1</span></a></li>
+                    <li><a href="recipes.html">Кулинария и рецепты <span class="count">1</span></a></li>
+                    <li><a href="boss.html">Боссы <span class="count">1</span></a></li>
+                    <li><a href="raid.html">Рейды и эндгейм <span class="count">2</span></a></li>
+                    <li><a href="map.html">Карта и области <span class="count">1</span></a></li>
+                    <li><a href="coop.html">Мультиплеер и кооп <span class="count">2</span></a></li>
+                    <li><a href="review.html">Обзор и роадмап <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Официальные ссылки</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Магазин Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>DragonSword Awakening Wiki — это независимый гайд-сайт от фанатов, охватывающий всех героев, боевую механику, билды команд и советы по прогрессу для DragonSword: Awakening. Не связан с Hound13 Inc.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Гайды</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">Гайд для новичков</a></li>
+                    <li><a href="tier-list.html">Тиер лист</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="build.html">Билды</a></li>
+                    <li><a href="best-team.html">Билды команд</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Системы</h4>
+                <ul>
+                    <li><a href="combat.html">Бой</a></li>
+                    <li><a href="gear.html">Снаряжение</a></li>
+                    <li><a href="karma.html">Карма</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Сообщество</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Играть в Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Официальный Discord</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">YouTube</a></li>
+                    <li><a href="review.html">Обзор игры</a></li>
+                    <li><a href="roadmap.html">Роадмап</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. Сделано фанатами, не связано с Hound13.</span>
+            <span>Последнее обновление: Август 2026</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening — торговая марка Hound13 Inc. Этот сайт является сообщественным ресурсом и не одобрен и не связан с Hound13 Inc.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>
