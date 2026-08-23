@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칼리엔 가이드 | 드래곤소드 어웨이크닝 위키</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 칼리엔 완전 공략. 최고 빌드, 팀 조합, 스킬, 화상/기절 메커니즘과 전투 팁.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 칼리엔, 칼리엔 빌드, 칼리엔 팀, 블레이즈플레임, 화상, 기절, 여우 정령 수르">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/kalien.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/kalien.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/kalien.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/kalien.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/kalien.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/kalien.html">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/kalien.html">
+    <meta property="og:title" content="칼리엔 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="최고 빌드, 팀, 스킬과 화상/기절 메커니즘.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "칼리엔 가이드 | 드래곤소드 어웨이크닝 위키",
+      "description": "드래곤소드: 어웨이크닝 칼리엔 완전 공략. 최고 빌드, 팀 조합, 스킬, 화상/기절 메커니즘과 전투 팁.",
+      "url": "https://ds-guides.wiki/ko/kalien.html",
+      "inLanguage": "ko",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DragonSword Awakening Wiki",
+        "url": "https://ds-guides.wiki/"
+      },
+      "datePublished": "2026-08-23",
+      "dateModified": "2026-08-23",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ds-guides.wiki/ko/kalien.html"
+      }
+    }
+    </script>
+
+    <script src="../js/analytics.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html" class="active">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">맵</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="Switch to light mode">☀️</button>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">붉은 여우 용병단 · A 티어</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">칼리엔 — 정령 마법사</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                화염 여우 정령 수르와 함께 싸우는 정령 마법사. 칼리엔은 여우 분신으로 화상을 빠르게 중첩시키고, 여우 잡기와 피날레로 기절과 함께 폭발 피해를 입힙니다.
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 붉은 여우 용병단</div>
+                <div class="hero-stat"><span class="dot"></span> 블레이즈플레임</div>
+                <div class="hero-stat"><span class="dot"></span> 화상 / 기절</div>
+                <div class="hero-stat"><span class="dot"></span> 여우 정령 수르</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>칼리엔은 여우 정령 수르와 분신으로 전장을 장악하는 A티어 화상 딜러입니다. 넓은 범위에 화상을 중첩시킨 후 여우 잡기와 피날레로 강력한 피해와 기절을 부여합니다. 칼시온, 아리아와 함께 최상위 화상/공중 콤보 팀을 구성하세요. 장비는 화염 3세트 + 파괴자 2세트를 추천하며, 공격력, 치명타 확률, 치명타 피해를 우선하세요.</p>
+            </div>
+
+            <h2 id="overview">📋 캐릭터 개요</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td><strong>이름</strong></td><td>칼리엔 (Kalien)</td></tr>
+                        <tr><td><strong>소속</strong></td><td>붉은 여우 용병단</td></tr>
+                        <tr><td><strong>역할</strong></td><td>정령 마법사 / 화상 딜러</td></tr>
+                        <tr><td><strong>특성</strong></td><td>블레이즈플레임 (Blazeflame)</td></tr>
+                        <tr><td><strong>동료</strong></td><td>수르 (화염 여우 정령)</td></tr>
+                        <tr><td><strong>상태 이상</strong></td><td>화상, 기절</td></tr>
+                        <tr><td><strong>전용 카르마</strong></td><td>심홍의 불꽃에게 선택받은 자</td></tr>
+                        <tr><td><strong>티어</strong></td><td><span class="tier-badge tier-a">A 티어</span></td></tr>
+                        <tr><td><strong>플레이스타일</strong></td><td>화상 중첩, 광역 딜, 기절 폭딜</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 id="combat">🔥 전투 스타일</h2>
+            <p>칼리엔의 핵심은 기절로 적을 제어하면서 수르의 화염 피해가 지속되도록 하는 것입니다. 3단계 콤보 시스템에서 칼리엔은 액티브 스킬로 대상에게 기절을 중첩시킨 후, 자신의 시그널 스킬로 마무리하거나 아군이 기절 창에 시그널 스킬을 연계할 수 있도록 교체하는 역할입니다.</p>
+            <p>수르는 화염의 힘을 깨운 여우 정령입니다. 칼리엔은 여우 분신을 소환해 자동으로 넓은 범위에 화상을 적용할 수 있어, 잡몹 처리와 엘리트 그룹에 탁월합니다.</p>
+
+            <h2 id="build">⚔️ 추천 빌드</h2>
+            <div class="card">
+                <h3 class="card-title">화상 딜러 빌드 (추천)</h3>
+                <div style="margin-top: 16px;">
+                    <h4>장비 세트</h4>
+                    <p><strong>화염 3세트 + 파괴자 2세트</strong> (반대도 가능)</p>
+                    <p>화염 세트는 화염 피해와 화상 위력을 높입니다. 파괴자 세트는 방어 무시 효과로 피날레 폭딜을 강화합니다.</p>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>주요 스탯</h4>
+                    <p>공격력 증가 → 치명타 확률 → 치명타 피해</p>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>룬</h4>
+                    <p>증폭 (주) / 결의 (대안)</p>
+                </div>
+                <div style="margin-top: 16px;">
+                    <h4>전용 카르마</h4>
+                    <p><strong>심홍의 불꽃에게 선택받은 자</strong> — 영웅 퀘스트, 시련의 탑 교환소, 또는 불필요한 전용 카르마 분해로 획득.</p>
+                </div>
+            </div>
+
+            <h2 id="teams">👥 추천 팀 조합</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>팀</th>
+                            <th>적합 콘텐츠</th>
+                            <th>칼리엔의 역할</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>아리아 + 칼리엔 + 칼시온</strong></td>
+                            <td>화상/공중 메타 팀</td>
+                            <td>여우 분신으로 화상 중첩, 여우 잡기와 피날레로 폭딜과 기절</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테레지아 + 아스트리아 + 칼리엔</strong></td>
+                            <td>출혈/기절 하이브리드</td>
+                            <td>테레지아의 출혈과 함께 화상 피해와 광역 처리</td>
+                        </tr>
+                        <tr>
+                            <td><strong>록시 + 아스트리아 + 칼리엔</strong></td>
+                            <td>지속 피해 팀</td>
+                            <td>화상 + 출혈 중첩으로 지속 딜</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card" style="margin-top: 24px;">
+                <h3 class="card-title">아리아 + 칼리엔 + 칼시온 — 화상/공중 콤보</h3>
+                <ol style="margin-top: 12px;">
+                    <li><strong>아리아</strong>가 화상과 공중을 동시에 적용 — 이 조합의 최고 인에이블러</li>
+                    <li><strong>칼리엔</strong>이 여우 분신을 배치해 대상 지역에 화상을 빠르게 중첩</li>
+                    <li>칼리엔의 <strong>여우 잡기</strong>로 화상 대상에 폭딜과 기절 부여</li>
+                    <li><strong>칼시온</strong>이 무기 불꽃 강화 피해로 화상+공중 상태에서 마무리</li>
+                    <li>칼리엔의 여우는 교체 중에도 자동 피해와 기절을 제공</li>
+                </ol>
+            </div>
+
+            <h2 id="strengths">✅ 장점</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🔥</div>
+                    <h3 class="card-title">뛰어난 화상 압박</h3>
+                    <p class="card-desc">여우 분신이 넓은 범위에 화상을 적용해 그룹 대상 지속 피해가 우수합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💥</div>
+                    <h3 class="card-title">광역 처리</h3>
+                    <p class="card-desc">잡몹과 엘리트 그룹을 화려한 광역 공격으로 빠르게 정리합니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">기절 유틸리티</h3>
+                    <p class="card-desc">피날레가 화상과 기절을 동시에 부여 — 강력한 군중 제어와 피해를 겸비.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🦊</div>
+                    <h3 class="card-title">자동 피해</h3>
+                    <p class="card-desc">수르와 여우 분신이 다른 영웅으로 교체한 후에도 계속 싸웁니다.</p>
+                </div>
+            </div>
+
+            <h2 id="weaknesses">❌ 단점</h2>
+            <ul>
+                <li><strong>위치 의존</strong> — 여우 정령 배치와 타이밍에 피해가 크게 좌우됩니다</li>
+                <li><strong>빠른 보스에 약함</strong> — 이동이 빠른 보스는 여우 공격 범위를 벗어나 폭딜이 감소합니다</li>
+                <li><strong>연계 필요</strong> — 최대 피해를 내려면 아리아 같은 화상 인에이블러가 필요합니다</li>
+                <li><strong>단독 캐리 불가</strong> — 화상 팀에서 빛을 발하며, 단독 운용은 효율이 낮습니다</li>
+            </ul>
+
+            <h2 id="tips">🎮 전투 팁</h2>
+            <ol>
+                <li><strong>분신 먼저 배치</strong> — 여우 잡기 전에 분신을 먼저 보내 화상이 이미 중첩된 상태로 만드세요</li>
+                <li><strong>기절과 함께 피날레</strong> — 분신에 둘러싸인 적에게 피날레를 사용해 최대 화상+기절 폭딜을 노리세요</li>
+                <li><strong>기절 후 교체</strong> — 피날레로 기절시킨 후 칼시온이나 아리아로 교체해 시그널 스킬을 연계하세요</li>
+                <li><strong>그룹에 강함</strong> — 여우 분신은 적이 모여 있을 때 빛을 발합니다. 단일 보스에서는 가치가 감소합니다</li>
+                <li><strong>화상 유지</strong> — 화상이 만료되기 전에 분신으로 계속 재적용하세요</li>
+            </ol>
+
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">모든 영웅 티어가 궁금하신가요?</h3>
+                <p style="margin-bottom: 16px;">완전한 티어 리스트와 팀 조합 가이드를 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 티어 리스트</a>
+                    <a href="best-team.html" class="btn btn-secondary">👥 추천 팀</a>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#overview">캐릭터 개요</a></li>
+                    <li><a href="#combat">전투 스타일</a></li>
+                    <li><a href="#build">추천 빌드</a></li>
+                    <li><a href="#teams">추천 팀</a></li>
+                    <li><a href="#strengths">장점</a></li>
+                    <li><a href="#weaknesses">단점</a></li>
+                    <li><a href="#tips">전투 팁</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">다른 영웅</div>
+                <ul class="sidebar-nav">
+                    <li><a href="theresia.html">🔨 테레지아</a></li>
+                    <li><a href="lute.html">💚 루트</a></li>
+                    <li><a href="charlotte.html">🗡️ 샬롯</a></li>
+                    <li><a href="reina.html">🌪️ 레이나</a></li>
+                    <li><a href="characters.html">📋 전체 캐릭터</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">위키 네비게이션</div>
+                <ul class="sidebar-nav">
+                    <li><a href="beginner-guide.html">초보 가이드</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="build.html">빌드 & 스킬</a></li>
+                    <li><a href="best-team.html">팀 조합</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 공식 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝의 모든 영웅, 전투 메커니즘, 팀 빌드와 성장 팁을 다루는 독립 팬 가이드 사이트입니다. Hound13 Inc.와 무관합니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul>
+                    <li><a href="beginner-guide.html">초보 가이드</a></li>
+                    <li><a href="tier-list.html">티어 리스트</a></li>
+                    <li><a href="characters.html">캐릭터</a></li>
+                    <li><a href="best-team.html">팀 빌드</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>시스템</h4>
+                <ul>
+                    <li><a href="combat.html">전투</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="karma.html">카르마</a></li>
+                    <li><a href="tower-of-trials.html">시련의 탑</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam에서 플레이</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">공식 디스코드</a></li>
+                    <li><a href="roadmap.html">로드맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, Hound13과 무관.</span>
+            <span>최종 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">
+            DragonSword: Awakening is a trademark of Hound13 Inc. This site is a community resource and is not endorsed by or affiliated with Hound13 Inc.
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

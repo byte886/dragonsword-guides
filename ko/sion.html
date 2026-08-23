@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시온 가이드 | 드래곤소드 어웨이크닝 위키</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 시온 완전 공략. 최고 빌드, 팀 조합, 스킬, 감전 군중 제어 메커니즘과 전투 팁.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 시온, 시온 빌드, 시온 팀, 썬더볼트, 감전, 넉다운, 오르가나의 화신">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/sion.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/sion.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/sion.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/sion.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/sion.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/sion.html">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/sion.html">
+    <meta property="og:title" content="시온 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="최고 빌드, 팀, 스킬과 감전 군중 제어 메커니즘.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"시온 가이드 | 드래곤소드 어웨이크닝 위키","description":"드래곤소드: 어웨이크닝 시온 완전 공략.","url":"https://ds-guides.wiki/ko/sion.html","inLanguage":"ko","publisher":{"@type":"Organization","name":"DragonSword Awakening Wiki","url":"https://ds-guides.wiki/"},"datePublished":"2026-08-23","dateModified":"2026-08-23","mainEntityOfPage":{"@type":"WebPage","@id":"https://ds-guides.wiki/ko/sion.html"}}
+    </script>
+    <script src="../js/analytics.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><img src="../assets/favicon.png" alt="Logo" style="width:32px;height:32px;border-radius:6px;"><span>DragonSword Wiki</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html" class="active">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">맵</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="Switch to light mode">☀️</button>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding:48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">오르가나 교단 · B 티어 (상승 가능성)</span>
+            <h1 style="font-size:2.5rem;margin-bottom:16px;">시온 — 오르가나의 화신</h1>
+            <p style="font-size:1.1rem;color:var(--text-secondary);max-width:700px;">여신 오르가나의 화신. 시온은 적을 모으고 감전을 적용해 아군의 광역 폭딜 기회를 만듭니다. 현재 B티어지만 팀 조합이 발전함에 따라 가장 상승 가능성이 높은 영웅으로 평가됩니다.</p>
+            <div class="hero-stats" style="margin-top:24px;">
+                <div class="hero-stat"><span class="dot"></span> 오르가나 교단</div>
+                <div class="hero-stat"><span class="dot"></span> 썬더볼트</div>
+                <div class="hero-stat"><span class="dot"></span> 감전 / 넉다운</div>
+                <div class="hero-stat"><span class="dot"></span> 하이브리드 지원</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>시온은 밀집된 적을 모으고 감전을 적용해 아군의 광역 폭딜 기회를 만드는 감전 지원가입니다. 성물은 배치와 회수 시 각각 피해와 감전 판정이 발생합니다. 현재 B티어지만 밀집 그룹에서는 그 이상의 성능을 보이며, 팀 조합 최적화에 따라 가장 상승 가능성이 높은 영웅입니다. 오르네트, 타르트와 함께 감전 팀을 구성하거나 루트와 밸런스 있게 조합하세요.</p>
+            </div>
+
+            <h2 id="overview">📋 캐릭터 개요</h2>
+            <div class="table-wrapper"><table><tbody>
+                <tr><td><strong>이름</strong></td><td>시온 (Sion)</td></tr>
+                <tr><td><strong>칭호</strong></td><td>오르가나의 화신</td></tr>
+                <tr><td><strong>생일</strong></td><td>12월 21일</td></tr>
+                <tr><td><strong>소속</strong></td><td>오르가나 교단</td></tr>
+                <tr><td><strong>특성</strong></td><td>썬더볼트 (Thunderbolt)</td></tr>
+                <tr><td><strong>상태 이상</strong></td><td>감전, 넉다운</td></tr>
+                <tr><td><strong>티어</strong></td><td><span class="tier-badge tier-b">B 티어</span> (상승 가능성 가장 높음)</td></tr>
+                <tr><td><strong>플레이스타일</strong></td><td>적 군중 제어, 감전 설정, 하이브리드 지원</td></tr>
+            </tbody></table></div>
+
+            <h2 id="combat">⚡ 전투 스타일</h2>
+            <p>시온의 핵심은 배치 가능한 성물(성물) 필드로, 적을 한곳으로 모읍니다. 성물은 <strong>배치와 회수 시 모두</strong> 피해와 감전 판정이 발생합니다 — 즉, 적절한 타이밍에 회수하면 한 번 사용으로 감전을 두 번 적용할 수 있습니다.</p>
+            <p>이로 인해 시온은 밀집된 적 그룹에 탁월합니다: 적을 모으고, 감전을 걸고, 오르네트 같은 광역 딜러가 폭딜할 기회를 만듭니다. 단일 대상이나 흩어진 적에서는 군중 제어 가치가 떨어지는 시나리오 의존형 영웅입니다.</p>
+
+            <h2 id="build">⚔️ 추천 빌드</h2>
+            <div class="card">
+                <h3 class="card-title">감전 지원 빌드 (추천)</h3>
+                <div style="margin-top:16px;"><h4>장비 세트</h4><p><strong>썬더러시 3세트 + 파괴자 2세트</strong> (또는 감전 3 + 다운 2)</p><p>썬더러시는 감전 피해와 이상 적용 속도를 높입니다. 파괴자는 방어 무시를 추가합니다. 넉다운 연계 중심이면 감전 3 + 다운 2도 가능합니다.</p></div>
+                <div style="margin-top:16px;"><h4>주요 스탯</h4><p>공격력 증가 → 치명타 확률 → 치명타 피해<br>지원 중심: 공격 속도, 이상 적용률</p></div>
+                <div style="margin-top:16px;"><h4>스킬 우선순위</h4><p>공격 브랜치의 피해 노드와 치명타 관련 패시브 우선. 긴 쿨다운 액티브보다 핵심 패시브에 집중하세요.</p></div>
+            </div>
+
+            <h2 id="teams">👥 추천 팀 조합</h2>
+            <div class="table-wrapper"><table><thead><tr><th>팀</th><th>적합 콘텐츠</th><th>시온의 역할</th></tr></thead><tbody>
+                <tr><td><strong>오르네트 + 타르트 + 시온</strong></td><td>밀집 그룹 / 광역 스테이지</td><td>적을 모으고 감전 적용; 오르네트가 광역 폭딜</td></tr>
+                <tr><td><strong>오르네트 + 루트 + 시온</strong></td><td>밸런스 감전 팀</td><td>감전 설정과 군중 제어; 루트가 힐링과 공격력 버프</td></tr>
+                <tr><td><strong>시온 + 타르트 + 루트</strong></td><td>생존 중심 감전</td><td>군중 제어와 감전; 타르트와 루트가 유지력 제공</td></tr>
+            </tbody></table></div>
+
+            <div class="card" style="margin-top:24px;">
+                <h3 class="card-title">오르네트 + 타르트 + 시온 — 감전 팀 콤보</h3>
+                <ol style="margin-top:12px;">
+                    <li><strong>시온</strong>이 성물을 배치해 적을 모으고 첫 감전 적용</li>
+                    <li><strong>타르트</strong>가 모인 적에게 추가 감전 디버프 중첩</li>
+                    <li>시온이 <strong>성물을 회수</strong>해 두 번째 감전과 피해 적용</li>
+                    <li><strong>오르네트</strong>가 교체 후 모이고 감전된 적에게 넓은 낫 광역기</li>
+                    <li>감전 창에 시그널 스킬 연계로 폭딜</li>
+                </ol>
+            </div>
+
+            <h2 id="strengths">✅ 장점</h2>
+            <div class="card-grid">
+                <div class="card"><div class="card-icon">🎯</div><h3 class="card-title">적 군중 제어</h3><p class="card-desc">성물이 적을 한곳으로 모아 아군의 광역 기회를 만듭니다.</p></div>
+                <div class="card"><div class="card-icon">⚡</div><h3 class="card-title">이중 감전</h3><p class="card-desc">성물 배치와 회수 시 모두 감전 — 한 번에 두 번 적용합니다.</p></div>
+                <div class="card"><div class="card-icon">📈</div><h3 class="card-title">높은 성장 가능성</h3><p class="card-desc">팀 조합 최적화에 따라 티어 상승 가능성이 가장 높습니다.</p></div>
+                <div class="card"><div class="card-icon">🌀</div><h3 class="card-title">밀집 그룹 특화</h3><p class="card-desc">몹이 많은 콘텐츠에서 B티어 이상의 성능을 발휘합니다.</p></div>
+            </div>
+
+            <h2 id="weaknesses">❌ 단점</h2>
+            <ul>
+                <li><strong>시나리오 의존</strong> — 단일 보스나 흩어진 적에서는 군중 제어가 무의미합니다</li>
+                <li><strong>낮은 개인 피해</strong> — 주로 지원/설정 영웅으로 메인 딜러가 아닙니다</li>
+                <li><strong>팀 연계 필요</strong> — 모이고 감전된 적을 활용할 아군이 필요합니다</li>
+                <li><strong>B티어 기본</strong> — 단일 대상 콘텐츠에서는 다른 지원가가 더 낫습니다</li>
+            </ul>
+
+            <h2 id="tips">🎮 전투 팁</h2>
+            <ol>
+                <li><strong>배치 후 회수</strong> — 성물은 배치와 회수 모두 감전이 적용됩니다. 타이밍을 맞춰 회수하세요.</li>
+                <li><strong>모은 후 폭딜</strong> — 시온이 적을 모은 후 오르네트 같은 광역 딜러로 교체하세요</li>
+                <li><strong>몹이 많은 콘텐츠에서</strong> — 시온은 밀집 그룹에서 빛을 발합니다. 단일 보스전에서는 다른 지원가를 고려하세요.</li>
+                <li><strong>타르트와 조합</strong> — 타르트는 모인 적에게 감전을 빠르게 중첩시키는 필수 파트너입니다.</li>
+                <li><strong>잠재력을 믿으세요</strong> — B티어지만 군중 제어 능력은 독특하고 대체 불가능합니다.</li>
+            </ol>
+
+            <section style="text-align:center;padding:32px 0;">
+                <h3 style="border:none;">모든 영웅 티어가 궁금하신가요?</h3>
+                <p style="margin-bottom:16px;">티어 리스트와 팀 조합 가이드를 확인하세요.</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 티어 리스트</a>
+                    <a href="best-team.html" class="btn btn-secondary">👥 추천 팀</a>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-card"><div class="sidebar-title">목차</div><ul class="sidebar-nav">
+                <li><a href="#overview">캐릭터 개요</a></li><li><a href="#combat">전투 스타일</a></li><li><a href="#build">추천 빌드</a></li>
+                <li><a href="#teams">추천 팀</a></li><li><a href="#strengths">장점</a></li><li><a href="#weaknesses">단점</a></li><li><a href="#tips">전투 팁</a></li>
+            </ul></div>
+            <div class="sidebar-card"><div class="sidebar-title">다른 영웅</div><ul class="sidebar-nav">
+                <li><a href="ornette.html">🌙 오르네트</a></li><li><a href="theresia.html">🔨 테레지아</a></li><li><a href="lute.html">💚 루트</a></li>
+                <li><a href="kalien.html">🦊 칼리엔</a></li><li><a href="characters.html">📋 전체 캐릭터</a></li>
+            </ul></div>
+            <div class="sidebar-card"><div class="sidebar-title">공식 링크</div><ul class="sidebar-nav">
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam</a></li>
+                <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 디스코드</a></li>
+                <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+            </ul></div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about"><h3>DragonSword Awakening Wiki</h3><p>드래곤소드 어웨이크닝의 독립 팬 가이드 사이트입니다. Hound13 Inc.와 무관합니다.</p></div>
+            <div class="footer-col"><h4>가이드</h4><ul><li><a href="beginner-guide.html">초보 가이드</a></li><li><a href="tier-list.html">티어 리스트</a></li><li><a href="characters.html">캐릭터</a></li><li><a href="best-team.html">팀 빌드</a></li></ul></div>
+            <div class="footer-col"><h4>시스템</h4><ul><li><a href="combat.html">전투</a></li><li><a href="gear.html">장비</a></li><li><a href="karma.html">카르마</a></li><li><a href="tower-of-trials.html">시련의 탑</a></li></ul></div>
+            <div class="footer-col"><h4>커뮤니티</h4><ul><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam</a></li><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">디스코드</a></li><li><a href="roadmap.html">로드맵</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, Hound13과 무관.</span><span>최종 업데이트: 2026년 8월</span></div>
+        <div class="footer-disclaimer">DragonSword: Awakening is a trademark of Hound13 Inc. This site is a community resource and is not endorsed by or affiliated with Hound13 Inc.</div>
+    </footer>
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시련의 탑 가이드 | 드래곤소드 어웨이크닝 위키</title>
+    <meta name="description" content="드래곤소드: 어웨이크닝 시련의 탑 완전 공략. 3개 탑(질풍, 증폭, 파쇄), 층 메커니즘, 보상, 추천 팀과 전략.">
+    <meta name="keywords" content="드래곤소드 어웨이크닝 시련의 탑, 시련의 탑 공략, 보상, 회오리치는 생각, 기억의 파편, 탑 층수">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/tower-of-trials.html">
+    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/tower-of-trials.html">
+    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/tower-of-trials.html">
+    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/tower-of-trials.html">
+    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/tower-of-trials.html">
+    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/tower-of-trials.html">
+    <link rel="canonical" href="https://ds-guides.wiki/ko/tower-of-trials.html">
+    <meta property="og:title" content="시련의 탑 가이드 — 드래곤소드 어웨이크닝">
+    <meta property="og:description" content="3개 탑, 층 메커니즘, 보상, 추천 팀과 전략.">
+    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "시련의 탑 가이드 | 드래곤소드 어웨이크닝 위키",
+      "description": "드래곤소드: 어웨이크닝 시련의 탑 완전 공략. 3개 탑, 층 메커니즘, 보상, 추천 팀과 전략.",
+      "url": "https://ds-guides.wiki/ko/tower-of-trials.html",
+      "inLanguage": "ko",
+      "publisher": {"@type": "Organization", "name": "DragonSword Awakening Wiki", "url": "https://ds-guides.wiki/"},
+      "datePublished": "2026-08-23",
+      "dateModified": "2026-08-23",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ds-guides.wiki/ko/tower-of-trials.html"}
+    }
+    </script>
+    <script src="../js/analytics.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                <span>DragonSword Wiki</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="beginner-guide.html">초보 가이드</a></li>
+                <li><a href="tier-list.html">티어 리스트</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="build.html">빌드</a></li>
+                <li><a href="best-team.html">팀</a></li>
+                <li><a href="combat.html">전투</a></li>
+                <li><a href="map.html">맵</a></li>
+                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Steam에서 플레이</a></li>
+            </ul>
+            <button class="theme-toggle" title="Switch to light mode">☀️</button>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 48px 24px 32px;">
+        <div class="container">
+            <span class="hero-eyebrow">엔드게임 콘텐츠 · 하늘첨탑 바위</span>
+            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">시련의 탑</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">
+                드래곤소드: 어웨이크닝의 핵심 엔드게임 콘텐츠. 3개의 탑, 총 90층으로 구성되어 있으며 각 탑은 다른 전투 스타일을 요구합니다. 90초 이내 클리어 시 전용 카르마 재료, 기억의 파편, 회오리치는 생각 등 최대 보상을 획득할 수 있습니다.
+            </p>
+            <div class="hero-stats" style="margin-top: 24px;">
+                <div class="hero-stat"><span class="dot"></span> 3개 탑</div>
+                <div class="hero-stat"><span class="dot"></span> 90층</div>
+                <div class="hero-stat"><span class="dot"></span> 90초/층</div>
+                <div class="hero-stat"><span class="dot"></span> 전용 카르마 보상</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-layout">
+        <div class="content-area article-content">
+            <div class="alert alert-success">
+                <div class="alert-title">⚡ 빠른 답변</div>
+                <p>시련의 탑은 메인 스토리 3장 완료 후 하늘첨탑 바위에서 세레시의 인연 퀘스트를 완료하면 해금됩니다. 질풍의 탑(공중), 증폭의 탑(기절), 파쇄의 탑(넉다운) 3개가 있으며 각 30층씩 총 90층입니다. 각 층을 90초 이내에 클리어하면 3성 보상을 받습니다. 전체 보상은 기억의 파편 7,000개 이상, 회오리치는 생각 160개 이상으로, 전용 카르마 제작에 필수적인 최고의 후반 파밍처입니다.</p>
+            </div>
+
+            <h2 id="unlock">🔓 해금 조건</h2>
+            <ol>
+                <li>메인 스토리 <strong>3장</strong> 진행</li>
+                <li><strong>하늘첨탑 바위</strong> 산악 지역 도달</li>
+                <li><strong>세레시</strong>와 대화 후 그녀의 월드/인연 퀘스트 완료</li>
+                <li>시련의 탑 입장 가능</li>
+            </ol>
+
+            <h2 id="overview">🏰 탑 개요</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>탑</th><th>핵심 메커니즘</th><th>층수</th><th>보상</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>질풍의 탑</strong></td><td>공중 콤보</td><td>30</td><td>회오리치는 생각 + 기억의 파편</td></tr>
+                        <tr><td><strong>증폭의 탑</strong></td><td>기절 연계</td><td>30</td><td>회오리치는 생각 + 기억의 파편</td></tr>
+                        <tr><td><strong>파쇄의 탑</strong></td><td>넉다운/다운</td><td>30</td><td>회오리치는 생각 + 기억의 파편</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>각 탑은 색상으로 구분됩니다: 노란색(기절/증폭), 파란색(공중/질풍), 빨간색/주황색(넉다운/파쇄). 층이 올라갈수록 난이도가 상승하므로 최적화된 팀과 장비가 필요합니다.</p>
+
+            <h2 id="mechanics">⚙️ 층 메커니즘</h2>
+            <div class="card">
+                <h3 class="card-title">시간 제한 & 별점</h3>
+                <ul style="margin-top: 12px;">
+                    <li>각 층은 <strong>90초 이내</strong>에 클리어해야 최대 보상(3성) 획득</li>
+                    <li>느린 클리어도 진행은 되지만 보상이 감소합니다</li>
+                    <li>보스 처치와 빠른 클리어로 별점 획득</li>
+                    <li>별점 개선을 위해 재도전 가능</li>
+                </ul>
+            </div>
+            <div class="card" style="margin-top: 16px;">
+                <h3 class="card-title">메커니즘 요구사항</h3>
+                <p style="margin-top: 8px;">각 탑은 특정 상태 이상을 활용합니다. 빠른 클리어를 위해 해당 메커니즘에 맞는 팀 구성이 필수입니다:</p>
+                <ul style="margin-top: 8px;">
+                    <li><strong>질풍의 탑 (공중):</strong> 적을 띄우는 영웅(레이나, 카스텔라, 아리아) 사용. 공중 콤보가 추가 피해를 입히고 띄우기 시간을 연장합니다.</li>
+                    <li><strong>증폭의 탑 (기절):</strong> 기절을 거는 영웅(칼리엔, 테레지아, 루트) 사용. 기절로 적을 봉쇄합니다.</li>
+                    <li><strong>파쇄의 탑 (넉다운):</strong> 넉다운/다운을 거는 영웅(오르네트, 시온, 루트) 사용. 넉다운 후 강력한 처치 기회를 노립니다.</li>
+                </ul>
+            </div>
+
+            <h2 id="rewards">🎁 보상</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>보상</th><th>탑당 수량</th><th>총 수량(3개 탑)</th><th>용도</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>기억의 파편</strong></td><td>2,600+</td><td>7,000+</td><td>고티어 각성, 전용 카르마 강화, 펫 성장</td></tr>
+                        <tr><td><strong>회오리치는 생각</strong></td><td>~55</td><td>160+</td><td>전용 카르마 제작 재료</td></tr>
+                        <tr><td><strong>고유 카르마</strong></td><td colspan="2">특정 층 클리어</td><td>탑에서만 획득 가능한 무기 카드</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>기억의 파편은 영웅 고티어 각성, 전용 카르마 강화, 펫 성장, 잔영 파편 연금 제작에 사용되는 핵심 중후반 재화입니다. 시련의 탑은 기억의 파편과 회오리치는 생각 모두를 가장 안정적으로 수급할 수 있는 후반 콘텐츠입니다.</p>
+
+            <h2 id="teams">👥 탑별 추천 팀</h2>
+            <h3>질풍의 탑 (공중)</h3>
+            <div class="card">
+                <p><strong>추천: 레이나 + 카스텔라 + 루트</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li><strong>레이나</strong>가 라이징 커터/윈드 슬레이어로 적을 띄웁니다</li>
+                    <li><strong>카스텔라</strong>가 공중의 적을 내리꽂아 큰 피해</li>
+                    <li><strong>루트</strong>가 공중 지속 시간 연장과 힐링 지원</li>
+                </ul>
+            </div>
+            <h3>증폭의 탑 (기절)</h3>
+            <div class="card">
+                <p><strong>추천: 칼리엔 + 테레지아 + 루트</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li><strong>칼리엔</strong>이 피날레로 기절을 걸고 여우 분신이 화상 중첩</li>
+                    <li><strong>테레지아</strong>가 쌍둥이 메이스로 출혈+기절 제공</li>
+                    <li><strong>루트</strong>가 기절 지원, 방어구 파괴, 힐링</li>
+                </ul>
+            </div>
+            <h3>파쇄의 탑 (넉다운)</h3>
+            <div class="card">
+                <p><strong>추천: 오르네트 + 시온 + 타르트</strong></p>
+                <ul style="margin-top: 8px;">
+                    <li><strong>오르네트</strong>가 낫 공격으로 넉다운과 감전 적용</li>
+                    <li><strong>시온</strong>이 적을 모으고 감전으로 광역 넉다운 기회 창출</li>
+                    <li><strong>타르트</strong>가 감전 지원과 힐링</li>
+                </ul>
+            </div>
+
+            <h2 id="tips">🎮 전략 팁</h2>
+            <ol>
+                <li><strong>메커니즘에 맞는 팀 구성</strong> — 공중 탑에 화상 팀을 데려가지 마세요. 탑이 요구하는 상태 이상에 맞는 영웅을 편성하세요.</li>
+                <li><strong>90초 클리어 우선</strong> — 3성 보상이 재료를 훨씬 많이 줍니다. 시간을 놓쳤다면 레벨업이나 장비 최적화 후 재도전하세요.</li>
+                <li><strong>시그널 스킬 연계 활용</strong> — 3단계 콤보(적용→연장→마무리)가 빠른 처치의 핵심입니다. 각 탑에서 로테이션을 연습하세요.</li>
+                <li><strong>전용 카르마 우선 강화</strong> — 회오리치는 생각은 탑 외에는 구하기 어렵습니다. 주력 딜러의 전용 카르마에 먼저 사용하세요.</li>
+                <li><strong>90층을 한 번에 서두르지 마세요</strong> — 영웅과 장비가 성장함에 따라 자연스럽게 진행하세요. 탑 층은 만료되지 않습니다.</li>
+                <li><strong>고층에는 힐러 포함</strong> — 높은 층은 피해가 큽니다. 루트나 타르트로 생존력을 높이세요.</li>
+            </ol>
+
+            <h2 id="faq">❓ 자주 묻는 질문</h2>
+            <div class="card">
+                <h3 class="card-title">언제부터 시작해야 하나요?</h3>
+                <p>3장 완료 후 해금되면 바로 시작하세요. 초반 층은 스토리 레벨 장비로도 클리어 가능합니다. 어려운 층은 주력 팀이 성장한 후에 도전하세요.</p>
+            </div>
+            <div class="card" style="margin-top: 12px;">
+                <h3 class="card-title">보상이 초기화되나요?</h3>
+                <p>첫 클리어 보상은 1회성입니다. 층을 반복 클리어해 추가 재료를 얻을 수 있지만, 큰 기억의 파편 보상은 첫 클리어 기준입니다. 오래된 층 파밍보다 새 층 진행을 우선하세요.</p>
+            </div>
+            <div class="card" style="margin-top: 12px;">
+                <h3 class="card-title">어느 탑부터 해야 하나요?</h3>
+                <p>가장 강한 팀에 맞는 탑부터 시작하세요. 스토리 영웅 레이나를 키웠다면 질풍의 탑이 가장 접근하기 쉽습니다. 그 외에는 가장 잘 키운 영웅에 따라 선택하세요.</p>
+            </div>
+
+            <section style="text-align: center; padding: 32px 0;">
+                <h3 style="border: none;">탑 팀 구성이 필요하신가요?</h3>
+                <p style="margin-bottom: 16px;">티어 리스트와 팀 조합 가이드를 확인하세요.</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tier-list.html" class="btn btn-primary">🏆 티어 리스트</a>
+                    <a href="best-team.html" class="btn btn-secondary">👥 추천 팀</a>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">목차</div>
+                <ul class="sidebar-nav">
+                    <li><a href="#unlock">해금 조건</a></li>
+                    <li><a href="#overview">탑 개요</a></li>
+                    <li><a href="#mechanics">층 메커니즘</a></li>
+                    <li><a href="#rewards">보상</a></li>
+                    <li><a href="#teams">추천 팀</a></li>
+                    <li><a href="#tips">전략 팁</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-card">
+                <div class="sidebar-title">관련 가이드</div>
+                <ul class="sidebar-nav">
+                    <li><a href="endgame.html">엔드게임 가이드</a></li>
+                    <li><a href="karma.html">카르마 시스템</a></li>
+                    <li><a href="gear.html">장비</a></li>
+                    <li><a href="best-team.html">팀 조합</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-card">
+                <div class="sidebar-title">공식 링크</div>
+                <ul class="sidebar-nav">
+                    <li><a href="https://store.steampowered.com/app/4570720/" target="_blank">🎮 Steam</a></li>
+                    <li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">💬 디스코드</a></li>
+                    <li><a href="https://www.youtube.com/@DragonSwordAwakening" target="_blank">📺 YouTube</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>DragonSword Awakening Wiki</h3>
+                <p>드래곤소드 어웨이크닝의 모든 영웅, 전투 메커니즘, 팀 빌드와 성장 팁을 다루는 독립 팬 가이드 사이트입니다. Hound13 Inc.와 무관합니다.</p>
+            </div>
+            <div class="footer-col">
+                <h4>가이드</h4>
+                <ul><li><a href="beginner-guide.html">초보 가이드</a></li><li><a href="tier-list.html">티어 리스트</a></li><li><a href="characters.html">캐릭터</a></li><li><a href="best-team.html">팀 빌드</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>엔드게임</h4>
+                <ul><li><a href="endgame.html">엔드게임</a></li><li><a href="tower-of-trials.html">시련의 탑</a></li><li><a href="raid.html">레이드</a></li><li><a href="karma.html">카르마</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>커뮤니티</h4>
+                <ul><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam</a></li><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">디스코드</a></li><li><a href="roadmap.html">로드맵</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span class="current-year">2026</span> DragonSword Awakening Wiki. 팬 제작, Hound13과 무관.</span>
+            <span>최종 업데이트: 2026년 8월</span>
+        </div>
+        <div class="footer-disclaimer">DragonSword: Awakening is a trademark of Hound13 Inc. This site is a community resource and is not endorsed by or affiliated with Hound13 Inc.</div>
+    </footer>
+    <script src="../js/main.js?v=2"></script>
+</body>
+</html>
