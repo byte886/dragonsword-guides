@@ -366,6 +366,47 @@ code {
     opacity: 0.5;
 }
 
+/* ========== Trending Bar ========== */
+.trending-bar {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--space-sm) 0;
+    overflow-x: auto;
+}
+
+.trending-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    white-space: nowrap;
+}
+
+.trending-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    flex-shrink: 0;
+}
+
+.trending-link {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.trending-link:hover {
+    color: var(--accent-purple-light);
+    background: var(--bg-card);
+}
+
 /* ========== Buttons ========== */
 .btn {
     display: inline-flex;
