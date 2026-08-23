@@ -9,3 +9,10 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Playwright runtime
+.playwright-cli/
+.playwright-mcp/
+
+# Node
+node_modules/
