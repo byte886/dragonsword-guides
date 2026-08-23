@@ -68,6 +68,19 @@ sitemap.xml
 - hreflang for all language versions
 - Sitemap in `sitemap.xml`, disallow rules in `robots.txt`
 
+## Development Workflow
+
+Before committing any new or modified pages:
+
+1. Run validation: `python3 scripts/validate-pages.py` (or pass specific files)
+2. Check internal links — see `../06-project-continuity/10-content-relationship-map.md`
+3. Update `sitemap.xml` if pages were added
+4. Test locally: `python3 -m http.server 8000`
+5. Verify in browser: title, description, H1/H2, GA realtime
+6. Commit with `type: description` format
+7. Push to main → Vercel auto-deploys
+8. After deployment: verify live site, request indexing in GSC for new URLs
+
 ## Git
 
 - Commit messages: `type: description` (feat, fix, chore, style, refactor)
