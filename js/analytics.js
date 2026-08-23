@@ -10,4 +10,16 @@
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', 'G-6XQCHB1YYV');
+
+  // Track deep engagement: 3+ page views per session
+  try {
+    var count = parseInt(sessionStorage.getItem('ga_page_views') || '0', 10) + 1;
+    sessionStorage.setItem('ga_page_views', count);
+    if (count === 3) {
+      gtag('event', 'deep_engagement', {
+        'event_category': 'engagement',
+        'event_label': '3+ pages in session'
+      });
+    }
+  } catch(e) {}
 })();
