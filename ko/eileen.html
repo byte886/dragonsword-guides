@@ -1,25 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eileen 빌드 가이드: 최고의 카르마, 장비, 룬 & 팀 | DragonSword: Awakening</title>
-    <meta name="description" content="Complete Eileen build guide — Exclusive Karma (Between Chivalry and Bookmarks), 3-piece Azure Gale + 2-piece Ballad of Life or Ruinsbreaker, skill breakdown, and best team compositions for offensive support / airborne enabler.">
-    <meta name="keywords" content="dragonsword awakening eileen, eileen build, eileen karma, eileen gear, eileen team, gale, airborne">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ds-guides.wiki/ko/eileen.html">
-    <meta property="og:title" content="Eileen Build Guide — DragonSword: Awakening">
-    <meta property="og:description" content="Complete Eileen build guide — Exclusive Karma (Between Chivalry and Bookmarks), 3-piece Azure Gale + 2-piece Ballad of Life or Ruinsbreaker, skill breakdown, and best team compositions for offensive support / airborne enabler.">
-    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
-    <link rel="stylesheet" href="../css/style.css?v=2">
-    <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/eileen.html">
-    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/eileen.html">
-    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/eileen.html">
-    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/eileen.html">
-    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/eileen.html">
-    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/eileen.html">
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eileen빌드 가이드:최고의 카르마,장비, 룬 __ ENT0 __ 팀 | __ PN0 __: __ PN1 __</title>
+<meta content="Complete Eileen build guide — Exclusive Karma (Between Chivalry and Bookmarks), 3-piece Azure Gale + 2-piece Ballad of Life or Ruinsbreaker, skill breakdown, and best team compositions for offensive support / airborne enabler." name="description"/>
+<meta content="dragonsword awakening eileen, eileen build, eileen karma, eileen gear, eileen team, gale, airborne" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://ds-guides.wiki/ko/eileen.html" rel="canonical"/>
+<meta content="Eileen Build Guide — DragonSword: Awakening" property="og:title"/>
+<meta content="Complete Eileen build guide — Exclusive Karma (Between Chivalry and Bookmarks), 3-piece Azure Gale + 2-piece Ballad of Life or Ruinsbreaker, skill breakdown, and best team compositions for offensive support / airborne enabler." property="og:description"/>
+<meta content="https://ds-guides.wiki/assets/hero-cover.jpg" property="og:image"/>
+<link href="../css/style.css?v=2" rel="stylesheet"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="https://ds-guides.wiki/en/eileen.html" hreflang="en" rel="alternate"/>
+<link href="https://ds-guides.wiki/zh/eileen.html" hreflang="zh" rel="alternate"/>
+<link href="https://ds-guides.wiki/ko/eileen.html" hreflang="ko" rel="alternate"/>
+<link href="https://ds-guides.wiki/ru/eileen.html" hreflang="ru" rel="alternate"/>
+<link href="https://ds-guides.wiki/ja/eileen.html" hreflang="ja" rel="alternate"/>
+<link href="https://ds-guides.wiki/en/eileen.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -33,196 +34,182 @@
       "mainEntityOfPage": {"@type": "WebPage","@id": "https://ds-guides.wiki/ko/eileen.html"}
     }
     </script>
-    <script src="../js/analytics.js" defer></script>
+<script defer="" src="../js/analytics.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
-                <span>DragonSword Wiki</span>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="beginner-guide.html">Beginner Guide</a></li>
-                <li><a href="tier-list.html">Tier List</a></li>
-                <li><a href="characters.html" class="active">Characters</a></li>
-                <li><a href="build.html">Builds</a></li>
-                <li><a href="best-team.html">Teams</a></li>
-                <li><a href="combat.html">Combat</a></li>
-                <li><a href="map.html">Map</a></li>
-                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Play on Steam</a></li>
-            </ul>
-            <button class="theme-toggle" title="Switch to light mode">☀️</button>
-        </div>
-    </nav>
-
-    <section class="hero" style="padding: 48px 24px 32px;">
-        <div class="container">
-            <span class="hero-eyebrow">Orbis Kingdom · A Tier · Gale</span>
-            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Eileen — Offensive Support</h1>
-            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">A chivalric knight who bridges Gale and Airborne combos. Eileen is an offensive support who enables Reina's Airborne juggles while adding respectable damage and survivability.</p>
-            <div class="hero-stats" style="margin-top: 24px;">
-                <div class="hero-stat"><span class="dot"></span> Orbis Kingdom</div>
-                <div class="hero-stat"><span class="dot"></span> Rapier / Wind Magic</div>
-                <div class="hero-stat"><span class="dot"></span> Airborne</div>
-                <div class="hero-stat"><span class="dot"></span> Offensive Support / Airborne Enabler</div>
-            </div>
-        </div>
-    </section>
-
-    <main class="main-layout">
-        <div class="content-area article-content">
-            <div class="alert alert-success">
-                <div class="alert-title">⚡ Quick Answer</div>
-                <p>Eileen is an A-tier offensive support. Equip Karma "Between Chivalry and Bookmarks", 3-piece Azure Gale + 2-piece Ballad of Life (or Ruinsbreaker for more damage), and prioritize ATK, Crit DMG, and Max HP. Her best team is <strong>Reina + Kalsion</strong> — she enables Reina's Airborne combos while Kalsion provides Burn pressure. She also pairs well with Aria and Cerese.</p>
-            </div>
-            
-            <h2 id="overview">📋 Character Overview</h2>
-            <div class="table-wrapper"><table><tbody>
-                <tr><td><strong>Name</strong></td><td>Eileen (艾琳)</td></tr>
-                <tr><td><strong>Faction</strong></td><td>Orbis Kingdom</td></tr>
-                <tr><td><strong>Weapon</strong></td><td>Rapier / Wind Magic</td></tr>
-                <tr><td><strong>Hero Trait</strong></td><td>Gale</td></tr>
-                <tr><td><strong>Role</strong></td><td>Offensive Support / Airborne Enabler</td></tr>
-                <tr><td><strong>Status Effects</strong></td><td>Airborne</td></tr>
-                <tr><td><strong>Tier</strong></td><td>A</td></tr>
-                <tr><td><strong>Unlock</strong></td><td>Story progression</td></tr>
-            </tbody></table></div>
-
-            <h2 id="playstyle">🎯 Playstyle</h2>
-            <p>Eileen is a Gale-element support who excels at enabling Airborne combos. Her skills launch enemies and keep them suspended, allowing Reina to extend juggles. Unlike pure supports, she builds with offensive stats — Azure Gale boosts her Gale damage while Ballad of Life provides sustain. She is the bridge between setup and burst in Airborne teams.</p>
-
-            <h2 id="skills">⚔️ Skills</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Skill</th><th>Input</th><th>Effect</th><th>Damage</th></tr></thead><tbody>
-                <tr><td>Gale Thrust</td><td>Attack</td><td>Quick rapier thrusts with Gale damage</td><td>—</td></tr>
-                <tr><td>Wind Launcher</td><td>Skill 1</td><td>Launches enemies into the air (Airborne setup)</td><td>—</td></tr>
-                <tr><td>Chivalric Guard</td><td>Skill 2</td><td>Defensive parry with counter-attack</td><td>—</td></tr>
-                <tr><td>Gale Cyclone</td><td>Signal</td><td>Whirlwind that suspends Airborne enemies for extended juggle</td><td>—</td></tr>
-            </tbody></table></div>
-
-            <h2 id="awakening">🌟 Awakening Nodes</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Level</th><th>Effect</th></tr></thead><tbody>
-                <tr><td>1</td><td>Wind Launcher launch height increased</td></tr>
-                <tr><td>2</td><td>Max HP and survivability increased</td></tr>
-                <tr><td>3</td><td>Gale damage bonus when enemy is Airborne</td></tr>
-                <tr><td>4</td><td>Chivalric Guard counter damage increased</td></tr>
-                <tr><td>5</td><td>Airborne duration extended; Crit DMG bonus</td></tr>
-                <tr><td>6</td><td>Gale Cyclone pulls in nearby enemies and extends juggle</td></tr>
-            </tbody></table></div>
-
-            <h2 id="build">🔧 Best Build</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Slot</th><th>Recommendation</th></tr></thead><tbody>
-                <tr><td><strong>Exclusive Karma</strong></td><td>Between Chivalry and Bookmarks</td></tr>
-                <tr><td><strong>Gear Set</strong></td><td>3-piece Azure Gale + 2-piece Ballad of Life or Ruinsbreaker</td></tr>
-                <tr><td><strong>Main Stats</strong></td><td>ATK Power Up, Critical DMG, Max HP</td></tr>
-                <tr><td><strong>Runes</strong></td><td>Resolve / Amplification</td></tr>
-                <tr><td><strong>Crit Target</strong></td><td>~80% Crit Rate, ~150% Crit DMG</td></tr>
-            </tbody></table></div>
-
-            <h2 id="teams">👥 Best Team Compositions</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Team</th><th>Composition</th><th>How It Works</th></tr></thead><tbody>
-                <tr><td><strong>Airborne/Burn</strong></td><td>Eileen + Reina + Kalsion</td><td>Eileen launches, Reina juggles, Kalsion adds Burn burst. Her recommended team.</td></tr>
-                <tr><td><strong>Airborne Support</strong></td><td>Eileen + Reina + Aria</td><td>Double Gale/Airborne enablers with Aria adding Burn/Airborne.</td></tr>
-                <tr><td><strong>Venom/Gale</strong></td><td>Eileen + Johnny + Charlotte</td><td>Eileen provides Airborne setup for the Poison core.</td></tr>
-            </tbody></table></div>
-
-            <h2 id="tips">💡 Combat Tips</h2>
-            <div class="card-grid">
-                <div class="card"><h3 class="card-title">Launch First</h3><p>Use Wind Launcher to start Airborne combos, then swap to Reina for the juggle.</p></div>
-                <div class="card"><h3 class="card-title">Balance Offense and Survival</h3><p>Azure Gale + Ballad of Life gives her damage and sustain — don't go pure glass cannon.</p></div>
-                <div class="card"><h3 class="card-title">Max HP Matters</h3><p>Her build includes Max HP because she needs to survive while setting up combos.</p></div>
-                <div class="card"><h3 class="card-title">Extend Juggles</h3><p>Gale Cyclone keeps enemies suspended longer, giving Reina more time to burst.</p></div>
-            </div>
-
-            <h2 id="mistakes">⚠️ Common Mistakes</h2>
-            <ul>
-                <li>Building Eileen as pure DPS — she is an enabler first, damage dealer second</li>
-                <li>Using Gale Cyclone before enemies are Airborne — it needs the launch setup</li>
-                <li>Ignoring Max HP stats — her survivability is part of her value</li>
-            </ul>
-
-            <section style="text-align: center; padding: 32px 0;">
-                <h3 style="border: none;">Want to see all heroes?</h3>
-                <p style="margin-bottom: 16px;">Check our complete character roster and tier list.</p>
-                <a href="characters.html" class="btn btn-primary">👥 View All Characters</a>
-            </section>
-        </div>
-
-        <aside class="sidebar">
-            <div class="sidebar-card">
-                <div class="sidebar-title">On This Page</div>
-                <ul class="sidebar-nav">
-                    <li><a href="#overview">Character Overview</a></li>
-                    <li><a href="#playstyle">Playstyle</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awakening">Awakening Nodes</a></li>
-                    <li><a href="#build">Best Build</a></li>
-                    <li><a href="#teams">Team Comps</a></li>
-                    <li><a href="#tips">Combat Tips</a></li>
-                    <li><a href="#mistakes">Common Mistakes</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-card">
-                <div class="sidebar-title">Other Heroes</div>
-                <ul class="sidebar-nav">
-                    <li><a href="lute.html">Lute</a></li>
-                    <li><a href="kalien.html">Kalien</a></li>
-                    <li><a href="ornette.html">Ornette</a></li>
-                    <li><a href="sion.html">Sion</a></li>
-                    <li><a href="theresia.html">Theresia</a></li>
-                    <li><a href="charlotte.html">Charlotte</a></li>
-                    <li><a href="reina.html">Reina</a></li>
-                    <li><a href="roxy.html">Roxy</a></li>
-                    <li><a href="castella.html">Castella</a></li>
-                    <li><a href="aria.html">Aria</a></li>
-                    <li><a href="dana.html">Dana</a></li>
-                    <li><a href="johnny.html">Johnny</a></li>
-                    <li><a href="astria.html">Astria</a></li>
-                    <li><a href="alex.html">Alex</a></li>
-                    <li><a href="cerese.html">Cerese</a></li>
-                    <li><a href="othello.html">Othello</a></li>
-                    <li><a href="eileen.html">Eileen</a></li>
-                    <li><a href="kalsion.html">Kalsion</a></li>
-                    <li><a href="tarte.html">Tarte</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-card">
-                <div class="sidebar-title">Wiki Navigation</div>
-                <ul class="sidebar-nav">
-                    <li><a href="beginner-guide.html">Getting Started</a></li>
-                    <li><a href="tier-list.html">Tier List</a></li>
-                    <li><a href="build.html">Builds & Skills</a></li>
-                    <li><a href="best-team.html">Team Compositions</a></li>
-                    <li><a href="combat.html">Combat System</a></li>
-                    <li><a href="gear.html">Gear & Equipment</a></li>
-                    <li><a href="karma.html">Karma System</a></li>
-                    <li><a href="familiars.html">Familiars</a></li>
-                </ul>
-            </div>
-        </aside>
-    </main>
-
-
-    <section class="container" style="padding: 32px 24px; max-width: 800px; margin: 0 auto;">
-        <h2 id="sources" style="font-size: 1.3rem; margin-bottom: 16px;">📚 Sources</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">Build data and skill information cross-referenced from the following sources:</p>
-        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px;">
-                        <li><a href="https://allthings.how/dragonsword-awakening-best-builds-and-team-pairings-for-every-hero/" target="_blank" rel="noopener">All Things How</a></li>
-                        <li><a href="https://games.gg/dragonsword-awakening/guides/dragonsword-awakening-best-builds-and-teams/" target="_blank" rel="noopener">games.gg</a></li>
-                        <li><a href="https://www.destructoid.com/best-builds-and-teams-for-all-characters-in-dragonsword-awakening/" target="_blank" rel="noopener">Destructoid</a></li>
-                        <li><a href="https://dsawakening.wiki/team-build" target="_blank" rel="noopener">dsawakening.wiki</a></li>
-                    </ul>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about"><h3>DragonSword Awakening Wiki</h3><p>Independent fan-made guide site. Not affiliated with Hound13 Inc.</p></div>
-            <div class="footer-col"><h4>Guides</h4><ul><li><a href="beginner-guide.html">Beginner Guide</a></li><li><a href="tier-list.html">Tier List</a></li><li><a href="characters.html">Characters</a></li><li><a href="build.html">Builds</a></li></ul></div>
-            <div class="footer-col"><h4>Systems</h4><ul><li><a href="combat.html">Combat</a></li><li><a href="gear.html">Gear</a></li><li><a href="karma.html">Karma</a></li><li><a href="familiars.html">Familiars</a></li></ul></div>
-            <div class="footer-col"><h4>Community</h4><ul><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Discord</a></li><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam</a></li></ul></div>
-        </div>
-        <div class="footer-bottom"><p>&copy; 2026 DragonSword Awakening Wiki. Fan site. DragonSword: Awakening &copy; Hound13 Inc.</p></div>
-    </footer>
-    <script src="../js/main.js"></script>
+<nav class="navbar">
+<div class="nav-container">
+<a class="nav-logo" href="../index.html">
+<img alt="DragonSword Wiki Logo" src="../assets/favicon.png" style="width: 32px; height: 32px; border-radius: 6px;"/>
+<span>__ PN0 __ Wiki</span>
+</a>
+<button aria-label="Toggle menu" class="nav-toggle">☰</button>
+<ul class="nav-links">
+<li><a href="beginner-guide.html">__ PN0 __ 가이드</a></li>
+<li><a href="tier-list.html">__ PN0 __ 목록</a></li>
+<li><a class="active" href="characters.html">Characters</a></li>
+<li><a href="build.html">빌드</a></li>
+<li><a href="best-team.html">팀</a></li>
+<li><a href="combat.html">"전투</a></li>
+<li><a href="map.html">지도</a></li>
+<li><a class="nav-cta" href="https://store.steampowered.com/app/4570720/" target="_blank">Steam에서 플레이하세요</a></li>
+</ul>
+<button class="theme-toggle" title="Switch to light mode">☀️</button>
+</div>
+</nav>
+<section class="hero" style="padding: 48px 24px 32px;">
+<div class="container">
+<span class="hero-eyebrow">오르비스 왕국 · A __ PN0 __ · 게일</span>
+<h1 style="font-size: 2.5rem; margin-bottom: 16px;">아일린 — 공격적인 지원</h1>
+<p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">게일과 공수 콤보를 이어주는 기사도. 에일린은 레이나의 공수 저글을 가능하게 하는 동시에 존경할 만한 피해와 생존 가능성을 더해주는 공격적인 지원가입니다.</p>
+<div class="hero-stats" style="margin-top: 24px;">
+<div class="hero-stat"><span class="dot"></span>오르비스 왕국</div>
+<div class="hero-stat"><span class="dot"></span>레이피어/윈드 매직</div>
+<div class="hero-stat"><span class="dot"></span>공수부대</div>
+<div class="hero-stat"><span class="dot"></span>오르비스 왕국 · A __ PN0 __ · 게일</div>
+</div>
+</div>
+</section>
+<main class="main-layout">
+<div class="content-area article-content">
+<div class="alert alert-success">
+<div class="alert-title">아일린 — 공격적인 지원</div>
+<p>게일과 공수 콤보를 이어주는 기사도. 에일린은 레이나의 공수 저글을 가능하게 하는 동시에 존경할 만한 피해와 생존 가능성을 더해주는 공격적인 지원가입니다.<strong>오르비스 왕국</strong>레이피어/윈드 매직</p>
+</div>
+<h2 id="overview">📋 캐릭터 개요</h2>
+<div class="table-wrapper"><table><tbody>
+<tr><td><strong>명칭</strong></td><td>Eileen (에일린艾琳)</td></tr>
+<tr><td><strong>당 例</strong></td><td>오르비스 왕국</td></tr>
+<tr><td><strong>무기</strong></td><td>공격 지원/공수 지원병</td></tr>
+<tr><td><strong>⚡ 빠른 답변</strong></td><td>질풍</td></tr>
+<tr><td><strong>Eileen은 A-티어 공격 지원입니다. 카르마 "기사도와 책갈피 사이", 3피스 애저 게일 + 2피스 생명의 발라드 (또는 더 많은 피해를 입히려면 유적 파괴자) 를 장착하고 __ PN0 __, 치명타 대미지 및 최대 __ PN1 __ 의 우선 순위를 지정하세요. 그녀의 최고의 팀은</strong></td><td>레이나 + 칼시온</td></tr>
+<tr><td><strong>— 그녀는 레이나의 공수 콤보를 활성화하고 칼시온은 화상 압력을 제공합니다. 그녀는 아리아와 세레세와도 잘 어울립니다.</strong></td><td>공수부대</td></tr>
+<tr><td><strong>__ PN0 __</strong></td><td>A</td></tr>
+<tr><td><strong>잠금해제</strong></td><td>스토리 진행</td></tr>
+</tbody></table></div>
+<h2 id="playstyle">🎯 플레이스타일</h2>
+<p>Eileen은 공중 콤보를 활성화하는 데 탁월한 Gale 요소 지원입니다. 그녀의 스킬은 적을 발사하고 정지 상태로 유지하여 레이나가 저글을 확장할 수 있게 합니다. 순수한 지원과는 달리, 그녀는 공격적인 능력치로 구축합니다. Azure Gale은 그녀의 강풍 데미지를 증가시키고 Ballad of Life는 서스테인을 제공합니다. 그녀는 공수 팀에서 설정과 버스트 사이의 다리입니다.</p>
+<h2 id="skills">📋 캐릭터 개요</h2>
+<div class="table-wrapper"><table><thead><tr><th>명칭</th><th>당 例</th><th>오르비스 왕국</th><th>무기</th></tr></thead><tbody>
+<tr><td>강풍 찌르기</td><td>공격</td><td>강풍 피해를 가한 빠른 레이피어 추력</td><td>—</td></tr>
+<tr><td>윈드 런처</td><td>스킬 1</td><td>레이피어/윈드 매직</td><td>—</td></tr>
+<tr><td>영웅 특성</td><td>역할</td><td>공격 지원/공수 지원병</td><td>—</td></tr>
+<tr><td>상태 효과</td><td>신호</td><td>장시간 저글링을 위해 공중 적을 정지시키는 회오리바람</td><td>—</td></tr>
+</tbody></table></div>
+<h2 id="awakening">🌟 __ PN0 __ 노드</h2>
+<div class="table-wrapper"><table><thead><tr><th>수평기</th><th>효과</th></tr></thead><tbody>
+<tr><td>1</td><td>Wind Launcher 발사 높이 증가</td></tr>
+<tr><td>2</td><td>__ PN0 __</td></tr>
+<tr><td>3</td><td>잠금해제</td></tr>
+<tr><td>4</td><td>스토리 진행</td></tr>
+<tr><td>5</td><td>🎯 플레이스타일</td></tr>
+<tr><td>6</td><td>Eileen은 공중 콤보를 활성화하는 데 탁월한 Gale 요소 지원입니다. 그녀의 스킬은 적을 발사하고 정지 상태로 유지하여 레이나가 저글을 확장할 수 있게 합니다. 순수한 지원과는 달리, 그녀는 공격적인 능력치로 구축합니다. Azure Gale은 그녀의 강풍 데미지를 증가시키고 Ballad of Life는 서스테인을 제공합니다. 그녀는 공수 팀에서 설정과 버스트 사이의 다리입니다.</td></tr>
+</tbody></table></div>
+<h2 id="build">🔧 베스트 빌드</h2>
+<div class="table-wrapper"><table><thead><tr><th>슬롯</th><th>권고 사항</th></tr></thead><tbody>
+<tr><td><strong>독점 카르마</strong></td><td>기사도와 책갈피 사이</td></tr>
+<tr><td><strong>⚔️ 기술</strong></td><td>스킬</td></tr>
+<tr><td><strong>입력</strong></td><td>효과</td></tr>
+<tr><td><strong>손상</strong></td><td>해결/증폭</td></tr>
+<tr><td><strong>치명타 목표</strong></td><td>~ 80% 치명타율, ~ 150% 치명타 대미지</td></tr>
+</tbody></table></div>
+<h2 id="teams">👥 최고의 팀 구성</h2>
+<div class="table-wrapper"><table><thead><tr><th>팀</th><th>강풍 찌르기</th><th>공격</th></tr></thead><tbody>
+<tr><td><strong>강풍 피해를 가한 빠른 레이피어 추력</strong></td><td>윈드 런처</td><td>스킬 1</td></tr>
+<tr><td><strong>공수 지원</strong></td><td>에일린 + 레이나 + 아리아</td><td>Aria가 Burn/Airborne을 추가하는 Double Gale/Airborne 인에이블러.</td></tr>
+<tr><td><strong>독/강풍</strong></td><td>에일린 + 조니 + 샬럿</td><td>적을 공중으로 띄웁니다 (공수 설정)</td></tr>
+</tbody></table></div>
+<h2 id="tips">기사도 경비병</h2>
+<div class="card-grid">
+<div class="card"><h3 class="card-title">스킬 2</h3><p>반격으로 방어 패리</p></div>
+<div class="card"><h3 class="card-title">강풍 사이클론</h3><p>Azure Gale + Ballad of Life는 대미지를 입히고 지속합니다. 순수 유리 대포로 가지 마세요.</p></div>
+<div class="card"><h3 class="card-title">최대 __ PN0 __ 건</h3><p>그녀의 빌드에는 콤보를 설정하는 동안 생존해야 하기 때문에 최대 __ PN0 __ 이 (가) 포함됩니다.</p></div>
+<div class="card"><h3 class="card-title">저글 확장</h3><p>강풍 사이클론은 적을 더 오래 정지 상태로 유지하여 레이나에게 폭발할 시간을 더 줍니다.</p></div>
+</div>
+<h2 id="mistakes">장시간 저글링을 위해 공중 적을 정지시키는 회오리바람</h2>
+<ul>
+<li>🌟 __ PN0 __ 노드</li>
+<li>수평기</li>
+<li>효과</li>
+</ul>
+<section style="text-align: center; padding: 32px 0;">
+<h3 style="border: none;">Wind Launcher 발사 높이 증가</h3>
+<p style="margin-bottom: 16px;">전체 캐릭터 명단과 등급 목록을 확인하세요.</p>
+<a class="btn btn-primary" href="characters.html">모든 문자 👥 보기</a>
+</section>
+</div>
+<aside class="sidebar">
+<div class="sidebar-card">
+<div class="sidebar-title">현재 페이지</div>
+<ul class="sidebar-nav">
+<li><a href="#overview">캐릭터 개요</a></li>
+<li><a href="#playstyle">플레이스타일</a></li>
+<li><a href="#skills">최대 __ PN0 __ 및 생존 가능성 증가</a></li>
+<li><a href="#awakening">적이 공수일 때 강풍 대미지 보너스</a></li>
+<li><a href="#build">기사단 가드 카운터 대미지 증가</a></li>
+<li><a href="#teams">공수 지속 시간 연장, 치명타 대미지 보너스</a></li>
+<li><a href="#tips">강풍 사이클론이 주변의 적을 끌어당기고 저글링을 확장합니다.</a></li>
+<li><a href="#mistakes">일반적인 실수</a></li>
+</ul>
+</div>
+<div class="sidebar-card">
+<div class="sidebar-title">다른 영웅</div>
+<ul class="sidebar-nav">
+<li><a href="lute.html">류트</a></li>
+<li><a href="kalien.html">칼리엔</a></li>
+<li><a href="ornette.html">오르네트</a></li>
+<li><a href="sion.html">시옹</a></li>
+<li><a href="theresia.html">엔나 후 베르 투스</a></li>
+<li><a href="charlotte.html">샬럿</a></li>
+<li><a href="reina.html">레이나</a></li>
+<li><a href="roxy.html">록시</a></li>
+<li><a href="castella.html">카스텔라</a></li>
+<li><a href="aria.html">아리아</a></li>
+<li><a href="dana.html">다나</a></li>
+<li><a href="johnny.html">조니</a></li>
+<li><a href="astria.html">아스트리아</a></li>
+<li><a href="alex.html">믿ㅌ</a></li>
+<li><a href="cerese.html">세레세</a></li>
+<li><a href="othello.html">오셀로</a></li>
+<li><a href="eileen.html">에일린</a></li>
+<li><a href="kalsion.html">칼시온</a></li>
+<li><a href="tarte.html">타르테</a></li>
+</ul>
+</div>
+<div class="sidebar-card">
+<div class="sidebar-title">Wiki 탐색</div>
+<ul class="sidebar-nav">
+<li><a href="beginner-guide.html">시작하기</a></li>
+<li><a href="tier-list.html">__ PN0 __ 목록</a></li>
+<li><a href="build.html">🔧 베스트 빌드</a></li>
+<li><a href="best-team.html">슬롯</a></li>
+<li><a href="combat.html">권고 사항</a></li>
+<li><a href="gear.html">독점 카르마</a></li>
+<li><a href="karma.html">기사도와 책갈피 사이</a></li>
+<li><a href="familiars.html">Familiars</a></li>
+</ul>
+</div>
+</aside>
+</main>
+<section class="container" style="padding: 32px 24px; max-width: 800px; margin: 0 auto;">
+<h2 id="sources" style="font-size: 1.3rem; margin-bottom: 16px;">출처</h2>
+<p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">다음 출처에서 상호 참조되는 데이터 및 기술 정보를 구축하십시오.</p>
+<ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px;">
+<li><a href="https://allthings.how/dragonsword-awakening-best-builds-and-team-pairings-for-every-hero/" rel="noopener" target="_blank">All Things How</a></li>
+<li><a href="https://games.gg/dragonsword-awakening/guides/dragonsword-awakening-best-builds-and-teams/" rel="noopener" target="_blank">games.gg</a></li>
+<li><a href="https://www.destructoid.com/best-builds-and-teams-for-all-characters-in-dragonsword-awakening/" rel="noopener" target="_blank">디스트럭토이드</a></li>
+<li><a href="https://dsawakening.wiki/team-build" rel="noopener" target="_blank">dsawakening.wiki</a></li>
+</ul>
+</section>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-about"><h3>기어 세트</h3><p>3피스 Azure Gale + 2피스 Ballad of Life 또는 Ruinsbreaker</p></div>
+<div class="footer-col"><h4>가이드&#x0D;</h4><ul><li><a href="beginner-guide.html">주요 능력치</a></li><li><a href="tier-list.html">__ PN0 __ 파워 업, 치명타 대미지, 최대 __ PN1 __</a></li><li><a href="characters.html">Characters</a></li><li><a href="build.html">빌드</a></li></ul></div>
+<div class="footer-col"><h4>시스템</h4><ul><li><a href="combat.html">"전투</a></li><li><a href="gear.html">룬</a></li><li><a href="karma.html">카르마</a></li><li><a href="familiars.html">Familiars</a></li></ul></div>
+<div class="footer-col"><h4>커뮤니티</h4><ul><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Discord</a></li><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">__ PN0 __</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 __ PN0 __ __ PN1 __ Wiki. 팬 사이트. __ PN0 __: __ PN1 __ © Hound13 Inc.</p></div>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>

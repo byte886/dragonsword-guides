@@ -1,25 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex 빌드 가이드: 최고의 카르마, 장비, 룬 & 팀 | DragonSword: Awakening</title>
-    <meta name="description" content="Complete Alex build guide — Exclusive Karma (Provisional (testing)), 3-piece Ruinsbreaker + 2-piece defensive set (provisional), skill breakdown, and best team compositions for tank / armor break.">
-    <meta name="keywords" content="dragonsword awakening alex, alex build, alex karma, alex gear, alex team, defense / knockdown, knockdown">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ds-guides.wiki/ko/alex.html">
-    <meta property="og:title" content="Alex Build Guide — DragonSword: Awakening">
-    <meta property="og:description" content="Complete Alex build guide — Exclusive Karma (Provisional (testing)), 3-piece Ruinsbreaker + 2-piece defensive set (provisional), skill breakdown, and best team compositions for tank / armor break.">
-    <meta property="og:image" content="https://ds-guides.wiki/assets/hero-cover.jpg">
-    <link rel="stylesheet" href="../css/style.css?v=2">
-    <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <link rel="alternate" hreflang="en" href="https://ds-guides.wiki/en/alex.html">
-    <link rel="alternate" hreflang="zh" href="https://ds-guides.wiki/zh/alex.html">
-    <link rel="alternate" hreflang="ko" href="https://ds-guides.wiki/ko/alex.html">
-    <link rel="alternate" hreflang="ru" href="https://ds-guides.wiki/ru/alex.html">
-    <link rel="alternate" hreflang="ja" href="https://ds-guides.wiki/ja/alex.html">
-    <link rel="alternate" hreflang="x-default" href="https://ds-guides.wiki/en/alex.html">
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex빌드 가이드:최고의 카르마,장비, 룬 __ ENT0 __ 팀 | __ PN0 __: __ PN1 __</title>
+<meta content="Complete Alex build guide — Exclusive Karma (Provisional (testing)), 3-piece Ruinsbreaker + 2-piece defensive set (provisional), skill breakdown, and best team compositions for tank / armor break." name="description"/>
+<meta content="dragonsword awakening alex, alex build, alex karma, alex gear, alex team, defense / knockdown, knockdown" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://ds-guides.wiki/ko/alex.html" rel="canonical"/>
+<meta content="Alex Build Guide — DragonSword: Awakening" property="og:title"/>
+<meta content="Complete Alex build guide — Exclusive Karma (Provisional (testing)), 3-piece Ruinsbreaker + 2-piece defensive set (provisional), skill breakdown, and best team compositions for tank / armor break." property="og:description"/>
+<meta content="https://ds-guides.wiki/assets/hero-cover.jpg" property="og:image"/>
+<link href="../css/style.css?v=2" rel="stylesheet"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="https://ds-guides.wiki/en/alex.html" hreflang="en" rel="alternate"/>
+<link href="https://ds-guides.wiki/zh/alex.html" hreflang="zh" rel="alternate"/>
+<link href="https://ds-guides.wiki/ko/alex.html" hreflang="ko" rel="alternate"/>
+<link href="https://ds-guides.wiki/ru/alex.html" hreflang="ru" rel="alternate"/>
+<link href="https://ds-guides.wiki/ja/alex.html" hreflang="ja" rel="alternate"/>
+<link href="https://ds-guides.wiki/en/alex.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -33,196 +34,183 @@
       "mainEntityOfPage": {"@type": "WebPage","@id": "https://ds-guides.wiki/ko/alex.html"}
     }
     </script>
-    <script src="../js/analytics.js" defer></script>
+<script defer="" src="../js/analytics.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <img src="../assets/favicon.png" alt="DragonSword Wiki Logo" style="width: 32px; height: 32px; border-radius: 6px;">
-                <span>DragonSword Wiki</span>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="beginner-guide.html">Beginner Guide</a></li>
-                <li><a href="tier-list.html">Tier List</a></li>
-                <li><a href="characters.html" class="active">Characters</a></li>
-                <li><a href="build.html">Builds</a></li>
-                <li><a href="best-team.html">Teams</a></li>
-                <li><a href="combat.html">Combat</a></li>
-                <li><a href="map.html">Map</a></li>
-                <li><a href="https://store.steampowered.com/app/4570720/" target="_blank" class="nav-cta">Play on Steam</a></li>
-            </ul>
-            <button class="theme-toggle" title="Switch to light mode">☀️</button>
-        </div>
-    </nav>
-
-    <section class="hero" style="padding: 48px 24px 32px;">
-        <div class="container">
-            <span class="hero-eyebrow">Red Fox · B Tier · Tank</span>
-            <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Alex — Tank</h1>
-            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">A reliable frontline tank with high HP and damage reduction. Alex absorbs hits and creates space for DPS teammates, with Knockdown utility that sets up juggle combos.</p>
-            <div class="hero-stats" style="margin-top: 24px;">
-                <div class="hero-stat"><span class="dot"></span> Red Fox Mercenary Crew</div>
-                <div class="hero-stat"><span class="dot"></span> Greatsword / Shield</div>
-                <div class="hero-stat"><span class="dot"></span> Knockdown</div>
-                <div class="hero-stat"><span class="dot"></span> Tank / Armor Break</div>
-            </div>
-        </div>
-    </section>
-
-    <main class="main-layout">
-        <div class="content-area article-content">
-            <div class="alert alert-success">
-                <div class="alert-title">⚡ Quick Answer</div>
-                <p>Alex is a B-tier tank who excels at absorbing damage and breaking enemy poise with Knockdown. His optimal build is still being tested by the community, but prioritize HP and survivability. His best team is <strong>Ornette + Castella</strong> for stagger control against armored bosses. He is also a solid early-game frontliner paired with Aria and Roxy.</p>
-            </div>
-            <div class="alert alert-info"><div class="alert-title">📝 Note</div><p>Alex's optimal Karma, gear, and rune builds are still being tested by the community as of August 2026. Recommendations on this page are provisional and will be updated as the meta settles.</p></div>
-            <h2 id="overview">📋 Character Overview</h2>
-            <div class="table-wrapper"><table><tbody>
-                <tr><td><strong>Name</strong></td><td>Alex (亚历克斯)</td></tr>
-                <tr><td><strong>Faction</strong></td><td>Red Fox Mercenary Crew</td></tr>
-                <tr><td><strong>Weapon</strong></td><td>Greatsword / Shield</td></tr>
-                <tr><td><strong>Hero Trait</strong></td><td>Defense / Knockdown</td></tr>
-                <tr><td><strong>Role</strong></td><td>Tank / Armor Break</td></tr>
-                <tr><td><strong>Status Effects</strong></td><td>Knockdown</td></tr>
-                <tr><td><strong>Tier</strong></td><td>B</td></tr>
-                <tr><td><strong>Unlock</strong></td><td>Story progression</td></tr>
-            </tbody></table></div>
-
-            <h2 id="playstyle">🎯 Playstyle</h2>
-            <p>Alex is the team's shield. He has high health, damage reduction, and poise-breaking attacks that Knockdown enemies. While his individual damage is low, his ability to survive boss attacks and create openings makes him valuable in tough fights. He breaks enemy poise, then teammates like Castella capitalize on Knockdown targets with launchers.</p>
-
-            <h2 id="skills">⚔️ Skills</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Skill</th><th>Input</th><th>Effect</th><th>Damage</th></tr></thead><tbody>
-                <tr><td>Shield Bash</td><td>Attack</td><td>Heavy shield strike that builds poise damage</td><td>—</td></tr>
-                <tr><td>Guard</td><td>Dodge/Block</td><td>Raises guard to reduce incoming damage</td><td>—</td></tr>
-                <tr><td>Divine Wind</td><td>Skill</td><td>Core skill — prioritize leveling. Poise break + Knockdown</td><td>—</td></tr>
-                <tr><td>Taunt Roar</td><td>Skill 2</td><td>Draws enemy aggro to protect teammates</td><td>—</td></tr>
-            </tbody></table></div>
-
-            <h2 id="awakening">🌟 Awakening Nodes</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Level</th><th>Effect</th></tr></thead><tbody>
-                <tr><td>1</td><td>Increases damage reduction while guarding</td></tr>
-                <tr><td>2</td><td>Max HP increased</td></tr>
-                <tr><td>3</td><td>Divine Wind poise damage increased</td></tr>
-                <tr><td>4</td><td>Counter-attack after successful block</td></tr>
-                <tr><td>5</td><td>Knockdown duration extended</td></tr>
-                <tr><td>6</td><td>Party damage reduction when Alex is on-field</td></tr>
-            </tbody></table></div>
-
-            <h2 id="build">🔧 Best Build</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Slot</th><th>Recommendation</th></tr></thead><tbody>
-                <tr><td><strong>Exclusive Karma</strong></td><td>Provisional (testing)</td></tr>
-                <tr><td><strong>Gear Set</strong></td><td>3-piece Ruinsbreaker + 2-piece defensive set (provisional)</td></tr>
-                <tr><td><strong>Main Stats</strong></td><td>Max HP, ATK Power Up, DEF (provisional)</td></tr>
-                <tr><td><strong>Runes</strong></td><td>Resolve (provisional)</td></tr>
-                <tr><td><strong>Crit Target</strong></td><td>~80% Crit Rate, ~150% Crit DMG</td></tr>
-            </tbody></table></div>
-
-            <h2 id="teams">👥 Best Team Compositions</h2>
-            <div class="table-wrapper"><table><thead><tr><th>Team</th><th>Composition</th><th>How It Works</th></tr></thead><tbody>
-                <tr><td><strong>Stagger Control</strong></td><td>Ornette + Castella + Alex</td><td>Alex strips armor and Knockdown, Castella launches, Ornette adds Shock. Best against armored bosses.</td></tr>
-                <tr><td><strong>Beginner Tank</strong></td><td>Alex + Aria + Roxy</td><td>Balanced early-game comp — Alex tanks, Aria supports, Roxy deals damage.</td></tr>
-                <tr><td><strong>Break/Juggle</strong></td><td>Alex + Castella + Roxy</td><td>Alex breaks poise, Castella launches, Roxy bursts during juggle.</td></tr>
-            </tbody></table></div>
-
-            <h2 id="tips">💡 Combat Tips</h2>
-            <div class="card-grid">
-                <div class="card"><h3 class="card-title">Prioritize Divine Wind</h3><p>Level this core skill first — it is Alex's main poise break and Knockdown tool.</p></div>
-                <div class="card"><h3 class="card-title">Guard at Key Moments</h3><p>Use guard during boss charge attacks to reduce damage and create counter windows.</p></div>
-                <div class="card"><h3 class="card-title">Knockdown Setup</h3><p>After breaking poise, Knockdown the enemy then swap to Castella for Airborne follow-up.</p></div>
-                <div class="card"><h3 class="card-title">Don't Chase Damage</h3><p>Alex's value is survival and control, not DPS. Build him tanky.</p></div>
-            </div>
-
-            <h2 id="mistakes">⚠️ Common Mistakes</h2>
-            <ul>
-                <li>Building Alex as a DPS — he is a tank/control character</li>
-                <li>Forgetting to guard — his damage reduction is a major asset</li>
-                <li>Leaving Alex on-field too long — swap to DPS after Knockdown is applied</li>
-            </ul>
-
-            <section style="text-align: center; padding: 32px 0;">
-                <h3 style="border: none;">Want to see all heroes?</h3>
-                <p style="margin-bottom: 16px;">Check our complete character roster and tier list.</p>
-                <a href="characters.html" class="btn btn-primary">👥 View All Characters</a>
-            </section>
-        </div>
-
-        <aside class="sidebar">
-            <div class="sidebar-card">
-                <div class="sidebar-title">On This Page</div>
-                <ul class="sidebar-nav">
-                    <li><a href="#overview">Character Overview</a></li>
-                    <li><a href="#playstyle">Playstyle</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awakening">Awakening Nodes</a></li>
-                    <li><a href="#build">Best Build</a></li>
-                    <li><a href="#teams">Team Comps</a></li>
-                    <li><a href="#tips">Combat Tips</a></li>
-                    <li><a href="#mistakes">Common Mistakes</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-card">
-                <div class="sidebar-title">Other Heroes</div>
-                <ul class="sidebar-nav">
-                    <li><a href="lute.html">Lute</a></li>
-                    <li><a href="kalien.html">Kalien</a></li>
-                    <li><a href="ornette.html">Ornette</a></li>
-                    <li><a href="sion.html">Sion</a></li>
-                    <li><a href="theresia.html">Theresia</a></li>
-                    <li><a href="charlotte.html">Charlotte</a></li>
-                    <li><a href="reina.html">Reina</a></li>
-                    <li><a href="roxy.html">Roxy</a></li>
-                    <li><a href="castella.html">Castella</a></li>
-                    <li><a href="aria.html">Aria</a></li>
-                    <li><a href="dana.html">Dana</a></li>
-                    <li><a href="johnny.html">Johnny</a></li>
-                    <li><a href="astria.html">Astria</a></li>
-                    <li><a href="alex.html">Alex</a></li>
-                    <li><a href="cerese.html">Cerese</a></li>
-                    <li><a href="othello.html">Othello</a></li>
-                    <li><a href="eileen.html">Eileen</a></li>
-                    <li><a href="kalsion.html">Kalsion</a></li>
-                    <li><a href="tarte.html">Tarte</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-card">
-                <div class="sidebar-title">Wiki Navigation</div>
-                <ul class="sidebar-nav">
-                    <li><a href="beginner-guide.html">Getting Started</a></li>
-                    <li><a href="tier-list.html">Tier List</a></li>
-                    <li><a href="build.html">Builds & Skills</a></li>
-                    <li><a href="best-team.html">Team Compositions</a></li>
-                    <li><a href="combat.html">Combat System</a></li>
-                    <li><a href="gear.html">Gear & Equipment</a></li>
-                    <li><a href="karma.html">Karma System</a></li>
-                    <li><a href="familiars.html">Familiars</a></li>
-                </ul>
-            </div>
-        </aside>
-    </main>
-
-
-    <section class="container" style="padding: 32px 24px; max-width: 800px; margin: 0 auto;">
-        <h2 id="sources" style="font-size: 1.3rem; margin-bottom: 16px;">📚 Sources</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">Build data and skill information cross-referenced from the following sources:</p>
-        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px;">
-                        <li><a href="https://allthings.how/dragonsword-awakening-best-builds-and-team-pairings-for-every-hero/" target="_blank" rel="noopener">All Things How</a></li>
-                        <li><a href="https://games.gg/dragonsword-awakening/guides/dragonsword-awakening--best-team-compositions/" target="_blank" rel="noopener">games.gg</a></li>
-                        <li><a href="https://nerdschalk.com/dragonsword-awakening-best-teams-ranked/" target="_blank" rel="noopener">Nerd's Chalk</a></li>
-                        <li><a href="https://3g.ali213.net/gl/html/1797879.html" target="_blank" rel="noopener">游侠网</a></li>
-                    </ul>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about"><h3>DragonSword Awakening Wiki</h3><p>Independent fan-made guide site. Not affiliated with Hound13 Inc.</p></div>
-            <div class="footer-col"><h4>Guides</h4><ul><li><a href="beginner-guide.html">Beginner Guide</a></li><li><a href="tier-list.html">Tier List</a></li><li><a href="characters.html">Characters</a></li><li><a href="build.html">Builds</a></li></ul></div>
-            <div class="footer-col"><h4>Systems</h4><ul><li><a href="combat.html">Combat</a></li><li><a href="gear.html">Gear</a></li><li><a href="karma.html">Karma</a></li><li><a href="familiars.html">Familiars</a></li></ul></div>
-            <div class="footer-col"><h4>Community</h4><ul><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Discord</a></li><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">Steam</a></li></ul></div>
-        </div>
-        <div class="footer-bottom"><p>&copy; 2026 DragonSword Awakening Wiki. Fan site. DragonSword: Awakening &copy; Hound13 Inc.</p></div>
-    </footer>
-    <script src="../js/main.js"></script>
+<nav class="navbar">
+<div class="nav-container">
+<a class="nav-logo" href="../index.html">
+<img alt="DragonSword Wiki Logo" src="../assets/favicon.png" style="width: 32px; height: 32px; border-radius: 6px;"/>
+<span>__ PN0 __ Wiki</span>
+</a>
+<button aria-label="Toggle menu" class="nav-toggle">☰</button>
+<ul class="nav-links">
+<li><a href="beginner-guide.html">초보자 가이드</a></li>
+<li><a href="tier-list.html">등급 목록</a></li>
+<li><a class="active" href="characters.html">Characters</a></li>
+<li><a href="build.html">빌드</a></li>
+<li><a href="best-team.html">팀</a></li>
+<li><a href="combat.html">"전투</a></li>
+<li><a href="map.html">지도</a></li>
+<li><a class="nav-cta" href="https://store.steampowered.com/app/4570720/" target="_blank">__ PN0 __에서 플레이</a></li>
+</ul>
+<button class="theme-toggle" title="Switch to light mode">☀️</button>
+</div>
+</nav>
+<section class="hero" style="padding: 48px 24px 32px;">
+<div class="container">
+<span class="hero-eyebrow">레드 폭스 · B __ PN0 __ · 탱크</span>
+<h1 style="font-size: 2.5rem; margin-bottom: 16px;">알렉스 — 탱크</h1>
+<p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px;">높은 __ PN1 __ 및 대미지 감소를 가진 신뢰할 수 있는 최전방 탱크. Alex는 저글링 콤보를 설정하는 Knockdown 유틸리티를 사용하여 __ PN0 __ 명의 팀원을 위한 타격을 흡수하고 공간을 만듭니다.</p>
+<div class="hero-stats" style="margin-top: 24px;">
+<div class="hero-stat"><span class="dot"></span>레드 폭스 용병단</div>
+<div class="hero-stat"><span class="dot"></span>그레이트소드/실드</div>
+<div class="hero-stat"><span class="dot"></span>넉다운</div>
+<div class="hero-stat"><span class="dot"></span>레드 폭스 · B 티어 · 탱크</div>
+</div>
+</div>
+</section>
+<main class="main-layout">
+<div class="content-area article-content">
+<div class="alert alert-success">
+<div class="alert-title">알렉스 — 탱크</div>
+<p>높은 HP와 대미지 감소를 가진 신뢰할 수 있는 최전방 탱크. Alex는 저글링 콤보를 설정하는 Knockdown 유틸리티를 사용하여 타격을 흡수하고 DPS 팀원을 위한 공간을 만듭니다.<strong>레드 폭스 용병 대원</strong>그레이트소드/실드</p>
+</div>
+<div class="alert alert-info"><div class="alert-title">비 고</div><p>알렉스의 최적의 카르마, 장비 및 룬 빌드는 2026년 8월 현재 커뮤니티에서 테스트 중입니다. 이 페이지의 권장 사항은 잠정적이며 메타가 해결되면 업데이트됩니다.</p></div>
+<h2 id="overview">📋 캐릭터 개요</h2>
+<div class="table-wrapper"><table><tbody>
+<tr><td><strong>명칭</strong></td><td>Alex (알렉스亚历克斯)</td></tr>
+<tr><td><strong>당 例</strong></td><td>탱크/아머 브레이크</td></tr>
+<tr><td><strong>⚡ 빠른 답변</strong></td><td>알렉스는 넉다운으로 대미지를 흡수하고 적의 포이즈를 파괴하는 데 탁월한 B티어 탱크입니다. 그의 최적 빌드는 여전히 커뮤니티에 의해 테스트되고 있지만 HP와 생존 가능성을 우선시합니다. 그의 최고의 팀은</td></tr>
+<tr><td><strong>오르네트와 카스텔라</strong></td><td>장갑 보스에 대한 비틀거림 제어. 그는 또한 아리아와 록시와 짝을 이루는 탄탄한 초반 게임 프론트라이너이기도 합니다.</td></tr>
+<tr><td><strong>역할</strong></td><td>갑옷 파괴</td></tr>
+<tr><td><strong>상태 효과</strong></td><td>넉다운</td></tr>
+<tr><td><strong>__ PN0 __</strong></td><td>B</td></tr>
+<tr><td><strong>잠금해제</strong></td><td>📝 참고</td></tr>
+</tbody></table></div>
+<h2 id="playstyle">알렉스의 최적의 카르마, 장비 및 룬 빌드는 2026년 8월 현재 커뮤니티에서 테스트 중입니다. 이 페이지의 권장 사항은 잠정적이며 메타가 해결되면 업데이트됩니다.</h2>
+<p>📋 캐릭터 개요</p>
+<h2 id="skills">이름</h2>
+<div class="table-wrapper"><table><thead><tr><th>파벌</th><th>입력</th><th>효과</th><th>손상</th></tr></thead><tbody>
+<tr><td><Skill.Name>방패 강타</></td><td>공격</td><td>레드 폭스 용병 대원</td><td>—</td></tr>
+<tr><td>경비병</td><td>무기</td><td>그레이트소드/실드</td><td>—</td></tr>
+<tr><td>영웅 특성</td><td>방어/넉다운</td><td>핵심 기술 — 평준화를 우선시합니다. 포이즈 브레이크 + 넉다운</td><td>—</td></tr>
+<tr><td>포효 도발</td><td>스킬 2</td><td>팀원을 보호하기 위해 적 어그로를 뽑습니다</td><td>—</td></tr>
+</tbody></table></div>
+<h2 id="awakening">🌟 __ PN0 __ 노드</h2>
+<div class="table-wrapper"><table><thead><tr><th>역할</th><th>탱크/아머 브레이크</th></tr></thead><tbody>
+<tr><td>1</td><td>상태 효과</td></tr>
+<tr><td>2</td><td>등급</td></tr>
+<tr><td>3</td><td>잠금 해제</td></tr>
+<tr><td>4</td><td>방어 성공 후 반격</td></tr>
+<tr><td>5</td><td>넉다운 지속 시간 연장</td></tr>
+<tr><td>6</td><td>알렉스가 현장에 있을 때 파티 데미지 감소</td></tr>
+</tbody></table></div>
+<h2 id="build">🔧 베스트 빌드</h2>
+<div class="table-wrapper"><table><thead><tr><th>슬롯</th><th>스토리 진행</th></tr></thead><tbody>
+<tr><td><strong>🎯 플레이스타일</strong></td><td>알렉스는 팀의 방패입니다. 그는 높은 체력, 대미지 감소, 적을 쓰러뜨리는 공격을 합니다. 개인 데미지는 낮지만, 보스의 공격에서 살아남고 구멍을 만드는 능력은 힘든 싸움에서 그를 소중하게 만듭니다. 그는 적의 포이즈를 깨뜨린 다음, 카스텔라와 같은 팀원들이 발사기로 넉다운 대상을 활용합니다.</td></tr>
+<tr><td><strong>⚔️ 기술</strong></td><td>스킬</td></tr>
+<tr><td><strong>주요 능력치</strong></td><td>최대 __ PN2 __, __ PN0 __ 파워 업, __ PN1 __ (임시)</td></tr>
+<tr><td><strong>룬</strong></td><td>해결 (임시)</td></tr>
+<tr><td><strong>치명타 목표</strong></td><td>입력</td></tr>
+</tbody></table></div>
+<h2 id="teams">효과</h2>
+<div class="table-wrapper"><table><thead><tr><th>대미지</th><th>방어막 강타</th><th>공격</th></tr></thead><tbody>
+<tr><td><strong>스태거 컨트롤</strong></td><td>오르네트 + 카스텔라 + 알렉스</td><td>알렉스가 갑옷을 벗기고 넉다운하고, 카스텔라가 출시되고, 오넷이 쇼크를 추가합니다. 장갑 보스에 가장 적합합니다.</td></tr>
+<tr><td><strong>__ PN0 __ 탱크</strong></td><td>알렉스 + 아리아 + 록시</td><td>포이즈 데미지를 주는 헤비 실드 스트라이크</td></tr>
+<tr><td><strong>회피/차단</strong></td><td>가드를 들어올려 받는 피해를 줄입니다.</td><td>신성한 바람</td></tr>
+</tbody></table></div>
+<h2 id="tips">기술</h2>
+<div class="card-grid">
+<div class="card"><h3 class="card-title">신성한 바람 우선순위 지정</h3><p>이 핵심 스킬의 레벨을 먼저 올리세요. 알렉스의 주요 포이즈 브레이크 및 넉다운 도구입니다.</p></div>
+<div class="card"><h3 class="card-title">주요 순간에 경비</h3><p>보스 돌진 공격 중에 가드를 사용하여 피해를 줄이고 카운터 창을 생성합니다.</p></div>
+<div class="card"><h3 class="card-title">넉다운 설정</h3><p>핵심 기술 — 평준화를 우선시합니다. 포이즈 브레이크 + 넉다운</p></div>
+<div class="card"><h3 class="card-title">포효 도발</h3><p>기술 2</p></div>
+</div>
+<h2 id="mistakes">팀원을 보호하기 위해 적 어그로를 뽑습니다</h2>
+<ul>
+<li>🌟 각성 노드</li>
+<li>보호하는 것을 잊어버림 — 그의 피해 감소는 주요 자산입니다.</li>
+<li>알렉스를 필드에 너무 오래 두기 — 넉다운 적용 후 __ PN0 __ (으) 로 전환</li>
+</ul>
+<section style="text-align: center; padding: 32px 0;">
+<h3 style="border: none;">모든 영웅을 보고 싶으신가요?</h3>
+<p style="margin-bottom: 16px;">전체 캐릭터 명단과 등급 목록을 확인하세요.</p>
+<a class="btn btn-primary" href="characters.html">모든 문자 👥 보기</a>
+</section>
+</div>
+<aside class="sidebar">
+<div class="sidebar-card">
+<div class="sidebar-title">레벨</div>
+<ul class="sidebar-nav">
+<li><a href="#overview">효과</a></li>
+<li><a href="#playstyle">보호하는 동안 대미지 감소 증가</a></li>
+<li><a href="#skills">최대 생명력 증가</a></li>
+<li><a href="#awakening">신성한 바람 포이즈 대미지 증가</a></li>
+<li><a href="#build">베스트 빌드</a></li>
+<li><a href="#teams">팀 콤프</a></li>
+<li><a href="#tips">전투 팁</a></li>
+<li><a href="#mistakes">일반적인 실수</a></li>
+</ul>
+</div>
+<div class="sidebar-card">
+<div class="sidebar-title">다른 영웅</div>
+<ul class="sidebar-nav">
+<li><a href="lute.html">류트</a></li>
+<li><a href="kalien.html">칼리엔</a></li>
+<li><a href="ornette.html">오르네트</a></li>
+<li><a href="sion.html">시옹</a></li>
+<li><a href="theresia.html">엔나 후 베르 투스</a></li>
+<li><a href="charlotte.html">샬럿</a></li>
+<li><a href="reina.html">레이나</a></li>
+<li><a href="roxy.html">록시</a></li>
+<li><a href="castella.html">카스텔라</a></li>
+<li><a href="aria.html">아리아</a></li>
+<li><a href="dana.html">다나</a></li>
+<li><a href="johnny.html">조니</a></li>
+<li><a href="astria.html">아스트리아</a></li>
+<li><a href="alex.html">믿ㅌ</a></li>
+<li><a href="cerese.html">세레세</a></li>
+<li><a href="othello.html">오셀로</a></li>
+<li><a href="eileen.html">에일린</a></li>
+<li><a href="kalsion.html">칼시온</a></li>
+<li><a href="tarte.html">타르테</a></li>
+</ul>
+</div>
+<div class="sidebar-card">
+<div class="sidebar-title">방어 성공 후 반격</div>
+<ul class="sidebar-nav">
+<li><a href="beginner-guide.html">넉다운 지속 시간 연장</a></li>
+<li><a href="tier-list.html">알렉스가 현장에 있을 때 파티 데미지 감소</a></li>
+<li><a href="build.html">🔧 베스트 빌드</a></li>
+<li><a href="best-team.html">슬롯</a></li>
+<li><a href="combat.html">【 전투 시스템 】</a></li>
+<li><a href="gear.html">GEAR __ ENT0 __ 장비</a></li>
+<li><a href="karma.html">카르마 시스템</a></li>
+<li><a href="familiars.html">Familiars</a></li>
+</ul>
+</div>
+</aside>
+</main>
+<section class="container" style="padding: 32px 24px; max-width: 800px; margin: 0 auto;">
+<h2 id="sources" style="font-size: 1.3rem; margin-bottom: 16px;">출처</h2>
+<p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">다음 출처에서 상호 참조되는 데이터 및 기술 정보를 구축하십시오.</p>
+<ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px;">
+<li><a href="https://allthings.how/dragonsword-awakening-best-builds-and-team-pairings-for-every-hero/" rel="noopener" target="_blank">권장 사항</a></li>
+<li><a href="https://games.gg/dragonsword-awakening/guides/dragonsword-awakening--best-team-compositions/" rel="noopener" target="_blank">독점 카르마</a></li>
+<li><a href="https://nerdschalk.com/dragonsword-awakening-best-teams-ranked/" rel="noopener" target="_blank">잠정 (테스트)</a></li>
+<li><a href="https://3g.ali213.net/gl/html/1797879.html" rel="noopener" target="_blank">游侠网</a></li>
+</ul>
+</section>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-about"><h3>기어 세트</h3><p>3 피스 유적 파괴자 + 2 피스 방어 세트 (임시)</p></div>
+<div class="footer-col"><h4>가이드&#x0D;</h4><ul><li><a href="beginner-guide.html">__ PN0 __ 가이드</a></li><li><a href="tier-list.html">__ PN0 __ 목록</a></li><li><a href="characters.html">Characters</a></li><li><a href="build.html">빌드</a></li></ul></div>
+<div class="footer-col"><h4>시스템</h4><ul><li><a href="combat.html">"전투</a></li><li><a href="gear.html">기어</a></li><li><a href="karma.html">카르마</a></li><li><a href="familiars.html">Familiars</a></li></ul></div>
+<div class="footer-col"><h4>커뮤니티</h4><ul><li><a href="https://discord.gg/CzZ5ddkMVg" target="_blank">Discord</a></li><li><a href="https://store.steampowered.com/app/4570720/" target="_blank">__ PN0 __</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 __ PN0 __ __ PN1 __ Wiki. 팬 사이트. __ PN0 __: __ PN1 __ © Hound13 Inc.</p></div>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>
